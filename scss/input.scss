@@ -1,0 +1,26 @@
+@import "Ginkgo";
+@import "color";
+
+
+input, textarea {
+  border:0 none;
+  outline: 0;
+  background-color: transparent;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari 和 Chrome */
+}
+
+.input_gray {
+  display: inline-block;
+  width: 100%;
+  max-width: 135px;
+  background-color: $color_LGray; 
+  @include border-radius(20px);
+  padding: 5px 20px;
+  font-size: 1.3rem;
+  color: black;
+
+  @include range-width(770px, 1025px) {
+    max-width: 100px;
+  }
+}

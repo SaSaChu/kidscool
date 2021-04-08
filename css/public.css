@@ -1,0 +1,137 @@
+@charset "UTF-8";
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+p { padding: 0; margin: 0; }
+
+.f_b18 { font-size: 1.3rem; color: black; }
+@media screen and (max-width: 1024px) and (min-width: 450px) { .f_b18 { font-size: 1.2rem; } }
+
+.f_b13 { font-size: 1rem; line-height: 1.5; color: black; }
+@media screen and (max-width: 449px) and (min-width: 0) { .f_b13 { font-size: .9rem; } }
+
+.whiteNum { display: inline-block; width: 100%; max-width: 170px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: white; padding: 10px 15px; text-align: left; }
+.whiteNum:before { display: inline-block; content: attr(title); font-size: 1.15rem; color: black; }
+
+.m_r_10 { margin-right: 10px; }
+
+.m_t_10 { margin-top: 10px; }
+
+.m_r_5 { margin-right: 5px; }
+
+.m_rt_3_8 { margin: 3px 8px 0 0; }
+
+.p_t_3 { padding-top: 3px; }
+
+.p_t_5 { padding-top: 5px; }
+
+.p_td_20 { padding: 20px 0; }
+
+.m_r_30 { margin-right: 30px; }
+
+.order_l { float: left; }
+
+.order_r { float: right; }
+
+.logo, .header_icon, .icon_qa, .icon_lock { display: inline-block; width: 100%; }
+
+.logo { max-width: 132px; margin-right: 5px; }
+
+.header_icon { max-width: 30px; padding-top: 13px; margin-right: 5px; }
+
+.icon_qa { max-width: 25px; margin-right: 5px; }
+
+.icon_lock { max-width: 42px; }
+
+.img_slogan, .img_week, .img_testPlay { display: inline-block; width: 100%; }
+
+.img_slogan { max-width: 582px; }
+
+.img_week { max-width: 200px; position: absolute; left: 75px; }
+@media screen and (max-width: 1099px) and (min-width: 770px) { .img_week { max-width: 160px; left: 25px; top: 60px; } }
+
+.img_testPlay { max-width: 140px; position: absolute; right: 115px; top: 115px; }
+@media screen and (max-width: 1099px) and (min-width: 770px) { .img_testPlay { max-width: 120px; right: 55px; top: 175px; } }
+
+.tip_box { display: inline-block; position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; z-index: 8888; }
+@media screen and (max-width: 449px) and (min-width: 0) { .tip_box { display: none; } }
+
+.prompt { position: relative; display: inline-block; width: 40px; height: 40px; }
+.prompt.pa:hover { cursor: pointer; }
+.prompt.pa:hover:before { content: attr(data-showtip); background-color: red; color: white; padding: 0 5px; position: absolute; font-size: .9rem; left: -28px; bottom: -35px; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.prompt.pa:hover:after { display: inline-block; content: ''; position: absolute; left: 17px; bottom: -11px; width: 0; height: 0; border-style: solid; border-width: 0 5px 5px 5px; border-color: transparent transparent red transparent; }
+.prompt:hover { cursor: pointer; }
+.prompt:hover:before { content: attr(data-showtip); background-color: red; color: white; padding: 0 5px; position: absolute; font-size: .9rem; left: -20px; bottom: -35px; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.prompt:hover:after { display: inline-block; content: ''; position: absolute; left: 7px; bottom: -11px; width: 0; height: 0; border-style: solid; border-width: 0 5px 5px 5px; border-color: transparent transparent red transparent; }
+
+a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
+
+button { display: inline-block; cursor: pointer; outline: 0; border: 0; background-color: transparent; }
+
+.link_red { display: inline-block; padding: 5px 15px; font-size: 1.3rem; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
+.link_red:hover, .link_red:active { background: linear-gradient(#d00b0a, #fe4737); background: linear-gradient(to bottom, #d00b0a, #fe4737); background: linear-gradient(180deg, #d00b0a, #fe4737); background: linear-gradient(to top, #fe4737, #d00b0a); background: linear-gradient(to bottom, #d00b0a 0%, #fe4737 100%); }
+@media screen and (max-width: 1024px) and (min-width: 450px) { .link_red { font-size: 1.2rem; padding: 4px 10px; } }
+
+input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
+
+.input_gray { display: inline-block; width: 100%; max-width: 135px; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
+@media screen and (max-width: 1024px) and (min-width: 770px) { .input_gray { max-width: 100px; } }
+
+html { font-size: 13px; }
+
+body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+body.indexBg { margin: 0; padding: 0; background: #436ace url(../img/bg.png) center center fixed no-repeat; -moz-background-size: cover; background-size: cover; }
+
+header { display: flex; justify-content: center; align-items: center; width: 100%; height: 65px; background-color: white; padding: 0 50px; }
+@media screen and (max-width: 1189px) and (min-width: 770px) { header { padding: 0 20px; } }
+@media screen and (max-width: 769px) and (min-width: 450px) { header { padding: 0 0 0 20px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { header { padding: 0 0 0 10px; } }
+
+.header_l, .header_r { display: inline-block; }
+
+.header_l { width: 30%; float: left; text-align: left; }
+@media screen and (max-width: 769px) and (min-width: 0) { .header_l { width: 85%; } }
+
+.header_r { width: 70%; float: right; text-align: right; }
+@media screen and (max-width: 769px) and (min-width: 0) { .header_r { display: none; } }
+
+@media screen and (max-width: 769px) and (min-width: 0) { .m_header_r { display: inline-block; width: 15%; float: right; height: 65px; background-color: rgba(255, 0, 0, 0.2); } }
+
+.posit { position: relative; }
+
+.posit_a { position: absolute; }
+
+.ds { display: inline-block; }
+
+.ds_cent { display: flex; justify-content: center; align-items: center; }
+
+.bigBoxs { display: inline-block; width: 100%; position: relative; }
+.bigBoxs.cent_index { height: 100%; min-height: 800px; margin: 0; padding: 0; background: url(../img/star.png) center 65px fixed no-repeat; -moz-background-size: contain; background-size: contain; }
+.bigBoxs .bigPlanet { display: inline-block; width: 100%; min-height: 490px; position: fixed; bottom: 0; left: 0; margin: 0; padding: 0; background: url(../img/big_planet.png) center bottom fixed no-repeat; -moz-background-size: contain; background-size: contain; }
+
+.mainBoxs { display: inline-block; width: 100%; max-width: 1160px; margin: 0 auto; }
+
+.maxWidth { max-width: 1160px; }
+
+.allBoxs { display: inline-block; width: 100%; }
+@media screen and (max-width: 1159px) and (min-width: 770px) { .allBoxs { padding: 0 15px; } }
+
+.boxs280 { display: inline-block; width: 100%; height: 280px; }
+
+.boxs120 { display: inline-block; width: 100%; height: 120px; }
+
+footer { display: inline-block; width: 100%; padding: 20px 0; }
+
+.adBoxs { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); height: 120px; margin-right: 20px; float: left; background-color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; overflow: hidden; }
+.adBoxs:last-child { margin-right: 0; }
+
+.box20, .box30, .box40, .box60, .box80 { display: inline-block; float: left; }
+
+.box20 { width: 20%; }
+
+.box30 { width: 30%; }
+
+.box40 { width: 40%; }
+
+.box60 { width: 60%; }
+
+.box80 { width: 80%; }

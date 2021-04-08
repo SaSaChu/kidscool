@@ -1,0 +1,162 @@
+@import "Ginkgo";
+
+
+.order_l {
+  float: left;
+}
+
+.order_r {
+  float: right;
+}
+
+// header
+.logo, .header_icon, .icon_qa, .icon_lock {
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  max-width: 132px;
+  margin-right: 5px;
+}
+
+.header_icon {
+  max-width: 30px;
+  padding-top: 13px;
+  margin-right: 5px;
+}
+
+.icon_qa {
+  max-width: 25px;
+  margin-right: 5px;
+}
+
+.icon_lock {
+  max-width: 42px;
+}
+
+// index pic
+.img_slogan, .img_week, .img_testPlay {
+  display: inline-block;
+  width: 100%;
+}
+
+.img_slogan {
+  max-width: 582px;
+}
+
+.img_week {
+  max-width: 200px;
+  position: absolute;
+  left: 75px;
+
+  @include range-width(770px, 1100px) {
+    max-width: 160px;
+    left: 25px;
+    top: 60px;
+  }
+}
+
+.img_testPlay {
+  max-width: 140px;
+  position: absolute;
+  right: 115px;
+  top: 115px;
+
+  @include range-width(770px, 1100px) {
+    max-width: 120px;
+    right: 55px;
+    top: 175px;
+  }
+}
+
+
+// 提示框
+.tip_box {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  z-index: 8888;
+
+  @include range-width(0, 450px) {
+    display: none;
+  }
+}
+
+.prompt {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  &.pa {
+    &:hover {
+      cursor: pointer;
+
+      &:before {
+        content: attr(data-showtip);
+        background-color: red;
+        color: white;
+        padding: 0 5px;
+        position: absolute;
+        font-size: .9rem;
+        left: -28px;
+        bottom: -35px;
+        margin-right: -8px;
+        white-space: pre;
+        line-height: 25px;
+        @include border-radius(5px);
+      }
+
+      &:after {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        left: 17px;
+        bottom: -11px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 5px 5px;
+        border-color: transparent transparent red transparent;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &:before {
+      content: attr(data-showtip);
+      background-color: red;
+      color: white;
+      padding: 0 5px;
+      position: absolute;
+      font-size: .9rem;
+      left: -20px;
+      bottom: -35px;
+      margin-right: -8px;
+      white-space: pre;
+      line-height: 25px;
+      @include border-radius(5px);
+    }
+
+    &:after {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: 7px;
+      bottom: -11px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 5px 5px 5px;
+      border-color: transparent transparent red transparent;
+    }
+  }
+}
+
+

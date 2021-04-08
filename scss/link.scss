@@ -1,0 +1,43 @@
+@import "Ginkgo";
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.link_red {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 1.3rem;
+  color: white;
+  @include border-radius(3px);
+  border: 1px solid rgba(178, 7, 1, 1.00);
+  background:linear-gradient(rgba(254, 71, 55, 1.00), rgba(208, 11, 10, 1.00));
+  background:linear-gradient(to bottom, rgba(254, 71, 55, 1.00), rgba(208, 11, 10, 1.00));
+  background:linear-gradient(180deg,rgba(254, 71, 55, 1.00), rgba(208, 11, 10, 1.00));
+  background:linear-gradient(to top, rgba(208, 11, 10, 1.00), rgba(254, 71, 55, 1.00));
+  background:linear-gradient(to bottom, rgba(254, 71, 55, 1.00) 0%, rgba(208, 11, 10, 1.00) 100%);
+
+  &:hover, &:active {
+    background:linear-gradient(rgba(208, 11, 10, 1.00), rgba(254, 71, 55, 1.00) );
+    background:linear-gradient(to bottom, rgba(208, 11, 10, 1.00), rgba(254, 71, 55, 1.00));
+    background:linear-gradient(180deg, rgba(208, 11, 10, 1.00), rgba(254, 71, 55, 1.00));
+    background:linear-gradient(to top, rgba(254, 71, 55, 1.00), rgba(208, 11, 10, 1.00));
+    background:linear-gradient(to bottom, rgba(208, 11, 10, 1.00) 0%, rgba(254, 71, 55, 1.00) 100%);
+  }
+
+  @include range-width(450px, 1025px) {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+  }
+}

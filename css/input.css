@@ -1,0 +1,7 @@
+@charset "UTF-8";
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
+
+.input_gray { display: inline-block; width: 100%; max-width: 135px; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
+@media screen and (max-width: 1024px) and (min-width: 770px) { .input_gray { max-width: 100px; } }

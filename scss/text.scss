@@ -1,0 +1,42 @@
+@import "color";
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.f_b18 {
+  font-size: 1.3rem;
+  color: black;
+
+  @include range-width(450px, 1025px) {
+    font-size: 1.2rem;
+  }
+}
+
+.f_b13 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
+}
+
+.whiteNum {
+  display: inline-block;
+  width: 100%;
+  max-width: 170px;
+  @include border-radius(30px);
+  background-color: white;
+  padding: 10px 15px;
+  text-align: left;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1.15rem;
+    color: black;
+  }
+}
