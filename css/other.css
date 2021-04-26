@@ -1,5 +1,7 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+@media screen and (max-width: 449px) and (min-width: 0) { .m-close { display: none !important; } }
+
 .order_l { float: left; }
 
 .order_r { float: right; }
@@ -24,13 +26,15 @@
 .img_testPlay { max-width: 140px; position: absolute; right: 115px; top: 115px; }
 @media screen and (max-width: 1099px) and (min-width: 770px) { .img_testPlay { max-width: 120px; right: 55px; top: 175px; } }
 
+.img_ad { display: inline-block; width: 100%; max-width: 275px; }
+
 .tip_box { display: inline-block; position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; z-index: 8888; }
 @media screen and (max-width: 449px) and (min-width: 0) { .tip_box { display: none; } }
 
 .prompt { position: relative; display: inline-block; width: 40px; height: 40px; }
 .prompt.pa:hover { cursor: pointer; }
-.prompt.pa:hover:before { content: attr(data-showtip); background-color: red; color: white; padding: 0 5px; position: absolute; font-size: .9rem; left: -28px; bottom: -35px; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.prompt.pa:hover:before { content: attr(data-showtip); background-color: red; color: white; padding: 0 5px; position: absolute; font-size: .9rem; left: -20px; bottom: -35px; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .prompt.pa:hover:after { display: inline-block; content: ''; position: absolute; left: 17px; bottom: -11px; width: 0; height: 0; border-style: solid; border-width: 0 5px 5px 5px; border-color: transparent transparent red transparent; }
 .prompt:hover { cursor: pointer; }
-.prompt:hover:before { content: attr(data-showtip); background-color: red; color: white; padding: 0 5px; position: absolute; font-size: .9rem; left: -20px; bottom: -35px; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.prompt:hover:before { content: attr(data-showtip); background-color: red; color: white; padding: 0 5px; position: absolute; font-size: .9rem; left: -16px; bottom: -35px; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .prompt:hover:after { display: inline-block; content: ''; position: absolute; left: 7px; bottom: -11px; width: 0; height: 0; border-style: solid; border-width: 0 5px 5px 5px; border-color: transparent transparent red transparent; }

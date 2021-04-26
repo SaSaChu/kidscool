@@ -41,3 +41,61 @@ button {
     padding: 4px 10px;
   }
 }
+
+.menu01, .menu02, .menu03, .menu04, .menu05, .menu06 {
+  display: inline-block;
+  position: absolute;
+
+  @include range-width(0, 450px) {
+    display: none;
+  }
+}
+
+.menu01 {
+  width: 236px;
+  height: 232px;
+  background-color: rgba(255, 0, 0, 0.2);
+  top: 35px;
+  left: 55px;
+}
+
+.menu02 {
+  width: 221px;
+  height: 231px;
+  background-color: rgba(0, 0, 255, 0.2);
+  top: 250px;
+  left: 205px;
+}
+
+.menu03 {
+  width: 342px;
+  height: 370px;
+  background-color: rgba(0, 128, 0, 0.2);
+  top: 75px;
+  left: calc(50% - 170px);
+}
+
+.menu04 {
+  width: 202px;
+  height: 235px;
+  background-color: rgba(0, 0, 255, 0.2);
+  top: 250px;
+  right: 230px;
+}
+
+.menu05 {
+  width: 198px;
+  height: 257px;
+  background-color: rgba(255, 0, 0, 0.2);
+  top: 20px;
+  right: 75px;
+}
+
+.menu06 {
+  width: 138px;
+  height: 217px;
+  background-color: rgba(0, 128, 0, 0.2);
+  top: 345px;
+  right: 30px;
+}
+

@@ -142,6 +142,10 @@ header {
     background: url(../img/big_planet.png) center bottom fixed no-repeat;
     -moz-background-size: contain;
     background-size: contain;
+
+    @include range-width(0, 450px) {
+      min-height: 220px;
+    }
   }
 }
 
@@ -160,15 +164,20 @@ header {
   display: inline-block;
   width: 100%;
 
-  @include range-width(770px, 1160px) {
+  @include range-width(0, 1160px) {
     padding: 0 15px;
   }
 }
 
+// index title
 .boxs280 {
   display: inline-block;
   width: 100%;
   height: 280px;
+
+  @include range-width(0, 450px) {
+    height: auto;
+  }
 }
 
 .boxs120 {
@@ -181,6 +190,10 @@ footer {
   display: inline-block;
   width: 100%;
   padding: 20px 0;
+
+  @include range-width(0, 450px) {
+    padding: 10px 15px;
+  }
 }
 
 .adBoxs {
@@ -195,6 +208,10 @@ footer {
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include range-width(0, 450px) {
+    display: none;
   }
 }
 
@@ -217,6 +234,11 @@ footer {
 
 .box60 {
   width: 60%;
+
+  // index title
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
 }
 
 .box80 {

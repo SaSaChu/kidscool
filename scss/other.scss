@@ -1,5 +1,10 @@
 @import "Ginkgo";
 
+.m-close {
+  @include range-width(0, 450px) {
+    display: none !important;
+  }
+}
 
 .order_l {
   float: left;
@@ -70,6 +75,13 @@
   }
 }
 
+.img_ad {
+  display: inline-block;
+  width: 100%;
+  max-width: 275px;
+}
+
+
 
 // 提示框
 .tip_box {
@@ -103,7 +115,7 @@
         padding: 0 5px;
         position: absolute;
         font-size: .9rem;
-        left: -28px;
+        left: -20px;
         bottom: -35px;
         margin-right: -8px;
         white-space: pre;
@@ -136,7 +148,7 @@
       padding: 0 5px;
       position: absolute;
       font-size: .9rem;
-      left: -20px;
+      left: -16px;
       bottom: -35px;
       margin-right: -8px;
       white-space: pre;
