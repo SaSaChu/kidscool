@@ -19,6 +19,7 @@
   display: inline-block;
   width: 100%;
   border-bottom: 1px dotted rgba(162, 162, 163, 1.00);
+  // margin: 10px 0;
 }
 
 // header
@@ -80,6 +81,16 @@
     @include range-width(0, 450px) {
       max-width: 133px;
     }
+  }
+}
+
+.pt-img {
+  display: inline-block;
+  width: 100%;
+  max-width: 881px;
+
+  @include range-width(0, 450px) {
+    display: none;
   }
 }
 
@@ -440,7 +451,6 @@
     text-decoration: none;
     cursor: pointer;
     @include transition(all .3s);
-    border-bottom: 1px solid black;
 
     &:after {
       display: inline-block;
@@ -455,16 +465,23 @@
   > span, > a, > div > a, > div > div > a, > div > span {
     display: inline-block;
     width: 100%;
-    padding: 10px 0;
+    padding: 0;
     color: black;
     text-decoration: none;
     cursor: pointer;
     @include transition(all .3s);
-    border-bottom: 1px dotted rgba(186, 186, 186, 1.00);
 
     &.s_menublue {
       color: black;
       border-left: 2px solid yellow;
+    }
+  }
+
+  > span {
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 0;
     }
   }
 
@@ -473,67 +490,84 @@
     font-size: 1.8rem;
     font-weight: bolder;
     line-height: 50px;
-  }
-
-  > span.s {
-    border-bottom: 1px dotted rgba(186, 186, 186, 1.00);
+    position: relative;
 
     &:after {
       display: inline-block;
-      content: '\e90b';
-      font-family: 'icon';
-      color: black;
-      font-size: .9rem;
-      float: right;
+      width: 100%;
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      border-bottom: 1px dotted rgba(162, 162, 163, 1.00);
     }
 
-    + div {
+    + div.m-smenu {
       display: none;
     }
   }
 
-  > div > span.s {
-    border-bottom: 1px dotted rgba(186, 186, 186, 1.00);
-    background-color: rgba(216, 216, 216, 1.00);
-
-    &:after {
-      // @include rotate(90deg);
-      color: black;
-    }
+  > span.s {
+    background-color: rgba(255, 245, 151, 1.00);
+    @include border-radius(30px);
+    
+    // &:after {
+    //   display: inline-block;
+    //   content: '\e90b';
+    //   font-family: 'icon';
+    //   color: black;
+    //   font-size: .9rem;
+    //   float: right;
+    // }
 
     + div {
-      display: block;
+      display: inline-block;
     }
   }
 
-  .m-smenu {
-    display: inline-block;
-    width: 100%;
+  // > div > span.s {
+  //   border-bottom: 1px dotted rgba(186, 186, 186, 1.00);
+  //   background-color: rgba(216, 216, 216, 1.00);
 
+  //   &:after {
+  //     // @include rotate(90deg);
+  //     color: black;
+  //   }
+
+  //   + div {
+  //     display: none;
+  //   }
+  // }
+
+  .m-smenu {
+    margin-top: 20px;
+    width: 100%;
 
     > a {
       display: inline-block;
       width: 100%;
-      padding: 10px 15px 10px 30px;
+      padding: 10px 15px;
       color: black;
       text-decoration: none;
       cursor: pointer;
       @include transition(all .3s);
-      font-size: 1rem;
-      border-bottom: 1px dotted rgba(152, 152, 152, .2);
+      font-size: 1.2rem;
+      background-color: rgba(231, 231, 231, 1.00);
+      @include border-radius(20px);
+      margin-bottom: 15px;
 
       &:last-child {
-        border-bottom: 0;
+        margin-bottom: 0;
       }
 
       &:hover, &:active {
-        color: red;
-        background-color: yellow;
+        color: white;
+        background-color: rgba(55, 52, 58, 1.00);
       }
 
       &.l-menu-active {
-        color: red;
-        background-color: yellow;
+        color: white;
+        background-color: rgba(55, 52, 58, 1.00);
       }
     }
   }

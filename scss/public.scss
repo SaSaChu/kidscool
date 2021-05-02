@@ -84,13 +84,15 @@ header {
 }
 
 .pageTitleBox {
-  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   width: 100%;
   min-height: 199px;
   margin-top: 65px;
-  background: url(../img/pageHeaderBG.png) center top fixed no-repeat;
-  -moz-background-size: contain;
-  background-size: contain;
+  background: url(../img/pageHeaderBG.png) left bottom no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
 
   @include range-width(0, 450px) {
     margin-top: 40px;
@@ -176,6 +178,7 @@ header {
   }
   .pageRight {
     width: calc(100% - 250px);
+    padding-left: 50px;
 
     @include range-width(0, 450px) {
       width: 100%;
