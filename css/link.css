@@ -7,9 +7,20 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .m_header_r { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_header_r { display: inline-block; width: 40px; float: right; height: 40px; background-color: #0072ff; color: white; font-size: 1.5rem; line-height: 40px; } }
 
-.link_red { display: inline-block; padding: 5px 15px; font-size: 1.3rem; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
+.link_red { display: inline-block; padding: 5px 15px; font-size: 1.3rem; text-align: center; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
 .link_red:hover, .link_red:active { background: linear-gradient(#d00b0a, #fe4737); background: linear-gradient(to bottom, #d00b0a, #fe4737); background: linear-gradient(180deg, #d00b0a, #fe4737); background: linear-gradient(to top, #fe4737, #d00b0a); background: linear-gradient(to bottom, #d00b0a 0%, #fe4737 100%); }
 @media screen and (max-width: 1024px) and (min-width: 450px) { .link_red { font-size: 1.2rem; padding: 4px 10px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .link_red { font-size: 1.1rem; padding: 2px 12px; } }
+
+.link_grey { display: inline-block; padding: 5px 15px; font-size: 1.3rem; text-align: center; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #5f6f77; background: linear-gradient(#cddbe6, #5a6b73); background: linear-gradient(to bottom, #cddbe6, #5a6b73); background: linear-gradient(180deg, #cddbe6, #5a6b73); background: linear-gradient(to top, #5a6b73, #cddbe6); background: linear-gradient(to bottom, #cddbe6 0%, #5a6b73 100%); }
+.link_grey:hover, .link_grey:active { background: linear-gradient(#5a6b73, #cddbe6); background: linear-gradient(to bottom, #5a6b73, #cddbe6); background: linear-gradient(180deg, #5a6b73, #cddbe6); background: linear-gradient(to top, #cddbe6, #5a6b73); background: linear-gradient(to bottom, #5a6b73 0%, #cddbe6 100%); }
+@media screen and (max-width: 1024px) and (min-width: 450px) { .link_grey { font-size: 1.2rem; padding: 4px 10px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .link_grey { font-size: 1.1rem; padding: 2px 12px; } }
+
+.link_LGrey { display: inline-block; padding: 5px 15px; font-size: 1.3rem; text-align: center; color: black; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #cfcfcf; background: linear-gradient(#ffffff, #ededed); background: linear-gradient(to bottom, #ffffff, #ededed); background: linear-gradient(180deg, #ffffff, #ededed); background: linear-gradient(to top, #ededed, #ffffff); background: linear-gradient(to bottom, #ffffff 0%, #ededed 100%); }
+.link_LGrey:hover, .link_LGrey:active { background: linear-gradient(#ededed, #ffffff); background: linear-gradient(to bottom, #ededed, #ffffff); background: linear-gradient(180deg, #ededed, #ffffff); background: linear-gradient(to top, #ffffff, #ededed); background: linear-gradient(to bottom, #ededed 0%, #ffffff 100%); }
+@media screen and (max-width: 1024px) and (min-width: 450px) { .link_LGrey { font-size: 1.2rem; padding: 4px 10px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .link_LGrey { font-size: 1.1rem; padding: 2px 12px; } }
 
 .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: inline-block; position: absolute; }
 @media screen and (max-width: 449px) and (min-width: 0) { .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: none; } }

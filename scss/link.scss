@@ -44,6 +44,7 @@ button {
   display: inline-block;
   padding: 5px 15px;
   font-size: 1.3rem;
+  text-align: center;
   color: white;
   @include border-radius(3px);
   border: 1px solid rgba(178, 7, 1, 1.00);
@@ -64,6 +65,77 @@ button {
   @include range-width(450px, 1025px) {
     font-size: 1.2rem;
     padding: 4px 10px;
+  }
+
+  @include range-width(0, 450px) {
+    font-size: 1.1rem;
+    padding: 2px 12px;
+  }
+}
+
+.link_grey {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  @include border-radius(3px);
+  border: 1px solid rgba(95, 111, 119, 1.00);
+  background:linear-gradient(rgba(205, 219, 230, 1.00), rgba(90, 107, 115, 1.00));
+  background:linear-gradient(to bottom, rgba(205, 219, 230, 1.00), rgba(90, 107, 115, 1.00));
+  background:linear-gradient(180deg,rgba(205, 219, 230, 1.00), rgba(90, 107, 115, 1.00));
+  background:linear-gradient(to top, rgba(90, 107, 115, 1.00), rgba(205, 219, 230, 1.00));
+  background:linear-gradient(to bottom, rgba(205, 219, 230, 1.00) 0%, rgba(90, 107, 115, 1.00) 100%);
+
+  &:hover, &:active {
+    background:linear-gradient(rgba(90, 107, 115, 1.00), rgba(205, 219, 230, 1.00) );
+    background:linear-gradient(to bottom, rgba(90, 107, 115, 1.00), rgba(205, 219, 230, 1.00));
+    background:linear-gradient(180deg, rgba(90, 107, 115, 1.00), rgba(205, 219, 230, 1.00));
+    background:linear-gradient(to top, rgba(205, 219, 230, 1.00), rgba(90, 107, 115, 1.00));
+    background:linear-gradient(to bottom, rgba(90, 107, 115, 1.00) 0%, rgba(205, 219, 230, 1.00) 100%);
+  }
+
+  @include range-width(450px, 1025px) {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+  }
+
+  @include range-width(0, 450px) {
+    font-size: 1.1rem;
+    padding: 2px 11px;
+  }
+}
+
+.link_LGrey {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+  @include border-radius(3px);
+  border: 1px solid rgba(207, 207, 207, 1.00);
+  background:linear-gradient(rgba(255, 255, 255, 1.00), rgba(237, 237, 237, 1.00));
+  background:linear-gradient(to bottom, rgba(255, 255, 255, 1.00), rgba(237, 237, 237, 1.00));
+  background:linear-gradient(180deg,rgba(255, 255, 255, 1.00), rgba(237, 237, 237, 1.00));
+  background:linear-gradient(to top, rgba(237, 237, 237, 1.00), rgba(255, 255, 255, 1.00));
+  background:linear-gradient(to bottom, rgba(255, 255, 255, 1.00) 0%, rgba(237, 237, 237, 1.00) 100%);
+
+  &:hover, &:active {
+    background:linear-gradient(rgba(237, 237, 237, 1.00), rgba(255, 255, 255, 1.00) );
+    background:linear-gradient(to bottom, rgba(237, 237, 237, 1.00), rgba(255, 255, 255, 1.00));
+    background:linear-gradient(180deg, rgba(237, 237, 237, 1.00), rgba(255, 255, 255, 1.00));
+    background:linear-gradient(to top, rgba(255, 255, 255, 1.00), rgba(237, 237, 237, 1.00));
+    background:linear-gradient(to bottom, rgba(237, 237, 237, 1.00) 0%, rgba(255, 255, 255, 1.00) 100%);
+  }
+
+  @include range-width(450px, 1025px) {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+  }
+
+  @include range-width(0, 450px) {
+    font-size: 1.1rem;
+    padding: 2px 12px;
   }
 }
 

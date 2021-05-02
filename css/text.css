@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'range-width'.
-        on line 12 of /Users/teresachu/www/kidscool/cmd/../scss/text.scss, in `range-width'
-        from line 12 of /Users/teresachu/www/kidscool/cmd/../scss/text.scss
+        on line 24 of /Users/teresachu/www/kidscool/cmd/../scss/text.scss, in `range-width'
+        from line 24 of /Users/teresachu/www/kidscool/cmd/../scss/text.scss
 
-7: 
-8: .f_b18 {
-9:   font-size: 1.3rem;
-10:   color: black;
-11: 
-12:   @include range-width(450px, 1025px) {
-13:     font-size: 1.2rem;
-14:   }
-15: }
-16: 
-17: // footer
+19: 
+20: .f_b18 {
+21:   font-size: 1.3rem;
+22:   color: black;
+23: 
+24:   @include range-width(450px, 1025px) {
+25:     font-size: 1.2rem;
+26:   }
+27: }
+28: 
+29: // footer
 
 Backtrace:
-/Users/teresachu/www/kidscool/cmd/../scss/text.scss:12:in `range-width'
-/Users/teresachu/www/kidscool/cmd/../scss/text.scss:12
+/Users/teresachu/www/kidscool/cmd/../scss/text.scss:24:in `range-width'
+/Users/teresachu/www/kidscool/cmd/../scss/text.scss:24
 /Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
@@ -77,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'range-width'.\A         on line 12 of /Users/teresachu/www/kidscool/cmd/../scss/text.scss, in `range-width'\A         from line 12 of /Users/teresachu/www/kidscool/cmd/../scss/text.scss\A \A 7: \A 8: .f_b18 {\A 9:   font-size: 1.3rem;\A 10:   color: black;\A 11: \A 12:   @include range-width(450px, 1025px) {\A 13:     font-size: 1.2rem;\A 14:   }\A 15: }\A 16: \A 17: // footer"; }
+  content: "Error: Undefined mixin 'range-width'.\A         on line 24 of /Users/teresachu/www/kidscool/cmd/../scss/text.scss, in `range-width'\A         from line 24 of /Users/teresachu/www/kidscool/cmd/../scss/text.scss\A \A 19: \A 20: .f_b18 {\A 21:   font-size: 1.3rem;\A 22:   color: black;\A 23: \A 24:   @include range-width(450px, 1025px) {\A 25:     font-size: 1.2rem;\A 26:   }\A 27: }\A 28: \A 29: // footer"; }

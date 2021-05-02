@@ -24,3 +24,22 @@ input, textarea {
     max-width: 100px;
   }
 }
+
+.input_white {
+  display: inline-block;
+  width: 100%;
+  max-width: 135px;
+  background-color: white; 
+  @include border-radius(20px);
+  padding: 5px 20px;
+  font-size: 1.3rem;
+  color: black;
+
+  &.m-menuUse {
+    width: calc(100% - 69px);
+    max-width: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+}

@@ -59,13 +59,118 @@
         </div>
       </div>
 
-      <!-- 手機Menu -->
+      <!-- 手機Menu・觸發 -->
       <div class='m_header_r icon-navicon'></div>
     </header>
 
+    <!-- 手機Menu・內容 -->
     <div class='m_menu'>
       <div class='menuClose'><img src="img/close.png"></div>
-      <div class='menuBox'></div>
+      <div class='menuBox'>
+        <!-- menu header -->
+        <div class='m_header'>
+          <div class="allBoxs textLeft">
+            <img class='m_header_img' src="img/m-logo.png">
+
+            <!-- 輸入框 -->
+            <div class="ds ds-60">
+              <!-- 會員編號 -->
+              <div class='ds ds100'>
+                <p class='ds m_f_b13'>會員編號：</p>
+                <label>
+                  <input class='input_white m-menuUse' type="" name="">
+                </label>
+              </div>
+
+              <!-- 密碼： -->
+              <div class='ds ds100 m_t_5'>
+                <p class='ds m_f_b13'>密碼：</p>
+                <label>
+                  <input class='input_white m-menuUse' type="" name="">
+                </label>
+              </div>
+            </div>
+
+            <!-- link -->
+            <div class="ds ds100 m_t_10">
+              <a class='link_red m_r_10' href="login.html">登入</a>
+              <a class='link_red m_r_10' href="forget_pw.html">忘記密碼</a>
+              <a class='m-qBtnBox link_grey' href="forget_pw.html"><img class='icon_qa' src="img/icon_qa_w.svg">網站說明</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu cent -->
+        <div class='ds ds100'>
+          <div class="dropdown">
+            <button class="dropbtn m-nb m-menu01">互動學員</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn m-menu02">小試身手</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn m-menu03">知識寶庫</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn m-menu04">益智遊戲場</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn m-menu05">視聽大觀園</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn m-menu06">每週互動</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn m-menu07">歷史今日</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="dropbtn m-menu08">非會員試玩區</a>
+          </div>
+        </div>
+
+        <!-- menu footer -->
+        <div class="fixBoxs textReft">
+          <a class='link_LGrey lineH33' href="">
+            <img class='icon_lock p_t_3' src="img/m-lock.svg">
+            家長安心設定
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class='bigBoxs cent_index'>
@@ -77,6 +182,35 @@
         <a href="" class='menu04'><img class='img_menu04' src="img/index/test.png"></a>
         <a href="" class='menu05'><img class='img_menu05' src="img/index/game.png"></a>
         <a href="" class='menu06'><img class='img_menu06' src="img/index/history.png"></a>
+      </div>
+
+      <!-- 手機輪播・星球 -->
+      <div id="banner">    
+        <!-- 輪播圖片 -->
+        <div id="tab">
+          <img class="tabImg" src="img/index/video.png" height="330"/>
+          <img class="tabImg" src="img/index/knowledge.png" height="330"/>
+          <img class="tabImg" src="img/index/interactive.png" height="330"/>
+          <img class="tabImg" src="img/index/test.png" height="330"/>
+          <img class="tabImg" src="img/index/game.png" height="330"/>
+          <img class="tabImg" src="img/index/history.png" height="330"/>
+        </div>
+        <!-- 指示符 -->
+        <!-- <div class="lunbo_btn">
+          <span num="0" class="tabBtn hover"></span>
+          <span num="1" class="tabBtn"></span>
+          <span num="2" class="tabBtn"></span>
+          <span num="3" class="tabBtn"></span>
+          <span num="4" class="tabBtn"></span>
+          <span num="5" class="tabBtn"></span>
+        </div> -->
+        <!-- 左右切換按鈕 -->
+        <div class="arrow prve">
+          <span class="slider_left"></span>
+        </div>
+        <div class="arrow next">
+          <span class="slider_right"></span>
+        </div>
       </div>
 
       <!-- title boxs -->

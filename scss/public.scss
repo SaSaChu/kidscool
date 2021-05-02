@@ -103,6 +103,15 @@ header {
 
 .ds {
   display: inline-block;
+
+  &.ds100 {
+    width: 100%;
+  }
+
+  &.ds-60 {
+    width: calc(100% - 60px);
+    padding-left: 8px;
+  }
 }
 
 .ds_cent {
@@ -110,6 +119,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 
 .bigBoxs {
   display: inline-block;
@@ -168,6 +178,8 @@ header {
     padding: 0 15px;
   }
 }
+
+
 
 // index title
 .boxs280 {
@@ -245,8 +257,107 @@ footer {
   width: 80%;
 }
 
+.m-qBtnBox {
+  display: inline-block;
+  width: calc(100% - 55px - 110px);
+}
 
+.fixBoxs {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+}
 
+// 首頁輪播
+#banner {
+  display: none;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+  }
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  float: left;
+  padding: 30px 0;
+}
+
+#tab > img:not(:first-child) {
+  display: none;
+}
+
+// 點點
+.lunbo_btn {
+  height: 15px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: -40px;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+
+  span {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-color: #b4b5b7;
+    border-radius: 50%;
+    margin: 0px 2px;
+    cursor: pointer;
+
+    &.hover {
+      background-color: #ffb23c;
+    }
+  }
+}
+
+.arrow {
+  display: none;
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 999;
+
+  span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+  }
+}
+
+.slider_left {
+  margin: 25px 0 0 15px;
+  transform: rotate(45deg);
+}
+
+.prve {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.slider_right {
+  margin: 25px 0 0 -5px;
+  transform: rotate(-135deg);
+}
+
+// .arrow:hover {
+//   background: #444;
+// }
+
+#banner:hover .arrow {
+  display: block;
+}
 
 
 
