@@ -15,6 +15,12 @@
   float: right;
 }
 
+.d-borderDotted {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px dotted rgba(162, 162, 163, 1.00);
+}
+
 // header
 .logo, .header_icon, .icon_qa, .icon_lock {
   display: inline-block;
@@ -67,6 +73,14 @@
 
 .img_slogan {
   max-width: 570px;
+
+  &.img_S_page {
+    max-width: 310px;
+
+    @include range-width(0, 450px) {
+      max-width: 133px;
+    }
+  }
 }
 
 .img_week {
@@ -406,7 +420,124 @@
   }
 }
 
+// 桌機左邊選單・下拉
+.block-l-menuBox {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  @include border-radius(3px);
+  height: 100%;
+  @include transition(left .3s, right .3s);
+  @include clearfix();
+  text-align: left;
+  padding: 0;
 
+  span {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+    border-bottom: 1px solid black;
+
+    &:after {
+      display: inline-block;
+      content: '\e910';
+      font-family: 'icon';
+      color: black;
+      font-size: .9rem;
+      float: right;
+    }
+  }
+
+  > span, > a, > div > a, > div > div > a, > div > span {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+    border-bottom: 1px dotted rgba(186, 186, 186, 1.00);
+
+    &.s_menublue {
+      color: black;
+      border-left: 2px solid yellow;
+    }
+  }
+
+  > span, > a {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    line-height: 50px;
+  }
+
+  > span.s {
+    border-bottom: 1px dotted rgba(186, 186, 186, 1.00);
+
+    &:after {
+      display: inline-block;
+      content: '\e90b';
+      font-family: 'icon';
+      color: black;
+      font-size: .9rem;
+      float: right;
+    }
+
+    + div {
+      display: none;
+    }
+  }
+
+  > div > span.s {
+    border-bottom: 1px dotted rgba(186, 186, 186, 1.00);
+    background-color: rgba(216, 216, 216, 1.00);
+
+    &:after {
+      // @include rotate(90deg);
+      color: black;
+    }
+
+    + div {
+      display: block;
+    }
+  }
+
+  .m-smenu {
+    display: inline-block;
+    width: 100%;
+
+
+    > a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 15px 10px 30px;
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+      @include transition(all .3s);
+      font-size: 1rem;
+      border-bottom: 1px dotted rgba(152, 152, 152, .2);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &:hover, &:active {
+        color: red;
+        background-color: yellow;
+      }
+
+      &.l-menu-active {
+        color: red;
+        background-color: yellow;
+      }
+    }
+  }
+}
 
 
 

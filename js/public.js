@@ -8,6 +8,17 @@ $(function() {
     $('.m_menu').removeClass('menu_open');
   });
 
+  // $('.m-menu-t').click(function() {
+  //   $('.m-smenu').toggleClass ('m-smenu-show');
+  // });
+
+  $('.block-l-menuBox').each (function () {
+    var $that = $(this);
+    $that.find ('.m-menu-t').click (function () {
+      $(this).toggleClass ('s');
+    });
+  });
+
   //首頁手機・輪播圖
     var curIndex=0;//初始化
     var img_number = document.getElementsByClassName('tabImg').length;

@@ -14,9 +14,9 @@
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
   </head>
 
-  <body class='indexBg'>
+  <body>
     
-    <header>
+    <header class="pageH">
       <div class='header_l'>
         <a href="index.html"><img class='logo' src="img/logo.svg"></a>
         <a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" target='_blank'><img class='header_icon' src="img/icon_fb.svg"></a>
@@ -62,6 +62,10 @@
       <!-- 手機Menu・觸發 -->
       <div class='m_header_r icon-navicon'></div>
     </header>
+
+    <div class='pageTitleBox'>
+      <a href="index.html"><img class='img_slogan img_S_page m_t_10' src="img/slogan.png"></a>
+    </div>
 
     <!-- 手機Menu・內容 -->
     <div class='m_menu'>
@@ -173,95 +177,36 @@
       </div>
     </div>
 
-    <div class='bigBoxs cent_index'>
-      <!-- 星球島 -->
-      <div class='allBoxs posit'>
-        <a href="video.html" class='menu01'><img class='img_menu01' src="img/index/video.png"></a>
-        <a href="knowledge.html" class='menu02'><img class='img_menu02' src="img/index/knowledge.png"></a>
-        <a href="interactive.html" class='menu03'><img class='img_menu03' src="img/index/interactive.png"></a>
-        <a href="test.html" class='menu04'><img class='img_menu04' src="img/index/test.png"></a>
-        <a href="game.html" class='menu05'><img class='img_menu05' src="img/index/game.png"></a>
-        <a href="history.html" class='menu06'><img class='img_menu06' src="img/index/history.png"></a>
-      </div>
-
-      <!-- 手機輪播・星球 -->
-      <div id="banner">    
-        <!-- 輪播圖片 -->
-        <div id="tab">
-          <a href="video.html"><img class="tabImg" src="img/index/video.png" height="330"/></a>
-          <a href="knowledge.html"><img class="tabImg" src="img/index/knowledge.png" height="330"/></a>
-          <a href="interactive.html"><img class="tabImg" src="img/index/interactive.png" height="330"/></a>
-          <a href="test.html"><img class="tabImg" src="img/index/test.png" height="330"/></a>
-          <a href="game.html"><img class="tabImg" src="img/index/game.png" height="330"/></a>
-          <a href="history.html"><img class="tabImg" src="img/index/history.png" height="330"/></a>
-          <a href="week.html"><img class="tabImg" src="img/week.png" height="330"/></a>
-          <a href="testPlay.html"><img class="tabImg" src="img/testPlay.png" height="200"/></a>
-        </div>
-        <!-- 指示符 -->
-        <!-- <div class="lunbo_btn">
-          <span num="0" class="tabBtn hover"></span>
-          <span num="1" class="tabBtn"></span>
-          <span num="2" class="tabBtn"></span>
-          <span num="3" class="tabBtn"></span>
-          <span num="4" class="tabBtn"></span>
-          <span num="5" class="tabBtn"></span>
-        </div> -->
-        <!-- 左右切換按鈕 -->
-        <div class="arrow prve">
-          <span class="slider_left"></span>
-        </div>
-        <div class="arrow next">
-          <span class="slider_right"></span>
-        </div>
-      </div>
-
-      <!-- title boxs -->
-      <div class='bigPlanet'>
-        <div class='allBoxs'>
-          <div class='boxs280'>
-            <!-- 每週互動 -->
-            <div class='box20 posit m-close'>
-              <a href="week.html">
-                <img class='img_week' src="img/week.png">
-              </a>
-            </div>
-
-            <!-- slogan -->
-            <div class='box60'>
-              <img class='img_slogan' src="img/slogan.png">
-              <div class='allBoxs p_td_20'>
-                <div class='whiteNum' title='線上人數：'>00000000</div>
-                <div class='whiteNum' title='瀏覽人次：'>00000000</div>
-              </div>
-            </div>
-
-            <!-- 試玩區 -->
-            <div class='box20 posit m-close'>
-              <a href="testPlay.html">
-                <img class='img_testPlay' src="img/testPlay.png">
-              </a>
-            </div>
+    <!-- 中間內容 -->
+    <div class='pageBoxs'>
+      <!-- 左邊選單 -->
+      <div class="pageLeft">
+        <div class='block-l-menuBox'>
+          <span class="m-menu-t">
+            <img src="img/wMenuIcon/w-menu01.png">
+            系統管理者
+          </span>
+          <div class="m-smenu">
+            <a href="">取回密碼</a>
           </div>
-        </div>
 
-        <!-- AD -->
-        <div class='boxs120 m-close'>
-          <div class='allBoxs maxWidth'>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-          </div>
+          <span class="m-menu-t">一般業務</span>
+            <div class="m-smenu">
+              <a href="board_price_list.html">詢價列表</a>
+              <a href="board_sales_report.html">業務報表</a>
+            </div>
         </div>
-
-        <!-- footer -->
-        <footer>
-          <p class='f_b13'>Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc.</p>
-          <p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
-          <p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
-        </footer>
       </div>
+
+      <div class="pageRight"></div>
     </div>
+
+    <!-- footer -->
+    <footer class='bg_blue m_t_30'>
+      <p class='f_b13'>Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc.</p>
+      <p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
+      <p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
+    </footer>
   </body>
 
 </html>
