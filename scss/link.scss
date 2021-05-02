@@ -1,4 +1,5 @@
 @import "Ginkgo";
+@import "color";
 
 a {
   display: inline-block;
@@ -13,6 +14,30 @@ button {
   outline: 0;
   border: 0;
   background-color: transparent;
+}
+
+.m_header_r {
+  // @include range-width(450px, 770px) {
+  //   display: inline-block;
+  //   width: 15%;
+  //   float: right;
+
+  //   // d
+  //   height: 65px;
+  //   background-color: rgba(255, 0, 0, 0.2);
+  // }
+  display: none;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+    width: 40px;
+    float: right;
+    height: 40px; 
+    background-color: $color_Blue;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
 }
 
 .link_red {
@@ -52,49 +77,31 @@ button {
 }
 
 .menu01 {
-  width: 236px;
-  height: 232px;
-  background-color: rgba(255, 0, 0, 0.2);
   top: 35px;
   left: 55px;
 }
 
 .menu02 {
-  width: 221px;
-  height: 231px;
-  background-color: rgba(0, 0, 255, 0.2);
   top: 250px;
   left: 205px;
 }
 
 .menu03 {
-  width: 342px;
-  height: 370px;
-  background-color: rgba(0, 128, 0, 0.2);
-  top: 75px;
+  top: 58px;
   left: calc(50% - 170px);
 }
 
 .menu04 {
-  width: 202px;
-  height: 235px;
-  background-color: rgba(0, 0, 255, 0.2);
   top: 250px;
   right: 230px;
 }
 
 .menu05 {
-  width: 198px;
-  height: 257px;
-  background-color: rgba(255, 0, 0, 0.2);
   top: 20px;
   right: 75px;
 }
 
 .menu06 {
-  width: 138px;
-  height: 217px;
-  background-color: rgba(0, 128, 0, 0.2);
   top: 345px;
   right: 30px;
 }

@@ -35,6 +35,12 @@ body {
     // background:linear-gradient(180deg,#30b6f3, #1f2a9c);
     // background:linear-gradient(to top, #1f2a9c, #30b6f3);
     // background:linear-gradient(to bottom, #30b6f3 0%, #1f2a9c 100%);
+
+    @include range-width(0, 450px) {
+      background: #436ace url(../img/m_bg.png) center center fixed no-repeat;
+      background-size: cover;
+      -moz-background-size: cover;
+    }
   }
 }
 
@@ -56,7 +62,9 @@ header {
   }
 
   @include range-width(0, 450px) {
+    display: inline-block;
     padding: 0 0 0 10px;
+    height: 40px;
   }
 }
 
@@ -82,18 +90,6 @@ header {
 
   @include range-width(0, 770px) {
     display: none;
-  }
-}
-
-.m_header_r {
-  @include range-width(0, 770px) {
-    display: inline-block;
-    width: 15%;
-    float: right;
-
-    // d
-    height: 65px;
-    background-color: rgba(255, 0, 0, 0.2);
   }
 }
 
@@ -128,6 +124,10 @@ header {
     background: url(../img/star.png) center 65px fixed no-repeat;
     -moz-background-size: contain;
     background-size: contain;
+
+    @include range-width(0, 450px) {
+      background: url(../img/m_star.png) center top fixed no-repeat;
+    }
   }
 
   .bigPlanet {

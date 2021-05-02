@@ -1,0 +1,18 @@
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1619532760') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1619532760') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1619532760') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1619532760') format('svg'); }
+*[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
+
+.icon-close:before { content: "\f00d"; }
+
+.icon-remove:before { content: "\f00d"; }
+
+.icon-times:before { content: "\f00d"; }
+
+.icon-chevron-left:before { content: "\f053"; }
+
+.icon-chevron-right:before { content: "\f054"; }
+
+.icon-bars:before { content: "\f0c9"; }
+
+.icon-navicon:before { content: "\f0c9"; }
+
+.icon-reorder:before { content: "\f0c9"; }

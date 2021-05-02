@@ -9,8 +9,10 @@
 .logo, .header_icon, .icon_qa, .icon_lock { display: inline-block; width: 100%; }
 
 .logo { max-width: 132px; margin-right: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .logo { max-width: 85px; } }
 
 .header_icon { max-width: 30px; padding-top: 13px; margin-right: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .header_icon { padding-top: 5px; } }
 
 .icon_qa { max-width: 25px; margin-right: 5px; }
 
@@ -18,7 +20,7 @@
 
 .img_slogan, .img_week, .img_testPlay { display: inline-block; width: 100%; }
 
-.img_slogan { max-width: 582px; }
+.img_slogan { max-width: 570px; }
 
 .img_week { max-width: 200px; position: absolute; left: 75px; }
 @media screen and (max-width: 1099px) and (min-width: 770px) { .img_week { max-width: 160px; left: 25px; top: 60px; } }
@@ -38,3 +40,23 @@
 .prompt:hover { cursor: pointer; }
 .prompt:hover:before { content: attr(data-showtip); background-color: red; color: white; padding: 0 5px; position: absolute; font-size: .9rem; left: -16px; bottom: -35px; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .prompt:hover:after { display: inline-block; content: ''; position: absolute; left: 7px; bottom: -11px; width: 0; height: 0; border-style: solid; border-width: 0 5px 5px 5px; border-color: transparent transparent red transparent; }
+
+.img_menu01, .img_menu02, .img_menu03, .img_menu04, .img_menu05, .img_menu06 { display: inline-block; width: 100%; }
+
+.img_menu01 { max-width: 236px; }
+
+.img_menu02 { max-width: 221px; }
+
+.img_menu03 { max-width: 342px; }
+
+.img_menu04 { max-width: 202px; }
+
+.img_menu05 { max-width: 198px; }
+
+.img_menu06 { max-width: 138px; }
+
+.m_menu { display: none; width: 100%; height: 100vh; background-color: rgba(42, 58, 75, 0.8); position: absolute; z-index: 9999; top: 0; right: -100%; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_menu { display: inline-block; } }
+.m_menu.menu_open { right: 0; }
+.m_menu .menuBox { display: inline-block; width: 80%; height: 100vh; background-color: white; float: right; }
+.m_menu .menuClose { display: inline-block; width: 20%; float: left; margin: 10px 0; }

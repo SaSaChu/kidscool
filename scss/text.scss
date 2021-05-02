@@ -14,6 +14,7 @@ p {
   }
 }
 
+// footer
 .f_b13 {
   font-size: 1rem;
   line-height: 1.5;
@@ -21,6 +22,7 @@ p {
 
   @include range-width(0, 450px) {
     font-size: .8rem;
+    line-height: 1.3;
   }
 }
 

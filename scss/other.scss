@@ -1,4 +1,5 @@
 @import "Ginkgo";
+@import "color";
 
 .m-close {
   @include range-width(0, 450px) {
@@ -23,12 +24,20 @@
 .logo {
   max-width: 132px;
   margin-right: 5px;
+
+  @include range-width(0, 450px) {
+    max-width: 85px;
+  }
 }
 
 .header_icon {
   max-width: 30px;
   padding-top: 13px;
   margin-right: 5px;
+
+  @include range-width(0, 450px) {
+    padding-top: 5px;
+  }
 }
 
 .icon_qa {
@@ -47,7 +56,7 @@
 }
 
 .img_slogan {
-  max-width: 582px;
+  max-width: 570px;
 }
 
 .img_week {
@@ -80,7 +89,6 @@
   width: 100%;
   max-width: 275px;
 }
-
 
 
 // 提示框
@@ -170,5 +178,81 @@
     }
   }
 }
+
+
+// 首頁星球
+.img_menu01, .img_menu02, .img_menu03, .img_menu04, .img_menu05, .img_menu06 {
+  display: inline-block;
+  width: 100%;
+}
+
+.img_menu01 {
+  max-width: 236px;
+}
+
+.img_menu02 {
+  max-width: 221px;
+}
+
+.img_menu03 {
+  max-width: 342px;
+}
+
+.img_menu04 {
+  max-width: 202px;
+}
+
+.img_menu05 {
+  max-width: 198px;
+}
+
+.img_menu06 {
+  max-width: 138px;
+}
+
+
+// 手機Menu
+.m_menu {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(42, 58, 75, .8);
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: -100%;
+  @include transition(all .3s);
+  
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+  }
+
+  &.menu_open {
+    right: 0;
+  }
+
+  .menuBox {
+    display: inline-block;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    float: right;
+  }
+
+  .menuClose {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
 
 

@@ -4,6 +4,9 @@ a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 
 button { display: inline-block; cursor: pointer; outline: 0; border: 0; background-color: transparent; }
 
+.m_header_r { display: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_header_r { display: inline-block; width: 40px; float: right; height: 40px; background-color: #0072ff; color: white; font-size: 1.5rem; line-height: 40px; } }
+
 .link_red { display: inline-block; padding: 5px 15px; font-size: 1.3rem; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
 .link_red:hover, .link_red:active { background: linear-gradient(#d00b0a, #fe4737); background: linear-gradient(to bottom, #d00b0a, #fe4737); background: linear-gradient(180deg, #d00b0a, #fe4737); background: linear-gradient(to top, #fe4737, #d00b0a); background: linear-gradient(to bottom, #d00b0a 0%, #fe4737 100%); }
 @media screen and (max-width: 1024px) and (min-width: 450px) { .link_red { font-size: 1.2rem; padding: 4px 10px; } }
@@ -11,14 +14,14 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: inline-block; position: absolute; }
 @media screen and (max-width: 449px) and (min-width: 0) { .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: none; } }
 
-.menu01 { width: 236px; height: 232px; background-color: rgba(255, 0, 0, 0.2); top: 35px; left: 55px; }
+.menu01 { top: 35px; left: 55px; }
 
-.menu02 { width: 221px; height: 231px; background-color: rgba(0, 0, 255, 0.2); top: 250px; left: 205px; }
+.menu02 { top: 250px; left: 205px; }
 
-.menu03 { width: 342px; height: 370px; background-color: rgba(0, 128, 0, 0.2); top: 75px; left: calc(50% - 170px); }
+.menu03 { top: 58px; left: calc(50% - 170px); }
 
-.menu04 { width: 202px; height: 235px; background-color: rgba(0, 0, 255, 0.2); top: 250px; right: 230px; }
+.menu04 { top: 250px; right: 230px; }
 
-.menu05 { width: 198px; height: 257px; background-color: rgba(255, 0, 0, 0.2); top: 20px; right: 75px; }
+.menu05 { top: 20px; right: 75px; }
 
-.menu06 { width: 138px; height: 217px; background-color: rgba(0, 128, 0, 0.2); top: 345px; right: 30px; }
+.menu06 { top: 345px; right: 30px; }

@@ -7,7 +7,7 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 1024px) and (min-width: 450px) { .f_b18 { font-size: 1.2rem; } }
 
 .f_b13 { font-size: 1rem; line-height: 1.5; color: black; }
-@media screen and (max-width: 449px) and (min-width: 0) { .f_b13 { font-size: .8rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .f_b13 { font-size: .8rem; line-height: 1.3; } }
 
 .whiteNum { display: inline-block; width: 100%; max-width: 170px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: white; padding: 10px 15px; text-align: left; margin-right: 30px; }
 .whiteNum:before { display: inline-block; content: attr(title); font-size: 1.15rem; color: black; }
@@ -40,8 +40,10 @@ p { padding: 0; margin: 0; }
 .logo, .header_icon, .icon_qa, .icon_lock { display: inline-block; width: 100%; }
 
 .logo { max-width: 132px; margin-right: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .logo { max-width: 85px; } }
 
 .header_icon { max-width: 30px; padding-top: 13px; margin-right: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .header_icon { padding-top: 5px; } }
 
 .icon_qa { max-width: 25px; margin-right: 5px; }
 
@@ -49,7 +51,7 @@ p { padding: 0; margin: 0; }
 
 .img_slogan, .img_week, .img_testPlay { display: inline-block; width: 100%; }
 
-.img_slogan { max-width: 582px; }
+.img_slogan { max-width: 570px; }
 
 .img_week { max-width: 200px; position: absolute; left: 75px; }
 @media screen and (max-width: 1099px) and (min-width: 770px) { .img_week { max-width: 160px; left: 25px; top: 60px; } }
@@ -70,9 +72,32 @@ p { padding: 0; margin: 0; }
 .prompt:hover:before { content: attr(data-showtip); background-color: red; color: white; padding: 0 5px; position: absolute; font-size: .9rem; left: -16px; bottom: -35px; margin-right: -8px; white-space: pre; line-height: 25px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .prompt:hover:after { display: inline-block; content: ''; position: absolute; left: 7px; bottom: -11px; width: 0; height: 0; border-style: solid; border-width: 0 5px 5px 5px; border-color: transparent transparent red transparent; }
 
+.img_menu01, .img_menu02, .img_menu03, .img_menu04, .img_menu05, .img_menu06 { display: inline-block; width: 100%; }
+
+.img_menu01 { max-width: 236px; }
+
+.img_menu02 { max-width: 221px; }
+
+.img_menu03 { max-width: 342px; }
+
+.img_menu04 { max-width: 202px; }
+
+.img_menu05 { max-width: 198px; }
+
+.img_menu06 { max-width: 138px; }
+
+.m_menu { display: none; width: 100%; height: 100vh; background-color: rgba(42, 58, 75, 0.8); position: absolute; z-index: 9999; top: 0; right: -100%; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_menu { display: inline-block; } }
+.m_menu.menu_open { right: 0; }
+.m_menu .menuBox { display: inline-block; width: 80%; height: 100vh; background-color: white; float: right; }
+.m_menu .menuClose { display: inline-block; width: 20%; float: left; margin: 10px 0; }
+
 a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 
 button { display: inline-block; cursor: pointer; outline: 0; border: 0; background-color: transparent; }
+
+.m_header_r { display: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_header_r { display: inline-block; width: 40px; float: right; height: 40px; background-color: #0072ff; color: white; font-size: 1.5rem; line-height: 40px; } }
 
 .link_red { display: inline-block; padding: 5px 15px; font-size: 1.3rem; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
 .link_red:hover, .link_red:active { background: linear-gradient(#d00b0a, #fe4737); background: linear-gradient(to bottom, #d00b0a, #fe4737); background: linear-gradient(180deg, #d00b0a, #fe4737); background: linear-gradient(to top, #fe4737, #d00b0a); background: linear-gradient(to bottom, #d00b0a 0%, #fe4737 100%); }
@@ -81,17 +106,17 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: inline-block; position: absolute; }
 @media screen and (max-width: 449px) and (min-width: 0) { .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: none; } }
 
-.menu01 { width: 236px; height: 232px; background-color: rgba(255, 0, 0, 0.2); top: 35px; left: 55px; }
+.menu01 { top: 35px; left: 55px; }
 
-.menu02 { width: 221px; height: 231px; background-color: rgba(0, 0, 255, 0.2); top: 250px; left: 205px; }
+.menu02 { top: 250px; left: 205px; }
 
-.menu03 { width: 342px; height: 370px; background-color: rgba(0, 128, 0, 0.2); top: 75px; left: calc(50% - 170px); }
+.menu03 { top: 58px; left: calc(50% - 170px); }
 
-.menu04 { width: 202px; height: 235px; background-color: rgba(0, 0, 255, 0.2); top: 250px; right: 230px; }
+.menu04 { top: 250px; right: 230px; }
 
-.menu05 { width: 198px; height: 257px; background-color: rgba(255, 0, 0, 0.2); top: 20px; right: 75px; }
+.menu05 { top: 20px; right: 75px; }
 
-.menu06 { width: 138px; height: 217px; background-color: rgba(0, 128, 0, 0.2); top: 345px; right: 30px; }
+.menu06 { top: 345px; right: 30px; }
 
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
@@ -102,11 +127,12 @@ html { font-size: 13px; }
 
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 body.indexBg { margin: 0; padding: 0; background: #436ace url(../img/bg.png) center center fixed no-repeat; -moz-background-size: cover; background-size: cover; }
+@media screen and (max-width: 449px) and (min-width: 0) { body.indexBg { background: #436ace url(../img/m_bg.png) center center fixed no-repeat; background-size: cover; -moz-background-size: cover; } }
 
 header { display: flex; justify-content: center; align-items: center; width: 100%; height: 65px; background-color: white; padding: 0 50px; }
 @media screen and (max-width: 1189px) and (min-width: 770px) { header { padding: 0 20px; } }
 @media screen and (max-width: 769px) and (min-width: 450px) { header { padding: 0 0 0 20px; } }
-@media screen and (max-width: 449px) and (min-width: 0) { header { padding: 0 0 0 10px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { header { display: inline-block; padding: 0 0 0 10px; height: 40px; } }
 
 .header_l, .header_r { display: inline-block; }
 
@@ -115,8 +141,6 @@ header { display: flex; justify-content: center; align-items: center; width: 100
 
 .header_r { width: 70%; float: right; text-align: right; }
 @media screen and (max-width: 769px) and (min-width: 0) { .header_r { display: none; } }
-
-@media screen and (max-width: 769px) and (min-width: 0) { .m_header_r { display: inline-block; width: 15%; float: right; height: 65px; background-color: rgba(255, 0, 0, 0.2); } }
 
 .posit { position: relative; }
 
@@ -128,6 +152,7 @@ header { display: flex; justify-content: center; align-items: center; width: 100
 
 .bigBoxs { display: inline-block; width: 100%; position: relative; }
 .bigBoxs.cent_index { height: 100%; min-height: 800px; margin: 0; padding: 0; background: url(../img/star.png) center 65px fixed no-repeat; -moz-background-size: contain; background-size: contain; }
+@media screen and (max-width: 449px) and (min-width: 0) { .bigBoxs.cent_index { background: url(../img/m_star.png) center top fixed no-repeat; } }
 .bigBoxs .bigPlanet { display: inline-block; width: 100%; min-height: 490px; position: fixed; bottom: 0; left: 0; margin: 0; padding: 0; background: url(../img/big_planet.png) center bottom fixed no-repeat; -moz-background-size: contain; background-size: contain; }
 @media screen and (max-width: 449px) and (min-width: 0) { .bigBoxs .bigPlanet { min-height: 220px; } }
 
