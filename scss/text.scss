@@ -100,6 +100,47 @@ p {
   font-weight: bolder;
 }
 
+.helpTitle {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: $color_footer;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  @include border-radius(5px);
+  float: left;
+
+  @include range-width(0, 450px) {
+    font-size: 1.69rem;
+  }
+  
+  &:before {
+    display: inline-block;
+    content: '\e902';
+    color: rgba(177, 0, 3, 1.00);
+    font-size: 3rem; 
+    font-family: icon;
+    margin-right: 5px;
+
+    @include range-width(0, 450px) {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

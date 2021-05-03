@@ -56,6 +56,8 @@
 .img_slogan.img_S_page { max-width: 310px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .img_slogan.img_S_page { max-width: 133px; } }
 
+.helpTtitleImg { display: inline-block; width: 100%; max-width: 370px; float: left; }
+
 .pt-img { display: inline-block; width: 100%; max-width: 890px; }
 
 .img_week { max-width: 200px; position: absolute; left: 75px; }
