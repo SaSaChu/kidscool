@@ -1,81 +1,201 @@
-/*
-Error: Undefined mixin 'border-radius'.
-        on line 8 of /Users/Teresa/www/kidscool/cmd/../scss/effect.scss, in `border-radius'
-        from line 8 of /Users/Teresa/www/kidscool/cmd/../scss/effect.scss
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-3: .show-box {
-4:   display: inline-block;
-5:   width: 100%;
-6:   max-width: 640px;
-7:   padding: 20px 10px;
-8:   @include border-radius(15px);
-9:   
-10:   // 小框框的尺寸
-11:   $boxHeight: 180px;
-12:   // 小框框的間隙
-13:   $boxSpace: 10px;
+.show-box { display: inline-block; width: 100%; max-width: 640px; padding: 20px 10px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+.show-box .top { display: inline-block; width: 100%; }
+.show-box .top .boxs { width: 100%; display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start; }
+.show-box .top .boxs .array { display: inline-block; flex-shrink: 0; width: 28px; height: 28px; line-height: 28px; cursor: pointer; background-color: white; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.show-box .top .boxs .array.icon-arrow-right-thick, .show-box .top .boxs .array.icon-arrow-left-thick { color: #909090; }
+.show-box .top .boxs .box-container { position: relative; display: inline-block; height: 180px; margin: 0 10px; flex-grow: 1; }
+.show-box .top .boxs .box-container .box { cursor: pointer; display: inline-block; height: 180px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; -moz-transition: left 0.3s; -o-transition: left 0.3s; -webkit-transition: left 0.3s; transition: left 0.3s; padding: 10px 8px; text-align: left; color: white; }
+.show-box .top .boxs .box-container .box img { width: 100%; height: 116px; }
+.show-box .top .boxs .box-container .box span { display: inline-block; width: 100%; line-height: 1.2; margin-top: 6px; font-size: 1.4rem; }
+.show-box .top .boxs .box-container .box:after { position: absolute; bottom: -10px; left: calc(50% - 20px / 2); display: inline-block; width: 20px; height: 20px; background-color: white; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+.show-box .top .points { display: inline-block; width: 100%; height: 50px; display: inline-flex; flex-direction: row; align-items: center; justify-content: center; }
+.show-box .top .points label { position: relative; display: inline-block; width: 12px; height: 12px; background-color: rgba(0, 0, 255, 0.2); cursor: pointer; background-color: white; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.show-box .top .points label + label { margin-left: 8px; }
+.show-box .top .points label:before { content: ''; position: absolute; left: 2px; top: 2px; display: inline-block; right: 2px; bottom: 2px; background-color: white; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; -webkit-transition: background-color 0.3s; transition: background-color 0.3s; }
+.show-box .panels { display: inline-block; width: 100%; }
+.show-box .panels .panel { display: none; width: 100%; background-color: white; text-align: left; padding: 12px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.show-box .panels .panel b { display: inline-block; width: 100%; font-size: 1.6rem; padding-bottom: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .show-box .top .boxs .array { display: none; }
+  .show-box .top .boxs .box-container { height: 230px; margin: 0; display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start; overflow-y: none; overflow-x: scroll; width: 100%; }
+  .show-box .top .boxs .box-container .box { position: relative; width: 100px; flex-shrink: 0; }
+  .show-box .top .boxs .box-container .box img { display: none; }
+  .show-box .top .points { display: none; }
+  .show-box .panels { margin-top: 20px; }
+  .show-box[data-index='1'] .top .boxs .box-container .box:nth-child(1) { background-color: white; }
+  .show-box[data-index='1'] .top .boxs .box-container .box:nth-child(1) span { color: #4f8f2a; }
+  .show-box[data-index='1'] .top .boxs .box-container .box:nth-child(1):after { content: ''; }
+  .show-box[data-index='1'] .panels .panel:nth-child(1) { display: inline-block; }
+  .show-box[data-index='2'] .top .boxs .box-container .box:nth-child(2) { background-color: white; }
+  .show-box[data-index='2'] .top .boxs .box-container .box:nth-child(2) span { color: #4f8f2a; }
+  .show-box[data-index='2'] .top .boxs .box-container .box:nth-child(2):after { content: ''; }
+  .show-box[data-index='2'] .panels .panel:nth-child(2) { display: inline-block; }
+  .show-box[data-index='3'] .top .boxs .box-container .box:nth-child(3) { background-color: white; }
+  .show-box[data-index='3'] .top .boxs .box-container .box:nth-child(3) span { color: #4f8f2a; }
+  .show-box[data-index='3'] .top .boxs .box-container .box:nth-child(3):after { content: ''; }
+  .show-box[data-index='3'] .panels .panel:nth-child(3) { display: inline-block; }
+  .show-box[data-index='4'] .top .boxs .box-container .box:nth-child(4) { background-color: white; }
+  .show-box[data-index='4'] .top .boxs .box-container .box:nth-child(4) span { color: #4f8f2a; }
+  .show-box[data-index='4'] .top .boxs .box-container .box:nth-child(4):after { content: ''; }
+  .show-box[data-index='4'] .panels .panel:nth-child(4) { display: inline-block; }
+  .show-box[data-index='5'] .top .boxs .box-container .box:nth-child(5) { background-color: white; }
+  .show-box[data-index='5'] .top .boxs .box-container .box:nth-child(5) span { color: #4f8f2a; }
+  .show-box[data-index='5'] .top .boxs .box-container .box:nth-child(5):after { content: ''; }
+  .show-box[data-index='5'] .panels .panel:nth-child(5) { display: inline-block; } }
+@media screen and (min-width: 450px) { .show-box .top .boxs .box-container { overflow: hidden; }
+  .show-box .top .boxs .box-container .box { position: absolute; top: 0; }
+  .show-box[data-unit='1'] .top .boxs .box-container .box { width: calc((100% - 0px) / 1); }
+  .show-box[data-unit='1'][data-page='1'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 0px) / 1 + 10px) * 0); }
+  .show-box[data-unit='1'][data-page='1'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 0px) / 1 + 10px) * 1); }
+  .show-box[data-unit='1'][data-page='1'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 0px) / 1 + 10px) * 2); }
+  .show-box[data-unit='1'][data-page='1'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 0px) / 1 + 10px) * 3); }
+  .show-box[data-unit='1'][data-page='1'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 0px) / 1 + 10px) * 4); }
+  .show-box[data-unit='1'][data-page='2'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 0px) / 1 + 10px) * -1); }
+  .show-box[data-unit='1'][data-page='2'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 0px) / 1 + 10px) * 0); }
+  .show-box[data-unit='1'][data-page='2'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 0px) / 1 + 10px) * 1); }
+  .show-box[data-unit='1'][data-page='2'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 0px) / 1 + 10px) * 2); }
+  .show-box[data-unit='1'][data-page='2'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 0px) / 1 + 10px) * 3); }
+  .show-box[data-unit='1'][data-page='3'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 0px) / 1 + 10px) * -2); }
+  .show-box[data-unit='1'][data-page='3'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 0px) / 1 + 10px) * -1); }
+  .show-box[data-unit='1'][data-page='3'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 0px) / 1 + 10px) * 0); }
+  .show-box[data-unit='1'][data-page='3'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 0px) / 1 + 10px) * 1); }
+  .show-box[data-unit='1'][data-page='3'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 0px) / 1 + 10px) * 2); }
+  .show-box[data-unit='1'][data-page='4'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 0px) / 1 + 10px) * -3); }
+  .show-box[data-unit='1'][data-page='4'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 0px) / 1 + 10px) * -2); }
+  .show-box[data-unit='1'][data-page='4'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 0px) / 1 + 10px) * -1); }
+  .show-box[data-unit='1'][data-page='4'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 0px) / 1 + 10px) * 0); }
+  .show-box[data-unit='1'][data-page='4'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 0px) / 1 + 10px) * 1); }
+  .show-box[data-unit='1'][data-page='5'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 0px) / 1 + 10px) * -4); }
+  .show-box[data-unit='1'][data-page='5'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 0px) / 1 + 10px) * -3); }
+  .show-box[data-unit='1'][data-page='5'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 0px) / 1 + 10px) * -2); }
+  .show-box[data-unit='1'][data-page='5'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 0px) / 1 + 10px) * -1); }
+  .show-box[data-unit='1'][data-page='5'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 0px) / 1 + 10px) * 0); }
+  .show-box[data-index='1'] .top .boxs .box-container .box:nth-child(1) { background-color: white; }
+  .show-box[data-index='1'] .top .boxs .box-container .box:nth-child(1) span { color: #4f8f2a; }
+  .show-box[data-index='1'] .panels .panel:nth-child(1) { display: inline-block; }
+  .show-box[data-page='1'] .top .points label:nth-child(1):before { background-color: #2b2b2c; }
+  .show-box[data-unit='2'] .top .boxs .box-container .box { width: calc((100% - 10px) / 2); }
+  .show-box[data-unit='2'][data-page='1'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 10px) / 2 + 10px) * 0); }
+  .show-box[data-unit='2'][data-page='1'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 10px) / 2 + 10px) * 1); }
+  .show-box[data-unit='2'][data-page='1'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 10px) / 2 + 10px) * 2); }
+  .show-box[data-unit='2'][data-page='1'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 10px) / 2 + 10px) * 3); }
+  .show-box[data-unit='2'][data-page='1'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 10px) / 2 + 10px) * 4); }
+  .show-box[data-unit='2'][data-page='2'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 10px) / 2 + 10px) * -2); }
+  .show-box[data-unit='2'][data-page='2'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 10px) / 2 + 10px) * -1); }
+  .show-box[data-unit='2'][data-page='2'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 10px) / 2 + 10px) * 0); }
+  .show-box[data-unit='2'][data-page='2'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 10px) / 2 + 10px) * 1); }
+  .show-box[data-unit='2'][data-page='2'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 10px) / 2 + 10px) * 2); }
+  .show-box[data-unit='2'][data-page='3'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 10px) / 2 + 10px) * -4); }
+  .show-box[data-unit='2'][data-page='3'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 10px) / 2 + 10px) * -3); }
+  .show-box[data-unit='2'][data-page='3'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 10px) / 2 + 10px) * -2); }
+  .show-box[data-unit='2'][data-page='3'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 10px) / 2 + 10px) * -1); }
+  .show-box[data-unit='2'][data-page='3'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 10px) / 2 + 10px) * 0); }
+  .show-box[data-unit='2'][data-page='4'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 10px) / 2 + 10px) * -6); }
+  .show-box[data-unit='2'][data-page='4'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 10px) / 2 + 10px) * -5); }
+  .show-box[data-unit='2'][data-page='4'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 10px) / 2 + 10px) * -4); }
+  .show-box[data-unit='2'][data-page='4'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 10px) / 2 + 10px) * -3); }
+  .show-box[data-unit='2'][data-page='4'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 10px) / 2 + 10px) * -2); }
+  .show-box[data-unit='2'][data-page='5'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 10px) / 2 + 10px) * -8); }
+  .show-box[data-unit='2'][data-page='5'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 10px) / 2 + 10px) * -7); }
+  .show-box[data-unit='2'][data-page='5'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 10px) / 2 + 10px) * -6); }
+  .show-box[data-unit='2'][data-page='5'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 10px) / 2 + 10px) * -5); }
+  .show-box[data-unit='2'][data-page='5'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 10px) / 2 + 10px) * -4); }
+  .show-box[data-index='2'] .top .boxs .box-container .box:nth-child(2) { background-color: white; }
+  .show-box[data-index='2'] .top .boxs .box-container .box:nth-child(2) span { color: #4f8f2a; }
+  .show-box[data-index='2'] .panels .panel:nth-child(2) { display: inline-block; }
+  .show-box[data-page='2'] .top .points label:nth-child(2):before { background-color: #2b2b2c; }
+  .show-box[data-unit='3'] .top .boxs .box-container .box { width: calc((100% - 20px) / 3); }
+  .show-box[data-unit='3'][data-page='1'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 20px) / 3 + 10px) * 0); }
+  .show-box[data-unit='3'][data-page='1'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 20px) / 3 + 10px) * 1); }
+  .show-box[data-unit='3'][data-page='1'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 20px) / 3 + 10px) * 2); }
+  .show-box[data-unit='3'][data-page='1'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 20px) / 3 + 10px) * 3); }
+  .show-box[data-unit='3'][data-page='1'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 20px) / 3 + 10px) * 4); }
+  .show-box[data-unit='3'][data-page='2'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 20px) / 3 + 10px) * -3); }
+  .show-box[data-unit='3'][data-page='2'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 20px) / 3 + 10px) * -2); }
+  .show-box[data-unit='3'][data-page='2'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 20px) / 3 + 10px) * -1); }
+  .show-box[data-unit='3'][data-page='2'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 20px) / 3 + 10px) * 0); }
+  .show-box[data-unit='3'][data-page='2'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 20px) / 3 + 10px) * 1); }
+  .show-box[data-unit='3'][data-page='3'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 20px) / 3 + 10px) * -6); }
+  .show-box[data-unit='3'][data-page='3'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 20px) / 3 + 10px) * -5); }
+  .show-box[data-unit='3'][data-page='3'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 20px) / 3 + 10px) * -4); }
+  .show-box[data-unit='3'][data-page='3'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 20px) / 3 + 10px) * -3); }
+  .show-box[data-unit='3'][data-page='3'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 20px) / 3 + 10px) * -2); }
+  .show-box[data-unit='3'][data-page='4'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 20px) / 3 + 10px) * -9); }
+  .show-box[data-unit='3'][data-page='4'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 20px) / 3 + 10px) * -8); }
+  .show-box[data-unit='3'][data-page='4'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 20px) / 3 + 10px) * -7); }
+  .show-box[data-unit='3'][data-page='4'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 20px) / 3 + 10px) * -6); }
+  .show-box[data-unit='3'][data-page='4'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 20px) / 3 + 10px) * -5); }
+  .show-box[data-unit='3'][data-page='5'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 20px) / 3 + 10px) * -12); }
+  .show-box[data-unit='3'][data-page='5'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 20px) / 3 + 10px) * -11); }
+  .show-box[data-unit='3'][data-page='5'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 20px) / 3 + 10px) * -10); }
+  .show-box[data-unit='3'][data-page='5'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 20px) / 3 + 10px) * -9); }
+  .show-box[data-unit='3'][data-page='5'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 20px) / 3 + 10px) * -8); }
+  .show-box[data-index='3'] .top .boxs .box-container .box:nth-child(3) { background-color: white; }
+  .show-box[data-index='3'] .top .boxs .box-container .box:nth-child(3) span { color: #4f8f2a; }
+  .show-box[data-index='3'] .panels .panel:nth-child(3) { display: inline-block; }
+  .show-box[data-page='3'] .top .points label:nth-child(3):before { background-color: #2b2b2c; }
+  .show-box[data-unit='4'] .top .boxs .box-container .box { width: calc((100% - 30px) / 4); }
+  .show-box[data-unit='4'][data-page='1'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 30px) / 4 + 10px) * 0); }
+  .show-box[data-unit='4'][data-page='1'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 30px) / 4 + 10px) * 1); }
+  .show-box[data-unit='4'][data-page='1'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 30px) / 4 + 10px) * 2); }
+  .show-box[data-unit='4'][data-page='1'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 30px) / 4 + 10px) * 3); }
+  .show-box[data-unit='4'][data-page='1'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 30px) / 4 + 10px) * 4); }
+  .show-box[data-unit='4'][data-page='2'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 30px) / 4 + 10px) * -4); }
+  .show-box[data-unit='4'][data-page='2'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 30px) / 4 + 10px) * -3); }
+  .show-box[data-unit='4'][data-page='2'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 30px) / 4 + 10px) * -2); }
+  .show-box[data-unit='4'][data-page='2'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 30px) / 4 + 10px) * -1); }
+  .show-box[data-unit='4'][data-page='2'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 30px) / 4 + 10px) * 0); }
+  .show-box[data-unit='4'][data-page='3'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 30px) / 4 + 10px) * -8); }
+  .show-box[data-unit='4'][data-page='3'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 30px) / 4 + 10px) * -7); }
+  .show-box[data-unit='4'][data-page='3'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 30px) / 4 + 10px) * -6); }
+  .show-box[data-unit='4'][data-page='3'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 30px) / 4 + 10px) * -5); }
+  .show-box[data-unit='4'][data-page='3'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 30px) / 4 + 10px) * -4); }
+  .show-box[data-unit='4'][data-page='4'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 30px) / 4 + 10px) * -12); }
+  .show-box[data-unit='4'][data-page='4'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 30px) / 4 + 10px) * -11); }
+  .show-box[data-unit='4'][data-page='4'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 30px) / 4 + 10px) * -10); }
+  .show-box[data-unit='4'][data-page='4'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 30px) / 4 + 10px) * -9); }
+  .show-box[data-unit='4'][data-page='4'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 30px) / 4 + 10px) * -8); }
+  .show-box[data-unit='4'][data-page='5'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 30px) / 4 + 10px) * -16); }
+  .show-box[data-unit='4'][data-page='5'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 30px) / 4 + 10px) * -15); }
+  .show-box[data-unit='4'][data-page='5'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 30px) / 4 + 10px) * -14); }
+  .show-box[data-unit='4'][data-page='5'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 30px) / 4 + 10px) * -13); }
+  .show-box[data-unit='4'][data-page='5'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 30px) / 4 + 10px) * -12); }
+  .show-box[data-index='4'] .top .boxs .box-container .box:nth-child(4) { background-color: white; }
+  .show-box[data-index='4'] .top .boxs .box-container .box:nth-child(4) span { color: #4f8f2a; }
+  .show-box[data-index='4'] .panels .panel:nth-child(4) { display: inline-block; }
+  .show-box[data-page='4'] .top .points label:nth-child(4):before { background-color: #2b2b2c; }
+  .show-box[data-unit='5'] .top .boxs .box-container .box { width: calc((100% - 40px) / 5); }
+  .show-box[data-unit='5'][data-page='1'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 40px) / 5 + 10px) * 0); }
+  .show-box[data-unit='5'][data-page='1'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 40px) / 5 + 10px) * 1); }
+  .show-box[data-unit='5'][data-page='1'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 40px) / 5 + 10px) * 2); }
+  .show-box[data-unit='5'][data-page='1'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 40px) / 5 + 10px) * 3); }
+  .show-box[data-unit='5'][data-page='1'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 40px) / 5 + 10px) * 4); }
+  .show-box[data-unit='5'][data-page='2'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 40px) / 5 + 10px) * -5); }
+  .show-box[data-unit='5'][data-page='2'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 40px) / 5 + 10px) * -4); }
+  .show-box[data-unit='5'][data-page='2'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 40px) / 5 + 10px) * -3); }
+  .show-box[data-unit='5'][data-page='2'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 40px) / 5 + 10px) * -2); }
+  .show-box[data-unit='5'][data-page='2'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 40px) / 5 + 10px) * -1); }
+  .show-box[data-unit='5'][data-page='3'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 40px) / 5 + 10px) * -10); }
+  .show-box[data-unit='5'][data-page='3'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 40px) / 5 + 10px) * -9); }
+  .show-box[data-unit='5'][data-page='3'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 40px) / 5 + 10px) * -8); }
+  .show-box[data-unit='5'][data-page='3'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 40px) / 5 + 10px) * -7); }
+  .show-box[data-unit='5'][data-page='3'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 40px) / 5 + 10px) * -6); }
+  .show-box[data-unit='5'][data-page='4'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 40px) / 5 + 10px) * -15); }
+  .show-box[data-unit='5'][data-page='4'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 40px) / 5 + 10px) * -14); }
+  .show-box[data-unit='5'][data-page='4'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 40px) / 5 + 10px) * -13); }
+  .show-box[data-unit='5'][data-page='4'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 40px) / 5 + 10px) * -12); }
+  .show-box[data-unit='5'][data-page='4'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 40px) / 5 + 10px) * -11); }
+  .show-box[data-unit='5'][data-page='5'] .top .boxs .box-container .box:nth-child(1) { left: calc(((100% - 40px) / 5 + 10px) * -20); }
+  .show-box[data-unit='5'][data-page='5'] .top .boxs .box-container .box:nth-child(2) { left: calc(((100% - 40px) / 5 + 10px) * -19); }
+  .show-box[data-unit='5'][data-page='5'] .top .boxs .box-container .box:nth-child(3) { left: calc(((100% - 40px) / 5 + 10px) * -18); }
+  .show-box[data-unit='5'][data-page='5'] .top .boxs .box-container .box:nth-child(4) { left: calc(((100% - 40px) / 5 + 10px) * -17); }
+  .show-box[data-unit='5'][data-page='5'] .top .boxs .box-container .box:nth-child(5) { left: calc(((100% - 40px) / 5 + 10px) * -16); }
+  .show-box[data-index='5'] .top .boxs .box-container .box:nth-child(5) { background-color: white; }
+  .show-box[data-index='5'] .top .boxs .box-container .box:nth-child(5) span { color: #4f8f2a; }
+  .show-box[data-index='5'] .panels .panel:nth-child(5) { display: inline-block; }
+  .show-box[data-page='5'] .top .points label:nth-child(5):before { background-color: #2b2b2c; } }
 
-Backtrace:
-/Users/Teresa/www/kidscool/cmd/../scss/effect.scss:8:in `border-radius'
-/Users/Teresa/www/kidscool/cmd/../scss/effect.scss:8
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/bin/compass:44:in `call'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/bin/compass:22:in `load'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/bin/compass:22:in `<main>'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
-/Users/Teresa/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'border-radius'.\A         on line 8 of /Users/Teresa/www/kidscool/cmd/../scss/effect.scss, in `border-radius'\A         from line 8 of /Users/Teresa/www/kidscool/cmd/../scss/effect.scss\A \A 3: .show-box {\A 4:   display: inline-block;\A 5:   width: 100%;\A 6:   max-width: 640px;\A 7:   padding: 20px 10px;\A 8:   @include border-radius(15px);\A 9:   \A 10:   // 小框框的尺寸\A 11:   $boxHeight: 180px;\A 12:   // 小框框的間隙\A 13:   $boxSpace: 10px;"; }
+.pageContainer { display: inline-block; margin: 0 auto; font-size: 1.5rem; line-height: 1.5; *zoom: 1; }
+.pageContainer:before, .pageContainer:after { display: table; line-height: 0; content: ""; }
+.pageContainer:after { clear: both; }

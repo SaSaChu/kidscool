@@ -1,3 +1,4 @@
+@import "Ginkgo";
 
 // 知識內文banner
 .show-box {
@@ -13,6 +14,8 @@
   $boxSpace: 10px;
   // 小框框最多的數量
   $total: 20;
+  // 小框框手機版時寬度
+  $boxMobileWidth: 100px;
 
   .top {
     display: inline-block;
@@ -49,11 +52,8 @@
         margin: 0 10px;
 
         flex-grow: 1;
-        overflow: hidden;
         
         .box {
-          position: absolute;
-          top: 0;
           cursor: pointer;
 
           display: inline-block;
@@ -78,6 +78,16 @@
             line-height: 1.2;
             margin-top: 6px;
             font-size: 1.4rem;
+          }
+          &:after {
+            position: absolute;
+            bottom: 0 - 20px / 2;
+            left: calc(50% - 20px / 2);
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 1);
+            @include rotate(-45deg);
           }
         }
       }
@@ -140,26 +150,103 @@
       }
     }
   }
-  @for $i from 1 through $total {
-    &[data-unit='#{$i}'] {
-      .top {
-        .boxs {
-          .box-container {
-            .box {
-              width: calc((100% - #{(($i - 1) * $boxSpace)}) / #{$i});
+  @include range-width(0, 450px) {
+    .top {
+      .boxs {
+        .array {
+          display: none;
+        }
+        .box-container {
+          height: $boxHeight + 50px;
+          margin: 0;
+          display: inline-flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          overflow-y: none;
+          overflow-x: scroll;
+          width: 100%;
+          .box {
+            position: relative;
+            width: $boxMobileWidth;
+            flex-shrink: 0;
+            img {
+              display: none;
+            }
+
+          }
+        }
+      }
+      .points {
+        display: none;
+      }
+    }
+    .panels {
+      margin-top: 20px;
+    }
+
+    @for $i from 1 through $total {
+      &[data-index='#{$i}'] {
+        .top {
+          .boxs {
+            .box-container {
+              .box {
+                &:nth-child(#{$i}) {
+                  background-color: white;
+                  span {
+                    color: rgba(79, 143, 42, 1.00);
+                  }
+                  &:after {
+                    content: '';
+                  }
+                }
+              }
+            }
+          }
+        }
+        .panels {
+          .panel {
+            &:nth-child(#{$i}) {
+              display: inline-block;
             }
           }
         }
       }
-      @for $j from 1 through $total {
-        &[data-page='#{$j}'] {
-          .top {
-            .boxs {
-              .box-container {
-                .box {
-                  @for $k from 1 through $total {
-                    &:nth-child(#{$k}) {
-                      left: calc(((100% - #{(($i - 1) * $boxSpace)}) / #{$i} + #{$boxSpace}) * #{($k - (($j - 1) * $i + 1))});
+    }
+  }
+  @include range-width(450px) {
+    .top {
+      .boxs {
+        .box-container {
+          overflow: hidden;
+          .box {
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }
+    @for $i from 1 through $total {
+      &[data-unit='#{$i}'] {
+        .top {
+          .boxs {
+            .box-container {
+              .box {
+                width: calc((100% - #{(($i - 1) * $boxSpace)}) / #{$i});
+              }
+            }
+          }
+        }
+        @for $j from 1 through $total {
+          &[data-page='#{$j}'] {
+            .top {
+              .boxs {
+                .box-container {
+                  .box {
+                    @for $k from 1 through $total {
+                      &:nth-child(#{$k}) {
+                        left: calc(((100% - #{(($i - 1) * $boxSpace)}) / #{$i} + #{$boxSpace}) * #{($k - (($j - 1) * $i + 1))});
+                      }
                     }
                   }
                 }
@@ -168,43 +255,43 @@
           }
         }
       }
-    }
-    &[data-index='#{$i}'] {
-      .top {
-        .boxs {
-          .box-container {
-            .box {
-              &:nth-child(#{$i}) {
-                background-color: white;
-                span {
-                  color: rgba(79, 143, 42, 1.00);
+      &[data-index='#{$i}'] {
+        .top {
+          .boxs {
+            .box-container {
+              .box {
+                &:nth-child(#{$i}) {
+                  background-color: white;
+                  span {
+                    color: rgba(79, 143, 42, 1.00);
+                  }
                 }
               }
             }
           }
         }
-      }
-      .panels {
-        .panel {
-          &:nth-child(#{$i}) {
-            display: inline-block;
+        .panels {
+          .panel {
+            &:nth-child(#{$i}) {
+              display: inline-block;
+            }
           }
         }
       }
-    }
-
-    &[data-page='#{$i}'] {
-      .top {
-        .points {
-          label {
-            &:nth-child(#{$i}):before {
-              background-color: rgba(43, 43, 44, 1.00);
+      &[data-page='#{$i}'] {
+        .top {
+          .points {
+            label {
+              &:nth-child(#{$i}):before {
+                background-color: rgba(43, 43, 44, 1.00);
+              }
             }
           }
         }
       }
     }
   }
+
 }
 
 
