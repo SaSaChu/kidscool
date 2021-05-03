@@ -20,6 +20,14 @@
   margin-top: 30px;
 }
 
+.m_t_30_DM {
+  margin-top: 30px;
+
+  @include range-width(0, 450px) {
+    margin-top: 0;
+  }
+}
+
 .m_t_50 {
   margin-top: 50px;
 }
@@ -37,6 +45,10 @@
   margin-top: 5px;
 }
 
+.m_t_3 {
+  margin-top: 3px;
+}
+
 
 // header qa boxs
 .m_rt_3_8 {
@@ -51,6 +63,15 @@
 // header qa
 .p_t_5 {
   padding-top: 5px;
+}
+
+// 麵包屑
+.p_td_20_DM {
+  padding: 20px 0;
+
+  @include range-width(0, 450px) {
+    padding: 10px 15px;
+  }
 }
 
 // index-title img

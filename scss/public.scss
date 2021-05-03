@@ -2,7 +2,7 @@
 @import "color";
 @import "text";
 @import "space";
-@import "table";
+@import "effect";
 @import "other";
 @import "link";
 @import "input";
@@ -103,10 +103,6 @@ header {
   }
 }
 
-.bg_blue {
-  background-color: $color_footer;
-}
-
 .header_l, .header_r {
   display: inline-block;
   // line-height: 65px;
@@ -142,6 +138,7 @@ header {
 
 .ds {
   display: inline-block;
+  @include clearfix();
 
   &.ds100 {
     width: 100%;
@@ -159,10 +156,23 @@ header {
   align-items: center;
 }
 
+// tag
+.knowselect {
+  display: inline-block;
+  width: 100%;
+  // 控制按鈕分頁，設定預設值是沒有顯示
+  display: none;
+
+  &.knowselect_show {
+    display: inline-block;
+  } 
+}
+
 .pageBoxs {
   display: inline-block;
   width: 100%;
   max-width: 1180px;
+  @include clearfix();
 
   .pageLeft, .pageRight {
     display: inline-block;
@@ -178,11 +188,15 @@ header {
   }
   .pageRight {
     width: calc(100% - 250px);
-    padding-left: 50px;
+    padding-left: 40px;
 
     @include range-width(0, 450px) {
       width: 100%;
       padding: 15px;
+
+      &.tImg {
+        padding: 15px 0;
+      }
     }
   }
 }
@@ -230,6 +244,7 @@ header {
   width: 100%;
   max-width: 1160px;
   margin: 0 auto;
+  @include clearfix();
 }
 
 .maxWidth {
@@ -239,6 +254,7 @@ header {
 .allBoxs {
   display: inline-block;
   width: 100%;
+  @include clearfix();
 
   @include range-width(0, 1160px) {
     padding: 0 15px;
@@ -426,10 +442,49 @@ footer {
 }
 
 
+.knowBoxsLeft {
+  display: inline-block;
+  width: 100%;
+  max-width: 150px;
+  float: left;
 
+  p {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    @include transition(all .3s);
+    
+    &.li_green {
+      color: $page_green;
+    }
 
+    &.li_green_s {
+      background-color: $page_green;
+      color: white;
+      text-decoration: none;
+      @include border-radius(30px);
+      
+    }
+  }
+}
 
+.knowBoxsRight {
+  width: calc(100% - 150px);
+  display: inline-block;
+  float: left;
+  // 控制按鈕分頁，設定預設值是沒有顯示
+  display: none;
 
+  &.knowBoxsRight_show {
+    display: inline-block;
+  } 
+}
 
 
 

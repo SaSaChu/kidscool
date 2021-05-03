@@ -1,6 +1,28 @@
 @charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.pageColorGreen { color: #4e8f2b; }
+
+.pageColorBlue { color: #237eb1; }
+
+.pageColorPurple { color: #af4dac; }
+
+.pageColorOrange { color: #ff790b; }
+
+.pageColorBrown { color: #996536; }
+
+.bg_blue { background-color: #129eff; }
+
+.bg_page_green { background-color: #4e8f2b; }
+
+.bg_page_blue { background-color: #237eb1; }
+
+.bg_page_purple { background-color: #af4dac; }
+
+.bg_page_orange { background-color: #ff790b; }
+
+.bg_page_brown { background-color: #996536; }
+
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
 .input_gray { display: inline-block; width: 100%; max-width: 135px; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
@@ -8,3 +30,5 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 
 .input_white { display: inline-block; width: 100%; max-width: 135px; background-color: white; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
 .input_white.m-menuUse { width: calc(100% - 69px); max-width: none; padding: 5px 10px; font-size: 1rem; }
+
+.talk_input { display: inline-block; width: 100%; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }

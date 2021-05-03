@@ -1,5 +1,27 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.pageColorGreen { color: #4e8f2b; }
+
+.pageColorBlue { color: #237eb1; }
+
+.pageColorPurple { color: #af4dac; }
+
+.pageColorOrange { color: #ff790b; }
+
+.pageColorBrown { color: #996536; }
+
+.bg_blue { background-color: #129eff; }
+
+.bg_page_green { background-color: #4e8f2b; }
+
+.bg_page_blue { background-color: #237eb1; }
+
+.bg_page_purple { background-color: #af4dac; }
+
+.bg_page_orange { background-color: #ff790b; }
+
+.bg_page_brown { background-color: #996536; }
+
 a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 
 button { display: inline-block; cursor: pointer; outline: 0; border: 0; background-color: transparent; }
@@ -22,6 +44,12 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 @media screen and (max-width: 1024px) and (min-width: 450px) { .link_LGrey { font-size: 1.2rem; padding: 4px 10px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .link_LGrey { font-size: 1.1rem; padding: 2px 12px; } }
 
+.link_tag { display: inline-block; font-size: 1.5rem; color: black; float: left; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+@media screen and (max-width: 449px) and (min-width: 0) { .link_tag { font-size: 1rem; } }
+.link_tag:hover { color: #959595; }
+.link_tag:hover:after { color: black; }
+.link_tag:after { display: inline-block; content: '\f105'; font-family: icon; margin: 3px 5px 0  5px; }
+
 .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: inline-block; position: absolute; }
 @media screen and (max-width: 449px) and (min-width: 0) { .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: none; } }
 
@@ -36,3 +64,22 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .menu05 { top: 20px; right: 75px; }
 
 .menu06 { top: 345px; right: 30px; }
+
+.knowBtn { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); cursor: pointer; padding: 8px 25px; font-weight: bolder; font-size: 1.6rem; float: left; margin-right: 20px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+.knowBtn:nth-child(4n+4) { margin-right: 0; }
+.knowBtn:nth-child(n+5) { margin-top: 20px; }
+.knowBtn.btn_green { color: #4e8f2b; border: 1px solid #4e8f2b; background: transparent; }
+.knowBtn.green_s { color: white; background: #8fc400; /* Old browsers */ background: -moz-linear-gradient(top, #8fc400 1%, #488822 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #8fc400 1%, #488822 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #8fc400 1%, #488822 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', endColorstr='#488822',GradientType=0 ); /* IE6-9 */ border: 1px solid #4e8f2b; }
+.knowBtn.green_s:hover, .knowBtn.green_s:active { color: white; }
+.knowBtn.btn_blue { color: #237eb1; border: 1px solid #237eb1; background: transparent; }
+.knowBtn.blue_s { color: white; background: #53acd8; /* Old browsers */ background: -moz-linear-gradient(top, #53acd8 0%, #1874a7 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #53acd8 0%, #1874a7 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #53acd8 0%, #1874a7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53acd8', endColorstr='#1874a7',GradientType=0 ); /* IE6-9 */ border: 1px solid #237eb1; }
+.knowBtn.blue_s:hover, .knowBtn.blue_s:active { color: white; }
+.knowBtn.btn_purple { color: #af4dac; border: 1px solid #af4dac; background: transparent; }
+.knowBtn.purple_s { color: white; background: #e670e8; /* Old browsers */ background: -moz-linear-gradient(top, #e670e8 0%, #a849a3 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #e670e8 0%, #a849a3 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #e670e8 0%, #a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e670e8', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */ border: 1px solid #af4dac; }
+.knowBtn.purple_s:hover, .knowBtn.purple_s:active { color: white; }
+.knowBtn.btn_orange { color: #ff790b; border: 1px solid #ff790b; background: transparent; }
+.knowBtn.orange_s { color: white; background: #ffa443; /* Old browsers */ background: -moz-linear-gradient(top, #ffa443 0%, #ff7400 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #ffa443 0%, #ff7400 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #ffa443 0%, #ff7400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa443', endColorstr='#ff7400',GradientType=0 ); /* IE6-9 */ border: 1px solid #ff790b; }
+.knowBtn.orange_s:hover, .knowBtn.orange_s:active { color: white; }
+.knowBtn.btn_brown { color: #996536; border: 1px solid #996536; background: transparent; }
+.knowBtn.brown_s { color: white; background: #e09856; /* Old browsers */ background: -moz-linear-gradient(top, #e09856 0%, #996535 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #e09856 0%, #996535 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #e09856 0%, #996535 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e09856', endColorstr='#996535',GradientType=0 ); /* IE6-9 */ border: 1px solid #996536; }
+.knowBtn.brown_s:hover, .knowBtn.brown_s:active { color: white; }

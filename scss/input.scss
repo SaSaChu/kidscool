@@ -41,5 +41,14 @@ input, textarea {
     padding: 5px 10px;
     font-size: 1rem;
   }
+}
 
+.talk_input {
+  display: inline-block;
+  width: 100%;
+  background-color: $color_LGray; 
+  @include border-radius(20px);
+  padding: 5px 20px;
+  font-size: 1.3rem;
+  color: black;
 }

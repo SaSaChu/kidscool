@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'range-width'.
-        on line 24 of /Users/Teresa/www/kidscool/cmd/../scss/text.scss, in `range-width'
-        from line 24 of /Users/Teresa/www/kidscool/cmd/../scss/text.scss
+Error: Undefined mixin 'border-radius'.
+        on line 8 of /Users/Teresa/www/kidscool/cmd/../scss/effect.scss, in `border-radius'
+        from line 8 of /Users/Teresa/www/kidscool/cmd/../scss/effect.scss
 
-19: 
-20: .f_b18 {
-21:   font-size: 1.3rem;
-22:   color: black;
-23: 
-24:   @include range-width(450px, 1025px) {
-25:     font-size: 1.2rem;
-26:   }
-27: }
-28: 
-29: // footer
+3: .show-box {
+4:   display: inline-block;
+5:   width: 100%;
+6:   max-width: 640px;
+7:   padding: 20px 10px;
+8:   @include border-radius(15px);
+9:   
+10:   // 小框框的尺寸
+11:   $boxHeight: 180px;
+12:   // 小框框的間隙
+13:   $boxSpace: 10px;
 
 Backtrace:
-/Users/Teresa/www/kidscool/cmd/../scss/text.scss:24:in `range-width'
-/Users/Teresa/www/kidscool/cmd/../scss/text.scss:24
+/Users/Teresa/www/kidscool/cmd/../scss/effect.scss:8:in `border-radius'
+/Users/Teresa/www/kidscool/cmd/../scss/effect.scss:8
 /Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/Teresa/.rvm/gems/ruby-2.1.3/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'range-width'.\A         on line 24 of /Users/Teresa/www/kidscool/cmd/../scss/text.scss, in `range-width'\A         from line 24 of /Users/Teresa/www/kidscool/cmd/../scss/text.scss\A \A 19: \A 20: .f_b18 {\A 21:   font-size: 1.3rem;\A 22:   color: black;\A 23: \A 24:   @include range-width(450px, 1025px) {\A 25:     font-size: 1.2rem;\A 26:   }\A 27: }\A 28: \A 29: // footer"; }
+  content: "Error: Undefined mixin 'border-radius'.\A         on line 8 of /Users/Teresa/www/kidscool/cmd/../scss/effect.scss, in `border-radius'\A         from line 8 of /Users/Teresa/www/kidscool/cmd/../scss/effect.scss\A \A 3: .show-box {\A 4:   display: inline-block;\A 5:   width: 100%;\A 6:   max-width: 640px;\A 7:   padding: 20px 10px;\A 8:   @include border-radius(15px);\A 9:   \A 10:   // 小框框的尺寸\A 11:   $boxHeight: 180px;\A 12:   // 小框框的間隙\A 13:   $boxSpace: 10px;"; }

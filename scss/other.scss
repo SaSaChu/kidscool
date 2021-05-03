@@ -2,8 +2,16 @@
 @import "color";
 
 .m-close {
+  display: inline-block;
   @include range-width(0, 450px) {
     display: none !important;
+  }
+}
+
+.m-open {
+  display: none !important;
+  @include range-width(0, 450px) {
+    display: inline-block !important;
   }
 }
 
@@ -14,6 +22,15 @@
 .order_r {
   float: right;
 }
+
+.pageContentImg {
+  display: inline-block;
+  float: right;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 0 10px 10px;
+}
+
 
 .d-borderDotted {
   display: inline-block;
@@ -87,11 +104,7 @@
 .pt-img {
   display: inline-block;
   width: 100%;
-  max-width: 881px;
-
-  @include range-width(0, 450px) {
-    display: none;
-  }
+  max-width: 890px;
 }
 
 .img_week {
@@ -434,14 +447,15 @@
 // 桌機左邊選單・下拉
 .block-l-menuBox {
   display: inline-block;
-  width: 100%;
+  width: calc(100% - 15px);
   background-color: white;
   @include border-radius(3px);
   height: 100%;
   @include transition(left .3s, right .3s);
   @include clearfix();
   text-align: left;
-  padding: 0;
+  padding: 0 27px 0 0;
+  float: left;
 
   span {
     display: inline-block;
@@ -551,7 +565,7 @@
       text-decoration: none;
       cursor: pointer;
       @include transition(all .3s);
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       background-color: rgba(231, 231, 231, 1.00);
       @include border-radius(20px);
       margin-bottom: 15px;
@@ -572,6 +586,8 @@
     }
   }
 }
+
+
 
 
 
