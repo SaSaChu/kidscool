@@ -8522,6 +8522,14 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .knowBoxsLeft p { display: inline-block; width: 100%; text-align: left; font-size: 1.6rem; font-weight: bolder; margin-bottom: 10px; padding: 10px 10px 10px 20px; text-decoration: underline; cursor: pointer; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .knowBoxsLeft p.li_green { color: #4e8f2b; }
 .knowBoxsLeft p.li_green_s { background-color: #4e8f2b; color: white; text-decoration: none; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.knowBoxsLeft p.li_blue { color: #237eb1; }
+.knowBoxsLeft p.li_blue_s { background-color: #237eb1; color: white; text-decoration: none; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.knowBoxsLeft p.li_purple { color: #af4dac; }
+.knowBoxsLeft p.li_purple_s { background-color: #af4dac; color: white; text-decoration: none; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.knowBoxsLeft p.li_orange { color: #ff790b; }
+.knowBoxsLeft p.li_orange_s { background-color: #ff790b; color: white; text-decoration: none; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.knowBoxsLeft p.li_brown { color: #996536; }
+.knowBoxsLeft p.li_brown_s { background-color: #996536; color: white; text-decoration: none; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
 
 .knowBoxsRight { width: calc(100% - 150px); display: inline-block; float: left; display: none; }
 .knowBoxsRight.knowBoxsRight_show { display: inline-block; }

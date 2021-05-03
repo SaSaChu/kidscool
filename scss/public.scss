@@ -469,7 +469,50 @@ footer {
       color: white;
       text-decoration: none;
       @include border-radius(30px);
-      
+    }
+
+    &.li_blue {
+      color: $page_blue;
+    }
+
+    &.li_blue_s {
+      background-color: $page_blue;
+      color: white;
+      text-decoration: none;
+      @include border-radius(30px);
+    }
+
+    &.li_purple {
+      color: $page_purple;
+    }
+
+    &.li_purple_s {
+      background-color: $page_purple;
+      color: white;
+      text-decoration: none;
+      @include border-radius(30px);
+    }
+
+    &.li_orange {
+      color: $page_orange;
+    }
+
+    &.li_orange_s {
+      background-color: $page_orange;
+      color: white;
+      text-decoration: none;
+      @include border-radius(30px);
+    }
+
+    &.li_brown {
+      color: $page_brown;
+    }
+
+    &.li_brown_s {
+      background-color: $page_brown;
+      color: white;
+      text-decoration: none;
+      @include border-radius(30px);
     }
   }
 }

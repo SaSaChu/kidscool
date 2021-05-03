@@ -108,6 +108,7 @@ $(function() {
 
 
   // 切換tab(左邊)
+  // 綠色
   $('.li_green').click(function() {
     $('.li_green').removeClass ('li_green_s');
     $(this).addClass ('li_green_s');
@@ -115,8 +116,47 @@ $(function() {
     $('.knowBoxsRight').removeClass('knowBoxsRight_show');
     $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
-
   $('.li_green').eq (0).click();
+
+  // 藍色
+  $('.li_blue').click(function() {
+    $('.li_blue').removeClass ('li_blue_s');
+    $(this).addClass ('li_blue_s');
+
+    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+  });
+  $('.li_blue').eq (0).click();
+
+  // 紫色
+  $('.li_purple').click(function() {
+    $('.li_purple').removeClass ('li_purple_s');
+    $(this).addClass ('li_purple_s');
+
+    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+  });
+  $('.li_purple').eq (0).click();
+
+  // 橘色
+  $('.li_orange').click(function() {
+    $('.li_orange').removeClass ('li_orange_s');
+    $(this).addClass ('li_orange_s');
+
+    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+  });
+  $('.li_orange').eq (0).click();
+
+  // 棕色
+  $('.li_brown').click(function() {
+    $('.li_brown').removeClass ('li_brown_s');
+    $(this).addClass ('li_brown_s');
+
+    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+  });
+  $('.li_orange').eq (0).click();
 
 
 
