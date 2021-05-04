@@ -23,6 +23,8 @@
 
 .bg_page_brown { background-color: #996536; }
 
+.bg_page_LGreen { background-color: #d7e5ce; }
+
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
 .input_gray { display: inline-block; width: 100%; max-width: 135px; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }

@@ -22,6 +22,8 @@
 
 .bg_page_brown { background-color: #996536; }
 
+.bg_page_LGreen { background-color: #d7e5ce; }
+
 a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 
 button { display: inline-block; cursor: pointer; outline: 0; border: 0; background-color: transparent; }

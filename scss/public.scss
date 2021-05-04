@@ -190,6 +190,13 @@ header {
     width: calc(100% - 250px);
     padding-left: 40px;
 
+    &.page_R_K {
+      @include range-width(0, 450px) {
+        width: 100%;
+        padding: 15px 0;
+      }
+    }
+
     @include range-width(0, 450px) {
       width: 100%;
       padding: 15px;
@@ -258,6 +265,12 @@ header {
 
   @include range-width(0, 1160px) {
     padding: 0 15px;
+  }
+
+  &.all_no_p {
+    @include range-width(0, 450px) {
+      padding: 0;
+    }
   }
 }
 
@@ -441,93 +454,6 @@ footer {
   display: block;
 }
 
-
-.knowBoxsLeft {
-  display: inline-block;
-  width: 100%;
-  max-width: 150px;
-  float: left;
-
-  p {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-    font-size: 1.6rem;
-    font-weight: bolder;
-    margin-bottom: 10px;
-    padding: 10px 10px 10px 20px;
-    text-decoration: underline;
-    cursor: pointer;
-    @include transition(all .3s);
-    
-    &.li_green {
-      color: $page_green;
-    }
-
-    &.li_green_s {
-      background-color: $page_green;
-      color: white;
-      text-decoration: none;
-      @include border-radius(30px);
-    }
-
-    &.li_blue {
-      color: $page_blue;
-    }
-
-    &.li_blue_s {
-      background-color: $page_blue;
-      color: white;
-      text-decoration: none;
-      @include border-radius(30px);
-    }
-
-    &.li_purple {
-      color: $page_purple;
-    }
-
-    &.li_purple_s {
-      background-color: $page_purple;
-      color: white;
-      text-decoration: none;
-      @include border-radius(30px);
-    }
-
-    &.li_orange {
-      color: $page_orange;
-    }
-
-    &.li_orange_s {
-      background-color: $page_orange;
-      color: white;
-      text-decoration: none;
-      @include border-radius(30px);
-    }
-
-    &.li_brown {
-      color: $page_brown;
-    }
-
-    &.li_brown_s {
-      background-color: $page_brown;
-      color: white;
-      text-decoration: none;
-      @include border-radius(30px);
-    }
-  }
-}
-
-.knowBoxsRight {
-  width: calc(100% - 150px);
-  display: inline-block;
-  float: left;
-  // 控制按鈕分頁，設定預設值是沒有顯示
-  display: none;
-
-  &.knowBoxsRight_show {
-    display: inline-block;
-  } 
-}
 
 .help-note {
   display: inline-block;
