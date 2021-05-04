@@ -183,25 +183,28 @@ $(function() {
     // }
 
     var prve = document.getElementsByClassName("prve");
-    prve[0].onclick = function () {//上一張
-      clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
-      curIndex--;
-      if(curIndex == -1){
-        curIndex = img_number-1;
+    if (prve.length) {
+      prve[0].onclick = function () {//上一張
+        clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
+        curIndex--;
+        if(curIndex == -1){
+          curIndex = img_number-1;
+        }
+        slideTo(curIndex);
+        _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
       }
-      slideTo(curIndex);
-      _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
     }
-    
     var next = document.getElementsByClassName("next");
-    next[0].onclick = function () {//下一張
-      clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
-      curIndex++;
-      if(curIndex == img_number){
-        curIndex =0;
+    if (next.length) {
+      next[0].onclick = function () {//下一張
+        clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
+        curIndex++;
+        if(curIndex == img_number){
+          curIndex =0;
+        }
+        slideTo(curIndex);
+        _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
       }
-      slideTo(curIndex);
-      _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
     }
     
     //切換banner圖片 和 按鈕樣式
