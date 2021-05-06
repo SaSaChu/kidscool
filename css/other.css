@@ -10,6 +10,12 @@
 
 .pageColorBrown { color: #996536; }
 
+.pageColorLBlue { color: #52b1e3; }
+
+.pageColorRed { color: #c51c17; }
+
+.bg_LBlue { background-color: #52b1e3; }
+
 .bg_blue { background-color: #129eff; }
 
 .bg_page_green { background-color: #4e8f2b; }
@@ -24,6 +30,14 @@
 
 .bg_page_LGreen { background-color: #d7e5ce; }
 
+.bg_testOrange { background-color: #ff8504; }
+
+.bg_testRed { background-color: #ff2653; }
+
+.bg_testGreen { background-color: #83bf03; }
+
+.bg_testBlue { background-color: #2a9fe9; }
+
 .m-close { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m-close { display: none !important; } }
 
@@ -35,6 +49,7 @@
 .order_r { float: right; }
 
 .pageContentImg { display: inline-block; float: right; width: 100%; max-width: 300px; margin: 0 0 10px 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .pageContentImg { max-width: none; margin: 0 0 10px 0; } }
 
 .d-borderDotted { display: inline-block; width: 100%; border-bottom: 1px dotted #a2a2a3; }
 

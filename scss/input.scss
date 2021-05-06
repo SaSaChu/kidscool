@@ -52,3 +52,35 @@ input, textarea {
   font-size: 1.3rem;
   color: black;
 }
+
+.select_type {
+  display: inline-block;
+  width: calc(100% - 160px);
+  float: right;
+  font-size: 1.2rem;
+  padding: 8px 10px;
+  border: 1px solid rgba(198, 198, 198, 1.00);
+  color: black;
+
+  /*適應safari瀏覽器內容不跑偏*/
+  line-height: 1;
+  /*將預設的select選擇框樣式清除*/  
+  appearance:none;  
+  -moz-appearance:none;  
+  -webkit-appearance:none;  
+  /*在選擇框的最右側中間顯示小箭頭圖片*/  
+  background: url("../img/se_arrow.png") no-repeat scroll right center transparent;
+  background-size: 38px 40px;
+  /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/  
+  padding-right: 14px;
+  /*去除選中時樣式*/
+  outline: none;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+

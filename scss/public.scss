@@ -136,6 +136,24 @@ header {
   position: absolute;
 }
 
+.OutBoxs15 {
+  display: inline-block;
+  width: 100%;
+
+  @include range-width(0, 450px) {
+    padding: 0 15px;
+  }
+}
+
+
+.testCentBoxs {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(15px);
+  padding: 20px 10px;
+}
+
+
 .ds {
   display: inline-block;
   @include clearfix();
@@ -542,7 +560,87 @@ footer {
 
 
 
+// video中間盒子
+.videoCentBoxs {
+  display: inline-block;
+  cursor: pointer;
+  width: calc(100% / 4 - 40px * 3 / 4);
+  float: left;
+  margin-right: 40px;
 
+  @include range-width(0, 450px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    &:nth-child(n+5) {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  &:nth-child(n+5) {
+    margin-top: 20px;
+  }
+
+  .link_video {
+    display: inline-block;
+    width: 100%;
+
+    .video_pic {
+      display: inline-block;
+      width: 100%;
+      @include border-radius(5px);
+      background-color: $video_blue;
+      padding: 10px;
+      
+      img {
+        display: inline-block;
+        width: 100%;
+        max-width: 325px;
+        @include border-radius(5px);
+        overflow: hidden;
+      }
+    }
+
+    .game_pic {
+      display: inline-block;
+      width: 100%;
+      @include border-radius(5px);
+      background-color: rgba(255, 197, 5, 1.00);
+      padding: 10px;
+      
+      img {
+        display: inline-block;
+        width: 100%;
+        max-width: 325px;
+        @include border-radius(5px);
+        overflow: hidden;
+      }
+    }
+
+    p {
+      display: inline-block;
+      width: 100%;
+      font-size: 1.5rem;
+      color: black;
+      padding-top: 5px;
+    }
+
+    &:hover {
+      .video_pic, .game_pic {
+        background-color: rgba(227, 82, 82, 1.00);
+      }
+
+      p {
+        color: $color_red;
+      }
+    }
+  }
+}
 
 
 

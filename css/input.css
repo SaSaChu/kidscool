@@ -11,6 +11,12 @@
 
 .pageColorBrown { color: #996536; }
 
+.pageColorLBlue { color: #52b1e3; }
+
+.pageColorRed { color: #c51c17; }
+
+.bg_LBlue { background-color: #52b1e3; }
+
 .bg_blue { background-color: #129eff; }
 
 .bg_page_green { background-color: #4e8f2b; }
@@ -25,6 +31,14 @@
 
 .bg_page_LGreen { background-color: #d7e5ce; }
 
+.bg_testOrange { background-color: #ff8504; }
+
+.bg_testRed { background-color: #ff2653; }
+
+.bg_testGreen { background-color: #83bf03; }
+
+.bg_testBlue { background-color: #2a9fe9; }
+
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
 .input_gray { display: inline-block; width: 100%; max-width: 135px; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
@@ -34,3 +48,5 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .input_white.m-menuUse { width: calc(100% - 69px); max-width: none; padding: 5px 10px; font-size: 1rem; }
 
 .talk_input { display: inline-block; width: 100%; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
+
+.select_type { display: inline-block; width: calc(100% - 160px); float: right; font-size: 1.2rem; padding: 8px 10px; border: 1px solid #c6c6c6; color: black; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 38px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }

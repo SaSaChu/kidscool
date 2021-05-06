@@ -54,7 +54,7 @@ $(function() {
 
 
 
-  // 切換tab(上面) - 五個顏色
+  // 切換tab(上面)
   // 綠色
   $('.knowBtn.btn_green').click(function() {
     $('.knowBtn.btn_green').removeClass ('green_s');
@@ -104,7 +104,6 @@ $(function() {
     $('.knowselect').eq($(this).index()).addClass('knowselect_show');
   });
   $('.knowBtn.btn_brown').eq (0).click();
-
 
 
   // 切換tab(左邊)
@@ -157,6 +156,36 @@ $(function() {
     $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
   $('.li_orange').eq (0).click();
+
+
+  // 小試身手・左邊
+  $('.test_orange').click(function() {
+    $('.test_orange').removeClass ('test_orange_s');
+    $(this).addClass ('test_orange_s');
+
+    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+  });
+  $('.test_orange').eq (0).click();
+
+  $('.test_red').click(function() {
+    $('.test_red').removeClass ('test_red_s');
+    $(this).addClass ('test_red_s');
+
+    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+  });
+  $('.test_red').eq (0).click();
+
+
+  // 手機版 select
+  $("#m_sel").change(function () {
+    var i = $(this).val();
+    $(this).addClass("m_show").siblings().removeClass("m_show");
+
+    $('.knowselect').removeClass('knowselect_show');
+    $('.knowselect').eq($(this).index()).addClass('knowselect_show');
+  });
 
 
 

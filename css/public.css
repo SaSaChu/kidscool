@@ -11,6 +11,12 @@
 
 .pageColorBrown { color: #996536; }
 
+.pageColorLBlue { color: #52b1e3; }
+
+.pageColorRed { color: #c51c17; }
+
+.bg_LBlue { background-color: #52b1e3; }
+
 .bg_blue { background-color: #129eff; }
 
 .bg_page_green { background-color: #4e8f2b; }
@@ -24,6 +30,14 @@
 .bg_page_brown { background-color: #996536; }
 
 .bg_page_LGreen { background-color: #d7e5ce; }
+
+.bg_testOrange { background-color: #ff8504; }
+
+.bg_testRed { background-color: #ff2653; }
+
+.bg_testGreen { background-color: #83bf03; }
+
+.bg_testBlue { background-color: #2a9fe9; }
 
 p { padding: 0; margin: 0; }
 
@@ -79,6 +93,8 @@ p { padding: 0; margin: 0; }
 
 .m_t_3 { margin-top: 3px; }
 
+.m_d_20 { margin-bottom: 20px; }
+
 .m_rt_3_8 { margin: 3px 8px 0 0; }
 
 .p_t_3 { padding-top: 3px; }
@@ -86,11 +102,17 @@ p { padding: 0; margin: 0; }
 .p_t_5 { padding-top: 5px; }
 
 .p_td_20_DM { padding: 20px 0; }
-@media screen and (max-width: 449px) and (min-width: 0) { .p_td_20_DM { padding: 10px 0; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .p_td_20_DM { padding: 10px 15px; } }
+
+.p_rl_15 { padding-right: 15px; padding-left: 15px; }
+
+.p_td_15 { padding-top: 15px; padding-bottom: 15px; }
 
 .p_td_20 { padding: 20px 0; }
 
 .m_r_30 { margin-right: 30px; }
+
+.p_d_20 { padding-bottom: 20px; }
 
 .show-box { display: inline-block; width: 100%; max-width: 640px; padding: 20px 10px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .show-box { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; margin-top: 10px; } }
@@ -8302,9 +8324,9 @@ p { padding: 0; margin: 0; }
   .show-box[data-page='20'] .top .points label:nth-child(20):before { background-color: #2b2b2c; } }
 
 .pageContainer { display: inline-block; margin: 0 auto; font-size: 1.5rem; line-height: 1.5; *zoom: 1; }
-@media screen and (max-width: 449px) and (min-width: 0) { .pageContainer { width: 100%; *zoom: 1; }
-  .pageContainer:before, .pageContainer:after { display: none; }
-  .pageContainer:after { clear: none; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .pageContainer { width: 100%; *zoom: none; }
+  .pageContainer:before, .pageContainer:after { display: none !important; }
+  .pageContainer:after { clear: none !important; } }
 .pageContainer:before, .pageContainer:after { display: table; line-height: 0; content: ""; }
 .pageContainer:after { clear: both; }
 
@@ -8355,6 +8377,10 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsLeft p.li_brown { color: #959595; } }
 .knowBoxsLeft p.li_brown_s { background-color: #996536; color: white; text-decoration: none; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsLeft p.li_brown_s { background-color: transparent; color: #996536; font-weight: bolder; } }
+.knowBoxsLeft .test_orange { display: inline-block; width: 100%; text-align: left; font-size: 1.6rem; font-weight: bolder; margin-bottom: 10px; padding: 10px 10px 10px 20px; cursor: pointer; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.knowBoxsLeft .test_orange.test_orange_s { background-color: rgba(0, 128, 0, 0.2); }
+.knowBoxsLeft .test_red { display: inline-block; width: 100%; text-align: left; font-size: 1.6rem; font-weight: bolder; margin-bottom: 10px; padding: 10px 10px 10px 20px; cursor: pointer; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.knowBoxsLeft .test_red.test_orange_s { background-color: red; }
 
 .knowBoxsRight { width: calc(100% - 150px); display: inline-block; float: left; display: none; }
 .knowBoxsRight.knowBoxsRight_show { display: inline-block; }
@@ -8371,6 +8397,7 @@ p { padding: 0; margin: 0; }
 .order_r { float: right; }
 
 .pageContentImg { display: inline-block; float: right; width: 100%; max-width: 300px; margin: 0 0 10px 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .pageContentImg { max-width: none; margin: 0 0 10px 0; } }
 
 .d-borderDotted { display: inline-block; width: 100%; border-bottom: 1px dotted #a2a2a3; }
 
@@ -8532,6 +8559,24 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .knowBtn.brown_s { color: white; background: #e09856; /* Old browsers */ background: -moz-linear-gradient(top, #e09856 0%, #996535 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #e09856 0%, #996535 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #e09856 0%, #996535 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e09856', endColorstr='#996535',GradientType=0 ); /* IE6-9 */ border: 1px solid #996536; }
 .knowBtn.brown_s:hover, .knowBtn.brown_s:active { color: white; }
 
+.m_LeftMenu { display: inline-block; float: left; padding: 5px 10px; font-size: 1rem; float: left; text-align: left; }
+.m_LeftMenu:nth-child(n+2) { padding: 5px 0 5px 10px; }
+.m_LeftMenu:nth-child(n+2):after { margin: 0 5px 0 10px; }
+.m_LeftMenu.v_LBlue { color: #52b1e3; }
+.m_LeftMenu.v_LBlue:hover { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #52b1e3; }
+.m_LeftMenu.v_LBlue_s { color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #52b1e3; padding: 5px 10px !important; }
+.m_LeftMenu.v_LBlue_s:after { display: none; }
+.m_LeftMenu.v_LRed { color: red; }
+.m_LeftMenu.v_LRed:hover { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: red; }
+.m_LeftMenu.v_LRed_s { color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: red; padding: 5px 10px !important; }
+.m_LeftMenu.v_LRed_s:after { display: none; }
+.m_LeftMenu.v_LGreen { color: #63b902; }
+.m_LeftMenu.v_LGreen:hover { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #63b902; }
+.m_LeftMenu.v_LGreen_s { color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #63b902; padding: 5px 10px !important; }
+.m_LeftMenu.v_LGreen_s:after { display: none; }
+.m_LeftMenu:hover { color: white; }
+.m_LeftMenu:after { display: inline-block; content: '|'; margin: 0 5px; }
+
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
 .input_gray { display: inline-block; width: 100%; max-width: 135px; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
@@ -8541,6 +8586,8 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 .input_white.m-menuUse { width: calc(100% - 69px); max-width: none; padding: 5px 10px; font-size: 1rem; }
 
 .talk_input { display: inline-block; width: 100%; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
+
+.select_type { display: inline-block; width: calc(100% - 160px); float: right; font-size: 1.2rem; padding: 8px 10px; border: 1px solid #c6c6c6; color: black; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 38px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }
 
 html { font-size: 13px; }
 
@@ -8569,6 +8616,11 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 .posit { position: relative; }
 
 .posit_a { position: absolute; }
+
+.OutBoxs15 { display: inline-block; width: 100%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .OutBoxs15 { padding: 0 15px; } }
+
+.testCentBoxs { display: inline-block; width: 100%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 20px 10px; }
 
 .ds { display: inline-block; *zoom: 1; }
 .ds:after { display: table; content: ""; line-height: 0; clear: both; }
@@ -8669,7 +8721,21 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .qBoxs:before, .aBoxs:before { display: inline-block; content: attr(title); font-size: 1.7rem; font-weight: bolder; margin-right: 5px; }
 
 .qBoxs { padding-bottom: 10px; }
-.qBoxs:before { color: #da5859; }
+.qBoxs:before { color: #e35252; }
 
 .aBoxs:before { color: #4e8f2b; }
-.aBoxs a { display: inline-block; cursor: pointer; text-decoration: underline; color: #da5859; }
+.aBoxs a { display: inline-block; cursor: pointer; text-decoration: underline; color: #e35252; }
+
+.videoCentBoxs { display: inline-block; cursor: pointer; width: calc(100% / 4 - 40px * 3 / 4); float: left; margin-right: 40px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .videoCentBoxs { width: 100%; margin-right: 0; margin-bottom: 20px; }
+  .videoCentBoxs:nth-child(n+5) { margin-top: 0; } }
+.videoCentBoxs:nth-child(4n+4) { margin-right: 0; }
+.videoCentBoxs:nth-child(n+5) { margin-top: 20px; }
+.videoCentBoxs .link_video { display: inline-block; width: 100%; }
+.videoCentBoxs .link_video .video_pic { display: inline-block; width: 100%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #52b1e3; padding: 10px; }
+.videoCentBoxs .link_video .video_pic img { display: inline-block; width: 100%; max-width: 325px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; overflow: hidden; }
+.videoCentBoxs .link_video .game_pic { display: inline-block; width: 100%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #ffc505; padding: 10px; }
+.videoCentBoxs .link_video .game_pic img { display: inline-block; width: 100%; max-width: 325px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; overflow: hidden; }
+.videoCentBoxs .link_video p { display: inline-block; width: 100%; font-size: 1.5rem; color: black; padding-top: 5px; }
+.videoCentBoxs .link_video:hover .video_pic, .videoCentBoxs .link_video:hover .game_pic { background-color: #e35252; }
+.videoCentBoxs .link_video:hover p { color: #e35252; }

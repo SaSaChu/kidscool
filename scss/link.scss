@@ -329,6 +329,93 @@ button {
 }
 
 
+.m_LeftMenu {
+  display: inline-block;
+  float: left;
+  padding: 5px 10px;
+  font-size: 1rem;
+  float: left;
+  text-align: left;
+
+  &:nth-child(n+2) {
+    padding: 5px 0 5px 10px;
+
+    &:after {
+      margin: 0 5px 0 10px;
+    }
+  }
+
+  // video
+  &.v_LBlue {
+    color: $video_blue;
+
+    &:hover {
+      @include border-radius(5px);
+      background-color: $video_blue;
+    }
+  }
+  &.v_LBlue_s {
+    color: white;
+    @include border-radius(5px);
+    background-color: $video_blue;
+    padding: 5px 10px !important;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  // game
+  &.v_LRed {
+    color: red;
+
+    &:hover {
+      @include border-radius(5px);
+      background-color: red;
+    }
+  }
+  &.v_LRed_s {
+    color: white;
+    @include border-radius(5px);
+    background-color: red;
+    padding: 5px 10px !important;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  // know
+  &.v_LGreen {
+    color: rgba(99, 185, 2, 1.00);
+
+    &:hover {
+      @include border-radius(5px);
+      background-color: rgba(99, 185, 2, 1.00);
+    }
+  }
+  &.v_LGreen_s {
+    color: white;
+    @include border-radius(5px);
+    background-color: rgba(99, 185, 2, 1.00);
+    padding: 5px 10px !important;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &:hover {
+    color: white;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '|';
+    margin: 0 5px;
+  }
+}
+
 
 
 

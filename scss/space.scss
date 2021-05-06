@@ -49,6 +49,9 @@
   margin-top: 3px;
 }
 
+.m_d_20 {
+  margin-bottom: 20px;
+}
 
 // header qa boxs
 .m_rt_3_8 {
@@ -70,8 +73,18 @@
   padding: 20px 0;
 
   @include range-width(0, 450px) {
-    padding: 10px 0;
+    padding: 10px 15px;
   }
+}
+
+.p_rl_15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.p_td_15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 // index-title img
@@ -83,3 +96,11 @@
 .m_r_30 {
   margin-right: 30px;
 }
+
+.p_d_20 {
+  padding-bottom: 20px;
+}
+
+
+
+

@@ -2,7 +2,7 @@
 $color_LGray:rgba(215, 215, 215, 1.00);
 $color_Blue:rgba(0, 114, 255, 1.00);
 $color_footer: rgba(18, 158, 255, 1.00);
-$color_red: rgba(218, 88, 89, 1.00);
+$color_red: rgba(227, 82, 82, 1.00);
 $color_LBlue:rgba(154, 216, 250, 1.00);
 $color_DBlue:rgba(0, 50, 124, 1.00);
 
@@ -13,6 +13,8 @@ $page_orange: rgba(255, 121, 11, 1.00); // 橘色
 $page_brown: rgba(153, 101, 54, 1.00); // 棕色
 
 $font_grey: rgba(149, 149, 149, 1.00);
+
+$video_blue: rgba(82, 177, 227, 1.00);
 
 .pageColorGreen {
   color: $page_green; 
@@ -32,6 +34,19 @@ $font_grey: rgba(149, 149, 149, 1.00);
 
 .pageColorBrown {
   color: $page_brown; 
+}
+
+.pageColorLBlue {
+  color: $video_blue;
+}
+
+.pageColorRed {
+  color: rgba(197, 28, 23, 1.00);
+}
+
+
+.bg_LBlue {
+  background-color: $video_blue;
 }
 
 .bg_blue {
@@ -63,7 +78,21 @@ $font_grey: rgba(149, 149, 149, 1.00);
 }
 
 
+.bg_testOrange {
+  background-color: rgba(255, 133, 4, 1.00);
+}
 
+.bg_testRed {
+  background-color: rgba(255, 38, 83, 1.00);
+}
+
+.bg_testGreen {
+  background-color: rgba(131, 191, 3, 1.00);
+}
+
+.bg_testBlue {
+  background-color: rgba(42, 159, 233, 1.00);
+}
 
 
 

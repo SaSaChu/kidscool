@@ -29,6 +29,11 @@
   width: 100%;
   max-width: 300px;
   margin: 0 0 10px 10px;
+
+  @include range-width(0, 450px) {
+    max-width: none;
+    margin: 0 0 10px 0;
+  }
 }
 
 
