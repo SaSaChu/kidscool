@@ -23,6 +23,17 @@
   float: right;
 }
 
+.testIcon {
+  display: inline-block;
+  width: 100%;
+  max-width: 22px;
+  margin-right: 5px;
+
+  @include range-width(0, 450px) {
+    max-width: 15px;
+  }
+}
+
 .pageContentImg {
   display: inline-block;
   float: right;
@@ -456,7 +467,12 @@
   }
 }
 
-
+.img_testbook {
+  display: inline-block;
+  width: 100%;
+  max-width: 70px;
+  float: left;
+}
 
 
 

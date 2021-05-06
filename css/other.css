@@ -48,6 +48,9 @@
 
 .order_r { float: right; }
 
+.testIcon { display: inline-block; width: 100%; max-width: 22px; margin-right: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testIcon { max-width: 15px; } }
+
 .pageContentImg { display: inline-block; float: right; width: 100%; max-width: 300px; margin: 0 0 10px 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pageContentImg { max-width: none; margin: 0 0 10px 0; } }
 
@@ -148,3 +151,5 @@
 .dropdown:hover .dropbtn.m-menu06 { background-image: url(../img/mMenuIcon/m-menu06-hover.png); }
 .dropdown:hover .dropbtn.m-menu07 { background-image: url(../img/mMenuIcon/m-menu07-hover.png); }
 .dropdown:hover .dropbtn.m-menu08 { background-image: url(../img/mMenuIcon/m-menu08-hover.png); }
+
+.img_testbook { display: inline-block; width: 100%; max-width: 70px; float: left; }

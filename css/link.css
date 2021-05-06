@@ -115,5 +115,13 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .m_LeftMenu.v_LGreen:hover { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #63b902; }
 .m_LeftMenu.v_LGreen_s { color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #63b902; padding: 5px 10px !important; }
 .m_LeftMenu.v_LGreen_s:after { display: none; }
+.m_LeftMenu.v_Lpurple { color: #af4dac; }
+.m_LeftMenu.v_Lpurple:hover { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #af4dac; }
+.m_LeftMenu.v_Lpurple_s { color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #af4dac; padding: 5px 10px !important; }
+.m_LeftMenu.v_Lpurple_s:after { display: none; }
 .m_LeftMenu:hover { color: white; }
 .m_LeftMenu:after { display: inline-block; content: '|'; margin: 0 5px; }
+
+.btn_test { display: inline-block; cursor: pointer; width: 100%; background-color: #f9f9f9; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: 1px solid #b5b4b5; font-size: 1.2rem; color: black; text-align: left; padding: 2px 5px; line-height: 32px; }
+.btn_test:hover { background-color: #cccccc; }
+.btn_test img { display: inline-block; width: 100%; max-width: 35px; margin-right: 5px; }

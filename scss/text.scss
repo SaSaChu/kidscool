@@ -128,8 +128,28 @@ p {
   }
 }
 
+.test-font {
+  display: inline-block;
+  width: 100%;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  text-align: left;
+}
 
+.test-note {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  @include border-radius(5px);
+  background-color: white;
+  float: left;
 
+  @include range-width(0, 450px) {
+    padding: 6px 5px;
+    font-size: 1rem;
+  }
+}
 
 
 

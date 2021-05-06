@@ -145,6 +145,88 @@ header {
   }
 }
 
+.t-not-boxs {
+  display: inline-block;
+  padding: 0 10px;
+  float: left;
+
+  @include range-width(0, 450px) {
+    padding: 0 0 0 8px;
+  }
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 36px;
+    float: left;
+
+    @include range-width(0, 450px) {
+      max-width: 27px;
+    }
+  }
+
+  p {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0 5px;
+    font-weight: bolder;
+
+    @include range-width(0, 450px) {
+      font-size: .9rem;
+    }
+
+    &.tb {color: rgba(0, 46, 106, 1.00);}
+    &.tg {color: rgba(4, 120, 10, 1.00);}
+    &.tr {color: rgba(136, 0, 21, 1.00);}
+  }
+}
+
+.boxs3 {
+  display: inline-block;
+  width: calc(100% / 3 - 15px * 2 / 3);
+  margin-right: 15px;
+  @include border-radius(5px);
+  padding: 10px;
+  float: left;
+  @include clearfix();
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &.tcGreen {background-color: rgba(226, 254, 159, 1.00);}
+  &.tcBlue {background-color: rgba(155, 208, 255, 1.00);}
+  &.tcRed {background-color: rgba(255, 176, 187, 1.00);}
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .testbook_right {
+    display: inline-block;
+    width: calc(100% - 70px);
+    padding-left: 10px;
+    float: right;
+  }
+}
+
+.testGreyBoxs {
+  display: inline-block;
+  float: right;
+  @include border-radius(5px);
+  padding: 10px;
+  background-color: rgba(213, 213, 213, 1.00);
+
+  @include range-width(0, 450px) {
+    padding: 5px;
+    float: none;
+  }
+}
 
 .testCentBoxs {
   display: inline-block;
@@ -153,6 +235,18 @@ header {
   padding: 20px 10px;
 }
 
+.testCentBg {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  @include border-radius(15px);
+  padding: 15px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .ds {
   display: inline-block;

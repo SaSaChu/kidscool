@@ -159,23 +159,15 @@ $(function() {
 
 
   // 小試身手・左邊
-  $('.test_orange').click(function() {
-    $('.test_orange').removeClass ('test_orange_s');
-    $(this).addClass ('test_orange_s');
+  $('.testLboxs .test').click(function() {
+    $('.testLboxs .test').removeClass('show');
+    $(this).addClass('show');
 
     $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+    $('.knowBoxsRight').eq($(this).parent().index()).addClass('knowBoxsRight_show');
   });
-  $('.test_orange').eq (0).click();
+ $('.testLboxs').eq (0).find('.test').click();
 
-  $('.test_red').click(function() {
-    $('.test_red').removeClass ('test_red_s');
-    $(this).addClass ('test_red_s');
-
-    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
-  });
-  $('.test_red').eq (0).click();
 
 
   // 手機版 select

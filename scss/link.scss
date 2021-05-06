@@ -405,6 +405,26 @@ button {
     }
   }
 
+  // test
+  &.v_Lpurple {
+    color: $page_purple;
+
+    &:hover {
+      @include border-radius(5px);
+      background-color: $page_purple;
+    }
+  }
+  &.v_Lpurple_s {
+    color: white;
+    @include border-radius(5px);
+    background-color: $page_purple;
+    padding: 5px 10px !important;
+
+    &:after {
+      display: none;
+    }
+  }
+
   &:hover {
     color: white;
   }
@@ -416,7 +436,30 @@ button {
   }
 }
 
+.btn_test {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  background-color: rgba(249, 249, 249, 1.00);
+  @include border-radius(5px);
+  border: 1px solid rgba(181, 180, 181, 1.00);
+  font-size: 1.2rem; 
+  color: black;
+  text-align: left;
+  padding: 2px 5px;
+  line-height: 32px;
 
+  &:hover {
+    background-color: rgba(204, 204, 204, 1.00);
+  }
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 35px;
+    margin-right: 5px;
+  }
+}
 
 
 
