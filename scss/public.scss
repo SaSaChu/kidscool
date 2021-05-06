@@ -248,6 +248,23 @@ header {
   }
 }
 
+.hisBoxs {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(10px);
+  border: 1px solid rgba(143, 116, 208, 1.00);
+  background-color: rgba(227, 214, 254, 1.00);
+  padding: 10px;
+}
+
+.hisCentBox {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(10px);
+  background-color: white;
+  padding: 15px;
+}
+
 .ds {
   display: inline-block;
   @include clearfix();

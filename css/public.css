@@ -76,6 +76,8 @@ p { padding: 0; margin: 0; }
 .test-note { display: inline-block; padding: 10px; font-size: 1.3rem; font-weight: bolder; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .test-note { padding: 6px 5px; font-size: 1rem; } }
 
+.t-his26 { display: inline-block; width: 100%; font-size: 2rem; color: black; }
+
 .m_r_10 { margin-right: 10px; }
 
 .m_r_5 { margin-right: 5px; }
@@ -90,6 +92,10 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_t_30_DM { margin-top: 0; } }
 
 .m_t_50 { margin-top: 50px; }
+
+.m_td_30 { margin: 30px 0; }
+
+.m_3005 { margin: 30px 0; padding: 0 5px; }
 
 .m_t_100 { margin-top: 100px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_t_100 { margin-top: 30px; } }
@@ -8412,6 +8418,14 @@ p { padding: 0; margin: 0; }
 .knowBoxsRight.knowBoxsRight_show { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight.knowBoxsRight_show { width: 100%; } }
 
+#myModel { display: none; cursor: pointer; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
+#myModel.showModel { display: flex; }
+#myModel .ac_outer { width: 100%; }
+#myModel .ac_outer .model_boxs, #myModel .ac_outer .hisBoxs { display: none; width: 100%; max-width: 700px; *zoom: 1; display: inline-block; width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px solid #8f74d0; background-color: #e3d6fe; padding: 10px; }
+#myModel .ac_outer .model_boxs.l_show, #myModel .ac_outer .hisBoxs.l_show { display: inline-block; }
+#myModel .ac_outer .model_boxs:after, #myModel .ac_outer .hisBoxs:after { display: table; content: ""; line-height: 0; clear: both; }
+#myModel .ac_outer .model_boxs .t-close, #myModel .ac_outer .hisBoxs .t-close { display: inline-block; cursor: pointer; float: right; }
+
 .m-close { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m-close { display: none !important; } }
 
@@ -8528,6 +8542,9 @@ p { padding: 0; margin: 0; }
 
 .img_testbook { display: inline-block; width: 100%; max-width: 70px; float: left; }
 
+.his_ul { display: inline-block; width: 100%; text-align: left; padding-left: 0; }
+.his_ul li { display: inline-block; font-size: 1.15rem; color: black; line-height: 1.5; margin-bottom: 15px; background-image: url(../img/history/start_pur.png); background-position: left 2px; background-repeat: no-repeat; list-style-type: none; padding-left: 30px; }
+
 a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 
 button { display: inline-block; cursor: pointer; outline: 0; border: 0; background-color: transparent; }
@@ -8628,6 +8645,9 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 
 .select_type { display: inline-block; width: calc(100% - 160px); float: right; font-size: 1.2rem; padding: 8px 10px; border: 1px solid #c6c6c6; color: black; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 38px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }
 
+.select_history { display: inline-block; width: calc(100% / 2 - 15px * 1 / 2); float: left; font-size: 1.2rem; padding: 8px 10px; border: 1px solid #c6c6c6; color: black; margin-right: 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/his_arrow.png") no-repeat scroll right center white; background-size: 32px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }
+.select_history:last-child { margin-right: 0; }
+
 html { font-size: 13px; }
 
 body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
@@ -8686,6 +8706,10 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 
 .testCentBg { display: inline-block; width: 100%; background-color: white; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 15px; margin-bottom: 15px; }
 .testCentBg:last-child { margin-bottom: 0; }
+
+.hisBoxs { display: inline-block; width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #8f74d0; background-color: #e3d6fe; padding: 10px; }
+
+.hisCentBox { display: inline-block; width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: white; padding: 15px; }
 
 .ds { display: inline-block; *zoom: 1; }
 .ds:after { display: table; content: ""; line-height: 0; clear: both; }

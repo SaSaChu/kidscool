@@ -8327,3 +8327,11 @@
 .knowBoxsRight { width: calc(100% - 150px); display: inline-block; float: left; display: none; }
 .knowBoxsRight.knowBoxsRight_show { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight.knowBoxsRight_show { width: 100%; } }
+
+#myModel { display: none; cursor: pointer; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
+#myModel.showModel { display: flex; }
+#myModel .ac_outer { width: 100%; }
+#myModel .ac_outer .model_boxs, #myModel .ac_outer .hisBoxs { display: none; width: 100%; max-width: 700px; *zoom: 1; display: inline-block; width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px solid #8f74d0; background-color: #e3d6fe; padding: 10px; }
+#myModel .ac_outer .model_boxs.l_show, #myModel .ac_outer .hisBoxs.l_show { display: inline-block; }
+#myModel .ac_outer .model_boxs:after, #myModel .ac_outer .hisBoxs:after { display: table; content: ""; line-height: 0; clear: both; }
+#myModel .ac_outer .model_boxs .t-close, #myModel .ac_outer .hisBoxs .t-close { display: inline-block; cursor: pointer; float: right; }

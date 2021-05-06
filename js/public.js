@@ -228,6 +228,19 @@ $(function() {
       }
     }
     
+
+    // 光箱
+    $('.showModel').click(function() {
+      $('#myModel').addClass('showModel')
+
+      $('#myModel .model_boxs.box_' + $(this).data('id')).addClass('l_show').siblings().removeClass('l_show')
+    })
+
+    $('.btn_close, .t-close, .btn_delete').click(function() {
+      $('#myModel').removeClass('showModel')
+    })
+
+    
     //切換banner圖片 和 按鈕樣式
     function slideTo(index){
       console.log(index)
