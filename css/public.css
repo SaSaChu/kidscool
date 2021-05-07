@@ -76,7 +76,11 @@ p { padding: 0; margin: 0; }
 .test-note { display: inline-block; padding: 10px; font-size: 1.3rem; font-weight: bolder; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .test-note { padding: 6px 5px; font-size: 1rem; } }
 
-.t-his26 { display: inline-block; width: 100%; font-size: 2rem; color: black; }
+.t-his26 { display: inline-block; width: 100%; color: black; font-size: 2rem; font-weight: bolder; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .t-his26 { text-align: center; } }
+
+.t-login { display: inline-block; width: 100%; font-size: 1.2rem; color: black; padding-bottom: 10px; }
+.t-login.notall { width: 25%; float: left; }
 
 .m_r_10 { margin-right: 10px; }
 
@@ -121,6 +125,12 @@ p { padding: 0; margin: 0; }
 
 .p_rl_15 { padding-right: 15px; padding-left: 15px; }
 
+.p_rl_20 { padding-right: 20px; padding-left: 20px; }
+
+.p_rl_30 { padding-right: 30px; padding-left: 30px; }
+
+.p_r_20 { padding-right: 20px; }
+
 .p_td_15 { padding-top: 15px; padding-bottom: 15px; }
 
 .p_td_20 { padding: 20px 0; }
@@ -128,6 +138,8 @@ p { padding: 0; margin: 0; }
 .m_r_30 { margin-right: 30px; }
 
 .p_d_20 { padding-bottom: 20px; }
+
+.p_t_47 { padding-top: 47px; }
 
 .show-box { display: inline-block; width: 100%; max-width: 640px; padding: 20px 10px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .show-box { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; margin-top: 10px; } }
@@ -8557,6 +8569,12 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 @media screen and (max-width: 1024px) and (min-width: 450px) { .link_red { font-size: 1.2rem; padding: 4px 10px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .link_red { font-size: 1.1rem; padding: 2px 12px; } }
 
+.link_red_l { display: inline-block; padding: 5px 15px; font-size: 1.4rem; text-align: center; color: white; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
+.link_red_l:hover, .link_red_l:active { background: linear-gradient(#d00b0a, #fe4737); background: linear-gradient(to bottom, #d00b0a, #fe4737); background: linear-gradient(180deg, #d00b0a, #fe4737); background: linear-gradient(to top, #fe4737, #d00b0a); background: linear-gradient(to bottom, #d00b0a 0%, #fe4737 100%); }
+
+.link_blue_l { display: inline-block; padding: 5px 15px; font-size: 1.4rem; text-align: center; color: white; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; border: 1px solid #196bc8; background: #4a9bea; /* Old browsers */ background: -moz-linear-gradient(top, #4a9bea 0%, #1f7be5 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #4a9bea 0%, #1f7be5 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #4a9bea 0%, #1f7be5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a9bea', endColorstr='#1f7be5',GradientType=0 ); /* IE6-9 */ }
+.link_blue_l:hover, .link_blue_l:active { background: linear-gradient(#4a9bea, #1f7be5); background: linear-gradient(to bottom, #4a9bea, #1f7be5); background: linear-gradient(180deg, #4a9bea, #1f7be5); background: linear-gradient(to top, #1f7be5, #4a9bea); background: linear-gradient(to bottom, #4a9bea 0%, #1f7be5 100%); }
+
 .link_grey { display: inline-block; padding: 5px 15px; font-size: 1.3rem; text-align: center; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #5f6f77; background: linear-gradient(#cddbe6, #5a6b73); background: linear-gradient(to bottom, #cddbe6, #5a6b73); background: linear-gradient(180deg, #cddbe6, #5a6b73); background: linear-gradient(to top, #5a6b73, #cddbe6); background: linear-gradient(to bottom, #cddbe6 0%, #5a6b73 100%); }
 .link_grey:hover, .link_grey:active { background: linear-gradient(#5a6b73, #cddbe6); background: linear-gradient(to bottom, #5a6b73, #cddbe6); background: linear-gradient(180deg, #5a6b73, #cddbe6); background: linear-gradient(to top, #cddbe6, #5a6b73); background: linear-gradient(to bottom, #5a6b73 0%, #cddbe6 100%); }
 @media screen and (max-width: 1024px) and (min-width: 450px) { .link_grey { font-size: 1.2rem; padding: 4px 10px; } }
@@ -8639,6 +8657,8 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 @media screen and (max-width: 1024px) and (min-width: 770px) { .input_gray { max-width: 100px; } }
 
 .input_white { display: inline-block; width: 100%; max-width: 135px; background-color: white; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
+.input_white.m-login { width: 100%; max-width: none; }
+.input_white.w-login { width: 75%; max-width: none; }
 .input_white.m-menuUse { width: calc(100% - 69px); max-width: none; padding: 5px 10px; font-size: 1rem; }
 
 .talk_input { display: inline-block; width: 100%; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
@@ -8689,6 +8709,9 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 .t-not-boxs p.tg { color: #04780a; }
 .t-not-boxs p.tr { color: #880015; }
 
+.boxs3_l { display: inline-block; width: calc(100% / 3 - 10px * 2 / 3); float: left; }
+.boxs3_l:nth-child(2) { margin: 0 10px; }
+
 .boxs3 { display: inline-block; width: calc(100% / 3 - 15px * 2 / 3); margin-right: 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 10px; float: left; *zoom: 1; }
 .boxs3:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs3 { width: 100%; margin-bottom: 15px; }
@@ -8710,6 +8733,7 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 .hisBoxs { display: inline-block; width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #8f74d0; background-color: #e3d6fe; padding: 10px; }
 
 .hisCentBox { display: inline-block; width: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background-color: white; padding: 15px; }
+.hisCentBox.in_his { max-height: 600px; overflow-x: hidden; }
 
 .ds { display: inline-block; *zoom: 1; }
 .ds:after { display: table; content: ""; line-height: 0; clear: both; }
@@ -8759,7 +8783,7 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .adBoxs:last-child { margin-right: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .adBoxs { display: none; } }
 
-.box20, .box30, .box40, .box60, .box80 { display: inline-block; float: left; }
+.box20, .box30, .box40, .box60, .box70, .box80 { display: inline-block; float: left; }
 
 .box20 { width: 20%; }
 
@@ -8769,6 +8793,8 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 
 .box60 { width: 60%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box60 { width: 100%; } }
+
+.box70 { width: 70%; }
 
 .box80 { width: 80%; }
 
@@ -8828,3 +8854,8 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .videoCentBoxs .link_video p { display: inline-block; width: 100%; font-size: 1.5rem; color: black; padding-top: 5px; }
 .videoCentBoxs .link_video:hover .video_pic, .videoCentBoxs .link_video:hover .game_pic { background-color: #e35252; }
 .videoCentBoxs .link_video:hover p { color: #e35252; }
+
+.loginBoxs { display: inline-block; width: 100%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: #ffbd06; padding: 0 15px 15px 15px; }
+
+.w_loginBoxs { display: flex; justify-content: center; align-items: center; width: 100%; height: 370px; }
+.w_loginBoxs .whiteBoxs { display: inline-block; width: 100%; max-width: 685px; margin: 0 auto; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; padding: 15px; }

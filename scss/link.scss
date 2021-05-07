@@ -73,6 +73,53 @@ button {
   }
 }
 
+.link_red_l {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: white;
+  @include border-radius(15px);
+  border: 1px solid rgba(178, 7, 1, 1.00);
+  background:linear-gradient(rgba(254, 71, 55, 1.00), rgba(208, 11, 10, 1.00));
+  background:linear-gradient(to bottom, rgba(254, 71, 55, 1.00), rgba(208, 11, 10, 1.00));
+  background:linear-gradient(180deg,rgba(254, 71, 55, 1.00), rgba(208, 11, 10, 1.00));
+  background:linear-gradient(to top, rgba(208, 11, 10, 1.00), rgba(254, 71, 55, 1.00));
+  background:linear-gradient(to bottom, rgba(254, 71, 55, 1.00) 0%, rgba(208, 11, 10, 1.00) 100%);
+
+  &:hover, &:active {
+    background:linear-gradient(rgba(208, 11, 10, 1.00), rgba(254, 71, 55, 1.00) );
+    background:linear-gradient(to bottom, rgba(208, 11, 10, 1.00), rgba(254, 71, 55, 1.00));
+    background:linear-gradient(180deg, rgba(208, 11, 10, 1.00), rgba(254, 71, 55, 1.00));
+    background:linear-gradient(to top, rgba(254, 71, 55, 1.00), rgba(208, 11, 10, 1.00));
+    background:linear-gradient(to bottom, rgba(208, 11, 10, 1.00) 0%, rgba(254, 71, 55, 1.00) 100%);
+  }
+}
+
+.link_blue_l {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: white;
+  @include border-radius(15px);
+  border: 1px solid rgba(25, 107, 200, 1.00);
+  background: #4a9bea; /* Old browsers */
+  background: -moz-linear-gradient(top,  #4a9bea 0%, #1f7be5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #4a9bea 0%,#1f7be5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #4a9bea 0%,#1f7be5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a9bea', endColorstr='#1f7be5',GradientType=0 ); /* IE6-9 */
+
+  &:hover, &:active {
+    background:linear-gradient(#4a9bea, #1f7be5 );
+    background:linear-gradient(to bottom, #4a9bea, #1f7be5);
+    background:linear-gradient(180deg, #4a9bea, #1f7be5);
+    background:linear-gradient(to top, #1f7be5, #4a9bea);
+    background:linear-gradient(to bottom, #4a9bea 0%, #1f7be5 100%);
+  }
+}
+
+
 .link_grey {
   display: inline-block;
   padding: 5px 15px;

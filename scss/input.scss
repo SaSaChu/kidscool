@@ -35,6 +35,16 @@ input, textarea {
   font-size: 1.3rem;
   color: black;
 
+  &.m-login {
+    width: 100%;
+    max-width: none;
+  }
+
+  &.w-login {
+    width: 75%;
+    max-width: none;
+  }
+
   &.m-menuUse {
     width: calc(100% - 69px);
     max-width: none;
