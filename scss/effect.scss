@@ -870,3 +870,508 @@
 }
 
 
+// 互動學員  banner1
+.banner1 {
+  display: inline-block;
+  width: 100%;
+  // max-width: 600px;
+  
+  .top, .bottom {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .top {
+    > * {
+      display: inline-block;
+    }
+    .left, .right {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .boxs {
+      flex-grow: 1;
+      position: relative;
+      margin: 0 10px;
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    margin-top: 20px;
+    > * {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgba(225, 225, 225, 1.00);
+      border: 1px solid rgba(176, 176, 176, 1.00);
+      margin: 0 4px;
+      cursor: pointer;
+      @include transition(background-color .3s);
+      @include border-radius(50%);
+    }
+  }
+
+  $boxHeigth: 400px; // 小盒子高
+  $boxHeigth2: 140px; // 小盒子高
+  $boxsSpaceH: 20px; // 左右間距
+  $totalBox: 13; // 小盒子 最多數量
+
+  $boxMobileHeigth: 400px; // 手機版 小盒子 高
+  $boxMobileHeigth2: 265px; // 手機版 小盒子 高
+  $boxsMobileSpaceV: 10px; // 手機版 小盒子 上下間距
+  $boxsMobileSpaceH: 10px; // 手機版 小盒子 左右間距
+  
+  .boxs {
+    overflow: hidden;
+    height: $boxHeigth;
+    @include range-width(0, 450px) {
+      height: $boxMobileHeigth;
+    };
+
+    &.numTwo_s {
+      height: $boxHeigth2;
+      @include range-width(0, 450px) {
+        height: $boxMobileHeigth2;
+      };
+    }
+  }
+
+  .box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: calc(100% / 3 - #{$boxsSpaceH * 2 / 3});
+    height: $boxHeigth;
+    @include range-width(0, 450px) {
+      height: $boxMobileHeigth;
+    };
+    text-decoration: none;
+    @include transition(left .3s);
+
+    &.numTwo {
+      height: $boxHeigth2;
+      @include range-width(0, 450px) {
+        height: $boxMobileHeigth2;
+      };
+    }
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 252px;
+      padding: 10px;
+      border: 1px solid rgba(220, 220, 220, 1.00);
+      @include border-radius(15px);
+
+      &.in_noLine {
+        border: 0;
+        padding: 0;
+        @include border-radius(0);
+      }
+    }
+    
+    @include range-width(0, 450px) {
+      .cover {
+        display: none;
+      }
+
+      img {
+        &.in_noLine {
+          max-width: none;
+        }
+      }
+    }
+    @include range-width(450px) {
+      .cover {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        display: inline-block;
+        width:calc(100% - 20px);
+        height: calc(100% - 75px);
+        background-color: rgba(0, 0, 0, 0.5);
+        
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px;
+
+        &.c_numTwo2 {
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+        }
+        
+        button {
+          display: inline-block;
+          width: 50%;
+          font-size: 1.2rem;
+          padding: 10px;
+          background-color: white;
+          @include border-radius(15px);
+
+          + button {
+            margin-top: 20px;
+          }
+        }
+
+        a {
+          display: inline-block;
+          width: 90%;
+          line-height: 1.5;
+          font-size: 1.2rem;
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        @include opacity(0);
+        @include transition(opacity .3s);
+      }
+
+      &:hover {
+        .cover {
+          @include opacity(1);
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through ceil($totalBox / 3) {
+    &[p='#{$i}'] {
+      @for $j from 1 through $totalBox {
+        .box:nth-child(#{$j}) {
+          left: calc((100% * #{floor(($j - 1) / 3) - ($i - 1)}) + (#{($j - 1) % 3} * ((100% / 3 - #{$boxsSpaceH * 2 / 3}) + #{$boxsSpaceH})));
+        }
+      }
+      .bottom > *:nth-child(#{$i}) {
+        background-color: rgba(255, 67, 3, 1.00);
+        border: 1px solid rgba(198, 56, 9, 1.00);
+      }
+
+      .bottom.blue > *:nth-child(#{$i}) {
+        background-color: rgba(13, 89, 155, 1.00);
+        border: 1px solid rgba(13, 72, 121, 1.00);
+      }
+    }
+  }
+
+  @include range-width(0, 450px) {
+    .top {
+      .left, .right {
+        display: none;
+      }
+      .boxs {
+        margin: 0;
+      }
+    }
+    .bottom {
+      display: none;
+    }
+    .boxs {
+      overflow-x: scroll;
+      
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 $boxsMobileSpaceV;
+    }
+    .box {
+      position: relative;
+      left: auto !important;
+      top: auto !important;
+      width: 100%;
+      height: calc(100% - #{$boxsMobileSpaceV * 2});
+      flex-shrink: 0;
+      + .box {
+        margin-left: 10px;
+      }
+    }
+  };
+}
+
+// 互動學員 banner2
+.inOutBoxs {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(15px);
+  border: 1px solid rgba(208, 208, 208, 1.00);
+  padding: 20px 10px;
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+  @include clearfix();
+  
+  .inTitleBoxs {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgba(229, 36, 143, 1.00);
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    @include border-radius(15px);
+    float: left;
+  }
+  .inTitle {
+    display: inline-block;
+    padding: 10px 15px;
+    color: rgba(229, 36, 143, 1.00);
+    font-weight: bolder;
+    font-size: 2rem;
+    float: left;
+  }
+
+  .banner2 {
+    display: inline-block;
+    width: 100%;
+    // max-width: 600px;
+    
+    .top, .bottom {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .top {
+      > * {
+        display: inline-block;
+      }
+      .left, .right {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        cursor: pointer;
+        flex-shrink: 0;
+      }
+      .boxs {
+        flex-grow: 1;
+        position: relative;
+        margin: 0 10px;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      $height: 32px;
+      margin-top: 10px;
+      * {
+        display: inline-block;
+      }
+      .first, .prev, .next, .last {
+        width: $height;
+        height: $height;
+        line-height: $height;
+        cursor: pointer;
+        color: rgba(220, 14, 126, 1.00);
+        // background-color: rgba(0, 0, 255, 0.2);
+        @include border-radius(4px);
+        margin: 0 2px;
+        font-size: 1.5rem;
+      }
+
+      .center {
+        $h: 28px;
+        width: 72px;
+        height: $h;
+        line-height: $h;
+        margin-top: ($height - $h) / 2;
+        
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        
+        margin: 0 8px;
+        @include border-radius(4px);
+        overflow: hidden;
+        
+        * {
+          display: inline-block;
+        }
+        input {
+          flex-shrink: 0;
+          width: calc(50% - 10px / 2 + 5px);
+          height: $h - 2px;
+          border: 0;
+          outline: 0;
+          text-align: center;
+        }
+        i {
+          width: 10px;
+          height: $h;
+          line-height: $h;
+          font-style: normal;
+        }
+        span {
+          flex-shrink: 0;
+          width: calc(50% - 10px / 2 - 5px);
+        }
+      }
+    }
+
+    $boxHeigth: 140px; // 小盒子高
+    $boxsSpaceV: 20px; // 上下間距
+    $boxsSpaceH: 20px; // 左右間距
+    $totalBox: 20; // 小盒子 最多數量
+
+    $boxsMobileSpaceV: 10px; // 手機版 小盒子 上下間距
+    $boxsMobileSpaceH: 10px; // 手機版 小盒子 左右間距
+    
+
+    .boxs {
+      height: $boxHeigth * 2 + $boxsSpaceV;
+      overflow: hidden;
+    }
+    .box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      width: calc(100% / 3 - #{$boxsSpaceH * 2 / 3});
+      height: $boxHeigth;
+      @include transition(left .3s);
+      text-decoration: none;
+      background-color: rgba(0, 0, 255, 0.2);
+      
+      @include range-width(0, 450px) {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+        img {
+          display: inline-block;
+          width: 100%;
+          max-width: none;
+          flex-grow: 1;
+        }
+        span {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          font-size: 1.2rem;
+          color: white;
+        }
+      }
+      @include range-width(450px) {
+        img {
+          display: inline-block;
+          width: 100%;
+          max-width: 255px;
+        }
+
+        span, &:after {
+          cursor: pointer;
+          display: inline-block;
+          text-align: center;
+          font-size: 1.2rem;
+          position: absolute;
+          left: 0;
+          display: inline-block;
+          @include opacity(0);
+          @include transition(opacity .3s);
+        }
+        span {
+          width: 100%;
+          padding: 0 20px;
+          top: 50%;
+          color: white;
+          z-index: 3;
+          @include transform(translate(0, -50%));
+        }
+        &:after {
+          width: 100%;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          content: '';
+          z-index: 2;
+        }
+
+        &:hover {
+          &:after, span {
+            @include opacity(1);
+          }
+        }
+      };
+    }
+
+    @for $i from 1 through ceil($totalBox / 6) {
+      &[p='#{$i}'] {
+        @for $j from 1 through $totalBox {
+          .box:nth-child(#{$j}) {
+            left: calc((100% * #{floor(($j - 1) / 6) - ($i - 1)}) + (#{($j - 1) % 3} * ((100% / 3 - #{$boxsSpaceH * 2 / 3}) + #{$boxsSpaceH})));
+            @if ($j - 1) % 6 < 3 {
+              top: 0;
+            } @else {
+              top: $boxHeigth + $boxsSpaceV;
+            }
+          }
+        }
+      }
+    }
+
+    @include range-width(0, 450px) {
+      .top {
+        .left, .right {
+          display: none;
+        }
+        .boxs {
+          margin: 0;
+        }
+      }
+      .bottom {
+        display: none;
+      }
+      .boxs {
+        overflow-x: scroll;
+        
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 $boxsMobileSpaceV;
+      }
+      .box {
+        position: relative;
+        left: auto !important;
+        top: auto !important;
+        width: 100%;
+        height: calc(100% - #{$boxsMobileSpaceV * 2});
+        flex-shrink: 0;
+        + .box {
+          margin-left: 10px;
+        }
+      }
+    };
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

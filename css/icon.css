@@ -1,4 +1,4 @@
-@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1620363542') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1620363542') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1620363542') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1620363542') format('svg'); }
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1620649124') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1620649124') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1620649124') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1620649124') format('svg'); }
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-bars:before { content: "\f0c9"; }
@@ -6,6 +6,12 @@
 .icon-navicon:before { content: "\f0c9"; }
 
 .icon-reorder:before { content: "\f0c9"; }
+
+.icon-angle-double-left:before { content: "\f100"; }
+
+.icon-angle-double-right:before { content: "\f101"; }
+
+.icon-angle-left:before { content: "\f104"; }
 
 .icon-angle-right:before { content: "\f105"; }
 

@@ -45,6 +45,8 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .m_header_r { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_header_r { display: inline-block; width: 40px; float: right; height: 40px; background-color: #0072ff; color: white; font-size: 1.5rem; line-height: 40px; } }
 
+.link_pink { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #e5248f; }
+
 .link_red { display: inline-block; padding: 5px 15px; font-size: 1.3rem; text-align: center; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
 .link_red:hover, .link_red:active { background: linear-gradient(#d00b0a, #fe4737); background: linear-gradient(to bottom, #d00b0a, #fe4737); background: linear-gradient(180deg, #d00b0a, #fe4737); background: linear-gradient(to top, #fe4737, #d00b0a); background: linear-gradient(to bottom, #d00b0a 0%, #fe4737 100%); }
 @media screen and (max-width: 1024px) and (min-width: 450px) { .link_red { font-size: 1.2rem; padding: 4px 10px; } }
