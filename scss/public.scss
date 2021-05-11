@@ -798,8 +798,24 @@ footer {
   }
 }
 
+.writeBoxs {
+  display: inline-block;
+  width: 100%;
+  height: 346px;
+  background: url(../img/interactive/in_write_bg.png) center center no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding: 45px;
+}
 
-
+.write_White_Boxs {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  @include border-radius(15px);
+  background-color: white;
+  padding: 15px;
+}
 
 
 

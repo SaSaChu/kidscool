@@ -14,6 +14,10 @@
     @include border-radius(0);
     margin-top: 10px;
   }
+
+  &.write {
+    max-width: none;
+  }
   
   // 小框框的尺寸
   $boxHeight: 180px;
@@ -27,6 +31,17 @@
   .top {
     display: inline-block;
     width: 100%;
+
+    &.write_top {
+      border: 1px solid rgba(208, 208, 208, 1.00);
+      background: rgb(255,255,255); /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+      @include border-radius(15px);
+      padding: 20px 20px 0 20px;
+    }
     
     .boxs {
       width: 100%;
@@ -34,7 +49,7 @@
       display: inline-flex;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: flex-start;  
       
       .array {
         display: inline-block;
@@ -44,8 +59,15 @@
         line-height: 28px;
         cursor: pointer;
         background-color: white;
-        
         @include border-radius(50%);
+
+        &.write_array {
+          background-color: rgba(144, 144, 144, 1.00);
+
+          &.icon-arrow-right-thick, &.icon-arrow-left-thick {
+            color: white;
+          }
+        }
 
         &.icon-arrow-right-thick, &.icon-arrow-left-thick {
           color: rgba(144, 144, 144, 1.00);
@@ -63,6 +85,10 @@
         }
 
         flex-grow: 1;
+
+        &.writeCentBoxs {
+          height: 250px;
+        }
         
         .box {
           cursor: pointer;
@@ -81,9 +107,18 @@
           text-align: left;
           color: white;
 
+          &.writeCentBox {
+            height: 250px;
+          }
+
           img {
             width: 100%;
             height: $boxHeight - (10px * 2 + 20px * 2 + 4px);
+
+            &.writeImg {
+              max-width: 228px;
+              height: auto;
+            }
           }
 
           span {
@@ -93,6 +128,11 @@
             line-height: 1.2;
             margin-top: 6px;
             font-size: 1.4rem;
+
+            &.write_span {
+              text-align: center;
+              color: black;
+            }
           }
           
           &:after {
@@ -117,6 +157,16 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
+
+      &.write_po {
+        label {
+          background-color: rgba(39, 40, 34, .5);
+
+          &:before {
+            background-color: rgba(39, 40, 34, .2);
+          }
+        }
+      }
       
       label {
         position: relative;
@@ -125,12 +175,12 @@
         height: 12px;
         background-color: rgba(0, 0, 255, 0.2);
         cursor: pointer;
-        background-color: white;
         @include border-radius(50%);
 
         + label {
           margin-left: 8px;
         }
+
         &:before {
           content: '';
           position: absolute;
@@ -182,6 +232,7 @@
           overflow-y: none;
           overflow-x: scroll;
           width: 100%;
+
           .box {
             position: relative;
             width: $boxMobileWidth;
@@ -235,6 +286,7 @@
       .boxs {
         .box-container {
           overflow: hidden;
+
           .box {
             position: absolute;
             top: 0;
@@ -249,6 +301,7 @@
             .box-container {
               .box {
                 width: calc((100% - #{(($i - 1) * $boxSpace)}) / #{$i});
+
               }
             }
           }
@@ -278,8 +331,16 @@
               .box {
                 &:nth-child(#{$i}) {
                   background-color: white;
+
+                  &.writeCentBox {
+                    background-color: rgba(251, 149, 38, 1.00);
+                  }
                   span {
                     color: rgba(79, 143, 42, 1.00);
+
+                    &.write_span {
+                      color: black;
+                    }
                   }
                 }
               }
@@ -300,6 +361,14 @@
             label {
               &:nth-child(#{$i}):before {
                 background-color: rgba(43, 43, 44, 1.00);
+              }
+            }
+
+            &.write_po {
+              label {
+                &:nth-child(#{$i}):before {
+                  background-color: rgba(200, 12, 14, 1.00);
+                }
               }
             }
           }
@@ -1098,7 +1167,7 @@
         margin-left: 10px;
       }
     }
-  };
+  }
 }
 
 // 互動學員 banner2
@@ -1106,33 +1175,15 @@
   display: inline-block;
   width: 100%;
   @include border-radius(15px);
-  border: 1px solid rgba(208, 208, 208, 1.00);
   padding: 20px 10px;
+  border: 1px solid rgba(208, 208, 208, 1.00);
   background: rgb(255,255,255); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
   @include clearfix();
-  
-  .inTitleBoxs {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: rgba(229, 36, 143, 1.00);
-    color: white;
-    font-weight: bolder;
-    font-size: 2rem;
-    @include border-radius(15px);
-    float: left;
-  }
-  .inTitle {
-    display: inline-block;
-    padding: 10px 15px;
-    color: rgba(229, 36, 143, 1.00);
-    font-weight: bolder;
-    font-size: 2rem;
-    float: left;
-  }
+
 
   .banner2 {
     display: inline-block;
@@ -1229,7 +1280,7 @@
     $boxsSpaceH: 20px; // 左右間距
     $totalBox: 20; // 小盒子 最多數量
 
-    $boxsMobileSpaceV: 10px; // 手機版 小盒子 上下間距
+    $boxsMobileSpaceV: 35px; // 手機版 小盒子 上下間距
     $boxsMobileSpaceH: 10px; // 手機版 小盒子 左右間距
     
 
@@ -1246,7 +1297,6 @@
       height: $boxHeigth;
       @include transition(left .3s);
       text-decoration: none;
-      background-color: rgba(0, 0, 255, 0.2);
       
       @include range-width(0, 450px) {
         display: inline-flex;
@@ -1346,7 +1396,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 $boxsMobileSpaceV;
+        padding: 0 10px;
       }
       .box {
         position: relative;
@@ -1355,15 +1405,395 @@
         width: 100%;
         height: calc(100% - #{$boxsMobileSpaceV * 2});
         flex-shrink: 0;
+
         + .box {
           margin-left: 10px;
+        }
+
+        span {
+          margin-top: 10px;
+          color: black;
+          padding: 10px;
+          border: 1px solid rgba(224, 0, 116, 1.00);
+          @include border-radius(20px);
+        }
+      }
+    }
+  }
+}
+
+// 互動學員 banner3
+.banner3 {
+  display: inline-block;
+  width: 100%;
+
+  .years-month {
+    display: inline-flex;
+    width: 100%;
+    height: 40px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(123, 123, 123, 1.00);
+
+    @include border-radius(5px);
+    padding: 0 10px;
+
+    .years {
+      flex-shrink: 0;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+      font-size: 1.5rem;
+      
+      label {
+        display: inline-block;
+        width: 24px;
+        height: 28px;
+        line-height: 28px;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      span {
+        display: inline-block;
+        width: 56px;
+        height: 28px;
+        line-height: 28px;
+      }
+    }
+
+    .months {
+      flex-grow: 1;
+      margin-left: 10px;
+      
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      label {
+        display: inline-block;
+        width: calc(100% / 12 - 6px * 11 / 12);
+        height: 24px;
+        line-height: 24px;
+        background-color: white;
+        cursor: pointer;
+        @include border-radius(4px);
+
+        + label {
+          margin-left: 6px;
+        }
+        &:before {
+          font-size: 14px;
+        }
+        &:after {
+          content: '月';
+          font-size: 12px;
+          display: inline-block;
+          margin-top: 1px;
+          @include opacity(.75);
+        }
+        @for $i from 1 through 12 {
+          &:nth-child(#{$i}):before {
+            content: '#{$i}';
+          }
+        }
+      }
+    }
+
+    @include range-width(0, 450px) {
+      flex-direction: column;
+      height: auto;
+      padding: 8px;
+      width: calc(100% - 8px * 2);
+      margin: 0 8px;
+
+      .months {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 4px;
+        flex-wrap: wrap;
+
+        label {
+          flex-shrink: 0;
+          width: calc(100% / 6 - 6px * 5 / 6);
+          &:nth-child(7) {
+            margin-left: 0;
+          }
+          &:nth-child(n + 7) {
+            margin-top: 6px;
+          }
         }
       }
     };
   }
+
+  @for $i from 1 through 12 {
+    &[m='#{$i}'] {
+      .years-month {
+        .months {
+          label:nth-child(#{$i}) {
+            color: white;
+            background-color: rgba(32, 133, 204, 1.00);
+          }
+        }
+      }
+    }
+  }
+  
+  .top, .bottom {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .top {
+    margin-top: 20px;
+    > * {
+      display: inline-block;
+    }
+    .left, .right {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .boxs {
+      flex-grow: 1;
+      position: relative;
+      margin: 0 10px;
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    $height: 32px;
+    margin-top: 10px;
+    * {
+      display: inline-block;
+    }
+    .first, .prev, .next, .last {
+      width: $height;
+      height: $height;
+      line-height: $height;
+      cursor: pointer;
+      color: rgba(131, 131, 131, 1.00);
+      font-size: 1.5rem;
+      margin: 0 2px;
+    }
+
+    .center {
+      $h: 28px;
+      width: 72px;
+      height: $h;
+      line-height: $h;
+      margin-top: ($height - $h) / 2;
+      
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      
+      margin: 0 8px;
+      @include border-radius(4px);
+      overflow: hidden;
+      
+      * {
+        display: inline-block;
+      }
+      input {
+        flex-shrink: 0;
+        width: calc(50% - 10px / 2 + 5px);
+        height: $h - 2px;
+        border: 0;
+        outline: 0;
+        text-align: center;
+      }
+      i {
+        width: 10px;
+        height: $h;
+        line-height: $h;
+        font-style: normal;
+      }
+      span {
+        flex-shrink: 0;
+        width: calc(50% - 10px / 2 - 5px);
+      }
+    }
+  }
+
+  $boxHeigth: 140px; // 小盒子高
+  $boxsSpaceV: 20px; // 上下間距
+  $boxsSpaceH: 20px; // 左右間距
+  $totalBox: 20; // 小盒子 最多數量
+
+  $boxsMobileSpaceV: 35px; // 手機版 小盒子 上下間距
+  $boxsMobileSpaceH: 10px; // 手機版 小盒子 左右間距
+  
+  .boxs {
+    height: $boxHeigth * 2 + $boxsSpaceV;
+    overflow: hidden;
+  }
+  .box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: calc(100% / 3 - #{$boxsSpaceH * 2 / 3});
+    height: $boxHeigth;
+    @include transition(left .3s);
+    text-decoration: none;
+    border: 1px solid rgba(255, 0, 0, .3);
+    
+    @include range-width(0, 450px) {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      
+      img {
+        display: inline-block;
+        width: 100%;
+        flex-grow: 1;
+        background-color: rgba(0, 128, 0, 0.2);
+      }
+      span {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    @include range-width(450px) {
+      img {
+        display: inline-block;
+        width: 100%;
+        max-width: 255px;
+      }
+
+      span, &:after {
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        @include opacity(0);
+        @include transition(opacity .3s);
+      }
+      span {
+        width: 100%;
+        padding: 0 20px;
+        top: 50%;
+        color: white;
+        z-index: 3;
+        @include transform(translate(0, -50%));
+      }
+      &:after {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        z-index: 2;
+      }
+
+      &:hover {
+        &:after, span {
+          @include opacity(1);
+        }
+      }
+    };
+  }
+
+  @for $i from 1 through ceil($totalBox / 6) {
+    &[p='#{$i}'] {
+      @for $j from 1 through $totalBox {
+        .box:nth-child(#{$j}) {
+          left: calc((100% * #{floor(($j - 1) / 6) - ($i - 1)}) + (#{($j - 1) % 3} * ((100% / 3 - #{$boxsSpaceH * 2 / 3}) + #{$boxsSpaceH})));
+          @if ($j - 1) % 6 < 3 {
+            top: 0;
+          } @else {
+            top: $boxHeigth + $boxsSpaceV;
+          }
+        }
+      }
+    }
+  }
+
+  @include range-width(0, 450px) {
+    .top {
+      .left, .right {
+        display: none;
+      }
+      .boxs {
+        margin: 0;
+      }
+    }
+    .bottom {
+      display: none;
+    }
+    .boxs {
+      overflow-x: scroll;
+      
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 10px;
+    }
+    .box {
+      position: relative;
+      left: auto !important;
+      top: auto !important;
+      width: 100%;
+      height: calc(100% - #{$boxsMobileSpaceV * 2});
+      flex-shrink: 0;
+
+      + .box {
+        margin-left: 10px;
+      }
+
+      span {
+        margin-top: 10px;
+        color: black;
+        padding: 10px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &:after {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    @include border-radius(5px);
+  }
+
+  &[empty] {
+    .top, .bottom {
+      display: none;
+    }
+    &:after {
+      content: '讀取中，請稍候…';
+      background-color: rgba(204, 204, 204, 1.00);
+    }
+    &:not([empty='']) {
+      &:after {
+        content: attr(empty);
+        color: white;
+        background-color: rgba(255, 59, 48, 1);
+      } 
+    }
+  }
 }
-
-
 
 
 

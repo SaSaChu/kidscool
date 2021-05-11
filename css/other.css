@@ -26,6 +26,8 @@
 
 .bg_page_orange { background-color: #ff790b; }
 
+.bg_page_yellow { background-color: #fb9526 !important; }
+
 .bg_page_brown { background-color: #996536; }
 
 .bg_page_LGreen { background-color: #d7e5ce; }
@@ -77,6 +79,8 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .img_slogan.img_S_page { max-width: 133px; } }
 
 .img_inTitle { display: inline-block; width: 100%; max-width: 30px; margin-right: 10px; }
+
+.img_inTitle2 { display: inline-block; width: 100%; max-width: 22px; margin-right: 10px; }
 
 .helpTtitleImg { display: inline-block; width: 100%; max-width: 370px; float: left; }
 

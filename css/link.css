@@ -26,6 +26,8 @@
 
 .bg_page_orange { background-color: #ff790b; }
 
+.bg_page_yellow { background-color: #fb9526 !important; }
+
 .bg_page_brown { background-color: #996536; }
 
 .bg_page_LGreen { background-color: #d7e5ce; }
@@ -46,6 +48,18 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 @media screen and (max-width: 449px) and (min-width: 0) { .m_header_r { display: inline-block; width: 40px; float: right; height: 40px; background-color: #0072ff; color: white; font-size: 1.5rem; line-height: 40px; } }
 
 .link_pink { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #e5248f; }
+
+.link_b { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #0097bf; }
+
+.link_in_red { display: inline-block; padding: 5px 15px; font-size: 2rem; font-weight: bolder; text-align: center; color: white; margin-top: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
+.link_in_red:hover, .link_in_red:active { background: linear-gradient(#d00b0a, #fe4737); background: linear-gradient(to bottom, #d00b0a, #fe4737); background: linear-gradient(180deg, #d00b0a, #fe4737); background: linear-gradient(to top, #fe4737, #d00b0a); background: linear-gradient(to bottom, #d00b0a 0%, #fe4737 100%); }
+@media screen and (max-width: 1024px) and (min-width: 450px) { .link_in_red { font-size: 1.2rem; padding: 4px 10px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .link_in_red { font-size: 1.1rem; padding: 2px 11px; } }
+
+.link_orange { display: inline-block; width: 100%; padding: 5px 15px; font-size: 2rem; font-weight: bolder; text-align: center; color: white; margin-top: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 1px solid #5f6f77; background: #ffc578; /* Old browsers */ background: -moz-linear-gradient(top, #ffc578 0%, #fb9d23 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #ffc578 0%, #fb9d23 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #ffc578 0%, #fb9d23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc578', endColorstr='#fb9d23',GradientType=0 ); /* IE6-9 */ }
+.link_orange:hover, .link_orange:active { background: #ffc578; /* Old browsers */ background: -moz-linear-gradient(top, #fb9d23 0%, #ffc578 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #fb9d23 0%, #ffc578 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #fb9d23 0%, #ffc578 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc578', endColorstr='#fb9d23',GradientType=0 ); /* IE6-9 */ }
+@media screen and (max-width: 1024px) and (min-width: 450px) { .link_orange { font-size: 1.2rem; padding: 4px 10px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .link_orange { font-size: 1.1rem; padding: 2px 11px; } }
 
 .link_red { display: inline-block; padding: 5px 15px; font-size: 1.3rem; text-align: center; color: white; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #b20701; background: linear-gradient(#fe4737, #d00b0a); background: linear-gradient(to bottom, #fe4737, #d00b0a); background: linear-gradient(180deg, #fe4737, #d00b0a); background: linear-gradient(to top, #d00b0a, #fe4737); background: linear-gradient(to bottom, #fe4737 0%, #d00b0a 100%); }
 .link_red:hover, .link_red:active { background: linear-gradient(#d00b0a, #fe4737); background: linear-gradient(to bottom, #d00b0a, #fe4737); background: linear-gradient(180deg, #d00b0a, #fe4737); background: linear-gradient(to top, #fe4737, #d00b0a); background: linear-gradient(to bottom, #d00b0a 0%, #fe4737 100%); }

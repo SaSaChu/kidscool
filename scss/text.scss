@@ -186,8 +186,83 @@ p {
   }
 }
 
+.inTitleBoxs {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgba(229, 36, 143, 1.00);
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  @include border-radius(15px);
+  float: left;
 
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
 
+  &.inBoxs_b {
+    background-color: rgba(0, 151, 191, 1.00);
+  }
+}
+
+.inTitle {
+  display: inline-block;
+  padding: 10px 15px;
+  color: rgba(229, 36, 143, 1.00);
+  font-weight: bolder;
+  font-size: 2rem;
+  float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    text-align: center;
+  }
+
+  &.inT_b {
+    color: rgba(0, 151, 191, 1.00);
+  }
+}
+
+.inTitleBoxs2 {
+  display: inline-block;
+  padding: 10px 15px;
+  color: rgba(131, 108, 108, 1.00);
+  font-weight: bolder;
+  font-size: 1.8rem;
+  float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+}
+
+.inTitle2 {
+  display: inline-block;
+  padding: 10px 15px;
+  color: rgba(124, 124, 124, 1.00);
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.t-w-22 {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 1.84rem;
+  font-weight: bolder;
+  color: white;
+  line-height: 1.5;
+}
+
+.t-y-22 {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 1.84rem;
+  font-weight: bolder;
+  color: rgba(255, 197, 5, 1.00);
+}
 
 
 

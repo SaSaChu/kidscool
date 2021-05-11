@@ -142,4 +142,22 @@
 }
 
 
+// 互動學員
+.m_p_lf5 {
+  @include range-width(0, 450px) {
+    padding: 0 5px;
+  }
+}
+
+.in_m_d_20 {
+  margin-bottom: 20px;
+  @include range-width(0, 450px) {
+    margin-bottom: 0;
+  }
+}
+
+.p_l_20 {
+  padding-left: 20px;
+}
+
 
