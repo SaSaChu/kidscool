@@ -240,7 +240,6 @@
             img {
               display: none;
             }
-
           }
         }
       }
@@ -260,8 +259,17 @@
               .box {
                 &:nth-child(#{$i}) {
                   background-color: white;
+
                   span {
                     color: rgba(79, 143, 42, 1.00);
+
+                    &.span_b {
+                      color: $page_blue !important;
+                    }
+
+                    &.span_br {
+                      color: $page_brown !important;
+                    }
                   }
                   &:after {
                     content: '';
@@ -301,7 +309,6 @@
             .box-container {
               .box {
                 width: calc((100% - #{(($i - 1) * $boxSpace)}) / #{$i});
-
               }
             }
           }
@@ -340,6 +347,14 @@
 
                     &.write_span {
                       color: black;
+                    }
+
+                    &.span_b {
+                      color: $page_blue !important;
+                    }
+
+                    &.span_br {
+                      color: $page_brown !important;
                     }
                   }
                 }
@@ -567,6 +582,22 @@
     max-width: none;
     padding: 15px;
     background-color: rgba(215, 229, 206, 1.00);
+
+    &.kn02 {
+      background-color: rgba(210, 228, 239, 1.00) !important;
+    }
+
+    &.kn03 {
+      background-color: rgba(239, 218, 238, 1.00) !important;
+    }
+
+    &.kn04 {
+      background-color: rgba(254, 227, 206, 1.00) !important;
+    }
+
+    &.kn05 {
+      background-color: rgba(235, 223, 215, 1.00) !important;
+    }
   }
 
   &.k_nobg {

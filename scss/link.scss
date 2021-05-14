@@ -480,6 +480,14 @@ button {
   float: left;
   text-align: left;
 
+  &.m_LF {
+    padding: 5px 0 5px 10px;
+
+    &:after {
+      margin: 0 5px 0 10px;
+    }
+  }
+
   &:nth-child(n+2) {
     padding: 5px 0 5px 10px;
 

@@ -123,6 +123,8 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .knowBtn.brown_s:hover, .knowBtn.brown_s:active { color: white; }
 
 .m_LeftMenu { display: inline-block; float: left; padding: 5px 10px; font-size: 1rem; float: left; text-align: left; }
+.m_LeftMenu.m_LF { padding: 5px 0 5px 10px; }
+.m_LeftMenu.m_LF:after { margin: 0 5px 0 10px; }
 .m_LeftMenu:nth-child(n+2) { padding: 5px 0 5px 10px; }
 .m_LeftMenu:nth-child(n+2):after { margin: 0 5px 0 10px; }
 .m_LeftMenu.v_LBlue { color: #52b1e3; }
