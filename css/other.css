@@ -53,6 +53,8 @@
 .testIcon { display: inline-block; width: 100%; max-width: 22px; margin-right: 5px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testIcon { max-width: 15px; } }
 
+.tabImg { display: inline-block; width: 100%; max-width: 350px; }
+
 .pageContentImg { display: inline-block; float: right; width: 100%; max-width: 300px; margin: 0 0 10px 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pageContentImg { max-width: none; margin: 0 0 10px 0; } }
 
@@ -94,7 +96,7 @@
 
 .img_ad { display: inline-block; width: 100%; max-width: 275px; }
 
-.tip_box { display: inline-block; position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; z-index: 8888; }
+.tip_box { display: inline-block; position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; z-index: 7777; }
 @media screen and (max-width: 449px) and (min-width: 0) { .tip_box { display: none; } }
 
 .prompt { position: relative; display: inline-block; width: 40px; height: 40px; }

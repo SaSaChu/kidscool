@@ -40,6 +40,16 @@ button {
   }
 }
 
+.link40 {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+}
+
 .link_pink {
   display: inline-block;
   padding: 5px 15px;
@@ -319,33 +329,33 @@ button {
 }
 
 .menu01 {
-  top: 35px;
-  left: 55px;
+  top: 9%;
+  left: 1%;
 }
 
 .menu02 {
-  top: 250px;
-  left: 205px;
+  bottom: 1%;
+  left: 18%;
 }
 
 .menu03 {
-  top: 58px;
-  left: calc(50% - 170px);
+  top: 12%;
+  left: 39%;
 }
 
 .menu04 {
-  top: 250px;
-  right: 230px;
+  bottom: -7%;
+  right: 18%;
 }
 
 .menu05 {
-  top: 20px;
-  right: 75px;
+  top: 6%;
+  right: 6%;
 }
 
 .menu06 {
-  top: 345px;
-  right: 30px;
+  bottom: -18%;
+  right: 4%;
 }
 
 // tag

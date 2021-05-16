@@ -34,6 +34,12 @@
   }
 }
 
+.tabImg {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+}
+
 .pageContentImg {
   display: inline-block;
   float: right;
@@ -184,7 +190,7 @@
   left: 0;
   width: 40px;
   height: 40px;
-  z-index: 8888;
+  z-index: 7777;
 
   @include range-width(0, 450px) {
     display: none;

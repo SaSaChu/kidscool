@@ -47,6 +47,8 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .m_header_r { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_header_r { display: inline-block; width: 40px; float: right; height: 40px; background-color: #0072ff; color: white; font-size: 1.5rem; line-height: 40px; } }
 
+.link40 { display: inline-block; width: 40px; height: 40px; position: absolute; top: 0; left: 0; z-index: 8888; }
+
 .link_pink { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #e5248f; }
 
 .link_b { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #0097bf; }
@@ -91,17 +93,17 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: inline-block; position: absolute; }
 @media screen and (max-width: 449px) and (min-width: 0) { .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: none; } }
 
-.menu01 { top: 35px; left: 55px; }
+.menu01 { top: 9%; left: 1%; }
 
-.menu02 { top: 250px; left: 205px; }
+.menu02 { bottom: 1%; left: 18%; }
 
-.menu03 { top: 58px; left: calc(50% - 170px); }
+.menu03 { top: 12%; left: 39%; }
 
-.menu04 { top: 250px; right: 230px; }
+.menu04 { bottom: -7%; right: 18%; }
 
-.menu05 { top: 20px; right: 75px; }
+.menu05 { top: 6%; right: 6%; }
 
-.menu06 { top: 345px; right: 30px; }
+.menu06 { bottom: -18%; right: 4%; }
 
 .knowBtn { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); cursor: pointer; padding: 8px 25px; font-weight: bolder; font-size: 1.6rem; float: left; margin-right: 20px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
 .knowBtn:nth-child(4n+4) { margin-right: 0; }

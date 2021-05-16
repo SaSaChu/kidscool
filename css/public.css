@@ -9009,6 +9009,8 @@ p { padding: 0; margin: 0; }
 .testIcon { display: inline-block; width: 100%; max-width: 22px; margin-right: 5px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testIcon { max-width: 15px; } }
 
+.tabImg { display: inline-block; width: 100%; max-width: 350px; }
+
 .pageContentImg { display: inline-block; float: right; width: 100%; max-width: 300px; margin: 0 0 10px 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pageContentImg { max-width: none; margin: 0 0 10px 0; } }
 
@@ -9050,7 +9052,7 @@ p { padding: 0; margin: 0; }
 
 .img_ad { display: inline-block; width: 100%; max-width: 275px; }
 
-.tip_box { display: inline-block; position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; z-index: 8888; }
+.tip_box { display: inline-block; position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; z-index: 7777; }
 @media screen and (max-width: 449px) and (min-width: 0) { .tip_box { display: none; } }
 
 .prompt { position: relative; display: inline-block; width: 40px; height: 40px; }
@@ -9128,6 +9130,8 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .m_header_r { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .m_header_r { display: inline-block; width: 40px; float: right; height: 40px; background-color: #0072ff; color: white; font-size: 1.5rem; line-height: 40px; } }
 
+.link40 { display: inline-block; width: 40px; height: 40px; position: absolute; top: 0; left: 0; z-index: 8888; }
+
 .link_pink { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #e5248f; }
 
 .link_b { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #0097bf; }
@@ -9172,17 +9176,17 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: inline-block; position: absolute; }
 @media screen and (max-width: 449px) and (min-width: 0) { .menu01, .menu02, .menu03, .menu04, .menu05, .menu06 { display: none; } }
 
-.menu01 { top: 35px; left: 55px; }
+.menu01 { top: 9%; left: 1%; }
 
-.menu02 { top: 250px; left: 205px; }
+.menu02 { bottom: 1%; left: 18%; }
 
-.menu03 { top: 58px; left: calc(50% - 170px); }
+.menu03 { top: 12%; left: 39%; }
 
-.menu04 { top: 250px; right: 230px; }
+.menu04 { bottom: -7%; right: 18%; }
 
-.menu05 { top: 20px; right: 75px; }
+.menu05 { top: 6%; right: 6%; }
 
-.menu06 { top: 345px; right: 30px; }
+.menu06 { bottom: -18%; right: 4%; }
 
 .knowBtn { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); cursor: pointer; padding: 8px 25px; font-weight: bolder; font-size: 1.6rem; float: left; margin-right: 20px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
 .knowBtn:nth-child(4n+4) { margin-right: 0; }
@@ -9336,10 +9340,14 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
   .pageBoxs .pageRight.tImg { padding: 15px 0; } }
 
 .bigBoxs { display: inline-block; width: 100%; position: relative; }
-.bigBoxs.cent_index { height: 100%; min-height: 800px; margin: 0; padding: 0; background: url(../img/star.png) center 65px fixed no-repeat; -moz-background-size: contain; background-size: contain; }
-@media screen and (max-width: 449px) and (min-width: 0) { .bigBoxs.cent_index { background: url(../img/m_star.png) center top fixed no-repeat; } }
-.bigBoxs .bigPlanet { display: inline-block; width: 100%; min-height: 490px; position: fixed; bottom: 0; left: 0; margin: 0; padding: 0; background: url(../img/big_planet.png) center bottom fixed no-repeat; -moz-background-size: contain; background-size: contain; }
+.bigBoxs.cent_index { height: calc(100vh - 65px); margin: 0; padding: 0; background-image: url(../img/big_planet.png), url(../img/star.png); background-repeat: no-repeat, no-repeat; background-position: center bottom, center 65px; -moz-background-size: contain, contain; background-size: contain, contain; }
+.bigBoxs.cent_index.nocut { height: 100vh; }
+@media screen and (max-width: 449px) and (min-width: 0) { .bigBoxs.cent_index { height: calc(100vh - 40px); background-image: url(../img/big_planet.png), url(../img/m_star.png); background-repeat: no-repeat, no-repeat; background-position: center bottom, center top; -moz-background-size: contain, contain; background-size: contain, cover; } }
+.bigBoxs .bigPlanet { display: inline-block; width: 100%; min-height: 490px; position: fixed; bottom: 0; left: 0; margin: 0; padding: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .bigBoxs .bigPlanet { min-height: 220px; } }
+
+.planetBoxs { display: inline-block; width: 100%; height: calc(100% - 490px); position: relative; z-index: 7777; }
+@media screen and (max-width: 449px) and (min-width: 0) { .planetBoxs { display: none; } }
 
 .mainBoxs { display: inline-block; width: 100%; max-width: 1160px; margin: 0 auto; *zoom: 1; }
 .mainBoxs:after { display: table; content: ""; line-height: 0; clear: both; }
@@ -9382,7 +9390,7 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 
 .fixBoxs { display: inline-block; width: 100%; position: absolute; left: 0; bottom: 0; padding: 15px; }
 
-#banner { display: none; overflow: hidden; width: 100%; height: 400px; position: relative; float: left; padding: 30px 0; }
+#banner { display: none; overflow: hidden; width: 100%; height: 385px; position: relative; padding: 0 15px; margin: 0 auto; }
 @media screen and (max-width: 449px) and (min-width: 0) { #banner { display: inline-block; } }
 
 #tab > img:not(:first-child) { display: none; }
