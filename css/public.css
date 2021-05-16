@@ -43,11 +43,22 @@
 
 p { padding: 0; margin: 0; }
 
+.note_red { display: inline-block; padding: 3px 5px; background-color: red; color: white; font-size: 1rem; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; position: absolute; right: 35px; top: 37px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .note_red { position: static; margin-top: 10px; } }
+
 .textLeft { text-align: left; }
 
 .textReft { text-align: right; }
 
 .lineH33 { line-height: 33px; }
+
+.f_b22_b { font-size: 1.6rem; color: black; font-weight: bolder; text-align: left; }
+
+.f_b22 { font-size: 1.6rem; color: black; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .f_b22 { font-size: 1.4rem; } }
+
+.f_b18_s { font-size: 1.3rem; color: black; text-align: left; }
+.f_b18_s.f18_red { color: red; }
 
 .f_b18 { font-size: 1.3rem; color: black; }
 @media screen and (max-width: 1024px) and (min-width: 450px) { .f_b18 { font-size: 1.2rem; } }
@@ -155,6 +166,10 @@ p { padding: 0; margin: 0; }
 .p_r_20 { padding-right: 20px; }
 
 .p_td_15 { padding-top: 15px; padding-bottom: 15px; }
+
+.p_d_15 { padding-bottom: 15px; }
+
+.p_td_5 { padding: 5px 0; }
 
 .p_td_20 { padding: 20px 0; }
 
@@ -9030,11 +9045,15 @@ p { padding: 0; margin: 0; }
 .icon_lock { max-width: 42px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .icon_lock { max-width: 25px; } }
 
+.img_clock { display: inline-block; width: 100%; max-width: 315px; float: left; margin-right: 15px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .img_clock { margin-right: 0; margin-bottom: 15px; } }
+
 .img_slogan, .img_week, .img_testPlay { display: inline-block; width: 100%; }
 
 .img_slogan { max-width: 570px; }
 .img_slogan.img_S_page { max-width: 310px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .img_slogan.img_S_page { max-width: 133px; } }
+.img_slogan.img_safe_tilte { max-width: 280px; margin-top: -70px; }
 
 .img_inTitle { display: inline-block; width: 100%; max-width: 30px; margin-right: 10px; }
 
@@ -9237,8 +9256,16 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
 
+label { padding: 0; cursor: pointer; float: left; margin-left: 30px; }
+label.checkbox input[type=checkbox] { display: none; }
+label.checkbox input[type=checkbox] + span { display: inline-block; padding-left: 26px; line-height: 25px; background: url(../img/cbx-off.png) no-repeat; user-select: none; text-indent: -9999px; }
+label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-on.png) no-repeat; }
+
 .input_gray { display: inline-block; width: 100%; max-width: 135px; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
 @media screen and (max-width: 1024px) and (min-width: 770px) { .input_gray { max-width: 100px; } }
+
+.input_safe { display: inline-block; width: 100%; max-width: 260px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px solid #b9b9b9; float: left; padding: 5px 20px; font-size: 1.3rem; color: black; background-color: white; margin-right: 15px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .input_safe { margin-right: 0; max-width: none; } }
 
 .input_white { display: inline-block; width: 100%; max-width: 135px; background-color: white; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
 .input_white.m-login { width: 100%; max-width: none; }
@@ -9371,13 +9398,19 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .adBoxs:last-child { margin-right: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .adBoxs { display: none; } }
 
-.box20, .box30, .box40, .box60, .box70, .box80 { display: inline-block; float: left; }
+.box10, .box20, .box30, .box40, .box50, .box60, .box70, .box80, .box90 { display: inline-block; float: left; }
+
+.box10 { width: 10%; }
 
 .box20 { width: 20%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box20 { width: 100%; } }
 
 .box30 { width: 30%; }
 
 .box40 { width: 40%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box40 { width: 100%; } }
+
+.box50 { width: 50%; }
 
 .box60 { width: 60%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box60 { width: 100%; } }
@@ -9385,10 +9418,20 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .box70 { width: 70%; }
 
 .box80 { width: 80%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box80 { width: 100%; } }
+
+.box90 { width: 90%; }
 
 .m-qBtnBox { display: inline-block; width: calc(100% - 55px - 110px); }
 
 .fixBoxs { display: inline-block; width: 100%; position: absolute; left: 0; bottom: 0; padding: 15px; }
+
+.safeBoxs { display: inline-block; width: calc(100% - 20px * 2); margin: 50px 20px; padding: 20px; background-color: rgba(255, 255, 255, 0.5); -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; position: relative; }
+@media screen and (max-width: 449px) and (min-width: 0) { .safeBoxs { margin: 50px 0; padding: 10px; width: 100%; } }
+
+.safeCent325 { display: inline-block; width: 100%; max-width: 325px; float: left; }
+
+.safeBox { display: inline-block; width: 100%; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */ background: white; /* Old browsers */ background: -moz-linear-gradient(top, white 0%, #eeeeee 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, white 0%, #eeeeee 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */ -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 15px; }
 
 #banner { display: none; overflow: hidden; width: 100%; height: 385px; position: relative; padding: 0 15px; margin: 0 auto; }
 @media screen and (max-width: 449px) and (min-width: 0) { #banner { display: inline-block; } }

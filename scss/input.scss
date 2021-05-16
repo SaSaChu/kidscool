@@ -10,6 +10,32 @@ input, textarea {
   -webkit-appearance: none; /* Safari 和 Chrome */
 }
 
+label {
+  padding: 0;
+  cursor: pointer;
+  float: left;
+  margin-left: 30px;
+
+  &.checkbox {
+    input[type=checkbox] {
+      display: none;
+
+      + span {
+        display: inline-block;
+        padding-left: 26px;
+        line-height: 25px;
+        background: url(../img/cbx-off.png) no-repeat;
+        user-select: none;
+        text-indent:-9999px; 
+      }
+
+      &:checked + span {
+        background: url(../img/cbx-on.png) no-repeat;
+      }
+    }
+  }
+}
+
 .input_gray {
   display: inline-block;
   width: 100%;
@@ -22,6 +48,25 @@ input, textarea {
 
   @include range-width(770px, 1025px) {
     max-width: 100px;
+  }
+}
+
+.input_safe {
+  display: inline-block;
+  width: 100%;
+  max-width: 260px;
+  @include border-radius(10px);
+  border: 2px solid rgba(185, 185, 185, 1.00);
+  float: left;
+  padding: 5px 20px;
+  font-size: 1.3rem;
+  color: black;
+  background-color: white;
+  margin-right: 15px;
+
+  @include range-width(0, 450px) {
+    margin-right: 0;
+    max-width: none;
   }
 }
 

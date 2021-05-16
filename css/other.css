@@ -74,11 +74,15 @@
 .icon_lock { max-width: 42px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .icon_lock { max-width: 25px; } }
 
+.img_clock { display: inline-block; width: 100%; max-width: 315px; float: left; margin-right: 15px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .img_clock { margin-right: 0; margin-bottom: 15px; } }
+
 .img_slogan, .img_week, .img_testPlay { display: inline-block; width: 100%; }
 
 .img_slogan { max-width: 570px; }
 .img_slogan.img_S_page { max-width: 310px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .img_slogan.img_S_page { max-width: 133px; } }
+.img_slogan.img_safe_tilte { max-width: 280px; margin-top: -70px; }
 
 .img_inTitle { display: inline-block; width: 100%; max-width: 30px; margin-right: 10px; }
 

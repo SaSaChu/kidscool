@@ -5,6 +5,23 @@ p {
   margin: 0;
 }
 
+.note_red {
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  @include border-radius(50px);
+  position: absolute;
+  right: 35px;
+  top: 37px;
+
+  @include range-width(0, 450px) {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
 .textLeft {
   text-align: left;
 }
@@ -16,6 +33,34 @@ p {
 .lineH33 {
   line-height: 33px;
 } 
+
+.f_b22_b {
+  font-size: 1.6rem;
+  color: black;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.f_b22 {
+  font-size: 1.6rem;
+  color: black;
+  text-align: left;
+
+  @include range-width(0, 450px) {
+    font-size: 1.4rem;
+  }
+}
+
+.f_b18_s {
+  font-size: 1.3rem;
+  color: black;
+  text-align: left;
+
+  &.f18_red {
+    color: red;
+  }
+}
+
 
 .f_b18 {
   font-size: 1.3rem;

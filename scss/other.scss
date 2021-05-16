@@ -105,6 +105,19 @@
   }
 }
 
+.img_clock {
+  display: inline-block;
+  width: 100%;
+  max-width: 315px;
+  float: left;
+  margin-right: 15px;
+
+  @include range-width(0, 450px) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
 // index pic
 .img_slogan, .img_week, .img_testPlay {
   display: inline-block;
@@ -120,6 +133,11 @@
     @include range-width(0, 450px) {
       max-width: 133px;
     }
+  }
+
+  &.img_safe_tilte {
+    max-width: 280px;
+    margin-top: -70px;
   }
 }
 
