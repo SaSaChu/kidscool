@@ -56,7 +56,6 @@ $(function() {
   });
 
 
-
   // 切換tab(上面)
   // 綠色
   $('.knowBtn.btn_green').click(function() {
@@ -175,13 +174,11 @@ $(function() {
 
   // 手機版 select
   $("#m_sel").change(function () {
-    var i = $(this).val();
-    $(this).addClass("m_show").siblings().removeClass("m_show");
+    let i = $(this).val()
 
     $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show');
+    $('.knowselect').eq(i).addClass('knowselect_show');
   });
-
 
 
   //首頁手機・輪播圖
@@ -246,7 +243,6 @@ $(function() {
     
     //切換banner圖片 和 按鈕樣式
     function slideTo(index){
-      console.log(index)
       var index = parseInt(index);//轉int類型
       var images = document.getElementsByClassName('tabImg');
       for(var i=0;i<images.length;i++){//遍歷每個圖片
