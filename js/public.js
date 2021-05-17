@@ -47,7 +47,10 @@ $(function() {
 
   $('.block-l-menuBox').each (function () {
     var $that = $(this);
+    console.error(1);
+    
     $that.find ('.m-menu-t').click (function () {
+      $that.find ('.m-menu-t').removeClass ('s')
       $(this).toggleClass ('s');
     });
   });
