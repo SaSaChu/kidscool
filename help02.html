@@ -23,7 +23,7 @@
 
   <body>
     
-    <header class="pageH">
+    <header>
       <div class='header_l'>
         <a href="index.html"><img class='logo' src="img/logo.svg"></a>
         <a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" target='_blank'><img class='header_icon' src="img/icon_fb.svg"></a>
@@ -35,12 +35,23 @@
       <div class='header_r'>
         <!-- 會員編號 -->
         <div class='ds m_rt_3_8'>
-          <p class='talk_input'>嗨！李曉明！您好！你已經成功登入囉！</p>
+          <p class='ds f_b18 p_t_3'>會員編號：</p>
+          <label>
+            <input class='input_gray' type="" name="">
+          </label>
+        </div>
+
+        <!-- 密碼： -->
+        <div class='ds m_rt_3_8'>
+          <p class='ds f_b18 p_t_3'>密碼：</p>
+          <label>
+            <input class='input_gray' type="" name="">
+          </label>
         </div>
 
         <!-- link -->
-        <a class='link_red m_r_10' href="">登出</a>
-        <a class='link_red m_r_10' href="change_pw.html">變更密碼</a>
+        <a class='link_red m_r_10' href="login.html">登入</a>
+        <a class='link_red m_r_10' href="forget_pw.html">忘記密碼</a>
 
         <!-- qa按鈕 -->
         <div class='ds posit m_r_5'>
@@ -64,10 +75,10 @@
       </div>
 
       <!-- 手機Menu・觸發 -->
-      <!-- <div class='m_header_r icon-navicon'></div> -->
+      <div class='m_header_r icon-navicon'></div>
     </header>
 
-    <div class='pageTitleBox'>
+    <div class='pageTitleBox pageTB_no'>
       <a href="index.html"><img class='img_slogan img_S_page' src="img/slogan.png"></a>
     </div>
 
@@ -113,55 +124,58 @@
           <div class="dropdown">
             <button class="dropbtn m-nb m-menu01">互動學員</button>
             <div class="dropdown-content">
-              <a href="interactive.html">基礎版故事</a>
-              <a href="interactive02.html">基礎版活動投稿</a>
-              <a href="interactive03.html">進階版科學影片</a>
-              <a href="interactive04.html">進階版活動投稿</a>
-              <!-- <a href="interactive05.html">月號實驗影片</a> -->
-              <a href="interactive06.html">作文殿堂</a>
-              <a href="interactive07.html">小學版教材設計說明</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </div>
           <div class="dropdown">
             <button class="dropbtn m-menu02">小試身手</button>
             <div class="dropdown-content">
-              <a href="test.html">快樂小一生</a>
-              <a href="test02.html">聰明小二生</a>
-              <a href="test03.html">天才小三生</a>
-              <a href="test04.html">資優小四生</a>
-              <a href="test05.html">進擊小五生</a>
-              <a href="test06.html">衝刺小六生</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </div>
           <div class="dropdown">
             <button class="dropbtn m-menu03">知識寶庫</button>
             <div class="dropdown-content">
-              <a href="knowledge.html">自然篇</a>
-              <a href="knowledge02.html">科學篇</a>
-              <a href="knowledge03.html">世界篇</a>
-              <a href="knowledge04.html">鄉土篇</a>
-              <a href="knowledge05.html">典故篇</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </div>
           <div class="dropdown">
             <button class="dropbtn m-menu04">益智遊戲場</button>
             <div class="dropdown-content">
-              <a href="game.html">動腦挑戰</a>
-              <a href="game02.html">放鬆舒壓</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </div>
           <div class="dropdown">
             <button class="dropbtn m-menu05">視聽大觀園</button>
             <div class="dropdown-content">
-              <a href="video.html">英文律動館</a>
-              <a href="video02.html">語文養成館</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </div>
           <div class="dropdown">
-            <a class="dropbtn m-menu06">每週互動</a>
+            <button class="dropbtn m-menu06">每週互動</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
           <div class="dropdown">
-            <a class="dropbtn m-menu07">歷史今日</a>
+            <button class="dropbtn m-menu07">歷史今日</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
           <div class="dropdown">
             <a class="dropbtn m-menu08">非會員試玩區</a>
@@ -170,7 +184,7 @@
 
         <!-- menu footer -->
         <div class="fixBoxs textReft">
-          <a class='link_LGrey lineH33' href="safe.html">
+          <a class='link_LGrey lineH33' href="">
             <img class='icon_lock p_t_3' src="img/m-lock.svg">
             家長安心設定
           </a>
@@ -179,28 +193,53 @@
     </div>
 
     <!-- 中間內容 -->
-    <div class='pageBoxs m_3005'>
-      <div class="allBoxs">
-        <div class='loginBoxs'>
-          <img class='pt-img' src="img/login/m-title-login-2.png" style="margin-top: -10px;">
-          <img class='pt-img' src="img/login/m-pic-login-2.png">
+    <div class='pageBoxs m_t_30_DM'>
+      <div class="pageRight pageR_all">
+        <div class='ds ds100'>
+          <img class='helpTtitleImg' src="img/help-title.png">
+          <div class='help-note m-close'>瀏覽奇酷網遇到什麼困難的地方嗎？來這裡可以解決你的困擾呵！</div>
+        </div>
 
-          <div class="ds ds100 m_d_20">
-            <p class='t-login'>會員編號</p>
-            <label>
-              <input class='input_white m-login' type="" name="">
-            </label>
+        <div class='ds ds100 p_td_20_DM m-open'>
+          <a class='link_tag' href="index.html">首頁</a>
+          <p class='hover_tag'>網站小幫手</p>
+        </div>
+
+        <div class='help-note m-open'>瀏覽奇酷網遇到什麼困難的地方嗎？來這裡可以解決你的困擾呵！</div>
+
+        <div class='ds ds100 p_td_20_DM'>
+          <p class='helpTitle'>登入問題</p>
+
+          <div class='qaBoxs' title='1.'>
+            <div class='qBoxs' title='Q：'>會員登入需要付費嗎？</div>
+            <div class='aBoxs' title='A：'>只要是《超級小學生》基礎版或進階版的訂戶，就可以登入享用豐   富的網站資源，完全不需再支付任何費用。</div>
           </div>
 
-          <div class="ds ds100 m_d_20">
-            <p class='t-login'>E-mail</p>
-            <label>
-              <input class='input_white m-login' type="" name="">
-            </label>
+          <div class='qaBoxs' title='2.'>
+            <div class='qBoxs' title='Q：'>如何取得會員編號及密碼?</div>
+            <div class='aBoxs' title='A：'>只要你現在是《超級小學生》基礎版或進階版的訂戶，就可以從每月教材寄送的信封上找到會員編號（共10碼），並在讀本封底找到「登入密碼」。登入後，你可以點選<a href="">變更密碼</a>，即可重新設定密碼。</div>
           </div>
 
-          <div class="ds ds100 m_d_20">
-            <button class='link_red_l'>送出</button>
+          <div class='qaBoxs' title='3.'>
+            <div class='qBoxs' title='Q：'>如果不是會員，可以使用巧連智奇酷網嗎？</div>
+            <div class='aBoxs' title='A：'>如果沒有訂閱《超級小學生》基礎版或進階版，只能體驗奇酷網的部分單元內容而已唷！</div>
+          </div>
+
+          <p class='helpTitle'>網站使用問題</p>
+
+          <div class='qaBoxs' title='22.'>
+            <div class='qBoxs' title='Q：'>會員登入需要付費嗎？</div>
+            <div class='aBoxs' title='A：'>只要是《超級小學生》基礎版或進階版的訂戶，就可以登入享用豐   富的網站資源，完全不需再支付任何費用。</div>
+          </div>
+
+          <div class='qaBoxs' title='2.'>
+            <div class='qBoxs' title='Q：'>如何取得會員編號及密碼?</div>
+            <div class='aBoxs' title='A：'>只要你現在是《超級小學生》基礎版或進階版的訂戶，就可以從每月教材寄送的信封上找到會員編號（共10碼），並在讀本封底找到「登入密碼」。登入後，你可以點選<a href="">變更密碼</a>，即可重新設定密碼。</div>
+          </div>
+
+          <div class='qaBoxs' title='3.'>
+            <div class='qBoxs' title='Q：'>如果不是會員，可以使用巧連智奇酷網嗎？</div>
+            <div class='aBoxs' title='A：'>如果沒有訂閱《超級小學生》基礎版或進階版，只能體驗奇酷網的部分單元內容而已唷！</div>
           </div>
         </div>
       </div>

@@ -1,80 +1,73 @@
-/*
-Error: Undefined mixin 'range-width'.
-        on line 26 of /Users/teresachu/www/kidscool/cmd/../scss/space.scss, in `range-width'
-        from line 26 of /Users/teresachu/www/kidscool/cmd/../scss/space.scss
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-21: }
-22: 
-23: .m_t_30_DM {
-24:   margin-top: 30px;
-25: 
-26:   @include range-width(0, 450px) {
-27:     margin-top: 0;
-28:   }
-29: }
-30: 
-31: .m_t_50 {
+.m_r_10 { margin-right: 10px; }
 
-Backtrace:
-/Users/teresachu/www/kidscool/cmd/../scss/space.scss:26:in `range-width'
-/Users/teresachu/www/kidscool/cmd/../scss/space.scss:26
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:98:in `with_mixin'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/bin/compass:23:in `load'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/bin/compass:23:in `<main>'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/bin/ruby_executable_hooks:24:in `eval'
-/Users/teresachu/.rvm/gems/ruby-2.5.3/bin/ruby_executable_hooks:24:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'range-width'.\A         on line 26 of /Users/teresachu/www/kidscool/cmd/../scss/space.scss, in `range-width'\A         from line 26 of /Users/teresachu/www/kidscool/cmd/../scss/space.scss\A \A 21: }\A 22: \A 23: .m_t_30_DM {\A 24:   margin-top: 30px;\A 25: \A 26:   @include range-width(0, 450px) {\A 27:     margin-top: 0;\A 28:   }\A 29: }\A 30: \A 31: .m_t_50 {"; }
+.m_r_5 { margin-right: 5px; }
+
+.m_t_10 { margin-top: 10px; }
+
+.m_t_15 { margin-top: 15px; }
+
+.m_t_30 { margin-top: 30px; }
+
+.m_t_30_DM { margin-top: 30px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_t_30_DM { margin-top: 0; } }
+
+.m_t_50 { margin-top: 50px; }
+
+.m_td_30 { margin: 30px 0; }
+
+.m_3005 { margin: 30px 0; padding: 0 5px; }
+
+.m_t_100 { margin-top: 100px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_t_100 { margin-top: 30px; } }
+
+.m_t_5 { margin-top: 5px; }
+
+.m_t_3 { margin-top: 3px; }
+
+.m_d_20 { margin-bottom: 20px; }
+
+.m_d_30 { margin-bottom: 30px; }
+
+.m_d_10 { margin-bottom: 10px; }
+
+.m_d_5 { margin-bottom: 5px; }
+
+.m_rt_3_8 { margin: 3px 8px 0 0; }
+
+.p_t_3 { padding-top: 3px; }
+
+.p_t_5 { padding-top: 5px; }
+
+.p_td_20_DM { padding: 20px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p_td_20_DM { padding: 10px 15px; } }
+
+.p_rl_15 { padding-right: 15px; padding-left: 15px; }
+
+.p_rl_20 { padding-right: 20px; padding-left: 20px; }
+
+.p_rl_30 { padding-right: 30px; padding-left: 30px; }
+
+.p_r_20 { padding-right: 20px; }
+
+.p_td_15 { padding-top: 15px; padding-bottom: 15px; }
+
+.p_d_15 { padding-bottom: 15px; }
+
+.p_td_5 { padding: 5px 0; }
+
+.p_td_20 { padding: 20px 0; }
+
+.m_r_30 { margin-right: 30px; }
+
+.p_d_20 { padding-bottom: 20px; }
+
+.p_t_47 { padding-top: 47px; }
+
+@media screen and (max-width: 449px) and (min-width: 0) { .m_p_lf5 { padding: 0 5px; } }
+
+.in_m_d_20 { margin-bottom: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .in_m_d_20 { margin-bottom: 0; } }
+
+.p_l_20 { padding-left: 20px; }
