@@ -33,6 +33,8 @@
 
 .bg_page_LGreen { background-color: #d7e5ce; }
 
+.bg_page_Pink { background-color: #f27b9b; }
+
 .bg_testOrange { background-color: #ff8504; }
 
 .bg_testRed { background-color: #ff2653; }
@@ -42,6 +44,14 @@
 .bg_testBlue { background-color: #2a9fe9; }
 
 input, textarea { border: 0 none; outline: 0; background-color: transparent; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari 和 Chrome */ }
+
+input[type="radio"] { display: none; }
+
+input[type="radio"] + label { color: black; font-size: 1.6rem; display: block; text-align: left; padding: 10px 0 10px 50px; }
+
+input[type="radio"] + label span { display: inline-block; width: 25px; height: 25px; vertical-align: middle; background: url(../img/cbx-off.png) no-repeat; cursor: pointer; margin-right: 10px; }
+
+input[type="radio"]:checked + label span { background: url(../img/cbx-on.png) no-repeat; }
 
 label { padding: 0; cursor: pointer; }
 label.checkbox { float: left; margin-left: 30px; }

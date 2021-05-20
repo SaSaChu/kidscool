@@ -32,6 +32,8 @@
 
 .bg_page_LGreen { background-color: #d7e5ce; }
 
+.bg_page_Pink { background-color: #f27b9b; }
+
 .bg_testOrange { background-color: #ff8504; }
 
 .bg_testRed { background-color: #ff2653; }
@@ -41,6 +43,13 @@
 .bg_testBlue { background-color: #2a9fe9; }
 
 p { padding: 0; margin: 0; }
+
+.w_anok { color: black; font-size: 1.6rem; display: block; text-align: left; padding: 10px 0 10px 85px; }
+.w_anok.nopl { padding: 10px 0 10px 15px; }
+
+.w_an01 { display: inline-block; width: 100%; font-size: 1.2rem; color: #5b5b5c; padding-top: 10px; }
+
+.w_an02 { display: inline-block; width: 100%; font-size: 2rem; color: #7d2300; }
 
 .note_red { display: inline-block; padding: 3px 5px; background-color: red; color: white; font-size: 1rem; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; position: absolute; right: 35px; top: 37px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .note_red { position: static; margin-top: 10px; } }

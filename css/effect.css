@@ -33,6 +33,8 @@
 
 .bg_page_LGreen { background-color: #d7e5ce; }
 
+.bg_page_Pink { background-color: #f27b9b; }
+
 .bg_testOrange { background-color: #ff8504; }
 
 .bg_testRed { background-color: #ff2653; }
@@ -8869,3 +8871,39 @@
 .banner3[empty] .top, .banner3[empty] .bottom { display: none; }
 .banner3[empty]:after { content: '讀取中，請稍候…'; background-color: #cccccc; }
 .banner3[empty]:not([empty='']):after { content: attr(empty); color: white; background-color: #ff3b30; }
+
+.weekBoxs { display: inline-block; width: 100%; background-color: #fef5e4; }
+.weekBoxs .weekMoBox { display: inline-block; width: 100%; background-color: #f27b9b; padding: 5px; }
+.weekBoxs .weekMoBox .left, .weekBoxs .weekMoBox .right { display: inline-block; width: 36px; }
+.weekBoxs .weekMoBox .moBox { display: inline-block; width: calc(100% - 46px * 2); padding: 0 10px; *zoom: 1; }
+.weekBoxs .weekMoBox .moBox:after { display: table; content: ""; line-height: 0; clear: both; }
+.weekBoxs .weekMoBox .moBox .mo { display: inline-block; width: calc(100% / 12 - 10px * 11 / 12); background-color: #ffcaca; float: left; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; margin-right: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekMoBox .moBox .mo { width: calc(100% / 6 - 10px * 5 / 6); }
+  .weekBoxs .weekMoBox .moBox .mo:nth-child(n+7) { display: none; } }
+.weekBoxs .weekMoBox .moBox .mo:last-child { margin-right: 0; }
+.weekBoxs .weekMoBox .moBox .mo.future { background-color: #cccccc; }
+.weekBoxs .weekMoBox .moBox .mo.future .moyear { color: #7a7a7b; }
+.weekBoxs .weekMoBox .moBox .mo.future .monub { color: #7a7a7b; }
+.weekBoxs .weekMoBox .moBox .mo.now { background-color: #c30000; }
+.weekBoxs .weekMoBox .moBox .mo.now .moyear { color: white; }
+.weekBoxs .weekMoBox .moBox .mo.now .monub { color: white; }
+.weekBoxs .weekMoBox .moBox .mo .moyear { display: inline-block; width: 100%; font-size: 1.2rem; color: #a8696a; font-weight: bolder; }
+.weekBoxs .weekMoBox .moBox .mo .monub { display: inline-block; width: 100%; font-size: 2rem; color: #ff5984; font-weight: bolder; position: relative; text-align: left; padding-left: 6px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekMoBox .moBox .mo .monub { font-size: 1.6rem; } }
+.weekBoxs .weekMoBox .moBox .mo .monub:after { display: inline-block; content: '月'; font-size: 1.2rem; position: absolute; bottom: 4px; }
+.weekBoxs .weekCentBox { display: inline-block; width: 100%; }
+.weekBoxs .weekCentBox .weekCent { display: inline-block; width: 100%; border-bottom: 1px dotted rgba(122, 122, 123, 0.5); }
+.weekBoxs .weekCentBox .weekCent .weekContent { display: inline-block; width: 100%; padding: 10px 20px; *zoom: 1; }
+.weekBoxs .weekCentBox .weekCent .weekContent:after { display: table; content: ""; line-height: 0; clear: both; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox { display: inline-block; width: calc(100% - 250px); float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox { width: 100%; } }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_title { display: inline-block; width: 100%; margin-bottom: 15px; position: relative; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_title .w_clock { display: inline-block; width: 100%; max-width: 54px; position: absolute; left: 0; top: 0; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_title .w_anTitle { display: inline-block; width: 95%; margin-top: 13px; float: right; color: white; font-size: 2rem; font-weight: bolder; padding: 7px 0 7px 37px; text-align: left; background-color: #409fa4; -webkit-border-top-right-radius: 30px; -webkit-border-bottom-right-radius: 30px; -moz-border-radius-topright: 30px; -moz-border-radius-bottomright: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_title .w_anTitle .w_anTime { display: inline-block; background-color: white; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; color: #409fa4; font-size: 1.8rem; padding: 3px 15px; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer { display: inline-block; width: 100%; background-color: #acefdf; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 10px 15px; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_select { display: inline-block; width: 100%; font-size: 1.2rem; height: 50px; line-height: 50px; text-align: left; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_q { display: inline-block; width: 100%; font-size: 1.6rem; color: black; text-align: left; position: relative; padding: 0 0 0 50px; line-height: 32px; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_q .icon_q { display: inline-block; width: 100%; max-width: 40px; position: absolute; left: 0; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wRBox { display: inline-block; width: 100%; max-width: 250px; float: left; margin-top: 75px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wRBox { display: none; } }

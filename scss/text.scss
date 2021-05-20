@@ -6,6 +6,33 @@ p {
   margin: 0;
 }
 
+.w_anok {
+  color:black;
+  font-size: 1.6rem;
+  display: block;
+  text-align: left;
+  padding: 10px 0 10px 85px;
+
+  &.nopl {
+    padding: 10px 0 10px 15px;
+  }
+}
+
+.w_an01 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+  color: rgba(91, 91, 92, 1.00);
+  padding-top: 10px;
+}
+
+.w_an02 {
+  display: inline-block;
+  width: 100%;
+  font-size: 2rem;
+  color: rgba(125, 35, 0, 1.00);
+}
+
 .note_red {
   display: inline-block;
   padding: 3px 5px;
