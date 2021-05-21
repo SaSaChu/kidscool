@@ -6,7 +6,8 @@
 .show-box {
   display: inline-block;
   width: 100%;
-  max-width: 640px;
+  max-width: 660px;
+  float: right;
   padding: 20px 10px;
   @include border-radius(15px);
 
@@ -270,6 +271,10 @@
                     &.span_br {
                       color: $page_brown !important;
                     }
+
+                    &.span_o {
+                      color: $page_orange !important;
+                    }
                   }
                   &:after {
                     content: '';
@@ -344,6 +349,10 @@
                   }
                   span {
                     color: rgba(79, 143, 42, 1.00);
+
+                    &.span_o {
+                      color: $page_orange !important;
+                    }
 
                     &.write_span {
                       color: black;
@@ -1853,6 +1862,7 @@
     .left, .right {
       display: inline-block;
       width: 36px;
+      float: left;
     }
 
     .moBox {
@@ -1860,6 +1870,12 @@
       width: calc(100% - 46px * 2);
       padding: 0 10px;
       @include clearfix();
+      float: left;
+
+      @include range-width(0, 450px) {
+        padding: 7px 0 0 0;
+        width: calc(100% - 36px * 2);
+      }
       
       .mo {
         display: inline-block;
@@ -1870,7 +1886,12 @@
         margin-right: 10px;
 
         @include range-width(0, 450px) {
-          width: calc(100% / 6 - 10px * 5 / 6);
+          width: calc(100% / 6 - 5px * 5 / 6);
+          margin-right: 5px;
+
+          &:nth-child(n+6) {
+            margin-right: 0;
+          }
 
           &:nth-child(n+7) {
             display: none;
@@ -1911,6 +1932,10 @@
           font-size: 1.2rem;
           color: rgba(168, 105, 106, 1.00);
           font-weight: bolder;
+
+          @include range-width(0, 450px) {
+            font-size: 1rem;
+          }
         }
 
         .monub {
@@ -1924,7 +1949,7 @@
           padding-left: 6px;
 
           @include range-width(0, 450px) {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
           }
 
           &:after {
@@ -1933,6 +1958,11 @@
             font-size: 1.2rem;
             position: absolute;
             bottom: 4px;
+
+            @include range-width(0, 450px) {
+              font-size: 1rem;
+              bottom: 2px;
+            }
           }
         }
       }
@@ -1996,6 +2026,11 @@
               border-top-right-radius: 30px;
               border-bottom-right-radius: 30px;
 
+              @include range-width(0, 450px) {
+                font-size: 1.6rem;
+                padding: 7px 0 7px 43px;
+              }
+
               .w_anTime {
                 display: inline-block;
                 background-color: white;
@@ -2003,6 +2038,11 @@
                 color: rgba(64, 159, 164, 1.00);
                 font-size: 1.8rem;
                 padding: 3px 15px;
+
+                @include range-width(0, 450px) {
+                  font-size: 1.2rem;
+                  padding: 3px 10px;
+                }
               }
             }
           }
@@ -2018,9 +2058,13 @@
               display: inline-block;
               width: 100%;
               font-size: 1.2rem;
-              height: 50px;
+              // height: 50px;
               line-height: 50px;
               text-align: left;
+
+              @include range-width(0, 450px) {
+                line-height: 45px;
+              }
             }
 
             .w_q {

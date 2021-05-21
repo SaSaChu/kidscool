@@ -13,8 +13,28 @@ p {
   text-align: left;
   padding: 10px 0 10px 85px;
 
+  @include range-width(0, 450px) {
+    font-size: 1.2rem;
+    padding: 10px 0 10px 52px;
+    line-height: 25px;
+  }
+
   &.nopl {
     padding: 10px 0 10px 15px;
+
+    @include range-width(0, 450px) {
+      padding: 10px 0 10px 0;
+    }
+  }
+
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 64px;
+
+    @include range-width(0, 450px) {
+      max-width: 48px;
+    }
   }
 }
 

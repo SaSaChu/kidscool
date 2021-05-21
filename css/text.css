@@ -45,7 +45,11 @@
 p { padding: 0; margin: 0; }
 
 .w_anok { color: black; font-size: 1.6rem; display: block; text-align: left; padding: 10px 0 10px 85px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .w_anok { font-size: 1.2rem; padding: 10px 0 10px 52px; line-height: 25px; } }
 .w_anok.nopl { padding: 10px 0 10px 15px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .w_anok.nopl { padding: 10px 0 10px 0; } }
+.w_anok img { display: inline-block; width: 100%; max-width: 64px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .w_anok img { max-width: 48px; } }
 
 .w_an01 { display: inline-block; width: 100%; font-size: 1.2rem; color: #5b5b5c; padding-top: 10px; }
 

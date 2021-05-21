@@ -20,6 +20,10 @@ input[type="radio"] + label {
     display: block;
     text-align: left;
     padding: 10px 0 10px 50px;
+
+    @include range-width(0, 450px) {
+      font-size: 1.2rem;
+    }
 }
 
 input[type="radio"] + label span {

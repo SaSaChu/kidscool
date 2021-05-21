@@ -48,6 +48,7 @@ input, textarea { border: 0 none; outline: 0; background-color: transparent; -mo
 input[type="radio"] { display: none; }
 
 input[type="radio"] + label { color: black; font-size: 1.6rem; display: block; text-align: left; padding: 10px 0 10px 50px; }
+@media screen and (max-width: 449px) and (min-width: 0) { input[type="radio"] + label { font-size: 1.2rem; } }
 
 input[type="radio"] + label span { display: inline-block; width: 25px; height: 25px; vertical-align: middle; background: url(../img/cbx-off.png) no-repeat; cursor: pointer; margin-right: 10px; }
 
