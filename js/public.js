@@ -440,6 +440,35 @@ $(function() {
 
 
 
+  $('.weekBoxs').each(function() {
+    let $banner = $(this)
+
+    let $moBox = $banner.find('.moBox .mo')
+    let $weekCent = $banner.find('.weekCent')
+    let index = $moBox.filter('.now').index()
+
+    let $left = $banner.find('.left').click(_ => {
+      $moBox.filter('.now').removeClass('now')
+      $moBox.eq(index = (index == 0 ? $moBox.length : index) - 1).addClass('now')
+      $weekCent.removeClass('show').eq(index).addClass('show')
+    })
+    let $right = $banner.find('.right').click(_ => {
+      $moBox.filter('.now').removeClass('now')
+      $moBox.eq(index = (index == $moBox.length - 1 ? 0 : (index + 1))).addClass('now')
+      $weekCent.removeClass('show').eq(index).addClass('show')
+    })
+
+    $moBox.click(function() {
+      index = $(this).index()
+      $moBox.filter('.now').removeClass('now')
+      $moBox.eq(index).addClass('now')
+      $weekCent.removeClass('show').eq(index).addClass('show')
+    });
+
+    $weekCent.removeClass('show').eq(index).addClass('show')
+
+  })
+
 
 
 

@@ -1902,18 +1902,6 @@
           margin-right: 0;
         }
 
-        &.future {
-          background-color: rgba(204, 204, 204, 1.00);
-
-          .moyear {
-            color: rgba(122, 122, 123, 1.00);
-          }
-
-          .monub {
-            color: rgba(122, 122, 123, 1.00);
-          }
-        }
-
         &.now {
           background-color: rgba(195, 0, 0, 1.00);
 
@@ -1923,6 +1911,17 @@
 
           .monub {
             color: white;
+          }
+          ~ .mo {
+            background-color: rgba(204, 204, 204, 1.00);
+
+            .moyear {
+              color: rgba(122, 122, 123, 1.00);
+            }
+
+            .monub {
+              color: rgba(122, 122, 123, 1.00);
+            }
           }
         }
 
@@ -1974,10 +1973,13 @@
     width: 100%;
 
     .weekCent {
-      display: inline-block;
+      display: none;
       width: 100%;
       border-bottom: 1px dotted rgba(122, 122, 123, .5);
 
+      &.show {
+        display: inline-block;
+      }
       .weekContent {
         display: inline-block;
         width: 100%;
@@ -2055,6 +2057,7 @@
             padding: 10px 15px;
 
             .w_select {
+              position: relative;
               display: inline-block;
               width: 100%;
               font-size: 1.2rem;
@@ -2064,6 +2067,28 @@
 
               @include range-width(0, 450px) {
                 line-height: 45px;
+              }
+              span {
+                position: relative;
+                z-index: 2;
+              }
+              &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                top: 5px;
+                display: inline-block;
+                width: 0;
+                height: calc(100% - 5px * 2);
+                background-color: white;
+              }
+              @for $i from 1 through 100 {
+                &[p='#{$i}'] {
+                  &:before {
+                    width: $i * 1%;
+                  }
+                }
               }
             }
 
