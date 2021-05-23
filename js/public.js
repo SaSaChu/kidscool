@@ -63,7 +63,7 @@ $(function() {
     $(this).addClass ('green_s');
 
     $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show');
+    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
   });
   $('.knowBtn.btn_green').eq (0).click();
 
@@ -73,7 +73,7 @@ $(function() {
     $(this).addClass ('blue_s');
 
     $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show');
+    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
   });
   $('.knowBtn.btn_blue').eq (0).click();
 
@@ -83,7 +83,7 @@ $(function() {
     $(this).addClass ('purple_s');
 
     $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show');
+    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
   });
   $('.knowBtn.btn_purple').eq (0).click();
 
@@ -93,7 +93,7 @@ $(function() {
     $(this).addClass ('orange_s');
 
     $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show');
+    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
   });
   $('.knowBtn.btn_orange').eq (0).click();
 
@@ -103,7 +103,7 @@ $(function() {
     $(this).addClass ('brown_s');
 
     $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show');
+    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
   });
   $('.knowBtn.btn_brown').eq (0).click();
 
@@ -114,50 +114,45 @@ $(function() {
     $('.li_green').removeClass ('li_green_s');
     $(this).addClass ('li_green_s');
 
-    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
-  $('.li_green').eq (0).click();
 
   // 藍色
   $('.li_blue').click(function() {
     $('.li_blue').removeClass ('li_blue_s');
     $(this).addClass ('li_blue_s');
 
-    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
-  $('.li_blue').eq (0).click();
 
   // 紫色
   $('.li_purple').click(function() {
     $('.li_purple').removeClass ('li_purple_s');
     $(this).addClass ('li_purple_s');
 
-    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
-  $('.li_purple').eq (0).click();
 
   // 橘色
   $('.li_orange').click(function() {
     $('.li_orange').removeClass ('li_orange_s');
     $(this).addClass ('li_orange_s');
 
-    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
-  $('.li_orange').eq (0).click();
 
   // 棕色
   $('.li_brown').click(function() {
     $('.li_brown').removeClass ('li_brown_s');
     $(this).addClass ('li_brown_s');
 
-    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
-  $('.li_orange').eq (0).click();
 
 
   // 小試身手・左邊
@@ -165,8 +160,8 @@ $(function() {
     $('.testLboxs .test').removeClass('show');
     $(this).addClass('show');
 
-    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq($(this).parent().index()).addClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').eq($(this).parent().index()).addClass('knowBoxsRight_show');
   });
  $('.testLboxs').eq (0).find('.test').click();
 
@@ -444,6 +439,35 @@ $(function() {
     })
 
 
+
+  $('.weekBoxs').each(function() {
+    let $banner = $(this)
+
+    let $moBox = $banner.find('.moBox .mo')
+    let $weekCent = $banner.find('.weekCent')
+    let index = $moBox.filter('.now').index()
+
+    let $left = $banner.find('.left').click(_ => {
+      $moBox.filter('.now').removeClass('now')
+      $moBox.eq(index = (index == 0 ? $moBox.length : index) - 1).addClass('now')
+      $weekCent.removeClass('show').eq(index).addClass('show')
+    })
+    let $right = $banner.find('.right').click(_ => {
+      $moBox.filter('.now').removeClass('now')
+      $moBox.eq(index = (index == $moBox.length - 1 ? 0 : (index + 1))).addClass('now')
+      $weekCent.removeClass('show').eq(index).addClass('show')
+    })
+
+    $moBox.click(function() {
+      index = $(this).index()
+      $moBox.filter('.now').removeClass('now')
+      $moBox.eq(index).addClass('now')
+      $weekCent.removeClass('show').eq(index).addClass('show')
+    });
+
+    $weekCent.removeClass('show').eq(index).addClass('show')
+
+  })
 
 
 
