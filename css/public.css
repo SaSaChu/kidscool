@@ -260,3 +260,31 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .writeBoxs { display: inline-block; width: 100%; height: 346px; background: url(../img/interactive/in_write_bg.png) center center no-repeat; -moz-background-size: cover; background-size: cover; padding: 45px; }
 
 .write_White_Boxs { display: inline-block; width: 100%; margin-top: 20px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; padding: 15px; }
+
+.show-box.spbox { display: inline-block; }
+@media screen and (max-width: 449px) and (min-width: 0) { .show-box.spbox .top { padding: 0 10px 0 10px !important; }
+  .show-box.spbox .top .boxs .box-container .box.writeCentBox { position: relative; height: 100px; background-color: transparent !important; padding: 0 !important; }
+  .show-box.spbox .top .boxs .box-container .box.writeCentBox + .box { margin-left: 10px; }
+  .show-box.spbox .top .boxs .box-container .box.writeCentBox img { position: absolute; left: 0; top: 0; display: inline-block; width: 100%; height: 100%; z-index: 1; }
+  .show-box.spbox .top .boxs .box-container .box.writeCentBox:after { display: none; }
+  .show-box.spbox .top .boxs .box-container .box.writeCentBox span { position: absolute; bottom: 4px; left: 4px; right: 4px; font-size: 10px; padding: 0 10px; z-index: 2; display: inline-block; width: calc(100% - 4px * 2); height: 20px; line-height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: white; background-color: #cccdcc; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+  .show-box.spbox .top .boxs .box-container .box.writeCentBox span br { display: none; } }
+
+.boxn { display: inline-block; width: 100%; margin-top: 20px; }
+.boxn .header { width: 100%; height: 32px; line-height: 32px; display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start; padding-bottom: 20px; border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+.boxn .header label { flex-shrink: 0; display: inline-block; width: 150px; height: 32px; line-height: 32px; border: 1px solid rgba(0, 0, 0, 0.3); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.boxn .header label input { width: 100%; height: 100%; }
+.boxn .header b { flex-grow: 1; height: 32px; line-height: 32px; }
+.boxn .units { display: inline-flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-start; width: 100%; margin-top: 20px; }
+.boxn .units > * { background-color: #ecedd4; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px 0; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .boxn .units > * { width: 100%; }
+  .boxn .units > * img { height: auto; }
+  .boxn .units > * + * { margin-top: 20px; } }
+@media screen and (min-width: 450px) { .boxn .units > * { width: calc(100% / 5 - 10px * 4 / 5); }
+  .boxn .units > * + * { margin-left: 10px; }
+  .boxn .units > *:nth-child(5n + 1) { margin-left: 0; }
+  .boxn .units > *:nth-child(n + 6) { margin-top: 10px; }
+  .boxn .units > * img { height: 120px; } }
+.boxn .units > * img { display: inline-block; width: calc(100% - 20px); }
+.boxn .units > * img + span { margin-top: 4px; }
+.boxn .units > * span { display: inline-block; width: 100%; height: 20px; line-height: 20px; text-align: center; font-weight: bold; }
