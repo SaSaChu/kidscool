@@ -1889,17 +1889,29 @@
           width: calc(100% / 6 - 5px * 5 / 6);
           margin-right: 5px;
 
-          &:nth-child(n+6) {
+          &:nth-child(6n + 6) {
             margin-right: 0;
           }
 
-          &:nth-child(n+7) {
+          &:nth-child(n + 7) {
             display: none;
           }
         }
 
         &:last-child {
           margin-right: 0;
+        }
+
+        &.future {
+          background-color: rgba(204, 204, 204, 1.00);
+
+          .moyear {
+            color: rgba(122, 122, 123, 1.00);
+          }
+
+          .monub {
+            color: rgba(122, 122, 123, 1.00);
+          }
         }
 
         &.now {
@@ -1912,19 +1924,7 @@
           .monub {
             color: white;
           }
-          ~ .mo {
-            background-color: rgba(204, 204, 204, 1.00);
-
-            .moyear {
-              color: rgba(122, 122, 123, 1.00);
-            }
-
-            .monub {
-              color: rgba(122, 122, 123, 1.00);
-            }
-          }
         }
-
         .moyear {
           display: inline-block;
           width: 100%;
@@ -1961,6 +1961,16 @@
             @include range-width(0, 450px) {
               font-size: 1rem;
               bottom: 2px;
+            }
+          }
+        }
+      }
+      @include range-width(0, 450px) {
+        &[n2] {
+          .mo {
+            display: none;
+            &:nth-child(n + 7) {
+              display: inline-block;
             }
           }
         }
@@ -2071,6 +2081,12 @@
               span {
                 position: relative;
                 z-index: 2;
+                &:before {
+                  content: '('
+                }
+                &:after {
+                  content: ')'
+                }
               }
               &:before {
                 content: '';
@@ -2087,6 +2103,11 @@
                 &[p='#{$i}'] {
                   &:before {
                     width: $i * 1%;
+                  }
+                  span {
+                    &:after {
+                      content: ' #{$i}%)'
+                    }
                   }
                 }
               }
