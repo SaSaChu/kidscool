@@ -172,6 +172,7 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box20 { width: 100%; } }
 
 .box30 { width: 30%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box30 { width: 100%; } }
 
 .box40 { width: 40%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box40 { width: 100%; } }
@@ -182,6 +183,7 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box60 { width: 100%; } }
 
 .box70 { width: 70%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box70 { width: 100%; } }
 
 .box80 { width: 80%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box80 { width: 100%; } }
@@ -258,8 +260,10 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .w_loginBoxs .whiteBoxs { display: inline-block; width: 100%; max-width: 685px; margin: 0 auto; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; padding: 15px; }
 
 .writeBoxs { display: inline-block; width: 100%; height: 346px; background: url(../img/interactive/in_write_bg.png) center center no-repeat; -moz-background-size: cover; background-size: cover; padding: 45px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .writeBoxs { height: 270px; background: url(../img/interactive/m_in_write_bg.png) center center no-repeat; -moz-background-size: cover; background-size: cover; padding: 18px; } }
 
 .write_White_Boxs { display: inline-block; width: 100%; margin-top: 20px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; padding: 15px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .write_White_Boxs { margin-top: 8px; padding: 8px; } }
 
 .show-box.spbox { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .show-box.spbox .top { padding: 0 10px 0 10px !important; }

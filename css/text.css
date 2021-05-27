@@ -99,6 +99,7 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .helpTitle:before { font-size: 2.2rem; } }
 
 .test-font { display: inline-block; width: 100%; font-size: 2rem; padding-bottom: 10px; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .test-font.in-test-use { font-size: 1.2rem; font-weight: bolder; } }
 
 .test-note { display: inline-block; padding: 10px; font-size: 1.3rem; font-weight: bolder; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .test-note { padding: 6px 5px; font-size: 1rem; } }
@@ -108,6 +109,7 @@ p { padding: 0; margin: 0; }
 
 .t-login { display: inline-block; width: 100%; font-size: 1.2rem; color: black; padding-bottom: 10px; }
 .t-login.notall { width: 25%; float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .t-login.test-t-login { font-size: 1rem; padding-bottom: 5px; } }
 
 .inTitleBoxs { display: inline-block; padding: 10px 15px; background-color: #e5248f; color: white; font-weight: bolder; font-size: 2rem; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .inTitleBoxs { width: 100%; } }
@@ -124,4 +126,9 @@ p { padding: 0; margin: 0; }
 
 .t-w-22 { display: inline-block; width: 100%; text-align: left; font-size: 1.84rem; font-weight: bolder; color: white; line-height: 1.5; }
 
+.t-b-22 { display: inline-block; width: 90%; text-align: left; font-size: 1.84rem; font-weight: bolder; color: black; line-height: 1.5; margin: 15px 0; }
+
+.t-w-18 { display: inline-block; float: left; text-align: left; font-size: 1.1rem; font-weight: bolder; color: white; line-height: 1.5; }
+
 .t-y-22 { display: inline-block; width: 100%; text-align: left; font-size: 1.84rem; font-weight: bolder; color: #ffc505; }
+@media screen and (max-width: 449px) and (min-width: 0) { .t-y-22 { padding-top: 10px; text-align: center; font-size: 1.4rem; } }

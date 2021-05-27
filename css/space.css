@@ -34,6 +34,11 @@
 
 .m_d_5 { margin-bottom: 5px; }
 
+.m_rl_15 { margin: 0 15px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_rl_15 { margin: 0 5px; } }
+
+.m_l_15 { margin: 0 0 0 15px; }
+
 .m_rt_3_8 { margin: 3px 8px 0 0; }
 
 .p_t_3 { padding-top: 3px; }
@@ -71,3 +76,4 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .in_m_d_20 { margin-bottom: 0; } }
 
 .p_l_20 { padding-left: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .p_l_20 { padding-left: 0; } }

@@ -37,22 +37,11 @@
             <div class='ds ds100 p_td_15'>
               <div class='box20 p_td_5'>
                 <img class='order_l' src="img/star_y.png">
-                <p class='f_b22'>家長密碼</p>
+                <p class='f_b22'>填寫家長密碼</p>
               </div>
               <div class='box80'>
                 <div class='box40'><input class='input_safe'></div>
                 <div class='box60'><p class='f_b18_s p_td_5'>*家長密碼可以不受下面設定的時間限制登入奇酷網。</p></div>
-              </div>
-            </div>
-
-            <!-- 密碼確認 -->
-            <div class='ds ds100 p_d_15'>
-              <div class='box20 p_td_5'>
-                <img class='order_l' src="img/star_y.png">
-                <p class='f_b22'>密碼確認</p>
-              </div>
-              <div class='box80'>
-                <div class='box40'><input class='input_safe'></div>
               </div>
             </div>
 
@@ -63,7 +52,7 @@
                 <p class='f_b22'>密碼提示</p>
               </div>
               <div class='box80'>
-                <div class='box40'><input class='input_safe'></div>
+                <div class='box40'><input class='input_safe unselect' placeholder="小明的生日" readonly unselectable="on"></div>
                 <div class='box60'><p class='f_b18_s p_td_5'>(密碼提示請勿空白)</p></div>
               </div>
             </div>
@@ -75,50 +64,15 @@
                 <p class='f_b22'>E-mail</p>
               </div>
               <div class='box80'>
-                <div class='box40'><input class='input_safe'></div>
+                <div class='box40'><input class='input_safe unselect' placeholder="abc@gmail.com" readonly unselectable="on"></div>
                 <div class='box60'><p class='f_b18_s f18_red p_td_5'>*如果忘記家長密碼，會補寄密碼到這個電子郵件信箱。</p></div>
               </div>
             </div>
 
-            <!-- 寄送學習紀錄表 -->
-            <!-- <div class='ds ds100 p_td_15'>
-              <div class='safeCent325'>
-                <img class='order_l' src="img/star_y.png">
-                <p class='f_b22'>寄送學習紀錄表：</p>
-              </div>
-              <label class='checkbox'>
-                <input type="checkbox" value="寄送學習紀錄表" />
-                <span>寄送學習紀錄表</span>
-                <p class='ds f_b18_s'>是</p>
-              </label>
-              <label class='checkbox'>
-                <input type="checkbox" value="寄送學習紀錄表" />
-                <span>寄送學習紀錄表</span>
-                <p class='ds f_b18_s'>否</p>
-              </label>
-            </div> -->
-
-            <!-- 設定每次上奇酷網的使用時間 -->
-            <div class='ds ds100 p_td_15'>
-              <div class='safeCent325'>
-                <img class='order_l' src="img/star_y.png">
-                <p class='f_b22'>設定每次上奇酷網的使用時間：</p>
-              </div>
-              <input class='input_safe'>
-            </div>
-
-            <!-- 設定下次再登入的間隔時間 -->
-            <div class='ds ds100 p_td_15'>
-              <div class='safeCent325'>
-                <img class='order_l' src="img/star_y.png">
-                <p class='f_b22'>設定下次再登入的間隔時間：</p>
-              </div>
-              <input class='input_safe'>
-            </div>
-
             <div class='ds ds100 p_td_15'>
               <a href='help.html' class='link_blue_l'>登入說明</a>
-              <div class='link_red_l m_l_15 showModel' data-id='1'>儲存</div>
+              <button class='link_red_l m_rl_15'>登入</button>
+              <div class='link_blue_l showModel' data-id='1'>忘記密碼</div>
             </div>
           </div>
         </div>
@@ -130,11 +84,12 @@
       <div class='ac_outer'>
         <div class='model_boxs safeBg box_1'>
           <p class="t-b-22">親愛的家長您好：</br>
-          您所設定的資訊已經被儲存了。</p>
+          您的密碼已經寄送至您先前設定的信箱中了。</p>
           <div class='link_blue_l lB'>確定</div>
         </div>
       </div>
     </div>
+
   </body>
 
 </html>

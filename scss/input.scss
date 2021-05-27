@@ -100,6 +100,10 @@ label {
     margin-right: 0;
     max-width: none;
   }
+
+  &.unselect {
+    background-color: rgba(204, 204, 204, .8);
+  }
 }
 
 .input_white {

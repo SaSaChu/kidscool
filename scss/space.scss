@@ -76,6 +76,20 @@
   margin-bottom: 5px;
 }
 
+.m_rl_15 {
+  // 家長安心按鈕
+  margin: 0 15px;
+
+  @include range-width(0, 450px) {
+    margin: 0 5px;
+  }
+}
+
+.m_l_15 {
+  // 家長安心按鈕
+  margin: 0 0 0 15px;
+}
+
 // header qa boxs
 .m_rt_3_8 {
   margin: 3px 8px 0 0;
@@ -167,6 +181,11 @@
 
 .p_l_20 {
   padding-left: 20px;
+
+  // 互動學員，作文
+  @include range-width(0, 450px) {
+    padding-left: 0;
+  }
 }
 
 

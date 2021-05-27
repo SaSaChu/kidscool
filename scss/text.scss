@@ -235,6 +235,13 @@ p {
   font-size: 2rem;
   padding-bottom: 10px;
   text-align: left;
+
+  &.in-test-use {
+    @include range-width(0, 450px) {
+      font-size: 1.2rem;
+      font-weight: bolder;
+    }
+  }
 }
 
 .test-note {
@@ -276,6 +283,13 @@ p {
   &.notall {
     width: 25%;
     float: left;
+  }
+
+  &.test-t-login {
+    @include range-width(0, 450px) {
+      font-size: 1rem;
+      padding-bottom: 5px;
+    }
   }
 }
 
@@ -348,6 +362,29 @@ p {
   line-height: 1.5;
 }
 
+// 安心設定
+.t-b-22 {
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  font-size: 1.84rem;
+  font-weight: bolder;
+  color: black;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.t-w-18 {
+  display: inline-block;
+  float: left;
+  // width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: white;
+  line-height: 1.5;
+}
+
 .t-y-22 {
   display: inline-block;
   width: 100%;
@@ -355,6 +392,12 @@ p {
   font-size: 1.84rem;
   font-weight: bolder;
   color: rgba(255, 197, 5, 1.00);
+
+  @include range-width(0, 450px) {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+  }
 }
 
 

@@ -831,19 +831,19 @@
         }
 
         &.test_green {
-        background: rgba(131, 191, 3, 1.00); /* Old browsers */
-        background: -moz-linear-gradient(top,  rgba(131, 191, 3, 1.00) 0%, rgba(131, 191, 3, 1.00) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  rgba(131, 191, 3, 1.00) 0%,rgba(131, 191, 3, 1.00) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  rgba(131, 191, 3, 1.00) 0%,rgba(131, 191, 3, 1.00) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88c102', endColorstr='#709e00',GradientType=0 ); /* IE6-9 */
+          background: rgba(131, 191, 3, 1.00); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(131, 191, 3, 1.00) 0%, rgba(131, 191, 3, 1.00) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top,  rgba(131, 191, 3, 1.00) 0%,rgba(131, 191, 3, 1.00) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom,  rgba(131, 191, 3, 1.00) 0%,rgba(131, 191, 3, 1.00) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88c102', endColorstr='#709e00',GradientType=0 ); /* IE6-9 */
         }
 
         &.test_blue {
-        background: rgba(42, 159, 233, 1.00); /* Old browsers */
-        background: -moz-linear-gradient(top,  rgba(42, 159, 233, 1.00) 0%, rgba(42, 159, 233, 1.00) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  rgba(42, 159, 233, 1.00) 0%,rgba(42, 159, 233, 1.00) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  rgba(42, 159, 233, 1.00) 0%,rgba(42, 159, 233, 1.00) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ab8f2', endColorstr='#299ce6',GradientType=0 ); /* IE6-9 */
+          background: rgba(42, 159, 233, 1.00); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(42, 159, 233, 1.00) 0%, rgba(42, 159, 233, 1.00) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top,  rgba(42, 159, 233, 1.00) 0%,rgba(42, 159, 233, 1.00) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom,  rgba(42, 159, 233, 1.00) 0%,rgba(42, 159, 233, 1.00) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ab8f2', endColorstr='#299ce6',GradientType=0 ); /* IE6-9 */
         }
 
         &:after {
@@ -968,7 +968,13 @@
       display: none;
 
       &.l_show {
-          display: inline-block;
+        display: inline-block;
+      }
+
+      &.safeBg {
+        max-width: 500px;
+        background-color: white;
+        border: 10px solid rgba(255, 136, 51, 1.00);
       }
 
       width: 100%;

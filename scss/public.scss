@@ -538,6 +538,11 @@ footer {
 
 .box30 {
   width: 30%;
+
+  // 互動學員，作文
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
 }
 
 .box40 {
@@ -564,6 +569,11 @@ footer {
 
 .box70 {
   width: 70%;
+
+  // 互動學員，作文
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
 }
 
 .box80 {
@@ -924,6 +934,14 @@ footer {
   -moz-background-size: cover;
   background-size: cover;
   padding: 45px;
+
+  @include range-width(0, 450px) {
+    height: 270px;
+    background: url(../img/interactive/m_in_write_bg.png) center center no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    padding: 18px;
+  }
 }
 
 .write_White_Boxs {
@@ -933,6 +951,11 @@ footer {
   @include border-radius(15px);
   background-color: white;
   padding: 15px;
+
+  @include range-width(0, 450px) {
+    margin-top: 8px;
+    padding:8px;
+  }
 }
 
 

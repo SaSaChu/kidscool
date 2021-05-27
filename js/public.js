@@ -1,5 +1,15 @@
 $(function() {
 
+  // 小試身手・左邊
+  $('.testLboxs .test').click(function() {
+    $('.testLboxs .test').removeClass('show');
+    $(this).addClass('show');
+
+    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $(this).parent().parent().find('.knowBoxsRight').eq($(this).parent().index()).addClass('knowBoxsRight_show');
+  });
+  $('.testLboxs').eq (0).find('.test').click();
+
   // 知識內文banner 
   $('.show-box').each(function() {
     let $showBox = $(this)
@@ -154,19 +164,6 @@ $(function() {
     $(this).parent().parent().find('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
 
-
-  // 小試身手・左邊
-  $('.testLboxs .test').click(function() {
-    $('.testLboxs .test').removeClass('show');
-    $(this).addClass('show');
-
-    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $(this).parent().parent().find('.knowBoxsRight').eq($(this).parent().index()).addClass('knowBoxsRight_show');
-  });
- $('.testLboxs').eq (0).find('.test').click();
-
-
-
   // 手機版 select
   $("#m_sel").change(function () {
     let i = $(this).val()
@@ -231,7 +228,7 @@ $(function() {
       $('#myModel .model_boxs.box_' + $(this).data('id')).addClass('l_show').siblings().removeClass('l_show')
     })
 
-    $('.btn_close, .t-close, .btn_delete').click(function() {
+    $('.btn_close, .t-close, .btn_delete, .lB').click(function() {
       $('#myModel').removeClass('showModel')
     })
 
@@ -481,10 +478,6 @@ $(function() {
     $weekCent.removeClass('show').eq(index).addClass('show')
 
   })
-
-
-
-
 
 });
 

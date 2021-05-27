@@ -65,6 +65,7 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 
 .input_safe { display: inline-block; width: 100%; max-width: 260px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px solid #b9b9b9; float: left; padding: 5px 20px; font-size: 1.3rem; color: black; background-color: white; margin-right: 15px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .input_safe { margin-right: 0; max-width: none; } }
+.input_safe.unselect { background-color: rgba(204, 204, 204, 0.8); }
 
 .input_white { display: inline-block; width: 100%; max-width: 135px; background-color: white; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
 .input_white.m-login { width: 100%; max-width: none; }
