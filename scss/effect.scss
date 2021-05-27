@@ -583,7 +583,7 @@
 .knowBoxsLeft {
   display: inline-block;
   width: 100%;
-  max-width: 150px;
+  // max-width: 150px;
   float: left;
   @include clearfix();
 
@@ -924,7 +924,9 @@
  
 
 .knowBoxsRight {
-  width: calc(100% - 150px);
+  // width: calc(100% - 150px);
+  width: 100%;
+  padding-top: 20px;
   display: inline-block;
   float: left;
   // 控制按鈕分頁，設定預設值是沒有顯示
@@ -936,7 +938,26 @@
     @include range-width(0, 450px) {
       width: 100%;
     }
-  } 
+  }
+
+  .knowCentBoxs {
+    display: inline-block;
+    width: 100%;
+
+    .knowCent {
+      display: inline-block;
+      width: calc(100% / 4 - 40px * 3 / 4);
+      float: left;
+      margin-right: 40px;
+
+      &:nth-child(4n+4) {
+        margin-right: 0;
+      }
+      //d
+      height: 300px;
+      background-color: rgba(255, 0, 0, 0.2); 
+    }
+  }
 }
 
 

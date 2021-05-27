@@ -172,6 +172,14 @@ $(function() {
     $('.knowselect').eq(i).addClass('knowselect_show');
   });
 
+  // 網頁版 select
+  $("#k_sel").change(function () {
+    let i = $(this).val()
+
+    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $('.knowBoxsRight').eq(i).addClass('knowBoxsRight_show');
+  });
+
 
   //首頁手機・輪播圖
     var curIndex=0;//初始化
