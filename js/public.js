@@ -5,10 +5,10 @@ $(function() {
     $('.testLboxs .test').removeClass('show');
     $(this).addClass('show');
 
-    $(this).parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $(this).parent().parent().find('.knowBoxsRight').eq($(this).parent().index()).addClass('knowBoxsRight_show');
+    $(this).parent().parent().parent().find('.knowBoxsRight').removeClass('knowBoxsRight_show');
+    $(this).parent().parent().parent().find('.knowBoxsRight').eq($(this).parent().index()).addClass('knowBoxsRight_show');
   });
-  $('.testLboxs').eq (0).find('.test').click();
+  // $('.testLboxs').eq (0).find('.test').click();
 
   // 知識內文banner 
   $('.show-box').each(function() {
