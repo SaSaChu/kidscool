@@ -472,7 +472,7 @@ $(function() {
         $moBox.removeAttr('n2', '1')
     })
 
-    $moBoxs.click(function() {
+    $moBoxs.filter(':not(.future)').click(function() {
       index = $(this).index()
       $moBoxs.filter('.now').removeClass('now')
       $moBoxs.eq(index).addClass('now')
