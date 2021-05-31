@@ -1,0 +1,68 @@
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+.pageColorGreen { color: #4e8f2b; }
+
+.pageColorBlue { color: #237eb1; }
+
+.pageColorPurple { color: #af4dac; }
+
+.pageColorOrange { color: #ff790b; }
+
+.pageColorBrown { color: #996536; }
+
+.pageColorLBlue { color: #52b1e3; }
+
+.pageColorRed { color: #c51c17; }
+
+.bg_LBlue { background-color: #52b1e3; }
+
+.bg_blue { background-color: #129eff; }
+
+.bg_page_green { background-color: #4e8f2b; }
+
+.bg_page_blue { background-color: #237eb1; }
+
+.bg_page_purple { background-color: #af4dac; }
+
+.bg_page_orange { background-color: #ff790b; }
+
+.bg_page_yellow { background-color: #fb9526 !important; }
+
+.bg_page_brown { background-color: #996536; }
+
+.bg_page_LGreen { background-color: #d7e5ce; }
+
+.bg_page_Pink { background-color: #f27b9b; }
+
+.bg_testOrange { background-color: #ff8504; }
+
+.bg_testRed { background-color: #ff2653; }
+
+.bg_testGreen { background-color: #83bf03; }
+
+.bg_testBlue { background-color: #2a9fe9; }
+
+figure { position: relative; margin: 0; width: 100%; height: 100%; }
+
+figure img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
+
+figcaption { background: white; text-align: left; color: black; }
+
+.knowBoxsRight { width: 100%; padding-top: 20px; display: inline-block; float: left; display: none; }
+.knowBoxsRight.knowBoxsRight_show { display: inline-block; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight.knowBoxsRight_show { width: 100%; } }
+.knowBoxsRight .knowCentBoxs { display: inline-block; width: 100%; }
+.knowBoxsRight .knowCentBoxs .knowCent { display: inline-block; float: left; width: 180px; height: auto; margin-top: 40px; margin-right: 40px; background-color: rgba(255, 0, 0, 0.2); }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent { width: 100%; } }
+.knowBoxsRight .knowCentBoxs .knowCent:nth-child(4n + 4) { margin-right: 0; }
+.knowBoxsRight .knowCentBoxs .knowCent > .infoHolder { display: none; }
+.knowBoxsRight .infoWrapper { position: relative; margin-top: 40px; padding: 20px; width: 100%; float: left; border-radius: 10px; }
+.knowBoxsRight .infoWrapper.page_green { background-color: #4e8f2b; }
+.knowBoxsRight .infoWrapper:after { content: ''; clear: both; }
+.knowBoxsRight .infoWrapper > .btn { position: absolute; top: 20px; right: 20px; width: 40px; height: 30px; background-color: red; border-radius: 5px; color: white; }
+.knowBoxsRight .infoWrapper > .title { text-align: left; color: white; }
+.knowBoxsRight .infoWrapper > .content > .text { display: inline-block; }
+.knowBoxsRight .infoWrapper > .content > .text > img { float: right; margin-left: 20px; width: auto; height: auto; max-width: 200px; max-height: 200px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .infoWrapper > .content > .text > img { float: none; margin: 0 auto; max-width: 100%; max-height: 100%; } }
+.knowBoxsRight .infoWrapper > .content > .text > p { text-align: left; font-size: 16px; margin: 10px 0; color: white; }
+.knowBoxsRight .infoWrapper > .content > .text:after { content: ''; clear: both; }

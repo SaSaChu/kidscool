@@ -1,0 +1,143 @@
+@import "Ginkgo";
+@import "color";
+
+figure {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+figure img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+figcaption {
+   background: rgba(255, 255, 255, 1);
+   text-align: left;
+   color: rgba(0, 0, 0, 1);
+
+}
+
+.knowBoxsRight {
+    // width: calc(100% - 150px);
+    width: 100%;
+    padding-top: 20px;
+    display: inline-block;
+    float: left;
+    // 控制按鈕分頁，設定預設值是沒有顯示
+    display: none;
+
+    &.knowBoxsRight_show {
+        display: inline-block;
+
+        @include range-width(0, 450px) {
+            width: 100%;
+        }
+    }
+
+    .knowCentBoxs {
+        display: inline-block;
+        width: 100%;
+
+        .knowCent {
+            display: inline-block;
+            float: left;
+            width: 180px;
+            height: auto;
+            // width: calc(100% / 4 - 40px * 3 / 4);
+            // height: calc(100% / 4 - 40px * 3 / 4);
+            // height: 192.500px;
+            margin-top: 40px;
+            margin-right: 40px;
+            background-color: rgba(255, 0, 0, 0.2);
+
+            @include range-width(0, 450px) {
+                width: 100%;
+            }
+
+            &:nth-child(4n + 4) {
+                margin-right: 0;
+            }
+
+            > .infoHolder {
+                display: none;
+            }
+        }
+    }
+
+    .infoWrapper {
+        position: relative;
+        margin-top: 40px;
+        padding: 20px;
+        width: 100%;
+        float: left;
+        border-radius: 10px;
+
+        &.page_green {
+            background-color: $page_green;
+        }
+    
+        &:after {
+            content: '';
+            clear: both;
+        } 
+
+        > .btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 30px;
+            background-color: red;
+            border-radius: 5px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        > .title {
+            // float: left;
+            text-align: left;
+            color: rgba(255, 255, 255, 1);
+        }        
+
+        > .content {
+
+            > .text {
+                display: inline-block;
+                // float: left;
+
+                > img {
+                    float: right;
+                    margin-left: 20px;
+                    width: auto;
+                    height: auto;
+                    max-width: 200px;
+                    max-height: 200px;
+
+                    @include range-width(0, 450px) {
+                        float: none;
+                        margin: 0 auto;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                > p {
+                    // float: left;
+                    text-align: left;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                &:after {
+                    content: '';
+                    clear: both;
+                }
+            }
+            
+        }
+        
+    }
+}
