@@ -8470,6 +8470,8 @@
 
 .knowBoxsLeft { display: inline-block; width: 100%; float: left; *zoom: 1; }
 .knowBoxsLeft:after { display: table; content: ""; line-height: 0; clear: both; }
+.knowBoxsLeft.kShare_L { max-width: 150px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsLeft.kShare_L { width: 100%; max-width: none; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsLeft { max-width: none; padding: 15px; background-color: #d7e5ce; }
   .knowBoxsLeft.kn02 { background-color: #d2e4ef !important; }
   .knowBoxsLeft.kn03 { background-color: #efdaee !important; }
@@ -8527,6 +8529,8 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsLeft .testLboxs .test.test_blue:after { border-color: #2a9fe9 transparent transparent transparent; } }
 
 .knowBoxsRight { width: 100%; padding-top: 20px; display: inline-block; float: left; display: none; }
+.knowBoxsRight.kShare_R { width: calc(100% - 150px); padding-top: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight.kShare_R { width: 100%; } }
 .knowBoxsRight.knowBoxsRight_show { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight.knowBoxsRight_show { width: 100%; } }
 .knowBoxsRight .knowCentBoxs { display: inline-block; width: 100%; }

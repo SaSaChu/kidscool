@@ -587,6 +587,15 @@
   float: left;
   @include clearfix();
 
+  &.kShare_L {
+    max-width: 150px;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
   @include range-width(0, 450px) {
     max-width: none;
     padding: 15px;
@@ -924,13 +933,21 @@
  
 
 .knowBoxsRight {
-  // width: calc(100% - 150px);
   width: 100%;
   padding-top: 20px;
   display: inline-block;
   float: left;
   // 控制按鈕分頁，設定預設值是沒有顯示
   display: none;
+
+  &.kShare_R {
+    width: calc(100% - 150px);
+    padding-top: 0;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+    }
+  }
 
   &.knowBoxsRight_show {
     display: inline-block;
