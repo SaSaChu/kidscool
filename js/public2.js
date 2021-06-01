@@ -125,4 +125,15 @@ $(function () {
             .eq(i)
             .addClass("knowBoxsRight_show");
     });
+
+    $(".c_sel").change(function () {
+        let i = $(this).val();
+        $(this).parents(".countryBox").find(".text").removeClass("text_show");
+
+        $(this)
+            .parents(".countryBox")
+            .find(".text")
+            .eq(i)
+            .addClass("text_show");
+    });
 });

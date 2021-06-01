@@ -169,6 +169,11 @@ label {
     color: $page_orange;  
   }
 
+  &.p {
+    border: 1px solid $page_purple;
+    color: $page_purple;   
+  }
+
   &.br {
     border: 1px solid $page_brown;
     color: $page_brown; 

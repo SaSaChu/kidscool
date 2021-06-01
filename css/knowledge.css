@@ -42,28 +42,43 @@
 
 .bg_testBlue { background-color: #2a9fe9; }
 
-figure { position: relative; margin: 0; width: 100%; height: 100%; }
-
-figure img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
-
-figcaption { background: white; text-align: left; color: black; }
-
 .knowBoxsRight { width: 100%; padding-top: 20px; display: inline-block; float: left; display: none; }
 .knowBoxsRight.knowBoxsRight_show { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight.knowBoxsRight_show { width: 100%; } }
 .knowBoxsRight .knowCentBoxs { display: inline-block; width: 100%; }
-.knowBoxsRight .knowCentBoxs .knowCent, .knowBoxsRight .knowCentBoxs .knowCent_o { display: inline-block; float: left; width: 180px; height: auto; margin-top: 40px; margin-right: 40px; background-color: rgba(255, 0, 0, 0.2); }
-@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent, .knowBoxsRight .knowCentBoxs .knowCent_o { width: 100%; } }
-.knowBoxsRight .knowCentBoxs .knowCent.fullScreen, .knowBoxsRight .knowCentBoxs .knowCent_o.fullScreen { width: 100%; }
-.knowBoxsRight .knowCentBoxs .knowCent > .infoHolder, .knowBoxsRight .knowCentBoxs .knowCent_o > .infoHolder { display: none; }
-.knowBoxsRight .knowCentBoxs .knowCent > .content, .knowBoxsRight .knowCentBoxs .knowCent_o > .content { margin-top: 20px; padding: 20px; background-color: white; border-radius: 10px; }
-.knowBoxsRight .knowCentBoxs .knowCent > .content > .title, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .title { text-align: left; color: black; }
-.knowBoxsRight .knowCentBoxs .knowCent > .content > .text, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text { display: inline-block; }
-.knowBoxsRight .knowCentBoxs .knowCent > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > img { float: right; margin-left: 20px; width: auto; height: auto; max-width: 200px; max-height: 200px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > img { float: none; margin: 0 auto; max-width: 100%; max-height: 100%; } }
-.knowBoxsRight .knowCentBoxs .knowCent > .content > .text > p, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > p { text-align: left; font-size: 16px; margin: 10px 0; color: black; }
-.knowBoxsRight .knowCentBoxs .knowCent > .content > .text:after, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text:after { content: ''; clear: both; }
-.knowBoxsRight .knowCentBoxs .knowCent.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_o { padding: 20px; background-color: #ff790b; border-radius: 10px; }
+.knowBoxsRight .knowCentBoxs .knowCent, .knowBoxsRight .knowCentBoxs .knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p { display: inline-block; float: left; width: 180px; height: auto; margin-top: 40px; margin-right: 40px; background-color: white; cursor: pointer; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent, .knowBoxsRight .knowCentBoxs .knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p { width: 100%; } }
+.knowBoxsRight .knowCentBoxs .knowCent figure, .knowBoxsRight .knowCentBoxs .knowCent_o figure, .knowBoxsRight .knowCentBoxs .knowCent_p figure { position: relative; margin: 0; width: 100%; height: 100%; }
+.knowBoxsRight .knowCentBoxs .knowCent figure:hover img, .knowBoxsRight .knowCentBoxs .knowCent_o figure:hover img, .knowBoxsRight .knowCentBoxs .knowCent_p figure:hover img { border-radius: 3px; }
+.knowBoxsRight .knowCentBoxs .knowCent figure:hover img.page_green, .knowBoxsRight .knowCentBoxs .knowCent_o figure:hover img.page_green, .knowBoxsRight .knowCentBoxs .knowCent_p figure:hover img.page_green { border-color: #4e8f2b; }
+.knowBoxsRight .knowCentBoxs .knowCent figure:hover img.page_blue, .knowBoxsRight .knowCentBoxs .knowCent_o figure:hover img.page_blue, .knowBoxsRight .knowCentBoxs .knowCent_p figure:hover img.page_blue { border-color: #237eb1; }
+.knowBoxsRight .knowCentBoxs .knowCent figure:hover img.page_orange, .knowBoxsRight .knowCentBoxs .knowCent_o figure:hover img.page_orange, .knowBoxsRight .knowCentBoxs .knowCent_p figure:hover img.page_orange { border-color: #ff790b; }
+.knowBoxsRight .knowCentBoxs .knowCent figure:hover img.page_brown, .knowBoxsRight .knowCentBoxs .knowCent_o figure:hover img.page_brown, .knowBoxsRight .knowCentBoxs .knowCent_p figure:hover img.page_brown { border-color: #996536; }
+.knowBoxsRight .knowCentBoxs .knowCent figure img, .knowBoxsRight .knowCentBoxs .knowCent_o figure img, .knowBoxsRight .knowCentBoxs .knowCent_p figure img { width: auto; height: auto; max-width: 100%; max-height: 100%; border: 3px solid transparent; }
+.knowBoxsRight .knowCentBoxs .knowCent figure figcaption, .knowBoxsRight .knowCentBoxs .knowCent_o figure figcaption, .knowBoxsRight .knowCentBoxs .knowCent_p figure figcaption { background: white; text-align: left; color: black; }
+.knowBoxsRight .knowCentBoxs .knowCent figure figcaption > p.page_green, .knowBoxsRight .knowCentBoxs .knowCent_o figure figcaption > p.page_green, .knowBoxsRight .knowCentBoxs .knowCent_p figure figcaption > p.page_green { color: #4e8f2b; }
+.knowBoxsRight .knowCentBoxs .knowCent.fullScreen, .knowBoxsRight .knowCentBoxs .knowCent_o.fullScreen, .knowBoxsRight .knowCentBoxs .knowCent_p.fullScreen { width: 100%; }
+.knowBoxsRight .knowCentBoxs .knowCent > .infoHolder, .knowBoxsRight .knowCentBoxs .knowCent_o > .infoHolder, .knowBoxsRight .knowCentBoxs .knowCent_p > .infoHolder { display: none; }
+.knowBoxsRight .knowCentBoxs .knowCent > .content, .knowBoxsRight .knowCentBoxs .knowCent_o > .content, .knowBoxsRight .knowCentBoxs .knowCent_p > .content { margin-top: 20px; padding: 20px; background-color: white; border-radius: 10px; }
+.knowBoxsRight .knowCentBoxs .knowCent > .content > .title, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .title, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .title { text-align: left; color: black; }
+.knowBoxsRight .knowCentBoxs .knowCent > .content > .text, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text { display: inline-block; }
+.knowBoxsRight .knowCentBoxs .knowCent > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > img { float: right; margin-left: 20px; width: auto; height: auto; max-width: 200px; max-height: 200px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > img { float: none; margin: 0 auto; max-width: 100%; max-height: 100%; } }
+.knowBoxsRight .knowCentBoxs .knowCent > .content > .text > p, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > p, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > p { text-align: left; font-size: 16px; margin: 10px 0; color: black; }
+.knowBoxsRight .knowCentBoxs .knowCent > .content > .text:after, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text:after, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text:after { content: ''; clear: both; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_o { padding: 20px; background-color: #ff790b; border-radius: 10px; cursor: default; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p { padding: 20px; background-color: #af4dac; border-radius: 10px; cursor: default; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content { margin: 0; padding: 0; background-color: transparent; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content .title, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content .title, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content .title { width: 100%; color: white; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content .title h3, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content .title h3, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content .title h3 { display: inline-block; width: 50%; text-align: left; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content .title select, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content .title select, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content .title select { display: inline-block; width: 50%; text-align: right; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content .title select.w_select_type, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content .title select.w_select_type, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content .title select.w_select_type { background: url("../img/se_arrow.png") no-repeat scroll right center white; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content .text p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content .text p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content .text p { color: white; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text { display: none; width: 100%; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text.text_show, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text.text_show, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text.text_show { display: inline-block; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text img, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text img, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text img { display: inline-block; float: none; width: 30%; margin-left: 0; margin-right: 20px; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text p { display: inline-block; float: right; width: 70%; color: white; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text:after, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text:after, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text:after { content: ''; clear: both; }
 .knowBoxsRight .infoWrapper { position: relative; margin-top: 40px; padding: 20px; width: 100%; float: left; border-radius: 10px; }
 .knowBoxsRight .infoWrapper.page_green { background-color: #4e8f2b; }
 .knowBoxsRight .infoWrapper.page_blue { background-color: #237eb1; }
