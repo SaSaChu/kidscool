@@ -275,7 +275,8 @@ $(function() {
       let $bottom = $banner.find('.bottom').empty()
 
       let total = $banner.find('.box').length
-      let MaxPage = Math.ceil(total / 8)
+
+      let MaxPage = Math.ceil(total / 3)
 
       let getPage = n => parseInt($banner.attr('p'), 10) + n
       let setPage = p => $banner.attr('p', p)
