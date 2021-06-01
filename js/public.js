@@ -101,14 +101,14 @@ $(function() {
   // $('.knowBtn.btn_purple').eq (0).click();
 
   // 橘色
-  $('.knowBtn.btn_orange').click(function() {
-    $('.knowBtn.btn_orange').removeClass ('orange_s');
-    $(this).addClass ('orange_s');
+  // $('.knowBtn.btn_orange').click(function() {
+  //   $('.knowBtn.btn_orange').removeClass ('orange_s');
+  //   $(this).addClass ('orange_s');
 
-    $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
-  });
-  $('.knowBtn.btn_orange').eq (0).click();
+  //   $('.knowselect').removeClass('knowselect_show');
+  //   $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
+  // });
+  // $('.knowBtn.btn_orange').eq (0).click();
 
   // 棕色
   $('.knowBtn.btn_brown').click(function() {
