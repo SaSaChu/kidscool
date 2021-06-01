@@ -111,14 +111,14 @@ $(function() {
   // $('.knowBtn.btn_orange').eq (0).click();
 
   // 棕色
-  $('.knowBtn.btn_brown').click(function() {
-    $('.knowBtn.btn_brown').removeClass ('brown_s');
-    $(this).addClass ('brown_s');
+  // $('.knowBtn.btn_brown').click(function() {
+  //   $('.knowBtn.btn_brown').removeClass ('brown_s');
+  //   $(this).addClass ('brown_s');
 
-    $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
-  });
-  $('.knowBtn.btn_brown').eq (0).click();
+  //   $('.knowselect').removeClass('knowselect_show');
+  //   $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
+  // });
+  // $('.knowBtn.btn_brown').eq (0).click();
 
 
   // 切換tab(左邊)
@@ -167,6 +167,7 @@ $(function() {
     $(this).parent().parent().find('.knowBoxsRight').eq($(this).index()).addClass('knowBoxsRight_show');
   });
 
+  // 移至 public2.js
   // 手機版 select
   // $("#m_sel").change(function () {
   //   let i = $(this).val()
