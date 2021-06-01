@@ -2,6 +2,9 @@
 $(function() {
     
     var kl = {
+        Variable: {
+            color: $('.page_color').attr('data-color'),
+        },
         Method: {
             copyInfo: function(e) {
                 var _t = e.currentTarget;
@@ -40,7 +43,6 @@ $(function() {
                 var ans = kl.Method.findOpenTarget(_ul , item_ary , selfTop)
                 var targetInTail = ans.inTail;
                 var _openTarget = ans.target;
-
                 
                 $(newRow).append($(_li).find(".infoHolder").html()); //將產品內的詳細內容移入展開用的容器內
                 if(targetInTail == false){//插入在開啟產品<li> 的前一個
@@ -49,7 +51,7 @@ $(function() {
                     $(newRow).insertAfter(_openTarget);//.addClass('metest');
                 }
                 
-                $(_ul).find('.infoWrapper').addClass(($(_ul).attr('data-color')));
+                $(_ul).find('.infoWrapper').addClass(kl.Variable.color);
                 $(_ul).find('.infoWrapper').append($(_li).find('.infoHolder').text());
                 
                 $(wrapper).remove();                   

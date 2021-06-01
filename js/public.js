@@ -67,25 +67,28 @@ $(function() {
 
 
   // 切換tab(上面)
-  // 綠色
-  $('.knowBtn.btn_green').click(function() {
-    $('.knowBtn.btn_green').removeClass ('green_s');
-    $(this).addClass ('green_s');
+  // 移至 public2.js
 
-    $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
-  });
-  $('.knowBtn.btn_green').eq (0).click();
+  // 綠色
+  // $('.knowBtn.btn_green').click(function() {
+  //   $('.knowBtn.btn_green').removeClass ('green_s');
+  //   $(this).addClass ('green_s');
+
+  //   $('.knowselect').removeClass('knowselect_show');
+  //   $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
+  //   $('.knowselect').eq($(this).index()).next().addClass('knowBoxsRight_show');
+  // });
+  // $('.knowBtn.btn_green').eq (0).click();
 
   // 藍色
-  $('.knowBtn.btn_blue').click(function() {
-    $('.knowBtn.btn_blue').removeClass ('blue_s');
-    $(this).addClass ('blue_s');
+  // $('.knowBtn.btn_blue').click(function() {
+  //   $('.knowBtn.btn_blue').removeClass ('blue_s');
+  //   $(this).addClass ('blue_s');
 
-    $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
-  });
-  $('.knowBtn.btn_blue').eq (0).click();
+  //   $('.knowselect').removeClass('knowselect_show');
+  //   $('.knowselect').eq($(this).index()).addClass('knowselect_show').find('.li_orange').eq (0).click(); 
+  // });
+  // $('.knowBtn.btn_blue').eq (0).click();
 
   // 紫色
   $('.knowBtn.btn_purple').click(function() {
@@ -165,20 +168,22 @@ $(function() {
   });
 
   // 手機版 select
-  $("#m_sel").change(function () {
-    let i = $(this).val()
+  // $("#m_sel").change(function () {
+  //   let i = $(this).val()
 
-    $('.knowselect').removeClass('knowselect_show');
-    $('.knowselect').eq(i).addClass('knowselect_show');
-  });
+  //   $('.knowselect').removeClass('knowselect_show');
+  //   $('.knowselect').eq(i).addClass('knowselect_show');
+  // });
 
   // 網頁版 select
-  $("#k_sel").change(function () {
-    let i = $(this).val()
-
-    $('.knowBoxsRight').removeClass('knowBoxsRight_show');
-    $('.knowBoxsRight').eq(i).addClass('knowBoxsRight_show');
-  });
+  // #k_sel 修改為 .k_sel 
+  // $(".k_sel").change(function () {
+  //   let i = $(this).val()
+    
+  //   $('.knowBoxsRight').removeClass('knowBoxsRight_show');
+  //   $('.knowBoxsRight').eq(i).addClass('knowBoxsRight_show');
+  
+  // });
 
 
   //首頁手機・輪播圖

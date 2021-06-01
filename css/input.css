@@ -76,6 +76,9 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 
 .w_select_type { display: inline-block; width: 100%; float: right; font-size: 1.6rem; padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 38px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }
 .w_select_type.g { border: 1px solid #4e8f2b; color: #4e8f2b; }
+.w_select_type.b { border: 1px solid #237eb1; color: #237eb1; }
+.w_select_type.o { border: 1px solid #ff790b; color: #ff790b; }
+.w_select_type.br { border: 1px solid #996536; color: #996536; }
 
 .select_type { display: inline-block; width: calc(100% - 160px); float: right; font-size: 1.2rem; padding: 8px 10px; border: 1px solid #c6c6c6; color: black; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 38px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }
 

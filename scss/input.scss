@@ -159,6 +159,21 @@ label {
     color: $page_green;
   }
 
+  &.b {
+    border: 1px solid $page_blue;
+    color: $page_blue; 
+  }
+
+  &.o {
+    border: 1px solid $page_orange;
+    color: $page_orange;  
+  }
+
+  &.br {
+    border: 1px solid $page_brown;
+    color: $page_brown; 
+  }
+
   /*適應safari瀏覽器內容不跑偏*/
   line-height: 1;
   /*將預設的select選擇框樣式清除*/  
