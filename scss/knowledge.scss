@@ -25,6 +25,13 @@
         display: inline-block;
         width: 100%;
 
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
         .knowCent, .knowCent_o, .knowCent_p {
             display: inline-block;
             float: left;
@@ -219,6 +226,10 @@
                                     width: 30%;
                                     margin-left: 0;
                                     margin-right: 20px;
+
+                                    @include range-width(0, 450px) {
+                                        width: 100%;
+                                    }
                                 }
     
                                 p {
@@ -226,6 +237,10 @@
                                     float: right;
                                     width: 70%;
                                     color: rgba(255, 255, 255, 1);
+
+                                    @include range-width(0, 450px) {
+                                        width: 100%;
+                                    }
                                 }
 
                                 &:after {
