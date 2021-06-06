@@ -47,8 +47,8 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight.knowBoxsRight_show { width: 100%; } }
 .knowBoxsRight .knowCentBoxs { display: inline-block; width: 100%; }
 .knowBoxsRight .knowCentBoxs img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
-.knowBoxsRight .knowCentBoxs .knowCent, .knowBoxsRight .knowCentBoxs .knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p { display: inline-block; float: left; width: 180px; height: auto; margin-top: 40px; margin-right: 40px; background-color: white; cursor: pointer; }
-@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent, .knowBoxsRight .knowCentBoxs .knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p { width: 100%; } }
+.knowBoxsRight .knowCentBoxs .knowCent, .knowBoxsRight .knowCentBoxs .knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p { display: inline-block; float: left; width: 180px; height: auto; margin-top: 20px; margin-right: 20px; margin-left: 20px; background-color: white; cursor: pointer; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent, .knowBoxsRight .knowCentBoxs .knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p { width: calc(100% - 20px * 2); } }
 .knowBoxsRight .knowCentBoxs .knowCent figure, .knowBoxsRight .knowCentBoxs .knowCent_o figure, .knowBoxsRight .knowCentBoxs .knowCent_p figure { position: relative; margin: 0; width: 100%; height: 100%; }
 .knowBoxsRight .knowCentBoxs .knowCent figure:hover img, .knowBoxsRight .knowCentBoxs .knowCent_o figure:hover img, .knowBoxsRight .knowCentBoxs .knowCent_p figure:hover img { border-radius: 3px; }
 .knowBoxsRight .knowCentBoxs .knowCent figure:hover img.page_green, .knowBoxsRight .knowCentBoxs .knowCent_o figure:hover img.page_green, .knowBoxsRight .knowCentBoxs .knowCent_p figure:hover img.page_green { border-color: #4e8f2b; }
@@ -57,11 +57,14 @@
 .knowBoxsRight .knowCentBoxs .knowCent figure:hover img.page_brown, .knowBoxsRight .knowCentBoxs .knowCent_o figure:hover img.page_brown, .knowBoxsRight .knowCentBoxs .knowCent_p figure:hover img.page_brown { border-color: #996536; }
 .knowBoxsRight .knowCentBoxs .knowCent figure img, .knowBoxsRight .knowCentBoxs .knowCent_o figure img, .knowBoxsRight .knowCentBoxs .knowCent_p figure img { width: auto; height: auto; max-width: 100%; max-height: 100%; border: 3px solid transparent; }
 .knowBoxsRight .knowCentBoxs .knowCent figure figcaption, .knowBoxsRight .knowCentBoxs .knowCent_o figure figcaption, .knowBoxsRight .knowCentBoxs .knowCent_p figure figcaption { background: white; text-align: left; color: black; }
+.knowBoxsRight .knowCentBoxs .knowCent figure figcaption > p, .knowBoxsRight .knowCentBoxs .knowCent_o figure figcaption > p, .knowBoxsRight .knowCentBoxs .knowCent_p figure figcaption > p { padding-top: 10px; font-size: 1.4rem; }
 .knowBoxsRight .knowCentBoxs .knowCent figure figcaption > p.page_green, .knowBoxsRight .knowCentBoxs .knowCent_o figure figcaption > p.page_green, .knowBoxsRight .knowCentBoxs .knowCent_p figure figcaption > p.page_green { color: #4e8f2b; }
 .knowBoxsRight .knowCentBoxs .knowCent figure figcaption > p.page_blue, .knowBoxsRight .knowCentBoxs .knowCent_o figure figcaption > p.page_blue, .knowBoxsRight .knowCentBoxs .knowCent_p figure figcaption > p.page_blue { color: #237eb1; }
 .knowBoxsRight .knowCentBoxs .knowCent figure figcaption > p.page_orange, .knowBoxsRight .knowCentBoxs .knowCent_o figure figcaption > p.page_orange, .knowBoxsRight .knowCentBoxs .knowCent_p figure figcaption > p.page_orange { color: #ff790b; }
 .knowBoxsRight .knowCentBoxs .knowCent figure figcaption > p.page_brown, .knowBoxsRight .knowCentBoxs .knowCent_o figure figcaption > p.page_brown, .knowBoxsRight .knowCentBoxs .knowCent_p figure figcaption > p.page_brown { color: #996536; }
 .knowBoxsRight .knowCentBoxs .knowCent.fullScreen, .knowBoxsRight .knowCentBoxs .knowCent_o.fullScreen, .knowBoxsRight .knowCentBoxs .knowCent_p.fullScreen { width: 100%; }
+.knowBoxsRight .knowCentBoxs .knowCent.fullScreen.fullMobile_nospace, .knowBoxsRight .knowCentBoxs .knowCent_o.fullScreen.fullMobile_nospace, .knowBoxsRight .knowCentBoxs .knowCent_p.fullScreen.fullMobile_nospace { margin-right: 0; margin-left: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent.fullScreen.fullMobile_nospace, .knowBoxsRight .knowCentBoxs .knowCent_o.fullScreen.fullMobile_nospace, .knowBoxsRight .knowCentBoxs .knowCent_p.fullScreen.fullMobile_nospace { width: 100%; margin-right: 0; margin-left: 0; border-radius: 0; } }
 .knowBoxsRight .knowCentBoxs .knowCent > .infoHolder, .knowBoxsRight .knowCentBoxs .knowCent_o > .infoHolder, .knowBoxsRight .knowCentBoxs .knowCent_p > .infoHolder { display: none; }
 .knowBoxsRight .knowCentBoxs .knowCent > .content, .knowBoxsRight .knowCentBoxs .knowCent_o > .content, .knowBoxsRight .knowCentBoxs .knowCent_p > .content { margin-top: 20px; padding: 20px; background-color: white; border-radius: 10px; }
 .knowBoxsRight .knowCentBoxs .knowCent > .content > .title, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .title, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .title { text-align: left; color: black; }
@@ -86,6 +89,7 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text p { width: 100%; } }
 .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text:after, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text:after, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text:after { content: ''; clear: both; }
 .knowBoxsRight .infoWrapper { position: relative; margin-top: 40px; padding: 20px; width: 100%; float: left; border-radius: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .infoWrapper { border-radius: 0; } }
 .knowBoxsRight .infoWrapper.page_green { background-color: #4e8f2b; }
 .knowBoxsRight .infoWrapper.page_blue { background-color: #237eb1; }
 .knowBoxsRight .infoWrapper.page_orange { background-color: #ff790b; }

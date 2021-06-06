@@ -39,13 +39,15 @@
             height: auto;
             // width: calc(100% / 4 - 40px * 3 / 4);
             // height: 192.500px;
-            margin-top: 40px;
-            margin-right: 40px;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
             background-color: rgba(255, 255, 255, 1);
             cursor: pointer;
 
+
             @include range-width(0, 450px) {
-                width: 100%;
+                width: calc(100% - 20px * 2);
             }
 
             figure {
@@ -90,6 +92,9 @@
                     color: rgba(0, 0, 0, 1);
                  
                     > p {
+                        padding-top: 10px;
+                        font-size: 1.4rem;
+
                         &.page_green {
                             color: $page_green;
                         }
@@ -111,6 +116,18 @@
 
             &.fullScreen {
                 width: 100%;
+
+                &.fullMobile_nospace {
+                    margin-right: 0;
+                    margin-left: 0;
+                    
+                    @include range-width(0, 450px) {
+                        width: 100%;
+                        margin-right: 0;
+                        margin-left: 0;
+                        border-radius: 0;  
+                    }
+                }
             } 
 
             > .infoHolder {
@@ -262,6 +279,10 @@
         width: 100%;
         float: left;
         border-radius: 10px;
+
+        @include range-width(0, 450px) {
+            border-radius: 0;
+        }
 
         &.page_green {
             background-color: $page_green;
