@@ -1,0 +1,190 @@
+@import "Ginkgo";
+@import "color";
+
+
+.iModalTemplate {
+    display: none;
+}
+// 光箱
+#iModel {
+    // display: inline-block;
+    display: none;
+  
+    &.showModel {
+      display: flex;
+    }
+    
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(33, 33, 33, .8);
+  
+    .ac_outer {
+      width: 80%;
+
+      @include range-width(0, 450px) {
+        width: 95%;
+    }
+
+    .hisCentBox {
+        display: inline-block;
+        width: 100%;
+        background-color: white;
+        padding: 40px;
+        @include border-radius(10px);
+
+        @include range-width(0, 450px) {
+            padding: 15px;
+        }
+      
+        &.in_his {
+          max-height: 800px;
+          overflow-x:hidden;
+        }
+
+        .model_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+
+            &.bt_line {
+                border-bottom: 1px solid rgba(33, 33, 33, .8);
+
+                h2 {
+                    margin-bottom: 20px;
+                    color: $page_orange;
+                    font-size: 36px;
+                    
+                    @include range-width(0, 450px) {
+                        font-size: 24px;
+                    } 
+                }
+            }
+
+            @include range-width(0, 450px) {
+                flex-direction: column-reverse;
+                
+            }
+
+            h2 {
+                display: inline-block;
+                margin: 0;
+                width: 80%;
+                text-align: left;
+                @include range-width(0, 450px) {
+                    width: 100%;
+                }
+            }
+            
+            .t-close {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 15px;
+                width: 70px;
+                height: 30px;
+                font-size: 16px;
+                background-color: red;
+                border-radius: 5px;
+                color: white;
+
+                @include range-width(0, 450px) {
+                    align-self: flex-end;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        > .video {
+            margin-top: 40px;
+            display: inline-block;
+            width: 100%;
+            
+            video {
+                width: 100%;
+                height: 600px;
+
+                @include range-width(451px, 1441px) {
+                    height: 480px;
+                }
+
+                @include range-width(0, 450px) {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+                
+            }
+        }
+
+        .model_content {
+            display: flex;
+            margin-top: 20px;
+
+            @include range-width(0, 450px) {
+                flex-direction: column;
+            }
+
+            .text {
+                width: 40%;
+                font-size: 26px;
+                text-align: left;
+                line-height: 1.2;
+
+                @include range-width(0, 450px) {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    font-size: 20px;
+                }
+
+                > span {
+                    display: inline-block;
+                    margin: 20px 0;
+                    font-size: 22px;
+
+                    @include range-width(0, 450px) {
+                        margin: 10px 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .video {
+                width: 60%;
+
+                @include range-width(0, 450px) {
+                    width: 100%;
+                }
+
+                video {
+                    width: 100%;
+
+                    height: 600px;
+
+                    @include range-width(451px, 1441px) {
+                        height: 480px;
+                    }
+
+                    @include range-width(0, 450px) {
+                        width: auto;
+                        height: auto;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+            
+        }
+      }
+    }
+  }
