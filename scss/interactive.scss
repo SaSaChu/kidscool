@@ -260,6 +260,10 @@
     overflow: auto;
     background-color: rgba(33, 33, 33, 0.8);
 
+    @include range-width(0, 450px) {
+        align-items: flex-start;
+    }
+
     .ac_outer {
         width: 80%;
 
@@ -353,14 +357,29 @@
                             display: flex;
                             position: relative;
 
+                            @include range-width(0, 450px) {
+                                margin: 0;
+                            }
+
                             > label {
                                 width: 70%;
+                                @include range-width(0, 450px) {
+                                    width: 100%;
+                                    margin-bottom: 70px;
+                                }
     
                                 > span {
                                     width: 14.5%;
+                                    @include range-width(0, 450px) {
+                                        width: 100%;
+                                    }
                                 }
+
                                 > input[type="text"] {
                                     width: calc(100% - 14.5%);
+                                    @include range-width(0, 450px) {
+                                        width: 100%;
+                                    }
                                 }
                                 > input[type="file"] {
                                     width: 0;
@@ -377,10 +396,18 @@
                             color: #ffffff;
                             text-align: left;
                             border-radius: 5px;
+
+                            @include range-width(0, 450px) {
+                                flex-direction: column;
+                            }
     
                             > span {
                                 display: inline-block;
                                 width: 10%;
+
+                                @include range-width(0, 450px) {
+                                    width: 100%;
+                                }
                             }
                             > input, select {
                                 padding: 0 5px;
@@ -388,6 +415,9 @@
                                 height: 33px;
                                 font-size: 22px;
                                 background-color: #ffffff;
+                                @include range-width(0, 450px) {
+                                    width: 100%;
+                                }
                             }
     
                         }
@@ -402,6 +432,12 @@
                                 color: #ffffff;
                                 font-size: 22px;
                                 border-radius: 5px;
+
+                                @include range-width(0, 450px) {
+                                    top: 90px;
+                                    width: 100%;
+                                    margin: 0;
+                                }
                           }
                     }
 
