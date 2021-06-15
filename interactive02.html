@@ -1,407 +1,510 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <head>
-    <meta http-equiv="Content-Language" content="zh-tw">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 
-    <title>巧連智奇酷網</title>
+<head>
+	<meta http-equiv="Content-Language" content="zh-tw">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 
-    <link rel="stylesheet" type="text/css" href="css/icon.css">
-    <link rel="stylesheet" type="text/css" href="css/public.css">
-    <link rel="stylesheet" type="text/css" href="css/color.css">
-    <link rel="stylesheet" type="text/css" href="css/effect.css">
-    <link rel="stylesheet" type="text/css" href="css/input.css">
-    <link rel="stylesheet" type="text/css" href="css/link.css">
-    <link rel="stylesheet" type="text/css" href="css/other.css">
-    <link rel="stylesheet" type="text/css" href="css/space.css">
-    <link rel="stylesheet" type="text/css" href="css/text.css">
+	<title>巧連智奇酷網</title>
 
-    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/public.js"></script>
-  </head>
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/effect.css">
+	<link rel="stylesheet" type="text/css" href="css/input.css">
+	<link rel="stylesheet" type="text/css" href="css/link.css">
+	<link rel="stylesheet" type="text/css" href="css/other.css">
+	<link rel="stylesheet" type="text/css" href="css/space.css">
+	<link rel="stylesheet" type="text/css" href="css/text.css">
+	<link rel="stylesheet" type="text/css" href="css/interactive.css">
 
-  <body>
-    
-    <header class="pageH">
-      <div class='header_l'>
-        <a href="index.html"><img class='logo' src="img/logo.svg"></a>
-        <a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" target='_blank'><img class='header_icon' src="img/icon_fb.svg"></a>
-        <a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" target='_blank'><img class='header_icon' src="img/icon_u2.svg"></a>
-        <a href="https://www.benesse.com.tw/html/line/index.html" target='_blank'><img class='header_icon' src="img/icon_line.svg"></a>
-        <a href="https://app.benesse.com.tw/act/201601_member/" target='_blank'><img class='header_icon' src="img/icon_app.svg"></a>
-      </div>
+	<script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/public.js"></script>
+	<script language="javascript" type="text/javascript" src="js/interactive.js"></script>
+</head>
 
-      <div class='header_r'>
-        <!-- 會員編號 -->
-        <div class='ds m_rt_3_8'>
-          <p class='talk_input'>嗨！李曉明！您好！你已經成功登入囉！</p>
-        </div>
+<body>
 
-        <!-- link -->
-        <a class='link_red m_r_10' href="">登出</a>
-        <a class='link_red m_r_10' href="change_pw.html">變更密碼</a>
+	<header class="pageH">
+		<div class='header_l'>
+			<a href="index.html"><img class='logo' src="img/logo.svg"></a>
+			<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" target='_blank'><img class='header_icon'
+					src="img/icon_fb.svg"></a>
+			<a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" target='_blank'><img
+					class='header_icon' src="img/icon_u2.svg"></a>
+			<a href="https://www.benesse.com.tw/html/line/index.html" target='_blank'><img class='header_icon'
+					src="img/icon_line.svg"></a>
+			<a href="https://app.benesse.com.tw/act/201601_member/" target='_blank'><img class='header_icon'
+					src="img/icon_app.svg"></a>
+		</div>
 
-        <!-- qa按鈕 -->
-        <div class='ds posit m_r_5'>
-          <div class='tip_box'>
-            <span class='prompt' data-showtip='網站說明'>
-              <a class='link40' href="help.html"></a>
-            </span>
-          </div>
-          <img class='icon_qa p_t_5' src="img/icon_qa.svg">
-        </div>
+		<div class='header_r'>
+			<!-- 會員編號 -->
+			<div class='ds m_rt_3_8'>
+				<p class='talk_input'>嗨！李曉明！您好！你已經成功登入囉！</p>
+			</div>
 
-        <!-- lock按鈕 -->
-        <div class='ds posit'>
-          <div class='tip_box'>
-            <span class='prompt pa' data-showtip='家長安心設定'>
-              <a class='link40' href="safe.html"></a>
-            </span>
-          </div>
-          <img class='icon_lock' src="img/icon_lock.svg">
-        </div>
-      </div>
+			<!-- link -->
+			<a class='link_red m_r_10' href="">登出</a>
+			<a class='link_red m_r_10' href="change_pw.html">變更密碼</a>
 
-      <!-- 手機Menu・觸發 -->
-      <div class='m_header_r icon-navicon'></div>
-    </header>
+			<!-- qa按鈕 -->
+			<div class='ds posit m_r_5'>
+				<div class='tip_box'>
+					<span class='prompt' data-showtip='網站說明'>
+						<a class='link40' href="help.html"></a>
+					</span>
+				</div>
+				<img class='icon_qa p_t_5' src="img/icon_qa.svg">
+			</div>
 
-    <div class='pageTitleBox'>
-      <a href="index.html"><img class='img_slogan img_S_page' src="img/slogan.png"></a>
-    </div>
+			<!-- lock按鈕 -->
+			<div class='ds posit'>
+				<div class='tip_box'>
+					<span class='prompt pa' data-showtip='家長安心設定'>
+						<a class='link40' href="safe.html"></a>
+					</span>
+				</div>
+				<img class='icon_lock' src="img/icon_lock.svg">
+			</div>
+		</div>
 
-    <!-- 手機Menu・內容 -->
-    <div class='m_menu'>
-      <div class='menuClose'><img src="img/close.png"></div>
-      <div class='menuBox'>
-        <!-- menu header -->
-        <div class='m_header'>
-          <div class="allBoxs textLeft">
-            <img class='m_header_img' src="img/m-logo.png">
+		<!-- 手機Menu・觸發 -->
+		<div class='m_header_r icon-navicon'></div>
+	</header>
 
-            <!-- 輸入框 -->
-            <div class="ds ds-60">
-              <!-- 會員編號 -->
-              <div class='ds ds100'>
-                <p class='ds m_f_b13'>會員編號：</p>
-                <label>
-                  <input class='input_white m-menuUse' type="" name="">
-                </label>
-              </div>
+	<div class='pageTitleBox'>
+		<a href="index.html"><img class='img_slogan img_S_page' src="img/slogan.png"></a>
+	</div>
 
-              <!-- 密碼： -->
-              <div class='ds ds100 m_t_5'>
-                <p class='ds m_f_b13'>密碼：</p>
-                <label>
-                  <input class='input_white m-menuUse' type="" name="">
-                </label>
-              </div>
-            </div>
+	<!-- 手機Menu・內容 -->
+	<div class='m_menu'>
+		<div class='menuClose'><img src="img/close.png"></div>
+		<div class='menuBox'>
+			<!-- menu header -->
+			<div class='m_header'>
+				<div class="allBoxs textLeft">
+					<img class='m_header_img' src="img/m-logo.png">
 
-            <!-- link -->
-            <div class="ds ds100 m_t_10">
-              <a class='link_red m_r_10' href="login.html">登入</a>
-              <a class='link_red m_r_10' href="forget_pw.html">忘記密碼</a>
-              <a class='m-qBtnBox link_grey' href="help.html"><img class='icon_qa' src="img/icon_qa_w.svg">網站說明</a>
-            </div>
-          </div>
-        </div>
+					<!-- 輸入框 -->
+					<div class="ds ds-60">
+						<!-- 會員編號 -->
+						<div class='ds ds100'>
+							<p class='ds m_f_b13'>會員編號：</p>
+							<label>
+								<input class='input_white m-menuUse' type="" name="">
+							</label>
+						</div>
 
-        <!-- menu cent -->
-        <div class='ds ds100'>
-          <div class="dropdown">
-            <button class="dropbtn m-nb m-menu01">互動學員</button>
-            <div class="dropdown-content">
-              <a href="interactive.html">基礎版故事</a>
-              <a href="interactive02.html">基礎版活動投稿</a>
-              <a href="interactive03.html">進階版科學影片</a>
-              <a href="interactive04.html">進階版活動投稿</a>
-              <!-- <a href="interactive05.html">月號實驗影片</a> -->
-              <a href="interactive06.html">作文殿堂</a>
-              <a href="interactive07.html">小學版教材設計說明</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn m-menu02">小試身手</button>
-            <div class="dropdown-content">
-              <a href="test.html">快樂小一生</a>
-              <a href="test02.html">聰明小二生</a>
-              <a href="test03.html">天才小三生</a>
-              <a href="test04.html">資優小四生</a>
-              <a href="test05.html">進擊小五生</a>
-              <a href="test06.html">衝刺小六生</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn m-menu03">知識寶庫</button>
-            <div class="dropdown-content">
-              <a href="knowledge.html">自然篇</a>
-              <a href="knowledge02.html">科學篇</a>
-              <a href="knowledge03.html">世界篇</a>
-              <a href="knowledge04.html">鄉土篇</a>
-              <a href="knowledge05.html">典故篇</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn m-menu04">益智遊戲場</button>
-            <div class="dropdown-content">
-              <a href="game.html">動腦挑戰</a>
-              <a href="game02.html">放鬆舒壓</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn m-menu05">視聽大觀園</button>
-            <div class="dropdown-content">
-              <a href="video.html">英文律動館</a>
-              <a href="video02.html">語文養成館</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <a class="dropbtn m-menu06">每週互動</a>
-          </div>
-          <div class="dropdown">
-            <a class="dropbtn m-menu07">歷史今日</a>
-          </div>
-          <div class="dropdown">
-            <a class="dropbtn m-menu08">非會員試玩區</a>
-          </div>
-        </div>
+						<!-- 密碼： -->
+						<div class='ds ds100 m_t_5'>
+							<p class='ds m_f_b13'>密碼：</p>
+							<label>
+								<input class='input_white m-menuUse' type="" name="">
+							</label>
+						</div>
+					</div>
 
-        <!-- menu footer -->
-        <div class="fixBoxs textReft">
-          <a class='link_LGrey lineH33' href="safe.html">
-            <img class='icon_lock p_t_3' src="img/m-lock.svg">
-            家長安心設定
-          </a>
-        </div>
-      </div>
-    </div>
+					<!-- link -->
+					<div class="ds ds100 m_t_10">
+						<a class='link_red m_r_10' href="login.html">登入</a>
+						<a class='link_red m_r_10' href="forget_pw.html">忘記密碼</a>
+						<a class='m-qBtnBox link_grey' href="help.html"><img class='icon_qa'
+								src="img/icon_qa_w.svg">網站說明</a>
+					</div>
+				</div>
+			</div>
 
-    <!-- 中間內容 -->
-    <div class='pageBoxs m_t_30_DM'>
-      <!-- 左邊選單 -->
-      <div class="pageLeft">
-        <div class='block-l-menuBox'>
-          <span class="m-menu-t s">
-            <img src="img/wMenuIcon/w-menu01.png">
-            互動學員
-          </span>
-          <div class="m-smenu">
-            <a href="interactive.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">基礎版故事</a>
-            <a class='l-menu-active' href="interactive02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">基礎版活動投稿</a>
-            <a href="interactive03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進階版科學影片</a>
-            <a href="interactive04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進階版活動投稿</a>
-            <!-- <a href="interactive05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">月號實驗影片</a> -->
-            <a href="interactive06.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">作文殿堂</a>
-            <a href="interactive07.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">小學版教材設計說明</a>
-          </div>
+			<!-- menu cent -->
+			<div class='ds ds100'>
+				<div class="dropdown">
+					<button class="dropbtn m-nb m-menu01">互動學員</button>
+					<div class="dropdown-content">
+						<a href="interactive.html">基礎版故事</a>
+						<a href="interactive02.html">基礎版活動投稿</a>
+						<a href="interactive03.html">進階版科學影片</a>
+						<a href="interactive04.html">進階版活動投稿</a>
+						<!-- <a href="interactive05.html">月號實驗影片</a> -->
+						<a href="interactive06.html">作文殿堂</a>
+						<a href="interactive07.html">小學版教材設計說明</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn m-menu02">小試身手</button>
+					<div class="dropdown-content">
+						<a href="test.html">快樂小一生</a>
+						<a href="test02.html">聰明小二生</a>
+						<a href="test03.html">天才小三生</a>
+						<a href="test04.html">資優小四生</a>
+						<a href="test05.html">進擊小五生</a>
+						<a href="test06.html">衝刺小六生</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn m-menu03">知識寶庫</button>
+					<div class="dropdown-content">
+						<a href="knowledge.html">自然篇</a>
+						<a href="knowledge02.html">科學篇</a>
+						<a href="knowledge03.html">世界篇</a>
+						<a href="knowledge04.html">鄉土篇</a>
+						<a href="knowledge05.html">典故篇</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn m-menu04">益智遊戲場</button>
+					<div class="dropdown-content">
+						<a href="game.html">動腦挑戰</a>
+						<a href="game02.html">放鬆舒壓</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn m-menu05">視聽大觀園</button>
+					<div class="dropdown-content">
+						<a href="video.html">英文律動館</a>
+						<a href="video02.html">語文養成館</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="dropbtn m-menu06">每週互動</a>
+				</div>
+				<div class="dropdown">
+					<a class="dropbtn m-menu07">歷史今日</a>
+				</div>
+				<div class="dropdown">
+					<a class="dropbtn m-menu08">非會員試玩區</a>
+				</div>
+			</div>
 
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu02.png">
-            知識寶庫
-          </span>
-          <div class="m-smenu">
-            <a href="knowledge.html"><img class='m_r_5' src="img/wMenuIcon/w-star.png">自然篇</a>
-            <a href="knowledge02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">科學篇</a>
-            <a href="knowledge03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">世界篇</a>
-            <a href="knowledge04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">鄉土篇</a>
-            <a href="knowledge05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">典故篇</a>
-          </div>
+			<!-- menu footer -->
+			<div class="fixBoxs textReft">
+				<a class='link_LGrey lineH33' href="safe.html">
+					<img class='icon_lock p_t_3' src="img/m-lock.svg">
+					家長安心設定
+				</a>
+			</div>
+		</div>
+	</div>
 
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu03.png">
-            小試身手
-          </span>
-          <div class="m-smenu">
-            <a href="test.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">快樂小一生</a>
-            <a href="test02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">聰明小二生</a>
-            <a href="test03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">天才小三生</a>
-            <a href="test04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">資優小四生</a>
-            <a href="test05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進擊小五生</a>
-            <a href="test06.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">衝刺小六生</a>
-          </div>
+	<!-- 中間內容 -->
+	<div class='pageBoxs m_t_30_DM'>
+		<!-- 左邊選單 -->
+		<div class="pageLeft">
+			<div class='block-l-menuBox'>
+				<span class="m-menu-t s">
+					<img src="img/wMenuIcon/w-menu01.png">
+					互動學員
+				</span>
+				<div class="m-smenu">
+					<a href="interactive.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">基礎版故事</a>
+					<a class='l-menu-active' href="interactive02.html"><img class='m_t_3 m_r_5'
+							src="img/wMenuIcon/w-star.png">基礎版活動投稿</a>
+					<a href="interactive03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進階版科學影片</a>
+					<a href="interactive04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進階版活動投稿</a>
+					<!-- <a href="interactive05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">月號實驗影片</a> -->
+					<a href="interactive06.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">作文殿堂</a>
+					<a href="interactive07.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">小學版教材設計說明</a>
+				</div>
 
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu04.png">
-            視聽大觀園
-          </span>
-          <div class="m-smenu">
-            <a href="video.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">英文律動館</a>
-            <a href="video.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">語文養成館</a>
-          </div>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu02.png">
+					知識寶庫
+				</span>
+				<div class="m-smenu">
+					<a href="knowledge.html"><img class='m_r_5' src="img/wMenuIcon/w-star.png">自然篇</a>
+					<a href="knowledge02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">科學篇</a>
+					<a href="knowledge03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">世界篇</a>
+					<a href="knowledge04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">鄉土篇</a>
+					<a href="knowledge05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">典故篇</a>
+				</div>
 
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu05.png">
-            益智遊戲廠
-          </span>
-          <div class="m-smenu">
-            <a href="game.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">動腦挑戰</a>
-            <a href="game02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">放鬆舒壓</a>
-          </div>
-        </div>
-        <img class='order_l' src="img/wMenuIcon/menuShadow.png">
-      </div>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu03.png">
+					小試身手
+				</span>
+				<div class="m-smenu">
+					<a href="test.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">快樂小一生</a>
+					<a href="test02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">聰明小二生</a>
+					<a href="test03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">天才小三生</a>
+					<a href="test04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">資優小四生</a>
+					<a href="test05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進擊小五生</a>
+					<a href="test06.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">衝刺小六生</a>
+				</div>
 
-      <div class="pageRight page_R_K">
-        <div class='ds ds100'>
-          <picture>
-            <source srcset="img/interactive/m-title-interactive.png" media="(max-width: 450px)">
-            <source srcset="img/interactive/title-interactive.png" media="(max-width: 768px)">
-            <img class='pt-img' src="img/interactive/title-interactive.png">
-          </picture>
-        </div>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu04.png">
+					視聽大觀園
+				</span>
+				<div class="m-smenu">
+					<a href="video.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">英文律動館</a>
+					<a href="video.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">語文養成館</a>
+				</div>
 
-        <div class='ds ds100 p_td_20_DM'>
-          <a class='link_tag' href="index.html">首頁</a>
-          <a class='link_tag' href="">互動學員</a>
-          <p class='hover_tag'>基礎版活動投稿</p>
-        </div>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu05.png">
+					益智遊戲廠
+				</span>
+				<div class="m-smenu">
+					<a href="game.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">動腦挑戰</a>
+					<a href="game02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">放鬆舒壓</a>
+				</div>
+			</div>
+			<img class='order_l' src="img/wMenuIcon/menuShadow.png">
+		</div>
 
-        <div class='allBoxs textLeft m_d_20'>
-          <img class='m_r_10' src="img/interactive/interactiveIcon02.png">
-          <p class='f_b30 pageColorOrange'>基礎版活動投稿</p>
-        </div>
+		<div class="pageRight page_R_K">
+			<div class='ds ds100'>
+				<picture>
+					<source srcset="img/interactive/m-title-interactive.png" media="(max-width: 450px)">
+					<source srcset="img/interactive/title-interactive.png" media="(max-width: 768px)">
+					<img class='pt-img' src="img/interactive/title-interactive.png">
+				</picture>
+			</div>
 
-        <!-- 第一區塊 -->
-        <div class='ds ds100 m_p_lf5'>
-          <div class='inOutBoxs'>
-            <div class='ds ds100 in_m_d_20'>
-              <p class='inTitleBoxs'><img class='img_inTitle' src="img/interactive/in_titlePen.png">12月活動投稿</p>
-              <p class='inTitle'>魔術達人大集合</p>
-            </div>
-            <div class='banner2' p='1'>
-              <div class='top'>
-                <label class='left'><img src="img/interactive/in_arrow_LP.png"></label>
-                <div class='boxs'>
-                  <div class='box'>
-                    <img src="img/interactive/in_b71.png">
-                    <span>文字文字文字文字文字文字文字文字文字文字文字文字1</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b72.png">
-                    <span>文字文字文字文字文字文字2</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b71.png">
-                    <span>文字文字文字文字文字文字3</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b72.png">
-                    <span>文字文字文字文字文字文字4</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b71.png">
-                    <span>文字文字文字文字文字文字5</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b72.png">
-                    <span>文字文字文字文字文字文字6</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b71.png">
-                    <span>文字文字文字文字文字文字7</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b72.png">
-                    <span>文字文字文字文字文字文字8</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b71.png">
-                    <span>文字文字文字文字文字文字9</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b72.png">
-                    <span>文字文字文字文字文字文字10</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b71.png">
-                    <span>文字文字文字文字文字文字11</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b72.png">
-                    <span>文字文字文字文字文字文字12</span>
-                  </div>
-                  <div class='box'>
-                    <img src="img/interactive/in_b71.png">
-                    <span>文字文字文字文字文字文字13</span>
-                  </div>
-                </div>
-                <label class='right'><img src="img/interactive/in_arrow_RP.png"></label>
-              </div>
+			<div class='ds ds100 p_td_20_DM'>
+				<a class='link_tag' href="index.html">首頁</a>
+				<a class='link_tag' href="">互動學員</a>
+				<p class='hover_tag'>基礎版活動投稿</p>
+			</div>
 
-              <div class='bottom'>
-                <label class='first icon-angle-double-left'></label>
-                <label class='prev icon-angle-left'></label>
-                <label class='center'>
-                  <input type="text" value="0">
-                  <i>/</i>
-                  <span class='page'>0</span>
-                </label>
-                <label class='next icon-angle-right'></label>
-                <label class='last icon-angle-double-right'></label>
-              </div>
-            </div>
-          </div>
+			<div class='allBoxs textLeft m_d_20'>
+				<img class='m_r_10' src="img/interactive/interactiveIcon02.png">
+				<p class='f_b30 pageColorOrange'>基礎版活動投稿</p>
+			</div>
 
-          <!-- button -->
-          <div class='ds ds100'>
-            <a class='link_pink' href=""><img class='img_inTitle2' src="img/interactive/in_titlePen2.png">我要投稿</a>
-          </div>
+			<!-- 第一區塊 -->
+			<div class='ds ds100 m_p_lf5'>
+				<div class='inOutBoxs'>
+					<div class='ds ds100 in_m_d_20'>
+						<p class='inTitleBoxs'><img class='img_inTitle' src="img/interactive/in_titlePen.png">12月活動投稿
+						</p>
+						<p class='inTitle'>魔術達人大集合</p>
+					</div>
+					<div class='banner2' p='1'>
+						<div class='top'>
+							<label class='left'><img src="img/interactive/in_arrow_LP.png"></label>
+							<div class='boxs'>
+								<div class='box'>
+									<img src="img/interactive/in_b71.png">
+									<span>文字文字文字文字文字文字文字文字文字文字文字文字1</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b72.png">
+									<span>文字文字文字文字文字文字2</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b71.png">
+									<span>文字文字文字文字文字文字3</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b72.png">
+									<span>文字文字文字文字文字文字4</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b71.png">
+									<span>文字文字文字文字文字文字5</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b72.png">
+									<span>文字文字文字文字文字文字6</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b71.png">
+									<span>文字文字文字文字文字文字7</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b72.png">
+									<span>文字文字文字文字文字文字8</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b71.png">
+									<span>文字文字文字文字文字文字9</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b72.png">
+									<span>文字文字文字文字文字文字10</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b71.png">
+									<span>文字文字文字文字文字文字11</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b72.png">
+									<span>文字文字文字文字文字文字12</span>
+								</div>
+								<div class='box'>
+									<img src="img/interactive/in_b71.png">
+									<span>文字文字文字文字文字文字13</span>
+								</div>
+							</div>
+							<label class='right'><img src="img/interactive/in_arrow_RP.png"></label>
+						</div>
 
-          <!-- 虛線 -->
-          <i class='border_do'></i>
+						<div class='bottom'>
+							<label class='first icon-angle-double-left'></label>
+							<label class='prev icon-angle-left'></label>
+							<label class='center'>
+								<input type="text" value="0">
+								<i>/</i>
+								<span class='page'>0</span>
+							</label>
+							<label class='next icon-angle-right'></label>
+							<label class='last icon-angle-double-right'></label>
+						</div>
+					</div>
+				</div>
 
-          <!-- 第二區塊 -->
-          <div class='ds ds100'>
-            <div class='ds ds100 in_m_d_20'>
-              <p class='inTitleBoxs2'><img class='img_inTitle' src="img/interactive/in_c.png">其他月份投稿作品</p>
-            </div>
+				<!-- button -->
+				<div class='ds ds100'>
+					<div class='link_pink showTextModel' href="#">
+						<img class='img_inTitle2' src="img/interactive/in_titlePen2.png">我要投稿
+					</div>
+				</div>
 
-            <div class='banner3' p='1' empty=''>
-              <div class='years-month'>
-                <div class='years'>
-                  <label class='left-y icon-angle-left'></label>
-                  <span class='year'></span>
-                  <label class='right-y icon-angle-right'></label>
-                </div>
-                <div class='months'></div>
-              </div>
+				<!-- 虛線 -->
+				<i class='border_do'></i>
 
-              <div class='ds ds100'>
-                <p class='inTitle2'>魔術達人大集合</p>
-              </div>
+				<!-- 第二區塊 -->
+				<div class='ds ds100'>
+					<div class='ds ds100 in_m_d_20'>
+						<p class='inTitleBoxs2'><img class='img_inTitle' src="img/interactive/in_c.png">其他月份投稿作品</p>
+					</div>
 
-              <div class='top'>
-                <label class='left'><img src="img/interactive/in_arrow_LG.png"></label>
-                <div class='boxs'></div>
-                <label class='right'><img src="img/interactive/in_arrow_RG.png"></label>
-              </div>
+					<div class='banner3' p='1' empty=''>
+						<div class='years-month'>
+							<div class='years'>
+								<label class='left-y icon-angle-left'></label>
+								<span class='year'></span>
+								<label class='right-y icon-angle-right'></label>
+							</div>
+							<div class='months'></div>
+						</div>
 
-              <div class='bottom'>
-                <label class='first icon-angle-double-left'></label>
-                <label class='prev icon-angle-left'></label>
-                <label class='center'>
-                  <input type="text" value="0">
-                  <i>/</i>
-                  <span class='page'>0</span>
-                </label>
-                <label class='next icon-angle-right'></label>
-                <label class='last icon-angle-double-right'></label>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+						<div class='ds ds100'>
+							<p class='inTitle2'>魔術達人大集合</p>
+						</div>
 
-    <!-- footer -->
-    <footer class='bg_blue m_t_100'>
-      <p class='f_b13'>Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc.</p>
-      <p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
-      <p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
-    </footer>
-  </body>
+						<div class='top'>
+							<label class='left'><img src="img/interactive/in_arrow_LG.png"></label>
+							<div class='boxs'></div>
+							<label class='right'><img src="img/interactive/in_arrow_RG.png"></label>
+						</div>
+
+						<div class='bottom'>
+							<label class='first icon-angle-double-left'></label>
+							<label class='prev icon-angle-left'></label>
+							<label class='center'>
+								<input type="text" value="0">
+								<i>/</i>
+								<span class='page'>0</span>
+							</label>
+							<label class='next icon-angle-right'></label>
+							<label class='last icon-angle-double-right'></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- footer -->
+	<footer class='bg_blue m_t_100'>
+		<p class='f_b13'>Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc.</p>
+		<p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
+		<p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
+	</footer>
+
+	<!-- 光箱 -->
+	<div id="textModel" class="model text_model">
+		<div class='ac_outer'>
+			<div class='hisCentBox in_his'>
+				<div class="model_title">
+					<h2>作文投稿</h2>
+					<!-- <button class='t-close'>關閉</button> -->
+				</div>
+				<div class="content">
+					<form action="">
+						<div class="input-box">
+							<label>
+								<span>會員帳號</span>
+								<input type="text" name="account">
+							</label>
+						</div>
+						<div class="input-box">
+							<label>
+								<span>姓名</span>
+								<input type="text" name="name">
+							</label>
+						</div>
+						<div class="input-box">
+							<label>
+								<span>地區</span>
+								<select name="coutry" id="">
+									<option value="0">請選擇</option>
+									<option value="1">台北</option>
+									<option value="2">新北</option>
+									<option value="3">桃園</option>
+									<option value="4">台中</option>
+									<option value="5">台南</option>
+									<option value="6">高雄</option>
+								</select>
+							</label>
+						</div>
+						<div class="input-box">
+							<label>
+								<span>就讀國小</span>
+								<input type="text" name="school_name">
+							</label>
+						</div>
+						<div class="input-box">
+							<label>
+								<span>作文題目</span>
+								<select name="subject" id="">
+									<option value="0">請選擇</option>
+									<option value="1">寬與深</option>
+									<option value="2">學校和學生的關係</option>
+									<option value="3">我可以終身奉行的一個字</option>
+									<option value="4">審己以度人</option>
+									<option value="5">漂流木的獨白</option>
+									<option value="6">應變</option>
+								</select>
+							</label>
+						</div>
+						<div class="input-box upload">
+							<label>
+								<span>上傳檔案</span>
+								<input type="text" placeholder="請上傳小於 10 MB 之檔案" readonly>
+								<input type="file" name="file1">
+							</label>
+						</div>
+						<div class="input-box upload">
+							<label>
+								<span>上傳檔案</span>
+								<input type="text" placeholder="請上傳小於 10 MB 之檔案" readonly>
+								<input type="file" name="file2">
+							</label>
+						</div>
+						<div class="input-box upload">
+							<label>
+								<span>上傳檔案</span>
+								<input type="text" placeholder="請上傳小於 10 MB 之檔案" readonly>
+								<input type="file" name="file3">
+							</label>
+						</div>
+						<div class="note-box">
+							<p>01.上傳作文投稿、活動投稿時，務必確認照片及影片上的文字、畫面是否清晰，以利作品刊登。</p>
+							<p>02.投稿的作品不會立即刊登在網頁上，活動投稿經人員審核後才會刊登。作文投稿的作品會經老師評語後，才會刊登在網頁上。</p>
+						</div>
+						<div class="btn-box">
+							<button>確定上傳</button>
+							<button type="button" class="t-close">取消</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 
 </html>

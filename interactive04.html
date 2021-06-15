@@ -16,9 +16,11 @@
     <link rel="stylesheet" type="text/css" href="css/other.css">
     <link rel="stylesheet" type="text/css" href="css/space.css">
     <link rel="stylesheet" type="text/css" href="css/text.css">
+    <link rel="stylesheet" type="text/css" href="css/interactive.css">
 
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script language="javascript" type="text/javascript" src="js/interactive.js"></script>
   </head>
 
   <body>
@@ -346,7 +348,7 @@
 
           <!-- button -->
           <div class='ds ds100'>
-            <a class='link_b' href=""><img class='img_inTitle2' src="img/interactive/in_titlePen2.png">我要投稿</a>
+            <a class='link_b showTextModel' href="#"><img class='img_inTitle2' src="img/interactive/in_titlePen2.png">我要投稿</a>
           </div>
 
           <!-- 虛線 -->
@@ -402,6 +404,96 @@
       <p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
       <p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
     </footer>
+    <!-- 光箱 -->
+	<div id="textModel" class="model text_model">
+		<div class='ac_outer'>
+			<div class='hisCentBox in_his'>
+				<div class="model_title">
+					<h2>作文投稿</h2>
+					<!-- <button class='t-close'>關閉</button> -->
+				</div>
+				<div class="content">
+					<form action="">
+						<div class="input-box">
+							<label>
+								<span>會員帳號</span>
+								<input type="text" name="account">
+							</label>
+						</div>
+						<div class="input-box">
+							<label>
+								<span>姓名</span>
+								<input type="text" name="name">
+							</label>
+						</div>
+						<div class="input-box">
+							<label>
+								<span>地區</span>
+								<select name="coutry" id="">
+									<option value="0">請選擇</option>
+									<option value="1">台北</option>
+									<option value="2">新北</option>
+									<option value="3">桃園</option>
+									<option value="4">台中</option>
+									<option value="5">台南</option>
+									<option value="6">高雄</option>
+								</select>
+							</label>
+						</div>
+						<div class="input-box">
+							<label>
+								<span>就讀國小</span>
+								<input type="text" name="school_name">
+							</label>
+						</div>
+						<div class="input-box">
+							<label>
+								<span>作文題目</span>
+								<select name="subject" id="">
+									<option value="0">請選擇</option>
+									<option value="1">寬與深</option>
+									<option value="2">學校和學生的關係</option>
+									<option value="3">我可以終身奉行的一個字</option>
+									<option value="4">審己以度人</option>
+									<option value="5">漂流木的獨白</option>
+									<option value="6">應變</option>
+								</select>
+							</label>
+						</div>
+						<div class="input-box upload">
+							<label>
+								<span>上傳檔案</span>
+								<input type="text" placeholder="請上傳小於 10 MB 之檔案" readonly>
+								<input type="file" name="file1">
+							</label>
+						</div>
+						<div class="input-box upload">
+							<label>
+								<span>上傳檔案</span>
+								<input type="text" placeholder="請上傳小於 10 MB 之檔案" readonly>
+								<input type="file" name="file2">
+							</label>
+						</div>
+						<div class="input-box upload">
+							<label>
+								<span>上傳檔案</span>
+								<input type="text" placeholder="請上傳小於 10 MB 之檔案" readonly>
+								<input type="file" name="file3">
+							</label>
+						</div>
+						<div class="note-box">
+							<p>01.上傳作文投稿、活動投稿時，務必確認照片及影片上的文字、畫面是否清晰，以利作品刊登。</p>
+							<p>02.投稿的作品不會立即刊登在網頁上，活動投稿經人員審核後才會刊登。作文投稿的作品會經老師評語後，才會刊登在網頁上。</p>
+						</div>
+						<div class="btn-box">
+							<button>確定上傳</button>
+							<button type="button" class="t-close">取消</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
   </body>
 
 </html>
