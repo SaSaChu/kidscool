@@ -68,4 +68,8 @@ $(function () {
         $(this).parent().find('input[type="text"]').val(filename);
         // $('#filename').text(filename);
     });
+
+    lightbox.option({
+        'alwaysShowNavOnTouchDevices': true,
+      })
 });

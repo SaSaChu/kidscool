@@ -48,6 +48,13 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .banner1 > .top > .boxs > .box .cover { display: flex; justify-content: space-around; width: 100%; max-width: 252px; margin: 0 auto; margin-top: 10px; }
   .banner1 > .top > .boxs > .box .cover > button { width: 90px; height: 30px; border-radius: 20px; background-color: #ff790b; color: #ffffff; } }
 
+.banner2 > .top > .boxs > .box:hover > a:after { opacity: 1; }
+.banner2 > .top > .boxs > .box:hover > span { opacity: 1; }
+.banner2 > .top > .boxs > .box:after { content: none; }
+.banner2 > .top > .boxs > .box > a { position: relative; z-index: 0; }
+.banner2 > .top > .boxs > .box > a.lightbox-100 { width: 100%; }
+.banner2 > .top > .boxs > .box > a:after { position: absolute; width: 100%; top: 0; right: 0; bottom: 0; opacity: 0; background-color: rgba(0, 0, 0, 0.5); content: ''; z-index: 0; }
+
 .iModalTemplate { display: none; }
 
 #iModel { display: none; cursor: pointer; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
