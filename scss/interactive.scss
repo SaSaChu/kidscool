@@ -48,44 +48,53 @@
     > .top {
         > .boxs {
             > .box {
-                // position: relative;
-                &:hover {
-                    > a {
-                        
-                        &:after {
-                            opacity: 1;
-                        }        
-                    }
+            }
+        }
+    }
+}
 
-                    > span {
-                        opacity: 1;
-                    }
+.banner3 {
+    > .top {
+        > .boxs {
+            > .box {
+                // position: relative;
+                // &:hover {
+                //     > a {
+                        
+                //         &:after {
+                //             opacity: 1;
+                //         }        
+                //     }
+
+                //     > span {
+                //         opacity: 1;
+                //     }
                      
-                }
+                // }
 
                 &:after {
                     content: none;
                 }
-                > a {
-                    position: relative;
-                    z-index: 0;
+                // > a {
+                //     position: relative;
+                //     z-index: 0;
+
+                //     &.lightbox-100 {
+                //         width: 100%;
+                //     }
                     
-                    &.lightbox-100 {
-                        width: 100%;
-                    }
-                    
-                    &:after {
-                        position: absolute;
-                        width: 100%;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        opacity: 0;
-                        background-color: rgba(0, 0, 0, 0.5);
-                        content: '';
-                        z-index: 0;
-                    }                    
-                }
+                //     &:after {
+                //         position: absolute;
+                //         width: 100%;
+                //         top: 0;
+                //         right: 0;
+                //         bottom: 0;
+                //         opacity: 0;
+                //         background-color: rgba(0, 0, 0, 0.5);
+                //         content: '';
+                //         z-index: 0;
+                //     }                    
+                // }
                 
                 > img {
                     // width: auto;
@@ -94,7 +103,7 @@
                 }
             }
         }
-    }
+    } 
 }
 .iModalTemplate {
     display: none;
