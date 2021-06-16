@@ -42,7 +42,7 @@
 
 .bg_testBlue { background-color: #2a9fe9; }
 
-a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
+a, .cantuse { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
 
 button { display: inline-block; cursor: pointer; outline: 0; border: 0; background-color: transparent; }
 

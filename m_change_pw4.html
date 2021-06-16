@@ -21,9 +21,9 @@
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
   </head>
 
-  <body class='indexBg'>
+  <body>
     
-    <header>
+    <header class="pageH">
       <div class='header_l'>
         <a href="index.html"><img class='logo' src="img/logo.svg"></a>
         <a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" target='_blank'><img class='header_icon' src="img/icon_fb.svg"></a>
@@ -32,11 +32,44 @@
         <a href="https://app.benesse.com.tw/act/201601_member/" target='_blank'><img class='header_icon' src="img/icon_app.svg"></a>
       </div>
 
-      <div class='header_r'></div>
+      <div class='header_r'>
+        <!-- 會員編號 -->
+        <div class='ds m_rt_3_8'>
+          <p class='talk_input'>嗨！李曉明！您好！你已經成功登入囉！</p>
+        </div>
+
+        <!-- link -->
+        <a class='link_red m_r_10' href="">登出</a>
+        <a class='link_red m_r_10' href="change_pw.html">變更密碼</a>
+
+        <!-- qa按鈕 -->
+        <div class='ds posit m_r_5'>
+          <div class='tip_box'>
+            <span class='prompt' data-showtip='網站說明'>
+              <a class='link40' href="help.html"></a>
+            </span>
+          </div>
+          <img class='icon_qa p_t_5' src="img/icon_qa.svg">
+        </div>
+
+        <!-- lock按鈕 -->
+        <div class='ds posit'>
+          <div class='tip_box'>
+            <span class='prompt pa' data-showtip='家長安心設定'>
+              <a class='link40' href="safe.html"></a>
+            </span>
+          </div>
+          <img class='icon_lock' src="img/icon_lock.svg">
+        </div>
+      </div>
 
       <!-- 手機Menu・觸發 -->
-      <div class='m_header_r icon-navicon'></div>
+      <!-- <div class='m_header_r icon-navicon'></div> -->
     </header>
+
+    <div class='pageTitleBox'>
+      <a href="index.html"><img class='img_slogan img_S_page' src="img/slogan.png"></a>
+    </div>
 
     <!-- 手機Menu・內容 -->
     <div class='m_menu'>
@@ -68,7 +101,7 @@
 
             <!-- link -->
             <div class="ds ds100 m_t_10">
-              <a class='link_red m_r_10' href="m_login.html">登入</a>
+              <a class='link_red m_r_10' href="login.html">登入</a>
               <a class='link_red m_r_10' href="forget_pw.html">忘記密碼</a>
               <a class='m-qBtnBox link_grey' href="help.html"><img class='icon_qa' src="img/icon_qa_w.svg">網站說明</a>
             </div>
@@ -128,7 +161,7 @@
             <a class="dropbtn m-menu06">每週互動</a>
           </div>
           <div class="dropdown">
-            <a class="dropbtn m-menu07" href='m_history.html'>歷史今日</a>
+            <a class="dropbtn m-menu07">歷史今日</a>
           </div>
           <div class="dropdown">
             <a class="dropbtn m-menu08">非會員試玩區</a>
@@ -145,101 +178,32 @@
       </div>
     </div>
 
-    <div class='bigBoxs cent_index'>
+    <!-- 中間內容 -->
+    <div class='pageBoxs m_3005'>
       <div class="allBoxs">
-        <div class="w_loginBoxs">
-          <div class="whiteBoxs">
-            <div class="box70 p_r_20">
-              <div class='loginBoxs'>
-                <img class='order_l' src="img/login/w-title-login.png" style="margin-top: -10px;">
-                
-                <div class="ds ds100 m_d_30 p_rl_30">
-                  <p class='t-login notall'>會員編號：</p>
-                  <label>
-                    <input class='input_white w-login order_l' type="" name="">
-                  </label>
-                </div>
+        <div class='loginBoxs'>
 
-                <div class="ds ds100 m_d_30 p_rl_30">
-                  <p class='t-login notall'>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼：</p>
-                  <label>
-                    <input class='input_white w-login order_l' type="" name="">
-                  </label>
-                </div>
-
-                <div class="ds ds100 p_rl_30" style="margin-bottom: 20px;">
-                  <div class='boxs3_l'><button class='link_blue_l order_l'>登入說明</button></div>
-                  <div class='boxs3_l'><div class='link_red_l showModel' data-id='1'>登入</div></div>
-                  <div class='boxs3_l'><button class='link_blue_l order_r'>忘記密碼</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="box30">
-              <img class='pt-img' src="img/login/w-pic-login.png">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- title boxs -->
-      <div class='bigPlanet'>
-        <div class='allBoxs'>
-          <div class='boxs280'>
-            <div class='box20 posit m-close'>&nbsp;&nbsp;</div>
-
-            <!-- slogan -->
-            <div class='box60'>
-              <img class='img_slogan' src="img/slogan.png">
-              <div class='allBoxs p_td_20'>
-                <div class='whiteNum' title='線上人數：'>00000000</div>
-                <div class='whiteNum' title='瀏覽人次：'>00000000</div>
-              </div>
-            </div>
-
-            <!-- 試玩區 -->
-            <div class='box20 posit m-close'>
-              <a href="testPlay.html">
-                <img class='img_testPlay' src="img/testPlay.png">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- AD -->
-        <div class='boxs120 m-close'>
-          <div class='allBoxs maxWidth'>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-          </div>
-        </div>
-
-        <!-- footer -->
-        <footer>
-          <p class='f_b13'>Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc.</p>
-          <p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
-          <p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
-        </footer>
-      </div>
-    </div>
-
-    <!-- 光箱 -->
-    <div id="myModel" class="model">
-      <div class='ac_outer'>
-        <div class='model_boxs safeBg p_td_20_DM box_1'>
-          <div class='ds ds100'>
-            <img class='icon_clock' src="img/decline.png">
-            <p class="t-b-23">
-              您的帳號或密碼輸入錯誤！
+          <div class="ds ds100 m_d_30 p_rl_30">
+            <p class="t-b-22">
+              已經將密碼通知信寄到信箱:
+              </br>
+              leo610707@gmail.com 嘍！快去收信吧！
             </p>
           </div>
-          <div class='ds ds100'>
-            <div class='link_blue_l lB'>確定</div>
+
+          <div class="ds ds100 m_d_20">
+            <button class='link_red_l'>回首頁</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- footer -->
+    <footer class='bg_blue m_t_100'>
+      <p class='f_b13'>Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc.</p>
+      <p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
+      <p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
+    </footer>
   </body>
 
 </html>

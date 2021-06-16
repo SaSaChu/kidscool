@@ -796,6 +796,12 @@
       @include border-radius(15px);
       position: relative;
 
+      // 0616
+      text-decoration: none;
+      &:before {
+        display: none;
+      }
+
       @include range-width(0, 450px) {
         font-size: 1rem;
         padding: 3px 5px;
@@ -823,6 +829,7 @@
         }
 
         &.test_orange {
+          text-decoration: none;
           background: rgba(255, 132, 3, 1.00); /* Old browsers */
           background: -moz-linear-gradient(top,  rgba(255, 132, 3, 1.00) 0%, rgba(255, 132, 3, 1.00) 100%); /* FF3.6-15 */
           background: -webkit-linear-gradient(top,  rgba(255, 132, 3, 1.00) 0%,rgba(255, 132, 3, 1.00) 100%); /* Chrome10-25,Safari5.1-6 */

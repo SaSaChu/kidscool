@@ -126,6 +126,11 @@ label {
     max-width: none;
   }
 
+  &.w-change {
+    width: 60%;
+    max-width: none;
+  }
+
   &.m-menuUse {
     width: calc(100% - 69px);
     max-width: none;

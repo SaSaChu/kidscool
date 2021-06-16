@@ -70,6 +70,7 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 .input_white { display: inline-block; width: 100%; max-width: 135px; background-color: white; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
 .input_white.m-login { width: 100%; max-width: none; }
 .input_white.w-login { width: 75%; max-width: none; }
+.input_white.w-change { width: 60%; max-width: none; }
 .input_white.m-menuUse { width: calc(100% - 69px); max-width: none; padding: 5px 10px; font-size: 1rem; }
 
 .talk_input { display: inline-block; width: 100%; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }

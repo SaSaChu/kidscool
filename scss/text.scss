@@ -285,6 +285,12 @@ p {
     float: left;
   }
 
+  &.change {
+    width: 40%;
+    float: left;
+    text-align: right;
+  }
+
   &.test-t-login {
     @include range-width(0, 450px) {
       font-size: 1rem;
@@ -366,6 +372,18 @@ p {
 .t-b-22 {
   display: inline-block;
   width: 90%;
+  text-align: left;
+  font-size: 1.84rem;
+  font-weight: bolder;
+  color: black;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+// 安心設定
+.t-b-23 {
+  display: inline-block;
+  width: calc(100% - 120px);
   text-align: left;
   font-size: 1.84rem;
   font-weight: bolder;
