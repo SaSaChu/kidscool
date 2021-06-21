@@ -59,7 +59,6 @@ $(function() {
 
   $('.block-l-menuBox').each (function () {
     var $that = $(this);
-    console.error(1);
     
     $that.find ('.m-menu-t').click (function () {
       $that.find ('.m-menu-t').removeClass ('s')
@@ -304,17 +303,14 @@ $(function() {
     // 互動學員 banner2
     $('.banner2').each(function() {
       let $banner = $(this)
-
       let $prev = $banner.find('.prev')
       let $next = $banner.find('.next')
       let $input = $banner.find('input')
-
       let total = $banner.find('.box').length
       let MaxPage = Math.ceil(total / 6)
-
+      
       let getPage = n => parseInt($banner.attr('p'), 10) + n
       let setPage = p => $input.val($banner.attr('p', p).attr('p'))
-
       $input.keyup(function() {
         let p = getPage(0)
         setPage(isNaN(p) || p > MaxPage || MaxPage < 1 ? 1 : p)

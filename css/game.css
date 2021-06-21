@@ -1,0 +1,46 @@
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+.pageColorGreen { color: #4e8f2b; }
+
+.pageColorBlue { color: #237eb1; }
+
+.pageColorPurple { color: #af4dac; }
+
+.pageColorOrange { color: #ff790b; }
+
+.pageColorBrown { color: #996536; }
+
+.pageColorLBlue { color: #52b1e3; }
+
+.pageColorRed { color: #c51c17; }
+
+.bg_LBlue { background-color: #52b1e3; }
+
+.bg_blue { background-color: #129eff; }
+
+.bg_page_green { background-color: #4e8f2b; }
+
+.bg_page_blue { background-color: #237eb1; }
+
+.bg_page_purple { background-color: #af4dac; }
+
+.bg_page_orange { background-color: #ff790b; }
+
+.bg_page_yellow { background-color: #fb9526 !important; }
+
+.bg_page_brown { background-color: #996536; }
+
+.bg_page_LGreen { background-color: #d7e5ce; }
+
+.bg_page_Pink { background-color: #f27b9b; }
+
+.bg_testOrange { background-color: #ff8504; }
+
+.bg_testRed { background-color: #ff2653; }
+
+.bg_testGreen { background-color: #83bf03; }
+
+.bg_testBlue { background-color: #2a9fe9; }
+
+.videoCentBoxs .link_video .game_pic img { height: 100%; max-height: 325px; }
+.videoCentBoxs .iModalTemplate { display: none; }

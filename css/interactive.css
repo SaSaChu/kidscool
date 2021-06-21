@@ -60,6 +60,8 @@
 
 .banner3 .years-month .years span { display: none; }
 .banner3 .years-month .years span.active { display: inline-block; }
+.banner3 .years-month .months label { display: flex; justify-content: center; align-items: center; }
+.banner3 .years-month .months label:nth-child(n):before { content: none; }
 .banner3 > .top { display: inline-flex; }
 .banner3 > .top > .boxs > .box { padding: 5px; border-radius: 3px; border: 1px solid gainsboro; }
 @media screen and (max-width: 449px) and (min-width: 0) { .banner3 > .top > .boxs > .box { border: 0; } }

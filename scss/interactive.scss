@@ -136,6 +136,19 @@
                 }
             }
         }
+
+        .months {
+            label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:nth-child(n):before {
+                    content: none;
+                }
+            }
+            
+        }
     }
 
     > .top {

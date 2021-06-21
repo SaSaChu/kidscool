@@ -1,6 +1,13 @@
 @import "Ginkgo";
 @import "color";
 
+.allBoxs {
+    &.flex-wrap {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+}
+
 // video中間盒子
 .videoCentBoxs {
     .link_video {
