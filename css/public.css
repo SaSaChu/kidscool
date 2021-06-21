@@ -266,6 +266,7 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .writeBoxs { height: 270px; background: url(../img/interactive/m_in_write_bg.png) center center no-repeat; -moz-background-size: cover; background-size: cover; padding: 18px; } }
 
 .write_White_Boxs { display: inline-block; width: 100%; margin-top: 20px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; padding: 15px; }
+.write_White_Boxs.wwb2 { width: 48%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .write_White_Boxs { margin-top: 8px; padding: 8px; } }
 
 .show-box.spbox { display: inline-block; }

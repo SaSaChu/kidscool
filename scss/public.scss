@@ -964,6 +964,10 @@ footer {
   background-color: white;
   padding: 15px;
 
+  &.wwb2 {
+    width: 48%;
+  }
+
   @include range-width(0, 450px) {
     margin-top: 8px;
     padding:8px;
