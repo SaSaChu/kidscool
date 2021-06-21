@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1622386592') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1622386592') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1622386592') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1622386592') format('svg'); }
-=======
-@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1621216106') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1621216106') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1621216106') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1621216106') format('svg'); }
->>>>>>> 16e2b3055420e8b818e81e93c39bc080af27740e
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-bars:before { content: "\f0c9"; }
