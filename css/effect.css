@@ -71,7 +71,7 @@
 .show-box .top .points label + label { margin-left: 8px; }
 .show-box .top .points label:before { content: ''; position: absolute; left: 2px; top: 2px; display: inline-block; right: 2px; bottom: 2px; background-color: white; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; -webkit-transition: background-color 0.3s; transition: background-color 0.3s; }
 .show-box .panels { display: inline-block; width: 100%; }
-.show-box .panels .panel { display: none; width: 100%; background-color: white; text-align: left; padding: 12px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.show-box .panels .panel { width: 100%; background-color: white; text-align: left; padding: 12px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .show-box .panels .panel b { display: inline-block; width: 100%; font-size: 1.6rem; padding-bottom: 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .show-box .top .boxs .array { display: none; }
   .show-box .top .boxs .box-container { height: 230px; margin: 0; display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start; overflow-y: none; overflow-x: scroll; width: 100%; }
@@ -22278,7 +22278,7 @@
 .banner3 .bottom .center i { width: 10px; height: 28px; line-height: 28px; font-style: normal; }
 .banner3 .bottom .center span { flex-shrink: 0; width: calc(50% - 10px / 2 - 5px); }
 .banner3 .boxs { height: 300px; overflow: hidden; }
-.banner3 .box { position: absolute; left: 0; top: 0; display: inline-block; width: calc(100% / 3 - 13.33333px); height: 140px; -moz-transition: left 0.3s; -o-transition: left 0.3s; -webkit-transition: left 0.3s; transition: left 0.3s; text-decoration: none; border: 1px solid rgba(255, 0, 0, 0.3); }
+.banner3 .box { position: absolute; left: 0; top: 0; display: inline-block; width: calc(100% / 3 - 13.33333px); height: 140px; -moz-transition: left 0.3s; -o-transition: left 0.3s; -webkit-transition: left 0.3s; transition: left 0.3s; text-decoration: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .banner3 .box { display: inline-flex; flex-direction: column; align-items: center; justify-content: flex-start; }
   .banner3 .box img { display: inline-block; width: 100%; flex-grow: 1; background-color: rgba(0, 128, 0, 0.2); }
   .banner3 .box span { display: inline-block; width: 100%; } }

@@ -45,6 +45,8 @@ $(function() {
     })
   });
 
+  
+
 
   $('.m_header_r').click(function() {
     $('.m_menu').addClass('menu_open');
@@ -458,11 +460,11 @@ $(function() {
     let $moBoxs = $banner.find('.moBox .mo')
     let $weekCent = $banner.find('.weekCent')
     let index = $moBoxs.filter('.now').index()
-
     let $left = $banner.find('.left').click(_ => {
       $moBoxs.filter('.now').removeClass('now')
+
       $moBoxs.eq(index = (index == 0 ? $moBoxs.length : index) - 1).addClass('now')
-      $weekCent.removeClass('show').eq(index).addClass('show')
+      // $weekCent.removeClass('show').eq(index).addClass('show')
       if (index > 6)
         $moBox.attr('n2', '1')
       else
@@ -471,7 +473,7 @@ $(function() {
     let $right = $banner.find('.right').click(_ => {
       $moBoxs.filter('.now').removeClass('now')
       $moBoxs.eq(index = (index == $moBoxs.length - 1 ? 0 : (index + 1))).addClass('now')
-      $weekCent.removeClass('show').eq(index).addClass('show')
+      // $weekCent.removeClass('show').eq(index).addClass('show')
       
       if (index >= 6)
         $moBox.attr('n2', '1')
@@ -483,14 +485,14 @@ $(function() {
       index = $(this).index()
       $moBoxs.filter('.now').removeClass('now')
       $moBoxs.eq(index).addClass('now')
-      $weekCent.removeClass('show').eq(index).addClass('show')
+      // $weekCent.removeClass('show').eq(index).addClass('show')
       if (index > 6)
         $moBox.attr('n2', '1')
       else
         $moBox.removeAttr('n2', '1')
     });
 
-    $weekCent.removeClass('show').eq(index).addClass('show')
+    // $weekCent.removeClass('show').eq(index).addClass('show')
 
   })
 

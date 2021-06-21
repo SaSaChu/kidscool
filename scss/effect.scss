@@ -202,7 +202,7 @@
     width: 100%;
 
     .panel {
-      display: none;
+      // display: none;
       width: 100%;
       background-color: white;
       text-align: left;
@@ -1754,7 +1754,7 @@
     height: $boxHeigth;
     @include transition(left .3s);
     text-decoration: none;
-    border: 1px solid rgba(255, 0, 0, .3);
+    // border: 1px solid rgba(255, 0, 0, .3);
     
     @include range-width(0, 450px) {
       display: inline-flex;

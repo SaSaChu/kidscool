@@ -10,7 +10,23 @@
             }
 
             > .box {
+                &.numTwo {
+                    padding: 5px;
+                    border: 1px solid gainsboro;
+                    border-radius: 3px;
+
+                    .cover {
+                        &.c_numTwo2 {
+                            width: calc(100% - 10px);
+                            height: calc(100% - 10px);
+                            top: 5px;
+                            left: 5px;
+                        }
+                    }
+                }
                 > img {
+                    width: 100%;
+                    max-width: 252px;
                     height: 100%;
                     max-height: 347px;
                 }
@@ -48,62 +64,129 @@
     > .top {
         > .boxs {
             > .box {
+                padding: 5px;
+                border: 1px solid gainsboro;
+                border-radius: 3px;
+
+                @include range-width(0 ,450px) {
+                    border: 0;
+                }
+
+                &:after {
+                    content: "";
+                    width: calc(100% - 10px);
+                    height: calc(100% - 10px);
+                    top: 5px;
+                    left: 5px;
+                }
+
+                // &:after {
+                //     width: clac(100% - 10px);
+                //     height: clac(100% - 10px);
+                //     top: 5px;
+                //     left: 5px;
+                //     right: unset;
+                // }
+
+                > a {
+                    &:first-child {
+                        width: 100%;
+                        height: 100%;
+                        // max-width: 255px;
+                    }
+
+                    img {
+                        height: auto;
+                        max-height: 100%;
+                    }
+
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+
+                        @include range-width(0 ,450px) {
+                            display: inline-block;
+                            // margin-top: 0;
+                            height: auto;
+                        }
+                    }
+                }
+
+                // > img {
+                //     height: auto;
+                //     max-height: 100%;
+                // }
             }
         }
     }
 }
 
 .banner3 {
-    > .top {
-        > .boxs {
-            > .box {
-                // position: relative;
-                // &:hover {
-                //     > a {
-                        
-                //         &:after {
-                //             opacity: 1;
-                //         }        
-                //     }
+    .years-month {
+        .years {
+            label {
+            }
+            span {
+                display: none;
 
-                //     > span {
-                //         opacity: 1;
-                //     }
-                     
-                // }
-
-                &:after {
-                    content: none;
-                }
-                // > a {
-                //     position: relative;
-                //     z-index: 0;
-
-                //     &.lightbox-100 {
-                //         width: 100%;
-                //     }
-                    
-                //     &:after {
-                //         position: absolute;
-                //         width: 100%;
-                //         top: 0;
-                //         right: 0;
-                //         bottom: 0;
-                //         opacity: 0;
-                //         background-color: rgba(0, 0, 0, 0.5);
-                //         content: '';
-                //         z-index: 0;
-                //     }                    
-                // }
-                
-                > img {
-                    // width: auto;
-                    // height: auto;
-                    // max-height: 100%;
+                &.active {
+                    display: inline-block;
                 }
             }
         }
-    } 
+    }
+
+    > .top {
+        display: inline-flex;
+        > .boxs {
+            > .box {
+                padding: 5px;
+                border-radius: 3px;
+                border: 1px solid gainsboro;
+
+                @include range-width(0 ,450px) {
+                    border: 0;
+                }
+
+                &:after {
+                    // content: none;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    width: calc(100% - 10px);
+                    height: calc(100% - 10px);
+                    top: 5px;
+                    left: 5px;
+                }
+
+                > a {
+                    &:first-child {
+                        width: 100%;
+                        height: 100%;
+                        // max-width: 255px;
+                    }
+
+                    img {
+                        height: auto;
+                        max-height: 100%;
+                    }
+
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+
+                        @include range-width(0 ,450px) {
+                            display: inline-block;
+                            margin-top: 0;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .iModalTemplate {
     display: none;
@@ -186,7 +269,9 @@
                     }
                 }
 
-                .t-close {
+                .t-close,
+                .t-v-close,
+                .t-v-i-close {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -282,6 +367,18 @@
                             max-height: 100%;
                         }
                     }
+
+                    iframe {
+                        width: 100%;
+                        min-height: 480px;
+
+                        @include range-width(0, 450px) {
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -369,13 +466,11 @@
                     text-align: left;
                     color: $page_blue;
                     border-bottom: 1px solid $page_blue;
-                    
+
                     @include range-width(0, 450px) {
                         width: 100%;
                     }
                 }
-
-                
 
                 .t-close {
                     display: flex;
@@ -400,7 +495,7 @@
                 form {
                     > .input-box {
                         margin: 15px 0;
-    
+
                         &.upload {
                             display: flex;
                             position: relative;
@@ -415,7 +510,7 @@
                                     width: 100%;
                                     margin-bottom: 70px;
                                 }
-    
+
                                 > span {
                                     width: 14.5%;
                                     @include range-width(0, 450px) {
@@ -433,7 +528,7 @@
                                     width: 0;
                                     height: 0;
                                 }
-                            } 
+                            }
                         }
                         > label {
                             display: flex;
@@ -448,7 +543,7 @@
                             @include range-width(0, 450px) {
                                 flex-direction: column;
                             }
-    
+
                             > span {
                                 display: inline-block;
                                 width: 10%;
@@ -457,7 +552,8 @@
                                     width: 100%;
                                 }
                             }
-                            > input, select {
+                            > input,
+                            select {
                                 padding: 0 5px;
                                 width: 90%;
                                 height: 33px;
@@ -467,33 +563,31 @@
                                     width: 100%;
                                 }
                             }
-    
                         }
                         input::-webkit-file-upload-button {
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                                width: calc(30% - 10px);
-                                margin: 0 5px;
-                                padding: 10px 0;
-                                background-color: $page_blue;
-                                color: #ffffff;
-                                font-size: 22px;
-                                border-radius: 5px;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: calc(30% - 10px);
+                            margin: 0 5px;
+                            padding: 10px 0;
+                            background-color: $page_blue;
+                            color: #ffffff;
+                            font-size: 22px;
+                            border-radius: 5px;
 
-                                @include range-width(0, 450px) {
-                                    top: 90px;
-                                    width: 100%;
-                                    margin: 0;
-                                }
-                          }
+                            @include range-width(0, 450px) {
+                                top: 90px;
+                                width: 100%;
+                                margin: 0;
+                            }
+                        }
                     }
 
                     > .note-box {
                         font-size: 16px;
                         text-align: left;
                         color: $color_red;
-
                     }
 
                     > .btn-box {
@@ -510,7 +604,6 @@
                         }
                     }
                 }
-                
             }
         }
     }
@@ -522,4 +615,12 @@
 
 .lightbox {
     // width: 100%;
+}
+
+.units {
+    > label {
+        a {
+            text-align: center;
+        }
+    }
 }
