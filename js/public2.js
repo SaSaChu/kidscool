@@ -16,7 +16,6 @@ $(function () {
         var val = $(".knowselect").eq($(this).index()).find("select").val();
         
         val = val === undefined ? 0 : val;
-            console.log(val);
         $(".knowselect")
             .eq($(this).index())
             .find(".knowBoxsRight")
