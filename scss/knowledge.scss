@@ -25,6 +25,11 @@
         display: inline-block;
         width: 100%;
 
+        &.flex-box {
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+
         img {
             width: auto;
             height: auto;
@@ -34,9 +39,9 @@
 
         .knowCent, .knowCent_o, .knowCent_p {
             display: inline-block;
-            float: left;
+            float: unset;
             width: 180px;
-            height: 165px;
+            height: auto;
             // width: calc(100% / 4 - 40px * 3 / 4);
             // height: 192.500px;
             margin-top: 20px;

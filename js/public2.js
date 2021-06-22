@@ -5,7 +5,6 @@ $(function () {
 
         $(".knowBtn").removeClass(color);
         $(this).addClass(color);
-
         $(".knowselect").removeClass("knowselect_show");
         $(".knowselect")
             .eq($(this).index())
@@ -15,7 +14,7 @@ $(function () {
 
         // 選取 select value
         var val = $(".knowselect").eq($(this).index()).find("select").val();
-
+        
         $(".knowselect")
             .eq($(this).index())
             .find(".knowBoxsRight")
