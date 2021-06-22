@@ -265,9 +265,9 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .writeBoxs { display: inline-block; width: 100%; height: 346px; background: url(../img/interactive/in_write_bg.png) center center no-repeat; -moz-background-size: cover; background-size: cover; padding: 45px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .writeBoxs { height: 270px; background: url(../img/interactive/m_in_write_bg.png) center center no-repeat; -moz-background-size: cover; background-size: cover; padding: 18px; } }
 
-.write_White_Boxs { display: inline-block; width: 100%; margin-top: 20px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; padding: 15px; }
+.write_White_Boxs { display: inline-block; width: 100%; height: 140px; margin-top: 20px; overflow: hidden; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; padding: 15px; }
 .write_White_Boxs.wwb2 { width: 48%; }
-@media screen and (max-width: 449px) and (min-width: 0) { .write_White_Boxs { margin-top: 8px; padding: 8px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .write_White_Boxs { margin-top: 8px; padding: 8px; height: 96px; } }
 
 .show-box.spbox { display: inline-block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .show-box.spbox .top { padding: 0 10px 0 10px !important; }
@@ -277,6 +277,8 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
   .show-box.spbox .top .boxs .box-container .box.writeCentBox:after { display: none; }
   .show-box.spbox .top .boxs .box-container .box.writeCentBox span { position: absolute; bottom: 4px; left: 4px; right: 4px; font-size: 10px; padding: 0 10px; z-index: 2; display: inline-block; width: calc(100% - 4px * 2); height: 20px; line-height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: white; background-color: #cccdcc; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
   .show-box.spbox .top .boxs .box-container .box.writeCentBox span br { display: none; } }
+
+.wh { width: 100%; height: 140px; display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start; padding-bottom: 20px; }
 
 .boxn { display: inline-block; width: 100%; margin-top: 20px; }
 .boxn .header { width: 100%; height: 32px; line-height: 32px; display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start; padding-bottom: 20px; border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
