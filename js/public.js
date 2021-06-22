@@ -456,26 +456,26 @@ $(function() {
     let $moBoxs = $banner.find('.moBox .mo')
     let $weekCent = $banner.find('.weekCent')
     let index = $moBoxs.filter('.now').index()
-    let $left = $banner.find('.left').click(_ => {
-      $moBoxs.filter('.now').removeClass('now')
+    // let $left = $banner.find('.left').click(_ => {
+    //   $moBoxs.filter('.now').removeClass('now')
 
-      $moBoxs.eq(index = (index == 0 ? $moBoxs.length : index) - 1).addClass('now')
-      // $weekCent.removeClass('show').eq(index).addClass('show')
-      if (index > 6)
-        $moBox.attr('n2', '1')
-      else
-        $moBox.removeAttr('n2', '1')
-    })
-    let $right = $banner.find('.right').click(_ => {
-      $moBoxs.filter('.now').removeClass('now')
-      $moBoxs.eq(index = (index == $moBoxs.length - 1 ? 0 : (index + 1))).addClass('now')
-      // $weekCent.removeClass('show').eq(index).addClass('show')
+    //   $moBoxs.eq(index = (index == 0 ? $moBoxs.length : index) - 1).addClass('now')
+    //   // $weekCent.removeClass('show').eq(index).addClass('show')
+    //   if (index > 6)
+    //     $moBox.attr('n2', '1')
+    //   else
+    //     $moBox.removeAttr('n2', '1')
+    // })
+    // let $right = $banner.find('.right').click(_ => {
+    //   $moBoxs.filter('.now').removeClass('now')
+    //   $moBoxs.eq(index = (index == $moBoxs.length - 1 ? 0 : (index + 1))).addClass('now')
+    //   // $weekCent.removeClass('show').eq(index).addClass('show')
       
-      if (index >= 6)
-        $moBox.attr('n2', '1')
-      else
-        $moBox.removeAttr('n2', '1')
-    })
+    //   if (index >= 6)
+    //     $moBox.attr('n2', '1')
+    //   else
+    //     $moBox.removeAttr('n2', '1')
+    // })
 
     $moBoxs.filter(':not(.future)').click(function() {
       index = $(this).index()
