@@ -73,79 +73,79 @@
 
 .iModalTemplate { display: none; }
 
-#iModel { display: none; cursor: pointer; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
-#iModel.showModel { display: flex; }
-#iModel .ac_outer { width: 80%; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer { width: 95%; } }
-#iModel .ac_outer .hisCentBox { display: inline-block; width: 100%; background-color: white; padding: 40px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox { padding: 15px; } }
-#iModel .ac_outer .hisCentBox.in_his { max-height: 800px; overflow-x: hidden; }
-#iModel .ac_outer .hisCentBox .model_title { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
-#iModel .ac_outer .hisCentBox .model_title.bt_line { border-bottom: 1px solid rgba(33, 33, 33, 0.8); }
-#iModel .ac_outer .hisCentBox .model_title.bt_line h2 { margin-bottom: 20px; color: #ff790b; font-size: 36px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_title.bt_line h2 { font-size: 24px; } }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_title { flex-direction: column-reverse; } }
-#iModel .ac_outer .hisCentBox .model_title h2 { display: inline-block; margin: 0; width: 80%; text-align: left; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_title h2 { width: 100%; } }
-#iModel .ac_outer .hisCentBox .model_title .t-close, #iModel .ac_outer .hisCentBox .model_title .t-v-close, #iModel .ac_outer .hisCentBox .model_title .t-v-i-close { display: flex; justify-content: center; align-items: center; padding: 5px 15px; width: 70px; height: 30px; font-size: 16px; background-color: red; border-radius: 5px; color: white; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_title .t-close, #iModel .ac_outer .hisCentBox .model_title .t-v-close, #iModel .ac_outer .hisCentBox .model_title .t-v-i-close { align-self: flex-end; margin-bottom: 10px; } }
-#iModel .ac_outer .hisCentBox > .video { margin-top: 40px; display: inline-block; width: 100%; }
-#iModel .ac_outer .hisCentBox > .video video { width: 100%; height: 600px; }
-@media screen and (max-width: 1440px) and (min-width: 451px) { #iModel .ac_outer .hisCentBox > .video video { height: 480px; } }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox > .video video { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
-#iModel .ac_outer .hisCentBox .model_content { display: flex; margin-top: 20px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content { flex-direction: column; } }
-#iModel .ac_outer .hisCentBox .model_content .text { width: 40%; font-size: 26px; text-align: left; line-height: 1.2; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .text { margin-bottom: 20px; width: 100%; font-size: 20px; } }
-#iModel .ac_outer .hisCentBox .model_content .text > span { display: inline-block; margin: 20px 0; font-size: 22px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .text > span { margin: 10px 0; font-size: 16px; } }
-#iModel .ac_outer .hisCentBox .model_content .video { width: 60%; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .video { width: 100%; } }
-#iModel .ac_outer .hisCentBox .model_content .video.w-100 { width: 100%; }
-#iModel .ac_outer .hisCentBox .model_content .video video { width: 100%; height: 600px; }
-@media screen and (max-width: 1440px) and (min-width: 451px) { #iModel .ac_outer .hisCentBox .model_content .video video { height: 480px; } }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .video video { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
-#iModel .ac_outer .hisCentBox .model_content .video iframe { width: 100%; min-height: 480px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .video iframe { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
+#iModel, .model { display: none; cursor: pointer; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
+#iModel.showModel, .model.showModel { display: flex; }
+#iModel .ac_outer, .model .ac_outer { width: 80%; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer, .model .ac_outer { width: 95%; } }
+#iModel .ac_outer .hisCentBox, .model .ac_outer .hisCentBox { display: inline-block; width: 100%; background-color: white; padding: 40px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox, .model .ac_outer .hisCentBox { padding: 15px; } }
+#iModel .ac_outer .hisCentBox.in_his, .model .ac_outer .hisCentBox.in_his { max-height: 800px; overflow-x: hidden; }
+#iModel .ac_outer .hisCentBox .model_title, .model .ac_outer .hisCentBox .model_title { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
+#iModel .ac_outer .hisCentBox .model_title.bt_line, .model .ac_outer .hisCentBox .model_title.bt_line { border-bottom: 1px solid rgba(33, 33, 33, 0.8); }
+#iModel .ac_outer .hisCentBox .model_title.bt_line h2, .model .ac_outer .hisCentBox .model_title.bt_line h2 { margin-bottom: 20px; color: #ff790b; font-size: 36px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_title.bt_line h2, .model .ac_outer .hisCentBox .model_title.bt_line h2 { font-size: 24px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_title, .model .ac_outer .hisCentBox .model_title { flex-direction: column-reverse; } }
+#iModel .ac_outer .hisCentBox .model_title h2, .model .ac_outer .hisCentBox .model_title h2 { display: inline-block; margin: 0; width: 80%; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_title h2, .model .ac_outer .hisCentBox .model_title h2 { width: 100%; } }
+#iModel .ac_outer .hisCentBox .model_title .t-close, #iModel .ac_outer .hisCentBox .model_title .t-v-close, #iModel .ac_outer .hisCentBox .model_title .t-v-i-close, .model .ac_outer .hisCentBox .model_title .t-close, .model .ac_outer .hisCentBox .model_title .t-v-close, .model .ac_outer .hisCentBox .model_title .t-v-i-close { display: flex; justify-content: center; align-items: center; padding: 5px 15px; width: 70px; height: 30px; font-size: 16px; background-color: red; border-radius: 5px; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_title .t-close, #iModel .ac_outer .hisCentBox .model_title .t-v-close, #iModel .ac_outer .hisCentBox .model_title .t-v-i-close, .model .ac_outer .hisCentBox .model_title .t-close, .model .ac_outer .hisCentBox .model_title .t-v-close, .model .ac_outer .hisCentBox .model_title .t-v-i-close { align-self: flex-end; margin-bottom: 10px; } }
+#iModel .ac_outer .hisCentBox > .video, .model .ac_outer .hisCentBox > .video { margin-top: 40px; display: inline-block; width: 100%; }
+#iModel .ac_outer .hisCentBox > .video video, .model .ac_outer .hisCentBox > .video video { width: 100%; height: 600px; }
+@media screen and (max-width: 1440px) and (min-width: 451px) { #iModel .ac_outer .hisCentBox > .video video, .model .ac_outer .hisCentBox > .video video { height: 480px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox > .video video, .model .ac_outer .hisCentBox > .video video { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
+#iModel .ac_outer .hisCentBox .model_content, .model .ac_outer .hisCentBox .model_content { display: flex; margin-top: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content, .model .ac_outer .hisCentBox .model_content { flex-direction: column; } }
+#iModel .ac_outer .hisCentBox .model_content .text, .model .ac_outer .hisCentBox .model_content .text { width: 40%; font-size: 26px; text-align: left; line-height: 1.2; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .text, .model .ac_outer .hisCentBox .model_content .text { margin-bottom: 20px; width: 100%; font-size: 20px; } }
+#iModel .ac_outer .hisCentBox .model_content .text > span, .model .ac_outer .hisCentBox .model_content .text > span { display: inline-block; margin: 20px 0; font-size: 22px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .text > span, .model .ac_outer .hisCentBox .model_content .text > span { margin: 10px 0; font-size: 16px; } }
+#iModel .ac_outer .hisCentBox .model_content .video, .model .ac_outer .hisCentBox .model_content .video { width: 60%; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .video, .model .ac_outer .hisCentBox .model_content .video { width: 100%; } }
+#iModel .ac_outer .hisCentBox .model_content .video.w-100, .model .ac_outer .hisCentBox .model_content .video.w-100 { width: 100%; }
+#iModel .ac_outer .hisCentBox .model_content .video video, .model .ac_outer .hisCentBox .model_content .video video { width: 100%; height: 600px; }
+@media screen and (max-width: 1440px) and (min-width: 451px) { #iModel .ac_outer .hisCentBox .model_content .video video, .model .ac_outer .hisCentBox .model_content .video video { height: 480px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .video video, .model .ac_outer .hisCentBox .model_content .video video { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
+#iModel .ac_outer .hisCentBox .model_content .video iframe, .model .ac_outer .hisCentBox .model_content .video iframe { width: 100%; min-height: 480px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox .model_content .video iframe, .model .ac_outer .hisCentBox .model_content .video iframe { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
 
-#textModel { display: none; cursor: pointer; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
-#textModel.showModel { display: flex; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel { align-items: flex-start; } }
-#textModel .ac_outer { width: 80%; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer { width: 95%; } }
-#textModel .ac_outer .hisCentBox { display: inline-block; width: 100%; background-color: white; padding: 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox { padding: 15px; } }
-#textModel .ac_outer .hisCentBox.in_his { max-height: 900px; overflow-x: hidden; }
-#textModel .ac_outer .hisCentBox .model_title { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
-#textModel .ac_outer .hisCentBox .model_title.bt_line { border-bottom: 1px solid rgba(33, 33, 33, 0.8); }
-#textModel .ac_outer .hisCentBox .model_title.bt_line h2 { margin-bottom: 20px; color: #ff790b; font-size: 36px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox .model_title.bt_line h2 { font-size: 24px; } }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox .model_title { flex-direction: column-reverse; } }
-#textModel .ac_outer .hisCentBox .model_title h2 { display: inline-block; margin: 0; padding-bottom: 10px; margin-bottom: 10px; width: 100%; font-size: 26px; text-align: left; color: #237eb1; border-bottom: 1px solid #237eb1; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox .model_title h2 { width: 100%; } }
-#textModel .ac_outer .hisCentBox .model_title .t-close { display: flex; justify-content: center; align-items: center; padding: 5px 15px; width: 70px; height: 30px; font-size: 16px; background-color: red; border-radius: 5px; color: white; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox .model_title .t-close { align-self: flex-end; margin-bottom: 10px; } }
-#textModel .ac_outer .hisCentBox > .content form > .input-box { margin: 15px 0; }
-#textModel .ac_outer .hisCentBox > .content form > .input-box.upload { display: flex; position: relative; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box.upload { margin: 0; } }
-#textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label { width: 70%; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label { width: 100%; margin-bottom: 70px; } }
-#textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > span { width: 14.5%; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > span { width: 100%; } }
-#textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="text"] { width: calc(100% - 14.5%); }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="text"] { width: 100%; } }
-#textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="file"] { width: 0; height: 0; }
-#textModel .ac_outer .hisCentBox > .content form > .input-box > label { display: flex; padding: 10px; width: 100%; font-size: 24px; background-color: #237eb1; color: #ffffff; text-align: left; border-radius: 5px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box > label { flex-direction: column; } }
-#textModel .ac_outer .hisCentBox > .content form > .input-box > label > span { display: inline-block; width: 10%; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box > label > span { width: 100%; } }
-#textModel .ac_outer .hisCentBox > .content form > .input-box > label > input, #textModel .ac_outer .hisCentBox > .content form > .input-box > label select { padding: 0 5px; width: 90%; height: 33px; font-size: 22px; background-color: #ffffff; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box > label > input, #textModel .ac_outer .hisCentBox > .content form > .input-box > label select { width: 100%; } }
-#textModel .ac_outer .hisCentBox > .content form > .input-box input::-webkit-file-upload-button { position: absolute; top: 0; right: 0; width: calc(30% - 10px); margin: 0 5px; padding: 10px 0; background-color: #237eb1; color: #ffffff; font-size: 22px; border-radius: 5px; }
-@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box input::-webkit-file-upload-button { top: 90px; width: 100%; margin: 0; } }
-#textModel .ac_outer .hisCentBox > .content form > .note-box { font-size: 16px; text-align: left; color: #e35252; }
-#textModel .ac_outer .hisCentBox > .content form > .btn-box { text-align: right; }
-#textModel .ac_outer .hisCentBox > .content form > .btn-box button { margin: 10px; padding: 10px 20px; background-color: #237eb1; color: #ffffff; font-size: 22px; border-radius: 25px; }
+#textModel, .model { display: none; cursor: pointer; justify-content: center; align-items: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
+#textModel.showModel, .model.showModel { display: flex; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel, .model { align-items: flex-start; } }
+#textModel .ac_outer, .model .ac_outer { width: 80%; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer, .model .ac_outer { width: 95%; } }
+#textModel .ac_outer .hisCentBox, .model .ac_outer .hisCentBox { display: inline-block; width: 100%; background-color: white; padding: 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox, .model .ac_outer .hisCentBox { padding: 15px; } }
+#textModel .ac_outer .hisCentBox.in_his, .model .ac_outer .hisCentBox.in_his { max-height: 900px; overflow-x: hidden; }
+#textModel .ac_outer .hisCentBox .model_title, .model .ac_outer .hisCentBox .model_title { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
+#textModel .ac_outer .hisCentBox .model_title.bt_line, .model .ac_outer .hisCentBox .model_title.bt_line { border-bottom: 1px solid rgba(33, 33, 33, 0.8); }
+#textModel .ac_outer .hisCentBox .model_title.bt_line h2, .model .ac_outer .hisCentBox .model_title.bt_line h2 { margin-bottom: 20px; color: #ff790b; font-size: 36px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox .model_title.bt_line h2, .model .ac_outer .hisCentBox .model_title.bt_line h2 { font-size: 24px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox .model_title, .model .ac_outer .hisCentBox .model_title { flex-direction: column-reverse; } }
+#textModel .ac_outer .hisCentBox .model_title h2, .model .ac_outer .hisCentBox .model_title h2 { display: inline-block; margin: 0; padding-bottom: 10px; margin-bottom: 10px; width: 100%; font-size: 26px; text-align: left; color: #237eb1; border-bottom: 1px solid #237eb1; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox .model_title h2, .model .ac_outer .hisCentBox .model_title h2 { width: 100%; } }
+#textModel .ac_outer .hisCentBox .model_title .t-close, .model .ac_outer .hisCentBox .model_title .t-close { display: flex; justify-content: center; align-items: center; padding: 5px 15px; width: 70px; height: 30px; font-size: 16px; background-color: red; border-radius: 5px; color: white; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox .model_title .t-close, .model .ac_outer .hisCentBox .model_title .t-close { align-self: flex-end; margin-bottom: 10px; } }
+#textModel .ac_outer .hisCentBox > .content form > .input-box, .model .ac_outer .hisCentBox > .content form > .input-box { margin: 15px 0; }
+#textModel .ac_outer .hisCentBox > .content form > .input-box.upload, .model .ac_outer .hisCentBox > .content form > .input-box.upload { display: flex; position: relative; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box.upload, .model .ac_outer .hisCentBox > .content form > .input-box.upload { margin: 0; } }
+#textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label, .model .ac_outer .hisCentBox > .content form > .input-box.upload > label { width: 70%; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label, .model .ac_outer .hisCentBox > .content form > .input-box.upload > label { width: 100%; margin-bottom: 70px; } }
+#textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > span, .model .ac_outer .hisCentBox > .content form > .input-box.upload > label > span { width: 14.5%; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > span, .model .ac_outer .hisCentBox > .content form > .input-box.upload > label > span { width: 100%; } }
+#textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="text"], .model .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="text"] { width: calc(100% - 14.5%); }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="text"], .model .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="text"] { width: 100%; } }
+#textModel .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="file"], .model .ac_outer .hisCentBox > .content form > .input-box.upload > label > input[type="file"] { width: 0; height: 0; }
+#textModel .ac_outer .hisCentBox > .content form > .input-box > label, .model .ac_outer .hisCentBox > .content form > .input-box > label { display: flex; padding: 10px; width: 100%; font-size: 24px; background-color: #237eb1; color: #ffffff; text-align: left; border-radius: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box > label, .model .ac_outer .hisCentBox > .content form > .input-box > label { flex-direction: column; } }
+#textModel .ac_outer .hisCentBox > .content form > .input-box > label > span, .model .ac_outer .hisCentBox > .content form > .input-box > label > span { display: inline-block; width: 10%; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box > label > span, .model .ac_outer .hisCentBox > .content form > .input-box > label > span { width: 100%; } }
+#textModel .ac_outer .hisCentBox > .content form > .input-box > label > input, #textModel .ac_outer .hisCentBox > .content form > .input-box > label select, .model .ac_outer .hisCentBox > .content form > .input-box > label > input, .model .ac_outer .hisCentBox > .content form > .input-box > label select { padding: 0 5px; width: 90%; height: 33px; font-size: 22px; background-color: #ffffff; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box > label > input, #textModel .ac_outer .hisCentBox > .content form > .input-box > label select, .model .ac_outer .hisCentBox > .content form > .input-box > label > input, .model .ac_outer .hisCentBox > .content form > .input-box > label select { width: 100%; } }
+#textModel .ac_outer .hisCentBox > .content form > .input-box input::-webkit-file-upload-button, .model .ac_outer .hisCentBox > .content form > .input-box input::-webkit-file-upload-button { position: absolute; top: 0; right: 0; width: calc(30% - 10px); margin: 0 5px; padding: 10px 0; background-color: #237eb1; color: #ffffff; font-size: 22px; border-radius: 5px; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox > .content form > .input-box input::-webkit-file-upload-button, .model .ac_outer .hisCentBox > .content form > .input-box input::-webkit-file-upload-button { top: 90px; width: 100%; margin: 0; } }
+#textModel .ac_outer .hisCentBox > .content form > .note-box, .model .ac_outer .hisCentBox > .content form > .note-box { font-size: 16px; text-align: left; color: #e35252; }
+#textModel .ac_outer .hisCentBox > .content form > .btn-box, .model .ac_outer .hisCentBox > .content form > .btn-box { text-align: right; }
+#textModel .ac_outer .hisCentBox > .content form > .btn-box button, .model .ac_outer .hisCentBox > .content form > .btn-box button { margin: 10px; padding: 10px 20px; background-color: #237eb1; color: #ffffff; font-size: 22px; border-radius: 25px; }
 
 .showTextModel { cursor: pointer; }
 

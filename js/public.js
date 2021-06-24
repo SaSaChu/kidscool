@@ -247,6 +247,10 @@ $(function() {
       $('#myModel').removeClass('showModel')
     })
 
+    $('.login_btn_close').click(function() {
+      $('#loginModel').removeClass('showModel') 
+    })
+
     
     //切換banner圖片 和 按鈕樣式
     function slideTo(index){
