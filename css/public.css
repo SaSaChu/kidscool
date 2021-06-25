@@ -192,6 +192,14 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 
 .box90 { width: 90%; }
 
+.box100 { display: flex; justify-content: center; align-items: center; }
+.box100 .box50 { display: flex; }
+.box100 .box50 label { display: flex; justify-content: flex-start; align-items: center; width: 100%; text-align: left; }
+.box100 .box50 label span { display: inline-block; }
+.box100 .box50 label p { width: 80%; }
+.box100 .box50 .nopl { display: flex; align-items: center; }
+.box100 .box50 .nopl img { max-height: 27px; }
+
 .m-qBtnBox { display: inline-block; width: calc(100% - 55px - 110px); }
 
 .fixBoxs { display: inline-block; width: 100%; position: absolute; left: 0; bottom: 0; padding: 15px; }

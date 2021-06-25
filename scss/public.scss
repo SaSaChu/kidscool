@@ -597,6 +597,41 @@ footer {
   width: 90%;
 }
 
+.box100 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box50 {
+    display: flex;
+
+    label {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+
+      span {
+        display: inline-block;
+      }
+      
+      p {
+        width: 80%;
+      }
+    }
+
+    .nopl {
+      display: flex;
+      align-items: center;
+      
+      img {
+        max-height: 27px;
+      }
+    }
+  }
+}
+
 .m-qBtnBox {
   display: inline-block;
   width: calc(100% - 55px - 110px);
