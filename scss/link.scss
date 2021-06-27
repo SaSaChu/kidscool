@@ -62,6 +62,18 @@ button {
   background-color: rgba(229, 36, 143, 1.00);
 }
 
+.ll_grey {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  @include border-radius(15px);
+  margin-top: 20px;
+  background-color: #8e8e8e;
+}
+
 .link_b {
   display: inline-block;
   padding: 5px 15px;

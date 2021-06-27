@@ -53,6 +53,8 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .link_pink { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #e5248f; }
 
+.ll_grey { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #8e8e8e; }
+
 .link_b { display: inline-block; padding: 5px 15px; font-size: 2rem; text-align: center; color: white; font-weight: bolder; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 20px; background-color: #0097bf; }
 
 .link_in_grey { display: inline-block; pointer-events: none; cursor: default; padding: 5px 15px; font-size: 2rem; font-weight: bolder; text-align: center; color: white; margin-top: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; border: 1px solid #5f6f77; background: linear-gradient(#cddbe6, #5a6b73); background: linear-gradient(to bottom, #cddbe6, #5a6b73); background: linear-gradient(180deg, #cddbe6, #5a6b73); background: linear-gradient(to top, #5a6b73, #cddbe6); background: linear-gradient(to bottom, #cddbe6 0%, #5a6b73 100%); }
