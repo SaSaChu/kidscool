@@ -482,7 +482,7 @@
                     font-size: 26px;
                     text-align: left;
                     color: $page_blue;
-                    border-bottom: 1px solid $page_blue;
+                    // border-bottom: 1px solid $page_blue;
 
                     @include range-width(0, 450px) {
                         width: 100%;
