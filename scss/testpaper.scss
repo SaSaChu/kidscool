@@ -1,0 +1,59 @@
+@import "Ginkgo";
+
+html {
+  font-size: 13px;
+}
+
+body {
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+  font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+.testpaper_bg {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 720px;
+  height: 100vh;
+
+  @include range-width(0, 450px) {
+    max-width: none;
+    background-size: contain;
+  }
+
+  background-image: url(../img/testpaper/island.png),
+                    url(../img/testpaper/bg_blue.png);
+
+  background-repeat : no-repeat,
+                      no-repeat;
+
+  background-position: center bottom,
+                       center top;
+
+  -moz-background-size: initial,
+                        initial;
+
+  background-size: initial,
+                   initial;
+
+  background-color: #6cd5ed;
+
+  .testpaper_boxs {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    .tp_centBoxs {
+      display: inline-block;
+      width: 100%;
+      height: 800px; // 可刪除
+    }
+  }
+}
