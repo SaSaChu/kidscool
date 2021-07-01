@@ -1,59 +1,456 @@
 @import "Ginkgo";
+@import "color";
 
 html {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 body {
-  display: inline-block;
-  width: 100%;
+    display: inline-block;
+    width: 100%;
 
-  margin: 0;
-  padding: 0;
-  color: black;
-  text-align: center;
-  font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+    font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue,
+        Helvetica, Arial, sans-serif;
 }
 
 .testpaper_bg {
-  display: inline-block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 720px;
-  height: 100vh;
-
-  @include range-width(0, 450px) {
-    max-width: none;
-    background-size: contain;
-  }
-
-  background-image: url(../img/testpaper/island.png),
-                    url(../img/testpaper/bg_blue.png);
-
-  background-repeat : no-repeat,
-                      no-repeat;
-
-  background-position: center bottom,
-                       center top;
-
-  -moz-background-size: initial,
-                        initial;
-
-  background-size: initial,
-                   initial;
-
-  background-color: #6cd5ed;
-
-  .testpaper_boxs {
+    position: relative;
     display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 720px;
+    height: 1200px;
+
+    @include range-width(0, 450px) {
+        max-width: none;
+        height: 100vh;
+        background-size: contain;
+        background-image: url(../img/testpaper/index_m_bg.jpg);
+    }
+
+    &.infoPage {
+        background-image: url(../img/testpaper/in_title_s.png),
+            url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png);
+
+        @include range-width(0, 450px) {
+            max-width: none;
+            height: 100vh;
+            background-size: contain;
+            background-image: url(../img/testpaper/description_bg_m.jpg);
+        }
+    }
+
+    &.challengePage {
+		padding-top: 200px;
+		padding-bottom: 50px;
+		height: 100%;
+        background-image: url(../img/testpaper/cent_title.png),
+            url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png);
+
+        @include range-width(0, 450px) {
+            max-width: none;
+			padding-top: 100px;
+			background-position: center 2%, center bottom, center top;
+            background-image: url(../img/testpaper/cent_title.png),
+            url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png);
+        }
+
+		.testpaper_boxs {
+			.tp_centBoxs {
+				align-items: flex-start;
+			}
+		}
+    }
+
+    background-image: url(../img/testpaper/in_title_big.png),
+        url(../img/testpaper/island_ot.png), url(../img/testpaper/bg_blue.png);
+
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    background-position: center 5%, center bottom, center top;
+
+    -moz-background-size: contain, contain, cover;
+
+    background-size: initial, contain, initial;
+    background-color: #6cd5ed;
+
+    .testpaper_boxs {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+
+        .tp-title {
+            display: inline-flex;
+            justify-content: flex-start;
+        }
+
+        .tp_centBoxs {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            .tp_buttonBoxs {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 300px;
+
+                @include range-width(0, 450px) {
+                    height: 200px;
+                }
+
+                .btnBox {
+                    cursor: pointer;
+                }
+            }
+
+            .tp_infoBoxs {
+                position: relative;
+                top: 100px;
+
+                @include range-width(0, 450px) {
+                    top: 60px;
+                }
+
+                > img {
+                    @include range-width(0, 450px) {
+                        width: auto;
+                        height: auto;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+                > a {
+                    position: relative;
+                    top: 40px;
+
+                    @include range-width(0, 450px) {
+                        top: 20px;
+                    }
+                }
+            }
+
+            .tp_challengeBoxs {
+                position: relative;
+                // top: 150px;
+                width: 100%;
+                padding: 10px;
+                max-width: 650px;
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 10px;
+
+				@include range-width(0, 450px) {
+					width: 95%;
+				}
+
+                img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+				.questionType {
+					margin-top: 40px;
+				}
+
+				.questionBoxs {
+					counter-reset: question;
+					.questionBox {
+						position: relative;
+						margin: 20px 0;
+						padding-left: 60px;
+						@include range-width(0, 450px) {
+							padding-left: 30px;
+						}
+						
+						.question {
+							display: flex;
+							align-items: center;
+							height: 100%;
+
+							img {
+								max-width: 550px;
+
+								@include range-width(0, 450px) {
+									max-width: 300px;
+								}
+							}
+							&:before {
+								counter-increment: question;
+								content: counter(question) ".";
+								font-size: 20px;
+
+								@include range-width(0, 450px) {
+									font-size: 18px;
+								}
+							}
+						}
+						
+
+						.answer {
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							padding-left:10px;
+
+							label {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								input[type=radio] + img {
+									cursor: pointer;
+								}
+
+								img {
+									max-width: 500px;
+
+									@include range-width(0, 450px) {
+										max-width: 300px;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.tp_challengeButtons {
+					display: flex;
+					justify-content: center;
+					margin-bottom: 20px;
+					font-size: 20px;
+					cursor: pointer;
+
+					@include range-width(0, 450px) {
+						font-size: 16px;
+					}
+					
+					.button_outer {
+						background-color: rgba(13, 165, 240, 1.00);
+						border: 4px solid rgba(11, 115, 215, 1);
+						border-radius: 25px;
+						padding: 5px;
+
+						&:nth-child(1) {
+							margin-right: 20px;
+						}
+
+						&:nth-child(2) {
+							margin-left: 20px;
+						}
+					}
+
+					.button_inner {
+						background-color: rgba(133, 245, 252, 1);
+						border-radius: 25px;
+						padding: 5px;
+						// height: 32px;
+					}
+				}
+            }
+        }
+    }
+}
+
+.model {
+    // display: inline-block;
+    display: none;
+
+    &.showModel {
+        display: flex;
+    }
+
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
+    background-color: rgba(33, 33, 33, 0.8);
 
-    .tp_centBoxs {
-      display: inline-block;
-      width: 100%;
-      height: 800px; // 可刪除
+    .ac_outer {
+        width: 80%;
+
+        @include range-width(0, 450px) {
+            width: 100%;
+        }
+
+        .hisCentBox {
+            display: inline-block;
+			
+			&.quitModel {
+				width: 40%;
+				background-color: white;
+				border: 10px solid rgba(253, 169, 0, 1);
+            	@include border-radius(10px);
+				@include range-width(0, 450px) {
+					width: 95%;
+				}
+			}
+
+            &.in_his {
+				height: 100%;
+                // max-height: 800px;
+                // overflow-x: hidden;
+            }
+
+            .model_content {
+				margin: 20px 0;
+				padding: 10px;
+				width: 100%;
+				height: 100%;
+				@include border-radius(10px);
+
+                .text {
+                    display: flex;
+					justify-content: center;
+					align-items: flex-start;
+					margin-bottom: 20px;
+					font-size: 32px;
+					text-align: left;
+
+					p {
+						margin: 0 0 0 10px;
+					}
+
+					&.completeModel {
+						background-image: url(/img/testpaper/frame_pass.png);
+						background-size: cover;
+						background-repeat: no-repeat;
+						width: 550px;
+						height: 500px;
+
+						@include range-width(0, 450px) {
+							width: 100%;
+							height: 100%;
+						}
+
+						&.text {
+							flex-direction: column;
+							justify-content: flex-end;
+							align-items: center;
+
+							p {
+								width: 300px;
+								font-size: 24px;
+							}
+
+							img {
+								margin-bottom: 20px;
+								width: auto;
+								height: auto;
+								max-width: 200px;
+								max-height: 225px;
+							}
+						}
+					}
+
+					&.failModel {
+						background-image: url(/img/testpaper/frame_fail.png);
+						background-size: contain;
+						background-repeat: no-repeat;
+						width: 450px;
+						height: 400px;
+
+						@include range-width(0, 450px) {
+							width: 100%;
+							height: 100%;
+						}
+
+						&.text {
+							flex-direction: column;
+							justify-content: flex-end;
+							align-items: center;
+
+							p {
+								width: 300px;
+								font-size: 24px;
+
+								@include range-width(0, 450px) {
+									width: 300px;
+									font-size: 20px;
+								}
+							}
+
+							img {
+								margin-bottom: 20px;
+								width: auto;
+								height: auto;
+								max-width: 200px;
+								max-height: 225px;
+
+								@include range-width(0, 450px) {
+									// max-width: 100px;
+									// max-height: 125px;
+								}
+							}
+						}
+					}
+                }
+
+				.buttons {
+					display: flex;
+					justify-content: center;
+					font-size: 20px;
+					cursor: pointer;
+
+					&.completeModel, &.failModel {
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: center;
+						height: 300px;
+
+						@include range-width(0, 450px) {
+							height: 200px;
+						}
+
+					}
+					
+					.button_outer {
+						background-color: rgba(13, 165, 240, 1.00);
+						border: 4px solid rgba(11, 115, 215, 1);
+						border-radius: 25px;
+						width: 120px;
+						height: 40px;
+
+						&:nth-child(1) {
+							margin-right: 20px;
+						}
+
+						&:nth-child(2) {
+							margin-left: 20px;
+						}
+					}
+
+					.button_inner {
+						background-color: rgba(133, 245, 252, 1);
+						border-radius: 25px;
+						width: 112px;
+						height: 32px;
+
+						a {
+							text-decoration: none;
+							color: unset;
+						}
+					}
+				}
+            }
+        }
     }
-  }
 }
