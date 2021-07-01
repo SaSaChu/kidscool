@@ -330,7 +330,7 @@ body {
 					}
 
 					&.completeModel {
-						background-image: url(/img/testpaper/frame_pass.png);
+						background-image: url(../img/testpaper/frame_pass.png);
 						background-size: cover;
 						background-repeat: no-repeat;
 						width: 550px;
@@ -362,7 +362,7 @@ body {
 					}
 
 					&.failModel {
-						background-image: url(/img/testpaper/frame_fail.png);
+						background-image: url(../img/testpaper/frame_fail.png);
 						background-size: contain;
 						background-repeat: no-repeat;
 						width: 450px;
