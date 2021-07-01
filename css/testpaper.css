@@ -47,12 +47,12 @@ html { font-size: 13px; }
 
 body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
-.testpaper_bg { position: relative; display: inline-block; margin: 0 auto; width: 100%; max-width: 720px; height: 1200px; background-image: url(../img/testpaper/in_title_big.png), url(../img/testpaper/island_ot.png), url(../img/testpaper/bg_blue.png); background-repeat: no-repeat, no-repeat, no-repeat; background-position: center 5%, center bottom, center top; -moz-background-size: contain, contain, cover; background-size: initial, contain, initial; background-color: #6cd5ed; }
+.testpaper_bg { position: relative; display: inline-block; margin: 0 auto; width: 100%; max-width: 720px; height: 1200px; background-image: url(../img/testpaper/in_title_big.png), url(../img/testpaper/island_ot.png), url(../img/testpaper/bg_blue.png); background-repeat: no-repeat, no-repeat, no-repeat; background-position: center top, center bottom, center top; -moz-background-size: contain, contain, cover; background-size: initial, contain, initial; background-color: #6cd5ed; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg { max-width: none; height: 100vh; background-size: contain; background-image: url(../img/testpaper/index_m_bg.jpg); } }
 .testpaper_bg.infoPage { background-image: url(../img/testpaper/in_title_s.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg.infoPage { max-width: none; height: 100vh; background-size: contain; background-image: url(../img/testpaper/description_bg_m.jpg); } }
-.testpaper_bg.challengePage { padding-top: 200px; padding-bottom: 50px; height: 100%; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg.challengePage { max-width: none; padding-top: 100px; background-position: center 2%, center bottom, center top; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); } }
+.testpaper_bg.challengePage { padding-top: 200px; padding-bottom: 50px; height: 100%; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); background-position: center 2%, center bottom, center top; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg.challengePage { max-width: none; padding-top: 100px; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); } }
 .testpaper_bg.challengePage .testpaper_boxs .tp_centBoxs { align-items: flex-start; }
 .testpaper_bg .testpaper_boxs { display: inline-block; width: 100%; height: 100%; overflow: auto; }
 .testpaper_bg .testpaper_boxs .tp-title { display: inline-flex; justify-content: flex-start; }
@@ -68,23 +68,26 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { position: relative; width: 100%; padding: 10px; max-width: 650px; background-color: white; border-radius: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { width: 95%; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore { display: flex; justify-content: flex-end; align-items: center; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .socreBox { display: flex; justify-content: center; align-items: center; width: 60px; height: 60px; margin: 10px 10px 20px 10px; border: 1px solid #959595; border-radius: 10px; font-size: 32px; color: #e35252; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .socreBox h3 { margin: 0; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionType { margin-top: 40px; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs { counter-reset: question; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox { position: relative; margin: 20px 0; padding-left: 20px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox { padding-left: 10px; } }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .question { display: flex; align-items: center; height: 100%; margin-top: 40px; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .question img { max-width: 550px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .question img { max-width: 300px; } }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .question:before { counter-increment: question; content: counter(question) "."; font-size: 36px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .question:before { font-size: 18px; } }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .answer { display: flex; flex-direction: column; align-items: flex-start; padding-left: 10px; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .answer label { display: flex; justify-content: center; align-items: center; margin-top: 10px; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .answer label input[type=radio] + picture { cursor: pointer; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .answer label img { max-width: 500px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .answer label img { max-width: 300px; } }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .r-answer { margin-top: 10px; text-align: left; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .r-answer img { max-width: 500px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionBox .r-answer img { max-width: 300px; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent { counter-reset: question; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox { position: relative; margin: 20px 0; padding-left: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox { padding-left: 10px; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .question { display: flex; align-items: center; height: 100%; margin-top: 40px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .question img { max-width: 550px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .question img { max-width: 300px; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .question:before { counter-increment: question; content: counter(question) "."; font-size: 36px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .question:before { font-size: 18px; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .answer { display: flex; flex-direction: column; align-items: flex-start; padding-left: 10px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .answer label { display: flex; justify-content: center; align-items: center; margin-top: 10px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .answer label input[type=radio] + picture { cursor: pointer; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .answer label img { max-width: 500px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .answer label img { max-width: 300px; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .r-answer { margin-top: 10px; text-align: left; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .r-answer img { max-width: 500px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .r-answer img { max-width: 300px; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .tp_challengeButtons { display: flex; justify-content: center; margin-bottom: 20px; font-size: 20px; cursor: pointer; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .tp_challengeButtons { font-size: 16px; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .tp_challengeButtons .button_outer { background-color: #0da5f0; border: 4px solid #0b73d7; border-radius: 25px; padding: 5px; }
