@@ -185,7 +185,7 @@ body {
 							&:after {
 								content: '分';
 								font-size: 16px;
-								
+								vertical-align: baseline;
 							}
 						}
 
@@ -385,8 +385,8 @@ body {
 						height: 500px;
 
 						@include range-width(0, 450px) {
-							width: 100%;
-							height: 100%;
+							width: 375px;
+							height: 325px;
 						}
 
 						&.text {
@@ -417,8 +417,8 @@ body {
 						height: 400px;
 
 						@include range-width(0, 450px) {
-							width: 100%;
-							height: 100%;
+							width: 375px;
+							height: 325px;
 						}
 
 						&.text {
