@@ -170,15 +170,16 @@ body {
 					.questionBox {
 						position: relative;
 						margin: 20px 0;
-						padding-left: 60px;
+						padding-left: 20px;
 						@include range-width(0, 450px) {
-							padding-left: 30px;
+							padding-left: 10px;
 						}
 						
 						.question {
 							display: flex;
 							align-items: center;
 							height: 100%;
+							margin-top: 40px;
 
 							img {
 								max-width: 550px;
@@ -190,7 +191,7 @@ body {
 							&:before {
 								counter-increment: question;
 								content: counter(question) ".";
-								font-size: 20px;
+								font-size: 36px;
 
 								@include range-width(0, 450px) {
 									font-size: 18px;
@@ -209,8 +210,9 @@ body {
 								display: flex;
 								justify-content: center;
 								align-items: center;
+								margin-top: 10px;
 
-								input[type=radio] + img {
+								input[type=radio] + picture {
 									cursor: pointer;
 								}
 
@@ -220,6 +222,19 @@ body {
 									@include range-width(0, 450px) {
 										max-width: 300px;
 									}
+								}
+							}
+						}
+
+						.r-answer {
+							margin-top: 10px;
+							text-align: left;
+
+							img {
+								max-width: 500px;
+
+								@include range-width(0, 450px) {
+									max-width: 300px;
 								}
 							}
 						}
