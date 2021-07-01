@@ -385,8 +385,9 @@ body {
 						height: 500px;
 
 						@include range-width(0, 450px) {
+							background-image: url(../img/testpaper/frame_pass_m.png);
 							width: 375px;
-							height: 325px;
+							height: 350px;
 						}
 
 						&.text {
@@ -397,6 +398,11 @@ body {
 							p {
 								width: 300px;
 								font-size: 24px;
+
+								@include range-width(0, 450px) {
+									width: 260px;
+									font-size: 22px;
+								}
 							}
 
 							img {
@@ -405,6 +411,11 @@ body {
 								height: auto;
 								max-width: 200px;
 								max-height: 225px;
+
+								@include range-width(0, 450px) {
+									width: 100px;
+									height: 125px;
+								}
 							}
 						}
 					}
@@ -417,6 +428,7 @@ body {
 						height: 400px;
 
 						@include range-width(0, 450px) {
+							background-image: url(../img/testpaper/frame_fail_m.png);
 							width: 375px;
 							height: 325px;
 						}
@@ -431,8 +443,9 @@ body {
 								font-size: 24px;
 
 								@include range-width(0, 450px) {
-									width: 300px;
-									font-size: 20px;
+									width: 260px;
+									font-size: 22px;
+									
 								}
 							}
 
@@ -444,8 +457,8 @@ body {
 								max-height: 225px;
 
 								@include range-width(0, 450px) {
-									// max-width: 100px;
-									// max-height: 125px;
+									max-width: 150px;
+									max-height: 175px;
 								}
 							}
 						}
