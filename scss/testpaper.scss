@@ -54,7 +54,7 @@ body {
         @include range-width(0, 450px) {
             max-width: none;
 			padding-top: 100px;
-			// background-position: center 2%, center bottom, center top;
+			background-position: center 1%, center bottom, center top;
             background-image: url(../img/testpaper/cent_title.png),
             url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png);
         }
@@ -171,8 +171,8 @@ body {
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						width: 60px;
-						height: 60px;
+						width: 100px;
+						height: 100px;
 						margin: 10px 10px 20px 10px;
 						border: 1px solid rgba(149, 149, 149, 1.00);
 						border-radius: 10px;
@@ -181,6 +181,12 @@ body {
 
 						h3 {
 							margin: 0;
+							position: relative;
+							&:after {
+								content: '分';
+								font-size: 16px;
+								
+							}
 						}
 
 					}
