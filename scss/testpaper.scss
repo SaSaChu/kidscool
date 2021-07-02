@@ -218,8 +218,11 @@ body {
 				}
 
 				.questionBoxs {
+
+					
 					.questionContent {
 						counter-reset: question;
+
 						.questionBox {
 							position: relative;
 							margin: 20px 0;
@@ -228,17 +231,19 @@ body {
 							@include range-width(0, 450px) {
 								padding-left: 10px;
 							}
+							&.wrong {
+								&:before {
+									content: 'X';
+									position: absolute;
+									top: 6px;
+									left: 0;
+									font-size: 36px;
+									color: $color_red;
 
-							.wrong {
-								position: absolute;
-								top: 3px;
-								left: 0;
-								font-size: 36px;
-								color: $color_red;
-
-								@include range-width(0, 450px) {
-									top: 5px;
-									font-size: 18px;
+									@include range-width(0, 450px) {
+										top: 5px;
+										font-size: 18px;
+									}
 								}
 							}
 							

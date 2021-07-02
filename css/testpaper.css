@@ -79,8 +79,8 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent { counter-reset: question; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox { position: relative; margin: 20px 0; padding-left: 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox { padding-left: 10px; } }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .wrong { position: absolute; top: 3px; left: 0; font-size: 36px; color: #e35252; }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .wrong { top: 5px; font-size: 18px; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox.wrong:before { content: 'X'; position: absolute; top: 6px; left: 0; font-size: 36px; color: #e35252; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox.wrong:before { top: 5px; font-size: 18px; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .question { position: relative; display: flex; align-items: center; height: 100%; margin-top: 40px; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .question:before { counter-increment: question; content: counter(question) "."; margin: 0 25px; font-size: 36px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox .question:before { margin: 0 15px; font-size: 18px; } }

@@ -8,17 +8,15 @@ $(function () {
 
 		$("#iModel").find("h2").html(title);
 		$("#iModel").find(".text").html(template);
-		$("#iModel .control").find("source").attr("src", path);  
-		$("#iModel .control").load()
+		$("#iModel").find("iframe").attr("src", path);
+		// $("#iModel .control").find("source").attr("src", path);  
+		// $("#iModel .control").load()
 		
 		$("#iModel").addClass("showModel");
 	});
 
-	$(".t-v-close").click(function () {
-	
-		$('.control').get(0).pause();
-		$('.control').get(0).currentTime = 0; 
-			
+	$(".t-v-i-close").click(function () {
+		$('iframe').attr('src', '');
 		$(".model").removeClass("showModel");
-	});
+	  });
 });
