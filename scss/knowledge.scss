@@ -287,13 +287,15 @@
         width: 100%;
         float: left;
         border-radius: 10px;
+        text-align: left;
 
         @include range-width(0, 450px) {
             border-radius: 0;
         }
 
         &.page_green {
-            background-color: $page_green;
+            // background-color: $page_green;
+            background-color: #e0e0e0;
         }
 
         &.page_blue {

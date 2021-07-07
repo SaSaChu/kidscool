@@ -359,6 +359,7 @@ header {
   display: inline-block;
   width: 100%;
   position: relative;
+  min-height: 870px;
 
   &.cent_index {
     height: calc(100vh - 65px);
@@ -419,7 +420,7 @@ header {
     display: inline-block;
     width: 100%;
     min-height: 490px;
-    position: fixed;
+    // position: fixed;
     bottom: 0;
     left: 0;
     margin:0;

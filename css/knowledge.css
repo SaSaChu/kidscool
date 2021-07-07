@@ -90,9 +90,9 @@
 .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text p { display: inline-block; float: right; width: 70%; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text p { width: 100%; } }
 .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content.countryBox .text:after, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content.countryBox .text:after, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content.countryBox .text:after { content: ''; clear: both; }
-.knowBoxsRight .infoWrapper { position: relative; margin-top: 40px; padding: 20px; width: 100%; float: left; border-radius: 10px; }
+.knowBoxsRight .infoWrapper { position: relative; margin-top: 40px; padding: 20px; width: 100%; float: left; border-radius: 10px; text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .infoWrapper { border-radius: 0; } }
-.knowBoxsRight .infoWrapper.page_green { background-color: #4e8f2b; }
+.knowBoxsRight .infoWrapper.page_green { background-color: #e0e0e0; }
 .knowBoxsRight .infoWrapper.page_blue { background-color: #237eb1; }
 .knowBoxsRight .infoWrapper.page_orange { background-color: #ff790b; }
 .knowBoxsRight .infoWrapper.page_brown { background-color: #996536; }
