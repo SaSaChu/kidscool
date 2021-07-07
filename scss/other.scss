@@ -297,26 +297,51 @@
 
 .img_menu01 {
   max-width: 236px;
+
+  @include range-width(450px, 1300px) {
+    max-width: 215px;
+  }
 }
 
 .img_menu02 {
   max-width: 221px;
+
+  @include range-width(450px, 1300px) {
+    max-width: 210px;
+  }
 }
 
 .img_menu03 {
   max-width: 342px;
+
+  @include range-width(450px, 1300px) {
+    max-width: 310px;
+  }
 }
 
 .img_menu04 {
   max-width: 202px;
+
+  @include range-width(450px, 1300px) {
+    max-width: 190px;
+  }
 }
 
 .img_menu05 {
   max-width: 198px;
+
+  @include range-width(450px, 1320px) {
+    max-width: 175px;
+  }
+
 }
 
 .img_menu06 {
   max-width: 138px;
+
+  @include range-width(450px, 1300px) {
+    max-width: 125px;
+  }
 }
 
 .m_header_img {
