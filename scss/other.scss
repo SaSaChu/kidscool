@@ -307,7 +307,7 @@
   max-width: 221px;
 
   @include range-width(450px, 1300px) {
-    max-width: 210px;
+    max-width: 192px;
   }
 }
 
@@ -331,13 +331,13 @@
   max-width: 198px;
 
   @include range-width(450px, 1320px) {
-    max-width: 175px;
+    max-width: 160px;
   }
 
 }
 
 .img_menu06 {
-  max-width: 138px;
+  max-width: 115px;
 
   @include range-width(450px, 1300px) {
     max-width: 125px;

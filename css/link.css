@@ -112,15 +112,16 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .menu01 { top: 9%; left: 1%; }
 
-.menu02 { bottom: 1%; left: 18%; }
+.menu02 { bottom: 1%; left: 20%; }
 
 .menu03 { top: 12%; left: 39%; }
 
-.menu04 { bottom: -7%; right: 18%; }
+.menu04 { bottom: -2%; right: 22%; }
 
 .menu05 { top: 6%; right: 6%; }
 
 .menu06 { bottom: -18%; right: 4%; }
+@media screen and (max-width: 1284px) and (min-width: 450px) { .menu06 { bottom: -34%; right: 2%; } }
 
 .knowBtn { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); cursor: pointer; padding: 8px 25px; font-weight: bolder; font-size: 1.6rem; float: left; margin-right: 20px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
 .knowBtn:nth-child(4n+4) { margin-right: 0; }

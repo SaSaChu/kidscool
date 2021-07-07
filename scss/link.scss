@@ -455,7 +455,7 @@ button {
 
 .menu02 {
   bottom: 1%;
-  left: 18%;
+  left: 20%;
 }
 
 .menu03 {
@@ -464,8 +464,8 @@ button {
 }
 
 .menu04 {
-  bottom: -7%;
-  right: 18%;
+  bottom: -2%;
+  right: 22%;
 }
 
 .menu05 {
@@ -476,6 +476,11 @@ button {
 .menu06 {
   bottom: -18%;
   right: 4%;
+
+  @include range-width(450px, 1285px) {
+    bottom: -34%;
+    right: 2%;
+  }
 }
 
 // tag
