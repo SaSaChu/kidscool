@@ -149,6 +149,8 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 
 .maxWidth { max-width: 1160px; }
 
+.ads { margin: 0 auto; max-width: 1159px; }
+
 .allBoxs { display: inline-block; width: 100%; *zoom: 1; }
 .allBoxs:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 1159px) and (min-width: 0) { .allBoxs { padding: 0 15px; } }

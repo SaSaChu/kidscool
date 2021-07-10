@@ -64,9 +64,10 @@
     > .top {
         > .boxs {
             > .box {
-                padding: 5px;
-                border: 1px solid gainsboro;
+                // padding: 5px;
+                border: 2px solid gainsboro;
                 border-radius: 3px;
+                overflow: hidden;
 
                 @include range-width(0 ,450px) {
                     border: 0;
@@ -74,30 +75,19 @@
 
                 &:after {
                     content: "";
-                    width: calc(100% - 10px);
-                    height: calc(100% - 10px);
-                    top: 5px;
-                    left: 5px;
                 }
-
-                // &:after {
-                //     width: clac(100% - 10px);
-                //     height: clac(100% - 10px);
-                //     top: 5px;
-                //     left: 5px;
-                //     right: unset;
-                // }
 
                 > a {
                     &:first-child {
                         width: 100%;
                         height: 100%;
-                        // max-width: 255px;
                     }
 
                     img {
-                        height: auto;
-                        max-height: 100%;
+                        margin-top: -100px;
+                        margin-left: 0px;
+                        width: 250px;
+                        height: 340px;
                     }
 
                     span {
@@ -113,11 +103,6 @@
                         }
                     }
                 }
-
-                // > img {
-                //     height: auto;
-                //     max-height: 100%;
-                // }
             }
         }
     }
@@ -155,21 +140,17 @@
         display: inline-flex;
         > .boxs {
             > .box {
-                padding: 5px;
+                // padding: 5px;
                 border-radius: 3px;
-                border: 1px solid gainsboro;
+                border: 2px solid gainsboro;
+                overflow: hidden;
 
                 @include range-width(0 ,450px) {
                     border: 0;
                 }
 
                 &:after {
-                    // content: none;
                     background-color: rgba(0, 0, 0, 0.5);
-                    width: calc(100% - 10px);
-                    height: calc(100% - 10px);
-                    top: 5px;
-                    left: 5px;
                 }
 
                 > a {
@@ -180,8 +161,10 @@
                     }
 
                     img {
-                        height: auto;
-                        max-height: 100%;
+                        margin-top: -100px;
+                        margin-left: 0px;
+                        width: 250px;
+                        height: 340px;
                     }
 
                     span {

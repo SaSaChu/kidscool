@@ -390,7 +390,7 @@ body {
         .hisCentBox {
             display: inline-block;
 			
-			&.quitModel {
+			&.quitModel, &.scoreModel {
 				width: 40%;
 				background-color: white;
 				border: 10px solid rgba(253, 169, 0, 1);
@@ -423,6 +423,10 @@ body {
 
 					p {
 						margin: 0 0 0 10px;
+
+						span {
+							vertical-align: baseline;
+						}
 					}
 
 					&.completeModel {
@@ -528,7 +532,14 @@ body {
 						@include range-width(0, 450px) {
 							height: 200px;
 						}
+					}
 
+					&.scoreModel {
+						.button_outer {
+							&:nth-child(1) {
+								margin-right: 0;
+							}	
+						}
 					}
 					
 					.button_outer {

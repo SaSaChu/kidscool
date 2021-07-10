@@ -50,11 +50,11 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .banner1 > .top > .boxs > .box .cover { display: flex; justify-content: space-around; width: 100%; max-width: 252px; margin: 0 auto; margin-top: 10px; }
   .banner1 > .top > .boxs > .box .cover > button { width: 90px; height: 30px; border-radius: 20px; background-color: #ff790b; color: #ffffff; } }
 
-.banner2 > .top > .boxs > .box { padding: 5px; border: 1px solid gainsboro; border-radius: 3px; }
+.banner2 > .top > .boxs > .box { border: 2px solid gainsboro; border-radius: 3px; overflow: hidden; }
 @media screen and (max-width: 449px) and (min-width: 0) { .banner2 > .top > .boxs > .box { border: 0; } }
-.banner2 > .top > .boxs > .box:after { content: ""; width: calc(100% - 10px); height: calc(100% - 10px); top: 5px; left: 5px; }
+.banner2 > .top > .boxs > .box:after { content: ""; }
 .banner2 > .top > .boxs > .box > a:first-child { width: 100%; height: 100%; }
-.banner2 > .top > .boxs > .box > a img { height: auto; max-height: 100%; }
+.banner2 > .top > .boxs > .box > a img { margin-top: -100px; margin-left: 0px; width: 250px; height: 340px; }
 .banner2 > .top > .boxs > .box > a span { display: flex; justify-content: center; align-items: center; height: 100%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .banner2 > .top > .boxs > .box > a span { display: inline-block; height: auto; } }
 
@@ -63,11 +63,11 @@
 .banner3 .years-month .months label { display: flex; justify-content: center; align-items: center; }
 .banner3 .years-month .months label:nth-child(n):before { content: none; }
 .banner3 > .top { display: inline-flex; }
-.banner3 > .top > .boxs > .box { padding: 5px; border-radius: 3px; border: 1px solid gainsboro; }
+.banner3 > .top > .boxs > .box { border-radius: 3px; border: 2px solid gainsboro; overflow: hidden; }
 @media screen and (max-width: 449px) and (min-width: 0) { .banner3 > .top > .boxs > .box { border: 0; } }
-.banner3 > .top > .boxs > .box:after { background-color: rgba(0, 0, 0, 0.5); width: calc(100% - 10px); height: calc(100% - 10px); top: 5px; left: 5px; }
+.banner3 > .top > .boxs > .box:after { background-color: rgba(0, 0, 0, 0.5); }
 .banner3 > .top > .boxs > .box > a:first-child { width: 100%; height: 100%; }
-.banner3 > .top > .boxs > .box > a img { height: auto; max-height: 100%; }
+.banner3 > .top > .boxs > .box > a img { margin-top: -100px; margin-left: 0px; width: 250px; height: 340px; }
 .banner3 > .top > .boxs > .box > a span { display: flex; justify-content: center; align-items: center; height: 100%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .banner3 > .top > .boxs > .box > a span { display: inline-block; margin-top: 0; height: auto; } }
 

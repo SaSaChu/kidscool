@@ -12,6 +12,10 @@ $(function () {
 		$(".modelFail").addClass("showModel");
 	});
 
+	$(".score").click(function () {
+		$(".modelScore").addClass("showModel");
+	});
+
 	$(".t-close").click(function () {
 		$(".model").removeClass("showModel");
 	});

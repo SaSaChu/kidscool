@@ -16,8 +16,12 @@
     <link rel="stylesheet" type="text/css" href="css/other.css">
     <link rel="stylesheet" type="text/css" href="css/space.css">
     <link rel="stylesheet" type="text/css" href="css/text.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
 
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/slick.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
   </head>
 
@@ -258,13 +262,34 @@
 
         <!-- AD -->
         <div class='boxs120 m-close'>
-          <div class='allBoxs maxWidth'>
+          <div class='allBoxs maxWidth ads'>
+            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
             <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
             <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
             <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
             <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
           </div>
         </div>
+
+        <script>
+          $(document).ready(function(){
+            $('.ads').slick({
+              // 自動輪播
+              autoplay: true,
+              // 秒數控制
+              autoplaySpeed: 3000,
+              // 一次顯示數量
+              slidesToShow: 4, 
+              // 一次輪播數量
+              slidesToScroll: 1,
+              // 箭頭顯示
+              arrows: false,
+            });
+          });
+        </script>
 
         <!-- footer -->
         <footer>
