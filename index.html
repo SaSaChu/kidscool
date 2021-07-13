@@ -262,31 +262,79 @@
 
         <!-- AD -->
         <div class='boxs120 m-close'>
-          <div class='allBoxs maxWidth ads'>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
-            <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+          <div class='allBoxs maxWidth'>
+            <div class="MyAds ads-01">
+              <a class='adBoxs' href='#'><img src="img/Pipe20191126_135005199.jpg"></a>
+              <a class='adBoxs' href='#'><img src="img/Pipe20191126_135005199.jpg"></a>
+            </div>
+            <div class="MyAds ads-02">
+              <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+              <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+            </div>
+            <div class="MyAds ads-03">
+              <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+              <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+            </div>
+            <div class="MyAds ads-04">
+              <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+              <a class='adBoxs' href=''><img src="img/Pipe20191126_135005199.jpg"></a>
+            </div>
           </div>
         </div>
 
         <script>
           $(document).ready(function(){
-            $('.ads').slick({
+            $('.ads-01').slick({
+              // 自動輪播
+              autoplay: true,
+              // 秒數控制
+              autoplaySpeed: 1000,
+              // 一次顯示數量
+              slidesToShow: 1, 
+              // 一次輪播數量
+              slidesToScroll: 1,
+              // 箭頭顯示
+              arrows: false,
+              fade: true,
+            });
+            $('.ads-02').slick({
+              // 自動輪播
+              autoplay: true,
+              // 秒數控制
+              autoplaySpeed: 2000,
+              // 一次顯示數量
+              slidesToShow: 1, 
+              // 一次輪播數量
+              slidesToScroll: 1,
+              // 箭頭顯示
+              arrows: false,
+              fade: true,
+            });
+            $('.ads-03').slick({
               // 自動輪播
               autoplay: true,
               // 秒數控制
               autoplaySpeed: 3000,
               // 一次顯示數量
-              slidesToShow: 4, 
+              slidesToShow: 1, 
               // 一次輪播數量
               slidesToScroll: 1,
               // 箭頭顯示
               arrows: false,
+              fade: true,
+            });
+            $('.ads-04').slick({
+              // 自動輪播
+              autoplay: true,
+              // 秒數控制
+              autoplaySpeed: 4000,
+              // 一次顯示數量
+              slidesToShow: 1, 
+              // 一次輪播數量
+              slidesToScroll: 1,
+              // 箭頭顯示
+              arrows: false,
+              fade: true,
             });
           });
         </script>

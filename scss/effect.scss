@@ -466,6 +466,10 @@
       font-size: .9rem;
       float: right;
     }
+
+    > a {
+      color: black;
+    }
   }
 
   > span, > a, > div > a, > div > div > a, > div > span {
@@ -1067,6 +1071,10 @@
       line-height: 36px;
       cursor: pointer;
       flex-shrink: 0;
+
+      &.disabled {
+        color: rgba(122, 122, 123, .5);
+      }
     }
     .boxs {
       flex-grow: 1;

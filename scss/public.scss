@@ -513,13 +513,21 @@ footer {
   }
 }
 
+.MyAds {
+  width: 24%;
+
+  &.slick-slider {
+    display: inline-block;
+  }
+}
+
 .adBoxs {
   display: inline-block;
   width: calc(100% / 4 - 20px * 3 / 4);
   height: 120px;
   margin-right: 20px;
   float: left;
-  background-color: white;
+  background-color: transparent;
   @include border-radius(5px);
   overflow: hidden;
 
