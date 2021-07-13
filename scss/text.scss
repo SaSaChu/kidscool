@@ -356,6 +356,16 @@ p {
   font-weight: bolder;
   font-size: 2rem;
   text-align: center;
+
+  &.inT_r {
+    color: rgba(229, 36, 143, 1.00);
+    font-size: 2.4em;
+  }
+
+  &.inT_b {
+    color: rgba(0, 151, 191, 1.00);
+    font-size: 2.4em; 
+  }
 }
 
 .t-w-22 {
