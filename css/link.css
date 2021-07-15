@@ -142,7 +142,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .knowBtn.brown_s { color: white; background: #e09856; /* Old browsers */ background: -moz-linear-gradient(top, #e09856 0%, #996535 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #e09856 0%, #996535 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #e09856 0%, #996535 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e09856', endColorstr='#996535',GradientType=0 ); /* IE6-9 */ border: 1px solid #996536; }
 .knowBtn.brown_s:hover, .knowBtn.brown_s:active { color: white; }
 
-.m_LeftMenu { display: inline-block; float: left; padding: 5px 10px; font-size: 1rem; float: left; text-align: left; }
+.m_LeftMenu { display: inline-block; float: left; padding: 5px 10px; font-size: 1.2rem; float: left; text-align: left; }
 .m_LeftMenu.m_LF { padding: 5px 0 5px 10px; }
 .m_LeftMenu.m_LF:after { margin: 0 5px 0 10px; }
 .m_LeftMenu:nth-child(n+2) { padding: 5px 0 5px 10px; }

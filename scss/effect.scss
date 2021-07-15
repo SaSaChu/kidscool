@@ -1,6 +1,408 @@
 @import "Ginkgo";
 @import "color";
 
+// 知識內文banner
+.show-box {
+  display: inline-block;
+  width: 100%;
+  max-width: 660px;
+  float: right;
+  padding: 20px 10px;
+  @include border-radius(15px);
+
+  @include range-width(0, 450px) {
+    @include border-radius(0);
+    margin-top: 10px;
+  }
+
+  &.write {
+    max-width: none;
+  }
+  
+  // 小框框的尺寸
+  $boxHeight: 180px;
+  // 小框框的間隙
+  $boxSpace: 10px;
+  // 小框框最多的數量
+  $total: 200;
+  // 小框框手機版時寬度
+  $boxMobileWidth: 100px;
+
+  .top {
+    display: inline-block;
+    width: 100%;
+
+    &.write_top {
+      border: 1px solid rgba(208, 208, 208, 1.00);
+      background: rgb(255,255,255); /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+      @include border-radius(15px);
+      padding: 20px 20px 0 20px;
+    }
+    
+    .boxs {
+      width: 100%;
+
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;  
+      
+      .array {
+        display: inline-block;
+        flex-shrink: 0;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        cursor: pointer;
+        background-color: white;
+        @include border-radius(50%);
+
+        &.write_array {
+          background-color: rgba(144, 144, 144, 1.00);
+
+          &.icon-arrow-right-thick, &.icon-arrow-left-thick {
+            color: white;
+          }
+        }
+
+        &.icon-arrow-right-thick, &.icon-arrow-left-thick {
+          color: rgba(144, 144, 144, 1.00);
+        }
+      }
+
+      .box-container {
+        position: relative;
+        display: inline-block;
+        height: $boxHeight;
+        margin: 0 10px;
+
+        @include range-width(0, 450px) {
+          height: 120px !important;
+        }
+
+        flex-grow: 1;
+
+        &.writeCentBoxs {
+          height: 250px;
+        }
+        
+        .box {
+          cursor: pointer;
+
+          display: inline-block;
+          height: $boxHeight;
+
+          @include range-width(0, 450px) {
+            height: 95px;
+          }
+
+          @include border-radius(10px);
+          @include transition(left .3s);
+
+          padding: 10px 8px;
+          text-align: left;
+          color: white;
+
+          &.writeCentBox {
+            height: 250px;
+          }
+
+          img {
+            width: 100%;
+            height: $boxHeight - (10px * 2 + 20px * 2 + 4px);
+
+            &.writeImg {
+              max-width: 228px;
+              height: auto;
+            }
+          }
+
+          span {
+            display: inline-block;
+            width: 100%;
+            // height: 30px * 2;
+            line-height: 1.2;
+            margin-top: 6px;
+            font-size: 1.4rem;
+
+            &.write_span {
+              text-align: center;
+              color: black;
+            }
+          }
+          
+          &:after {
+            position: absolute;
+            bottom: 0 - 20px / 2;
+            left: calc(50% - 20px / 2);
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 1);
+            @include rotate(-45deg);
+          }
+        }
+      }
+    }
+    .points {
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      &.write_po {
+        label {
+          background-color: rgba(39, 40, 34, .5);
+
+          &:before {
+            background-color: rgba(39, 40, 34, .2);
+          }
+        }
+      }
+      
+      label {
+        position: relative;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-color: rgba(0, 0, 255, 0.2);
+        cursor: pointer;
+        @include border-radius(50%);
+
+        + label {
+          margin-left: 8px;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          display: inline-block;
+          right: 2px;
+          bottom: 2px;
+          background-color: white;
+          @include border-radius(50%);
+          @include transition(background-color .3s);
+        }
+      }
+    }
+  }
+  .panels {
+    display: inline-block;
+    width: 100%;
+
+    .panel {
+      // display: none;
+      width: 100%;
+      background-color: white;
+      text-align: left;
+      padding: 12px;
+      @include border-radius(5px);
+
+      b {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.6rem;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  @include range-width(0, 450px) {
+    .top {
+      .boxs {
+        .array {
+          display: none;
+        }
+        .box-container {
+          height: $boxHeight + 50px;
+          margin: 0;
+          display: inline-flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          overflow-y: none;
+          overflow-x: scroll;
+          width: 100%;
+
+          .box {
+            position: relative;
+            width: $boxMobileWidth;
+            flex-shrink: 0;
+            img {
+              display: none;
+            }
+          }
+        }
+      }
+      .points {
+        display: none;
+      }
+    }
+    .panels {
+      margin-top: 20px;
+    }
+
+    @for $i from 1 through $total {
+      &[data-index='#{$i}'] {
+        .top {
+          .boxs {
+            .box-container {
+              .box {
+                &:nth-child(#{$i}) {
+                  background-color: white;
+
+                  span {
+                    color: rgba(79, 143, 42, 1.00);
+
+                    &.span_b {
+                      color: $page_blue !important;
+                    }
+
+                    &.span_br {
+                      color: $page_brown !important;
+                    }
+
+                    &.span_o {
+                      color: $page_orange !important;
+                    }
+                  }
+                  &:after {
+                    content: '';
+                  }
+                }
+              }
+            }
+          }
+        }
+        .panels {
+          .panel {
+            &:nth-child(#{$i}) {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include range-width(450px) {
+    .top {
+      .boxs {
+        .box-container {
+          overflow: hidden;
+
+          .box {
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }
+    $i: 3;
+    &[data-unit='#{$i}'] {
+      .top {
+        .boxs {
+          .box-container {
+            .box {
+              width: calc((100% - #{(($i - 1) * $boxSpace)}) / #{$i});
+            }
+          }
+        }
+      }
+      @for $j from 1 through ceil($total / 3) {
+        &[data-page='#{$j}'] {
+          .top {
+            .boxs {
+              .box-container {
+                .box {
+                  @for $k from 1 through $total {
+                    &:nth-child(#{$k}) {
+                      left: calc(((100% - #{(($i - 1) * $boxSpace)}) / #{$i} + #{$boxSpace}) * #{($k - (($j - 1) * $i + 1))});
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @for $i from 1 through $total {
+      
+      &[data-index='#{$i}'] {
+        .top {
+          .boxs {
+            .box-container {
+              .box {
+                &:nth-child(#{$i}) {
+                  background-color: white;
+
+                  &.writeCentBox {
+                    background-color: rgba(251, 149, 38, 1.00);
+                  }
+                  span {
+                    color: rgba(79, 143, 42, 1.00);
+
+                    &.span_o {
+                      color: $page_orange !important;
+                    }
+
+                    &.write_span {
+                      color: black;
+                    }
+
+                    &.span_b {
+                      color: $page_blue !important;
+                    }
+
+                    &.span_br {
+                      color: $page_brown !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .panels {
+          .panel {
+            &:nth-child(#{$i}) {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      &[data-page='#{$i}'] {
+        .top {
+          .points {
+            label {
+              &:nth-child(#{$i}):before {
+                background-color: rgba(43, 43, 44, 1.00);
+              }
+            }
+
+            &.write_po {
+              label {
+                &:nth-child(#{$i}):before {
+                  background-color: rgba(200, 12, 14, 1.00);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // 桌機左邊選單・下拉
 .block-l-menuBox {
