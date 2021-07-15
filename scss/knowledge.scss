@@ -188,14 +188,16 @@
 
             &.knowCent_o {
                 padding: 20px;
-                background-color: $page_orange;
+                // background-color: $page_orange;
+                background-color: #e0e0e0;
                 border-radius: 10px;
                 cursor: default;
             }
 
             &.knowCent_p {
                 padding: 20px;
-                background-color: $page_purple;
+                // background-color: $page_purple;
+                background-color: #e0e0e0;
                 border-radius: 10px;
                 cursor: default;
 
@@ -299,15 +301,18 @@
         }
 
         &.page_blue {
-            background-color: $page_blue;
+            // background-color: $page_blue;
+            background-color: #e0e0e0;
         }
         
         &.page_orange {
-            background-color: $page_orange;
+            // background-color: $page_orange;
+            background-color: #e0e0e0;
         }
 
         &.page_brown {
-            background-color: $page_brown;
+            // background-color: $page_brown;
+            background-color: #e0e0e0;
         }
     
         &:after {

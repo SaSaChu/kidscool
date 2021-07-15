@@ -74,8 +74,8 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > img { float: none; margin: 0 auto; max-width: 100%; max-height: 100%; } }
 .knowBoxsRight .knowCentBoxs .knowCent > .content > .text > p, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > p, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > p { text-align: left; font-size: 16px; margin: 10px 0; color: black; }
 .knowBoxsRight .knowCentBoxs .knowCent > .content > .text:after, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text:after, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text:after { content: ''; clear: both; }
-.knowBoxsRight .knowCentBoxs .knowCent.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_o { padding: 20px; background-color: #ff790b; border-radius: 10px; cursor: default; }
-.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p { padding: 20px; background-color: #af4dac; border-radius: 10px; cursor: default; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_o { padding: 20px; background-color: #e0e0e0; border-radius: 10px; cursor: default; }
+.knowBoxsRight .knowCentBoxs .knowCent.knowCent_p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p { padding: 20px; background-color: #e0e0e0; border-radius: 10px; cursor: default; }
 .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content { margin: 0; padding: 0; background-color: transparent; }
 .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content .title, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content .title, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content .title { width: 100%; color: white; }
 .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p > .content .title h3, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p > .content .title h3, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p > .content .title h3 { display: inline-block; width: 50%; text-align: left; }
@@ -93,9 +93,9 @@
 .knowBoxsRight .infoWrapper { position: relative; margin-top: 40px; padding: 20px; width: 100%; float: left; border-radius: 10px; text-align: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .infoWrapper { border-radius: 0; } }
 .knowBoxsRight .infoWrapper.page_green { background-color: #e0e0e0; }
-.knowBoxsRight .infoWrapper.page_blue { background-color: #237eb1; }
-.knowBoxsRight .infoWrapper.page_orange { background-color: #ff790b; }
-.knowBoxsRight .infoWrapper.page_brown { background-color: #996536; }
+.knowBoxsRight .infoWrapper.page_blue { background-color: #e0e0e0; }
+.knowBoxsRight .infoWrapper.page_orange { background-color: #e0e0e0; }
+.knowBoxsRight .infoWrapper.page_brown { background-color: #e0e0e0; }
 .knowBoxsRight .infoWrapper:after { content: ''; clear: both; }
 .knowBoxsRight .infoWrapper > .btn { position: absolute; top: 20px; right: 20px; width: 40px; height: 30px; background-color: red; border-radius: 5px; color: white; }
 .knowBoxsRight .infoWrapper > .title { text-align: left; color: white; }
