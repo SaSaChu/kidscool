@@ -55,7 +55,7 @@
 .testIcon { display: inline-block; width: 100%; max-width: 22px; margin-right: 5px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testIcon { max-width: 15px; } }
 
-.tabImg { display: inline-block; width: 100%; max-width: 350px; }
+.tabImg { display: inline-block; width: 100%; max-width: 230px; }
 
 .pageContentImg { display: inline-block; float: right; width: 100%; max-width: 300px; margin: 0 0 10px 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pageContentImg { max-width: none; margin: 0 0 10px 0; } }
