@@ -55,9 +55,9 @@
   .banner2 > .top > .boxs.banner2-boxs .slick-prev, .banner2 > .top > .boxs.banner2-boxs .slick-next { width: 30px; height: 30px; z-index: 2; }
   .banner2 > .top > .boxs.banner2-boxs .slick-prev:before, .banner2 > .top > .boxs.banner2-boxs .slick-next:before { font-size: 30px; color: #10aadc; opacity: 1; }
   .banner2 > .top > .boxs.banner2-boxs .slick-prev.slick-prev, .banner2 > .top > .boxs.banner2-boxs .slick-next.slick-prev { left: 5px; }
-  .banner2 > .top > .boxs.banner2-boxs .slick-prev.slick-prev:before, .banner2 > .top > .boxs.banner2-boxs .slick-next.slick-prev:before { content: url(img/interactive/in_arrow_LB.png); }
+  .banner2 > .top > .boxs.banner2-boxs .slick-prev.slick-prev:before, .banner2 > .top > .boxs.banner2-boxs .slick-next.slick-prev:before { content: url(../img/interactive/in_arrow_LB.png); }
   .banner2 > .top > .boxs.banner2-boxs .slick-prev.slick-next, .banner2 > .top > .boxs.banner2-boxs .slick-next.slick-next { right: 10px; }
-  .banner2 > .top > .boxs.banner2-boxs .slick-prev.slick-next:before, .banner2 > .top > .boxs.banner2-boxs .slick-next.slick-next:before { content: url(img/interactive/in_arrow_RB.png); }
+  .banner2 > .top > .boxs.banner2-boxs .slick-prev.slick-next:before, .banner2 > .top > .boxs.banner2-boxs .slick-next.slick-next:before { content: url(../img/interactive/in_arrow_RB.png); }
   .banner2 > .top > .boxs.banner2-boxs .box + .box { margin-left: 0; } }
 .banner2 > .top > .boxs > .box { border: 2px solid gainsboro; border-radius: 3px; overflow: hidden; }
 @media screen and (max-width: 449px) and (min-width: 0) { .banner2 > .top > .boxs > .box { border: 0; } }

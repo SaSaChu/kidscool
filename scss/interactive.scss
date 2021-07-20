@@ -85,14 +85,14 @@
                             left: 5px;
 
                             &:before{
-                                content: url(img/interactive/in_arrow_LB.png)
+                                content: url(../img/interactive/in_arrow_LB.png)
                             }
                         }
 
                         &.slick-next {
                             right: 10px;
                             &:before{
-                                content: url(img/interactive/in_arrow_RB.png)
+                                content: url(../img/interactive/in_arrow_RB.png)
                             }
                         }
                     }
