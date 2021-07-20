@@ -183,6 +183,45 @@
     > .top {
         display: inline-flex;
         > .boxs {
+            @include range-width(0, 450px) {
+                &.banner3-boxs {
+                    overflow: hidden;
+
+                    .slick-prev, .slick-next {
+                        width: 30px;
+                        height: 30px;
+                        z-index: 2;
+
+                        &:before {
+                            font-size: 30px;
+                            color: rgba(16, 170, 220, 1.00);
+                            opacity: 1;
+                        }
+
+                        &.slick-prev {
+                            left: 5px;
+
+                            &:before{
+                                content: url(../img/interactive/in_arrow_LB.png)
+                            }
+                        }
+
+                        &.slick-next {
+                            right: 10px;
+                            &:before{
+                                content: url(../img/interactive/in_arrow_RB.png)
+                            }
+                        }
+                    }
+
+                    .box {
+                        + .box {
+                            margin-left: 0;
+                        }
+                    }
+
+                }
+            }
             > .box {
                 // padding: 5px;
                 border-radius: 3px;

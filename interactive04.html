@@ -449,7 +449,7 @@
 						<!-- 無投稿資料顯示 top、bottom 可以不用顯示-->
 						<div class='top'>
 							<label class='left'><img src="img/interactive/in_arrow_LG.png"></label>
-							<div class="boxs">
+							<div class="boxs banner3-boxs">
 								<div class="box">
 									<!-- 同一系列 data-lightbox 名稱需一樣 -->
 									<!-- 主要顯示照片 光箱時為第一張-->
@@ -664,6 +664,10 @@
 			// $(window).resize(function() {
 			if ( $(window).width() < 450 ) {
 				$('.banner2-boxs').slick({
+					arrows: true,
+				});
+
+				$('.banner3-boxs').slick({
 					arrows: true,
 				});
 			}
