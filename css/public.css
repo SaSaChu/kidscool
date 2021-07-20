@@ -56,7 +56,7 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 @media screen and (max-width: 769px) and (min-width: 450px) { header { padding: 0 0 0 20px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { header { display: inline-block; padding: 0 0 0 10px; height: 40px; } }
 
-.pageTitleBox { justify-content: center; align-items: center; display: flex; width: 100%; min-height: 199px; margin-top: 65px; background: url(../img/pageHeaderBG.png) left bottom no-repeat; -moz-background-size: cover; background-size: cover; }
+.pageTitleBox { justify-content: center; align-items: center; display: flex; width: 100%; min-height: 140px; margin-top: 65px; background: url(../img/pageHeaderBG.png) left bottom no-repeat; -moz-background-size: cover; background-size: cover; }
 .pageTitleBox.pageTB_no { margin-top: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pageTitleBox { margin-top: 40px; min-height: 60px; background: url(../img/m-pageHeaderBG.png) center center no-repeat; -moz-background-size: cover; background-size: cover; } }
 
@@ -136,7 +136,7 @@ header.pageH { position: absolute; top: 0; left: 0; z-index: 8888; box-shadow: 1
 .bigBoxs.cent_index { height: calc(100vh - 65px); margin: 0; padding: 0; background-image: url(../img/big_planet.png), url(../img/star.png); background-repeat: no-repeat, no-repeat; background-position: center bottom, center 65px; -moz-background-size: contain, contain; background-size: contain, contain; }
 .bigBoxs.cent_index.chagne_cent { height: 100%; }
 .bigBoxs.cent_index.nocut { height: 100vh; }
-@media screen and (max-width: 449px) and (min-width: 0) { .bigBoxs.cent_index { height: calc(100vh - 40px); background-image: url(../img/big_planet.png), url(../img/m_star.png); background-repeat: no-repeat, no-repeat; background-position: center bottom, center top; -moz-background-size: contain, contain; background-size: contain, cover; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .bigBoxs.cent_index { height: calc(100vh - 40px); min-height: 610px; background-image: url(../img/big_planet.png), url(../img/m_star.png); background-repeat: no-repeat, no-repeat; background-position: center bottom, center top; -moz-background-size: contain, contain; background-size: contain, cover; } }
 .bigBoxs .bigPlanet { display: inline-block; width: 100%; min-height: 490px; bottom: 0; left: 0; margin: 0; padding: 0; }
 .bigBoxs .bigPlanet.change_big { position: unset; }
 @media screen and (max-width: 449px) and (min-width: 0) { .bigBoxs .bigPlanet { min-height: 220px; } }
@@ -216,7 +216,7 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 
 .safeBox { display: inline-block; width: 100%; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */ background: white; /* Old browsers */ background: -moz-linear-gradient(top, white 0%, #eeeeee 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, white 0%, #eeeeee 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */ -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 15px; }
 
-#banner { display: none; overflow: hidden; width: 100%; height: 385px; position: relative; padding: 0 15px; margin: 0 auto; }
+#banner { display: none; overflow: hidden; width: 100%; height: 300px; position: relative; padding: 30px 15px; margin: 0 auto; }
 @media screen and (max-width: 449px) and (min-width: 0) { #banner { display: inline-block; } }
 
 #tab > img:not(:first-child) { display: none; }

@@ -83,7 +83,7 @@ header {
   align-items: center;
   display: flex;
   width: 100%;
-  min-height: 199px;
+  min-height: 140px;
   margin-top: 65px;
   background: url(../img/pageHeaderBG.png) left bottom no-repeat;
   -moz-background-size: cover;
@@ -398,6 +398,7 @@ header {
 
     @include range-width(0, 450px) {
       height: calc(100vh - 40px);
+      min-height: 610px;
 
       background-image: url(../img/big_planet.png),
                         url(../img/m_star.png);
@@ -707,10 +708,11 @@ footer {
   overflow: hidden;
   width: 100%;
   // max-width: 350px;
-  height: 385px;
+  // height: 385px;
+  height: 300px;
   position: relative;
   // float: left;
-  padding: 0 15px;
+  padding: 30px 15px;
   margin: 0 auto;
 }
 
