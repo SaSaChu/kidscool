@@ -1,0 +1,98 @@
+@import "Ginkgo";
+@import "color";
+
+.banner1, .banner2, .banner3 {
+	.top {
+		.boxs {
+			@include range-width(0, 450px) {
+				height: 360px;
+
+				&.i04-boxs {
+					.box {
+						span {
+							border: 2px solid rgba(16, 170, 220, 1.00);
+						}
+					}					
+				}
+				.box {
+					+ .box {
+						margin-left: 0;
+					}
+
+					img {
+						max-height: 300px;
+					}
+
+					span {
+						display : inline-block;
+						width: 251px;
+						color: black;
+						border: 2px solid #e00074;
+						border-radius: 20px;
+						text-overflow : ellipsis;
+						white-space : nowrap;
+						overflow : hidden;
+					}
+
+					
+				}
+			}
+		}
+	}
+
+	&.banner3 {
+		.top {
+			.boxs {
+				@include range-width(0, 450px) {
+					.box {
+						span {
+							width: 273px;
+						}
+
+						.in_noLine ~ a {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.show-box {
+	&.spbox {
+		.top {
+			.boxs {
+				.box-container {
+					@include range-width(0, 450px) {
+						height: 180px !important;
+
+						.box {
+							&.writeCentBox {
+								height: 150px;
+								
+								+ .box {
+									margin-left: 0;
+
+									img {
+										max-width: 100%;
+									}
+								}
+
+								span {
+									bottom : 3px;
+								}
+							}
+						}
+					}
+
+					
+				}
+			}
+		}
+	}
+}
+
+.slick-disabled {
+	opacity: 0;
+}

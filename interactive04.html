@@ -8,8 +8,6 @@
 
 	<title>巧連智奇酷網</title>
 
-	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/icon.css">
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/color.css">
@@ -21,6 +19,9 @@
 	<link rel="stylesheet" type="text/css" href="css/text.css">
 	<link rel="stylesheet" type="text/css" href="css/interactive.css">
 	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/interactive_slick.css">
 
 	<script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script language="javascript" type="text/javascript" src="js/public.js"></script>
@@ -28,6 +29,7 @@
 	<script language="javascript" type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
 	<script language="javascript" type="text/javascript" src="js/lightbox.js"></script>
 	<script language="javascript" type="text/javascript" src="js/slick.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/interactive_slick.js"></script>
 </head>
 
 <body>
@@ -292,7 +294,7 @@
 						<!-- 無投稿資料顯示 top、bottom 可以不用顯示-->
 						<div class='top'>
 							<label class='left'><img src="img/interactive/in_arrow_LB.png"></label>
-							<div class='boxs banner2-boxs'>
+							<div class='boxs i04-boxs'>
 								<div class='box'>
 									<!-- 同一系列 data-lightbox 名稱需一樣 -->
 									<!-- 主要顯示照片 光箱時為第一張-->
@@ -311,7 +313,7 @@
 								</div>
 								<div class='box showModel'>
 									<img class='in_noLine' src="img/interactive/testimg.jpeg">
-                  					<a class='f_b18_o m_t_10 m-open' href="#" data-video-path="https://www.youtube.com/embed/DTt2XqP3xF0"></a>
+                  					<a class="" href="#" data-video-path="https://www.youtube.com/embed/DTt2XqP3xF0"></a>
 									<span>文字文字文字文字文字文字3</span>
 									<!-- <a href="img/interactive/in_b71.png" class="light-1" data-lightbox="banner2-3">
 										<img src="img/interactive/in_b71.png">
@@ -449,7 +451,7 @@
 						<!-- 無投稿資料顯示 top、bottom 可以不用顯示-->
 						<div class='top'>
 							<label class='left'><img src="img/interactive/in_arrow_LG.png"></label>
-							<div class="boxs banner3-boxs">
+							<div class="boxs i04-boxs">
 								<div class="box">
 									<!-- 同一系列 data-lightbox 名稱需一樣 -->
 									<!-- 主要顯示照片 光箱時為第一張-->
@@ -472,7 +474,7 @@
 								</div>
 								<div class="box showModel">
 									<img class='in_noLine' src="img/interactive/testimg.jpeg">
-                  					<a class='f_b18_o m_t_10 m-open' href="#" data-video-path="https://www.youtube.com/embed/DTt2XqP3xF0"></a>
+                  					<a href="#" data-video-path="https://www.youtube.com/embed/DTt2XqP3xF0"></a>
 									<span>文字文字文字文字文字文字3</span>
 								</div>
 								<div class="box">
@@ -658,22 +660,6 @@
 			</div>
 		</div>
 	</div>
-
-	<script>
-		$(function(){
-			// $(window).resize(function() {
-			if ( $(window).width() < 450 ) {
-				$('.banner2-boxs').slick({
-					arrows: true,
-				});
-
-				$('.banner3-boxs').slick({
-					arrows: true,
-				});
-			}
-			// });
-		});
-	</script>
 </body>
 
 </html>

@@ -287,42 +287,44 @@ $(function() {
       let getPage = n => parseInt($banner.attr('p'), 10) + n
       let setPage = p => $banner.attr('p', p)
 
-      if(getPage(0) === 1) {
-        $banner.find('.left').find('img').attr('src', 'img/interactive/in_arrow_LG.png')        
+      if ( $(window).width() > 450 ) {
+        if(getPage(0) === 1) {
+          $banner.find('.left').find('img').attr('src', 'img/interactive/in_arrow_LG.png')        
+        }
+
+        $banner.find('.left').click(_ => {
+          let p = getPage(-1)
+          // setPage(p < 1 ? MaxPage : p)
+          if( p >= 1) {
+            $banner.find('.right').find('img').attr('src', 'img/interactive/in_arrow_R.png')
+            setPage(p)
+          }
+
+          if ( p === 1) {
+            $banner.find('.left').find('img').attr('src', 'img/interactive/in_arrow_LG.png')
+          }
+          
+          
+        })
+        $banner.find('.right').click(_ => {
+          // setPage(p > MaxPage ? 1 : p)
+          let p = getPage(+1)
+          if (p <= MaxPage) {
+            $banner.find('.left').find('img').attr('src', 'img/interactive/in_arrow_L.png')
+            setPage(p)
+          }
+          if (p === MaxPage){
+            $banner.find('.right').find('img').attr('src', 'img/interactive/in_arrow_RG.png')
+          }
+        })
+
+        for (let i = 0; i < MaxPage; i++)
+          $bottom.append($('<label />').click(function() {
+            setPage($(this).index() + 1)
+          }))
+
+        setPage(1)
       }
-
-      $banner.find('.left').click(_ => {
-        let p = getPage(-1)
-        // setPage(p < 1 ? MaxPage : p)
-        if( p >= 1) {
-          $banner.find('.right').find('img').attr('src', 'img/interactive/in_arrow_R.png')
-          setPage(p)
-        }
-
-        if ( p === 1) {
-          $banner.find('.left').find('img').attr('src', 'img/interactive/in_arrow_LG.png')
-        }
-        
-        
-      })
-      $banner.find('.right').click(_ => {
-        // setPage(p > MaxPage ? 1 : p)
-        let p = getPage(+1)
-        if (p <= MaxPage) {
-          $banner.find('.left').find('img').attr('src', 'img/interactive/in_arrow_L.png')
-          setPage(p)
-        }
-        if (p === MaxPage){
-          $banner.find('.right').find('img').attr('src', 'img/interactive/in_arrow_RG.png')
-        }
-      })
-
-      for (let i = 0; i < MaxPage; i++)
-        $bottom.append($('<label />').click(function() {
-          setPage($(this).index() + 1)
-        }))
-
-      setPage(1)
     })
 
     // 互動學員 banner2

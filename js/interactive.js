@@ -136,8 +136,12 @@ $(function () {
 		$('.spbox').attr('data-page', page);
 	}
 
-	lightbox.option({
-        'alwaysShowNavOnTouchDevices': true,
-		'disableScrolling': true,
-    })
+    // 判斷頁面有沒有使用 loghtbox 套件
+    if($('a[data-lightbox]').length) {
+        lightbox.option({
+            'alwaysShowNavOnTouchDevices': true,
+            'disableScrolling': true,
+        })
+    }
+	
 });
