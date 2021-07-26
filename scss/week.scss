@@ -1,6 +1,9 @@
 @import "Ginkgo";
 @import "color";
 
+// input[type="radio"]:checked + .label-box label span {
+//     background:url(../img/cbx-on.png) no-repeat;
+// }
 .weekBoxs {
 	.weekCentBox {
 		.weekCent {
@@ -26,35 +29,43 @@
 											margin-left: 52px;
 
 											@include range-width(0, 450px) {
-												margin-left: 50px;
+												margin-left: 15px;
 											}
 										}
 										
 									}	
 								}
 								.box100 {
-									flex-direction: column;
-									justify-content: flex-start;
-									align-items: flex-start;
+									// flex-direction: column;
+									// justify-content: flex-start;
+									// align-items: center;
+									// text-align: left;
+
 									.w_select {
 										margin-left: 52px;
 										@include range-width(0, 450px) {
-											margin-left: 52px;
+											margin-left: 15px;
 										}
 									}
 
 									.img_a {
-										margin-left: 85px;
+										margin-left: 52px;
 
 										@include range-width(0, 450px) {
-											margin-left: 52px;
+											margin-left: 15px;
 										}
 									}
 
 									.w_anok {
 										display: flex;
+										justify-content: flex-start;
 										align-items: center;
-										// padding-left: 52px;
+										padding-left: 52px;
+										width: 100%;
+
+										@include range-width(0, 450px) {
+											padding-left: 15px;	
+										}	
 									}
 								}
 							}

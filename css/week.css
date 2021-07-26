@@ -44,13 +44,13 @@
 
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_q .img_q { display: block; margin-top: 10px; width: 180px; height: 135px; }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box:last-child .box100 .w_select { margin-left: 52px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box:last-child .box100 .w_select { margin-left: 50px; } }
-.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 { flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box:last-child .box100 .w_select { margin-left: 15px; } }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_select { margin-left: 52px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_select { margin-left: 52px; } }
-.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .img_a { margin-left: 85px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .img_a { margin-left: 52px; } }
-.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_anok { display: flex; align-items: center; }
+@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_select { margin-left: 15px; } }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .img_a { margin-left: 52px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .img_a { margin-left: 15px; } }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_anok { display: flex; justify-content: flex-start; align-items: center; padding-left: 52px; width: 100%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_anok { padding-left: 15px; } }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 { justify-content: flex-start; }
 @media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 label { padding-left: 15px; } }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 label .label-box { display: flex; justify-content: flex-start; align-items: center; }
