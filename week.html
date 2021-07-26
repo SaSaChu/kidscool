@@ -1,560 +1,731 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <head>
-    <meta http-equiv="Content-Language" content="zh-tw">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 
-    <title>巧連智奇酷網</title>
+<head>
+	<meta http-equiv="Content-Language" content="zh-tw">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 
-    <link rel="stylesheet" type="text/css" href="css/icon.css">
-    <link rel="stylesheet" type="text/css" href="css/public.css">
-    <link rel="stylesheet" type="text/css" href="css/color.css">
-    <link rel="stylesheet" type="text/css" href="css/effect.css">
-    <link rel="stylesheet" type="text/css" href="css/input.css">
-    <link rel="stylesheet" type="text/css" href="css/link.css">
-    <link rel="stylesheet" type="text/css" href="css/other.css">
-    <link rel="stylesheet" type="text/css" href="css/space.css">
-    <link rel="stylesheet" type="text/css" href="css/text.css">
+	<title>巧連智奇酷網</title>
 
-    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/public.js"></script>
-  </head>
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/effect.css">
+	<link rel="stylesheet" type="text/css" href="css/input.css">
+	<link rel="stylesheet" type="text/css" href="css/link.css">
+	<link rel="stylesheet" type="text/css" href="css/other.css">
+	<link rel="stylesheet" type="text/css" href="css/space.css">
+	<link rel="stylesheet" type="text/css" href="css/text.css">
+	<link rel="stylesheet" type="text/css" href="css/week.css">
 
-  <body>
-    
-    <header class="pageH">
-      <div class='header_l'>
-        <a href="index.html"><img class='logo' src="img/logo.svg"></a>
-        <a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" target='_blank'><img class='header_icon' src="img/icon_fb.svg"></a>
-        <a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" target='_blank'><img class='header_icon' src="img/icon_u2.svg"></a>
-        <a href="https://www.benesse.com.tw/html/line/index.html" target='_blank'><img class='header_icon' src="img/icon_line.svg"></a>
-        <a href="https://app.benesse.com.tw/act/201601_member/" target='_blank'><img class='header_icon' src="img/icon_app.svg"></a>
-      </div>
 
-      <div class='header_r'>
-        <!-- 會員編號 -->
-        <div class='ds m_rt_3_8'>
-          <p class='talk_input'>嗨！李曉明！您好！你已經成功登入囉！</p>
-        </div>
+	<script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/public.js"></script>
+</head>
 
-        <!-- link -->
-        <a class='link_red m_r_10' href="">登出</a>
-        <a class='link_red m_r_10' href="change_pw.html">變更密碼</a>
+<body>
 
-        <!-- qa按鈕 -->
-        <div class='ds posit m_r_5'>
-          <div class='tip_box'>
-            <span class='prompt' data-showtip='網站說明'>
-              <a class='link40' href="help.html"></a>
-            </span>
-          </div>
-          <img class='icon_qa p_t_5' src="img/icon_qa.svg">
-        </div>
+	<header class="pageH">
+		<div class='header_l'>
+			<a href="index.html"><img class='logo' src="img/logo.svg"></a>
+			<a href="https://www.facebook.com/BenesseTaiwan/?fref=ts" target='_blank'><img class='header_icon'
+					src="img/icon_fb.svg"></a>
+			<a href="https://www.youtube.com/channel/UCnjadOj5qlKXsTAXPSwc67A/featured" target='_blank'><img
+					class='header_icon' src="img/icon_u2.svg"></a>
+			<a href="https://www.benesse.com.tw/html/line/index.html" target='_blank'><img class='header_icon'
+					src="img/icon_line.svg"></a>
+			<a href="https://app.benesse.com.tw/act/201601_member/" target='_blank'><img class='header_icon'
+					src="img/icon_app.svg"></a>
+		</div>
 
-        <!-- lock按鈕 -->
-        <div class='ds posit'>
-          <div class='tip_box'>
-            <span class='prompt pa' data-showtip='家長安心設定'>
-              <a class='link40' href="safe.html"></a>
-            </span>
-          </div>
-          <img class='icon_lock' src="img/icon_lock.svg">
-        </div>
-      </div>
+		<div class='header_r'>
+			<!-- 會員編號 -->
+			<div class='ds m_rt_3_8'>
+				<p class='talk_input'>嗨！李曉明！您好！你已經成功登入囉！</p>
+			</div>
 
-      <!-- 手機Menu・觸發 -->
-      <div class='m_header_r icon-navicon'></div>
-    </header>
+			<!-- link -->
+			<a class='link_red m_r_10' href="">登出</a>
+			<a class='link_red m_r_10' href="change_pw.html">變更密碼</a>
 
-    <div class='pageTitleBox'>
-      <a href="index.html"><img class='img_slogan img_S_page' src="img/slogan.png"></a>
-    </div>
+			<!-- qa按鈕 -->
+			<div class='ds posit m_r_5'>
+				<div class='tip_box'>
+					<span class='prompt' data-showtip='網站說明'>
+						<a class='link40' href="help.html"></a>
+					</span>
+				</div>
+				<img class='icon_qa p_t_5' src="img/icon_qa.svg">
+			</div>
 
-    <!-- 手機Menu・內容 -->
-    <div class='m_menu'>
-      <div class='menuClose'><img src="img/close.png"></div>
-      <div class='menuBox'>
-        <!-- menu header -->
-        <div class='m_header'>
-          <div class="allBoxs textLeft">
-            <img class='m_header_img' src="img/m-logo.png">
+			<!-- lock按鈕 -->
+			<div class='ds posit'>
+				<div class='tip_box'>
+					<span class='prompt pa' data-showtip='家長安心設定'>
+						<a class='link40' href="safe.html"></a>
+					</span>
+				</div>
+				<img class='icon_lock' src="img/icon_lock.svg">
+			</div>
+		</div>
 
-            <!-- 輸入框 -->
-            <div class="ds ds-60">
-              <!-- 會員編號 -->
-              <div class='ds ds100'>
-                <p class='ds m_f_b13'>會員編號：</p>
-                <label>
-                  <input class='input_white m-menuUse' type="" name="">
-                </label>
-              </div>
+		<!-- 手機Menu・觸發 -->
+		<div class='m_header_r icon-navicon'></div>
+	</header>
 
-              <!-- 密碼： -->
-              <div class='ds ds100 m_t_5'>
-                <p class='ds m_f_b13'>密碼：</p>
-                <label>
-                  <input class='input_white m-menuUse' type="" name="">
-                </label>
-              </div>
-            </div>
+	<div class='pageTitleBox'>
+		<a href="index.html"><img class='img_slogan img_S_page' src="img/slogan.png"></a>
+	</div>
 
-            <!-- link -->
-            <div class="ds ds100 m_t_10">
-              <a class='link_red m_r_10' href="login.html">登入</a>
-              <a class='link_red m_r_10' href="forget_pw.html">忘記密碼</a>
-              <a class='m-qBtnBox link_grey' href="help.html"><img class='icon_qa' src="img/icon_qa_w.svg">網站說明</a>
-            </div>
-          </div>
-        </div>
+	<!-- 手機Menu・內容 -->
+	<div class='m_menu'>
+		<div class='menuClose'><img src="img/close.png"></div>
+		<div class='menuBox'>
+			<!-- menu header -->
+			<div class='m_header'>
+				<div class="allBoxs textLeft">
+					<img class='m_header_img' src="img/m-logo.png">
 
-        <!-- menu cent -->
-        <div class='ds ds100'>
-          <div class="dropdown">
-            <button class="dropbtn m-nb m-menu01">互動學員</button>
-            <div class="dropdown-content">
-              <a href="interactive.html">基礎版故事</a>
-              <a href="interactive02.html">基礎版活動投稿</a>
-              <a href="interactive03.html">進階版科學影片</a>
-              <a href="interactive04.html">進階版活動投稿</a>
-              <!-- <a href="interactive05.html">月號實驗影片</a> -->
-              <a href="interactive06.html">作文殿堂</a>
-              <a href="interactive07.html">小學版教材設計說明</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn m-menu02">小試身手</button>
-            <div class="dropdown-content">
-              <a href="test.html">快樂小一生</a>
-              <a href="test02.html">聰明小二生</a>
-              <a href="test03.html">天才小三生</a>
-              <a href="test04.html">資優小四生</a>
-              <a href="test05.html">進擊小五生</a>
-              <a href="test06.html">衝刺小六生</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn m-menu03">知識寶庫</button>
-            <div class="dropdown-content">
-              <a href="knowledge.html">自然篇</a>
-              <a href="knowledge02.html">科學篇</a>
-              <a href="knowledge03.html">世界篇</a>
-              <a href="knowledge04.html">鄉土篇</a>
-              <a href="knowledge05.html">典故篇</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn m-menu04">益智遊戲場</button>
-            <div class="dropdown-content">
-              <a href="game.html">動腦挑戰</a>
-              <a href="game02.html">放鬆舒壓</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn m-menu05">視聽大觀園</button>
-            <div class="dropdown-content">
-              <a href="video.html">英文律動館</a>
-              <a href="video02.html">語文養成館</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <a class="dropbtn m-menu06">每週互動</a>
-          </div>
-          <div class="dropdown">
-            <a class="dropbtn m-menu07">歷史今日</a>
-          </div>
-          <div class="dropdown">
-            <a class="dropbtn m-menu08">非會員試玩區</a>
-          </div>
-        </div>
+					<!-- 輸入框 -->
+					<div class="ds ds-60">
+						<!-- 會員編號 -->
+						<div class='ds ds100'>
+							<p class='ds m_f_b13'>會員編號：</p>
+							<label>
+								<input class='input_white m-menuUse' type="" name="">
+							</label>
+						</div>
 
-        <!-- menu footer -->
-        <div class="fixBoxs textReft">
-          <a class='link_LGrey lineH33' href="safe.html">
-            <img class='icon_lock p_t_3' src="img/m-lock.svg">
-            家長安心設定
-          </a>
-        </div>
-      </div>
-    </div>
+						<!-- 密碼： -->
+						<div class='ds ds100 m_t_5'>
+							<p class='ds m_f_b13'>密碼：</p>
+							<label>
+								<input class='input_white m-menuUse' type="" name="">
+							</label>
+						</div>
+					</div>
 
-    <!-- 中間內容 -->
-    <div class='pageBoxs m_t_30_DM'>
-      <!-- 左邊選單 -->
-      <div class="pageLeft">
-        <div class='block-l-menuBox'>
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu01.png">
-            互動學員
-          </span>
-          <div class="m-smenu">
-            <a href="interactive.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">基礎版故事</a>
-            <a href="interactive02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">基礎版活動投稿</a>
-            <a href="interactive03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進階版科學影片</a>
-            <a href="interactive04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進階版活動投稿</a>
-            <!-- <a href="interactive05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">月號實驗影片</a> -->
-            <a href="interactive06.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">作文殿堂</a>
-            <a href="interactive07.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">小學版教材設計說明</a>
-          </div>
+					<!-- link -->
+					<div class="ds ds100 m_t_10">
+						<a class='link_red m_r_10' href="login.html">登入</a>
+						<a class='link_red m_r_10' href="forget_pw.html">忘記密碼</a>
+						<a class='m-qBtnBox link_grey' href="help.html"><img class='icon_qa'
+								src="img/icon_qa_w.svg">網站說明</a>
+					</div>
+				</div>
+			</div>
 
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu02.png">
-            知識寶庫
-          </span>
-          <div class="m-smenu">
-            <a href="knowledge.html"><img class='m_r_5' src="img/wMenuIcon/w-star.png">自然篇</a>
-            <a href="knowledge02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">科學篇</a>
-            <a href="knowledge03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">世界篇</a>
-            <a href="knowledge04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">鄉土篇</a>
-            <a href="knowledge05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">典故篇</a>
-          </div>
+			<!-- menu cent -->
+			<div class='ds ds100'>
+				<div class="dropdown">
+					<button class="dropbtn m-nb m-menu01">互動學員</button>
+					<div class="dropdown-content">
+						<a href="interactive.html">基礎版故事</a>
+						<a href="interactive02.html">基礎版活動投稿</a>
+						<a href="interactive03.html">進階版科學影片</a>
+						<a href="interactive04.html">進階版活動投稿</a>
+						<!-- <a href="interactive05.html">月號實驗影片</a> -->
+						<a href="interactive06.html">作文殿堂</a>
+						<a href="interactive07.html">小學版教材設計說明</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn m-menu02">小試身手</button>
+					<div class="dropdown-content">
+						<a href="test.html">快樂小一生</a>
+						<a href="test02.html">聰明小二生</a>
+						<a href="test03.html">天才小三生</a>
+						<a href="test04.html">資優小四生</a>
+						<a href="test05.html">進擊小五生</a>
+						<a href="test06.html">衝刺小六生</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn m-menu03">知識寶庫</button>
+					<div class="dropdown-content">
+						<a href="knowledge.html">自然篇</a>
+						<a href="knowledge02.html">科學篇</a>
+						<a href="knowledge03.html">世界篇</a>
+						<a href="knowledge04.html">鄉土篇</a>
+						<a href="knowledge05.html">典故篇</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn m-menu04">益智遊戲場</button>
+					<div class="dropdown-content">
+						<a href="game.html">動腦挑戰</a>
+						<a href="game02.html">放鬆舒壓</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn m-menu05">視聽大觀園</button>
+					<div class="dropdown-content">
+						<a href="video.html">英文律動館</a>
+						<a href="video02.html">語文養成館</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="dropbtn m-menu06">每週互動</a>
+				</div>
+				<div class="dropdown">
+					<a class="dropbtn m-menu07">歷史今日</a>
+				</div>
+				<div class="dropdown">
+					<a class="dropbtn m-menu08">非會員試玩區</a>
+				</div>
+			</div>
 
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu03.png">
-            小試身手
-          </span>
-          <div class="m-smenu">
-            <a href="test.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">快樂小一生</a>
-            <a href="test02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">聰明小二生</a>
-            <a href="test03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">天才小三生</a>
-            <a href="test04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">資優小四生</a>
-            <a href="test05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進擊小五生</a>
-            <a href="test06.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">衝刺小六生</a>
-          </div>
+			<!-- menu footer -->
+			<div class="fixBoxs textReft">
+				<a class='link_LGrey lineH33' href="safe.html">
+					<img class='icon_lock p_t_3' src="img/m-lock.svg">
+					家長安心設定
+				</a>
+			</div>
+		</div>
+	</div>
 
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu04.png">
-            視聽大觀園
-          </span>
-          <div class="m-smenu">
-            <a href="video.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">英文律動館</a>
-            <a href="video.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">語文養成館</a>
-          </div>
+	<!-- 中間內容 -->
+	<div class='pageBoxs m_t_30_DM'>
+		<!-- 左邊選單 -->
+		<div class="pageLeft">
+			<div class='block-l-menuBox'>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu01.png">
+					互動學員
+				</span>
+				<div class="m-smenu">
+					<a href="interactive.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">基礎版故事</a>
+					<a href="interactive02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">基礎版活動投稿</a>
+					<a href="interactive03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進階版科學影片</a>
+					<a href="interactive04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進階版活動投稿</a>
+					<!-- <a href="interactive05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">月號實驗影片</a> -->
+					<a href="interactive06.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">作文殿堂</a>
+					<a href="interactive07.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">小學版教材設計說明</a>
+				</div>
 
-          <span class="m-menu-t">
-            <img src="img/wMenuIcon/w-menu05.png">
-            益智遊戲廠
-          </span>
-          <div class="m-smenu">
-            <a href="game.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">動腦挑戰</a>
-            <a href="game02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">放鬆舒壓</a>
-          </div>
-        </div>
-        <img class='order_l' src="img/wMenuIcon/menuShadow.png">
-      </div>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu02.png">
+					知識寶庫
+				</span>
+				<div class="m-smenu">
+					<a href="knowledge.html"><img class='m_r_5' src="img/wMenuIcon/w-star.png">自然篇</a>
+					<a href="knowledge02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">科學篇</a>
+					<a href="knowledge03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">世界篇</a>
+					<a href="knowledge04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">鄉土篇</a>
+					<a href="knowledge05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">典故篇</a>
+				</div>
 
-      <div class="pageRight page_R_K">
-        <div class='ds ds100 p_td_20_DM m-open'>
-          <a class='link_tag' href="index.html">首頁</a>
-          <p class='hover_tag'>每週互動</p>
-        </div>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu03.png">
+					小試身手
+				</span>
+				<div class="m-smenu">
+					<a href="test.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">快樂小一生</a>
+					<a href="test02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">聰明小二生</a>
+					<a href="test03.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">天才小三生</a>
+					<a href="test04.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">資優小四生</a>
+					<a href="test05.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">進擊小五生</a>
+					<a href="test06.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">衝刺小六生</a>
+				</div>
 
-        <div class='ds ds100'>
-          <picture>
-            <source srcset="img/week/m-title-week.png" media="(max-width: 450px)">
-            <source srcset="img/week/title-week.png" media="(max-width: 768px)">
-            <img class='pt-img' src="img/week/title-week.png">
-          </picture>
-        </div>
-        
-        <div class='weekBoxs'>
-          
-          <div class="weekMoBox">
-            <a href="#" class='left'><img src="img/week/in_arrow_LG.png"></a>
-            <div class="moBox">
-              <div class="mo">
-                <p class='moyear'>2021</p>
-                <p class='monub'>01</p>
-              </div>
-              <div class="mo">
-                <p class='moyear'>2021</p>
-                <p class='monub'>02</p>
-              </div>
-              <div class="mo">
-                <p class='moyear'>2021</p>
-                <p class='monub'>03</p>
-              </div>
-              <div class="mo">
-                <p class='moyear'>2021</p>
-                <p class='monub'>04</p>
-              </div>
-              <div class="mo">
-                <p class='moyear'>2021</p>
-                <p class='monub'>05</p>
-              </div>
-              <div class="mo now">
-                <p class='moyear'>2021</p>
-                <p class='monub'>06</p>
-              </div>
-              <div class="mo future">
-                <p class='moyear'>2021</p>
-                <p class='monub'>07</p>
-              </div>
-              <div class="mo future">
-                <p class='moyear'>2021</p>
-                <p class='monub'>08</p>
-              </div>
-              <div class="mo future">
-                <p class='moyear'>2021</p>
-                <p class='monub'>09</p>
-              </div>
-              <div class="mo future">
-                <p class='moyear'>2021</p>
-                <p class='monub'>10</p>
-              </div>
-              <div class="mo future">
-                <p class='moyear'>2021</p>
-                <p class='monub'>11</p>
-              </div>
-              <div class="mo future">
-                <p class='moyear'>2021</p>
-                <p class='monub'>12</p>
-              </div>
-            </div>
-            <a href="#" class='right'><img src="img/week/in_arrow_RG.png"></a>
-          </div>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu04.png">
+					視聽大觀園
+				</span>
+				<div class="m-smenu">
+					<a href="video.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">英文律動館</a>
+					<a href="video.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">語文養成館</a>
+				</div>
 
-          <div class="weekCentBox">
-            <!-- 01 -->
-            <div class="weekCent show">
-              <div class="weekContent">
-                <div class="wLBox">
-                  <div class='w_title'>
-                    <img class='w_clock' src="img/week/w_clock.png">
-                    <div class="w_anTitle">
-                      作答時間
-                      <div class='w_anTime'>2014.9.29~2014.10.5</div>
-                    </div>
-                  </div>
+				<span class="m-menu-t">
+					<img src="img/wMenuIcon/w-menu05.png">
+					益智遊戲廠
+				</span>
+				<div class="m-smenu">
+					<a href="game.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">動腦挑戰</a>
+					<a href="game02.html"><img class='m_t_3 m_r_5' src="img/wMenuIcon/w-star.png">放鬆舒壓</a>
+				</div>
+			</div>
+			<img class='order_l' src="img/wMenuIcon/menuShadow.png">
+		</div>
 
-                  <div class="w_answer">
-                    <p class="w_q"><img class='icon_q' src="img/week/icon_q.png">哪一個選項不是昆蟲?</p>
-                    <div class="ds ds100">
-                      <div class='box100'>
-                        <div class="box50">
-                          <input type="radio" id="r1" name="rr"/>
-                          <label for="r1"><span></span><p>蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶</p></label>
-                        </div>
-                        <div class="box50">
-                          <div class='w_select' p=50>
-                            <span>有23位小朋友選擇!</span>
-                          </div>
-                        </div>                        
-                      </div>
-                      <div class="box100">
-                        <div class="box50">
-                          <input type="radio" id="r2" name="rr"/>
-                          <label for="r2"><span></span><p>蜜蜂</p></label>
-                        </div>
-                        <div class='box50'>
-                          <div class='w_select' p=80>
-                            <span>有23位小朋友選擇!</span>
-                          </div>
-                        </div>
-                      </div>
-                        
-                      <div class="box100">
-                        <div class="box50">
-                          <input type="radio" id="r3" name="rr"/>
-                          <label for="r3"><span></span>蜘蛛</label>
-                        </div>
-                        <div class='box50'>
-                          <div class='w_select' p=10>
-                            <span>有23位小朋友選擇!</span>
-                          </div>
-                        </div>
-                      </div>
-                        
-                      <div class="box100">
-                          <div class="box50">
-                            <input type="radio" id="r4" name="rr"/>
-                            <label for="r4"><span></span>螢火蟲</label>
-                          </div>
-                          <div class='box50'>
-                            <div class='w_select' p=20>
-                              <span>有23位小朋友選擇!</span>
-                            </div>
-                          </div>
-                      </div>
-                      
-                    </div>
-                    <div class="ds ds100 m-open">
-                      <button class="link_orange2">確定作答</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="wRBox">
-                  <img src="img/week/w-pic01.png">
-                  <button class="link_orange2">確定作答</button>
-                </div>
-              </div>
-              <div class="weekContent">
-                <div class="wLBox">
-                  <div class='w_title'>
-                    <img class='w_clock' src="img/week/w_clock.png">
-                    <div class="w_anTitle">
-                      作答時間
-                      <div class='w_anTime'>2014.9.29~2014.10.5</div>
-                    </div>
-                  </div>
+		<div class="pageRight page_R_K">
+			<div class='ds ds100 p_td_20_DM m-open'>
+				<a class='link_tag' href="index.html">首頁</a>
+				<p class='hover_tag'>每週互動</p>
+			</div>
 
-                  <div class="w_answer">
-                    <p class="w_q"><img class='icon_q' src="img/week/icon_q.png">哪一個節日在12月?</p>
-                    <div class="ds ds100">
-                      <div class="box100">
-                        <div class='box50'>
-                          <div class='w_anok'>國慶日</div>
-                        </div>
-                        <div class='box50'>
-                          <div class='w_select'>有23位小朋友選擇!</div>
-                        </div>
-                      </div>
-                      <div class="box100">
-                        <div class='box50'>
-                          <div class='w_anok'>母親節</div>
-                          
-                        </div>
-                        <div class='box50'>
-                          <div class='w_select'>有23位小朋友選擇!</div>
-                        </div>
-                      </div>
-                      <div class="box100">
-                        <div class='box50'>
-                          <div class='w_anok'>兒童節</div>
-                        </div>
-                        <div class='box50'>
-                          <div class='w_select'>有23位小朋友選擇!</div>
-                        </div>
-                      </div>
-                      <div class="box100">
-                        <div class='box50'>
-                          <div class='w_anok nopl'>
-                            <img src="img/week/correct.png">
-                          行憲紀念日行憲紀念日行憲紀念日行憲紀念日行憲紀念日
-                          </div>
-                        </div>
-                        <div class='box50'>
-                          <div class='w_select'>有23位小朋友選擇!</div>
-                        </div>
-                      </div> 
-                    </div>
-                    <div class="ds ds100 m-open">
-                      <p class="w_an01">您選擇的答案是</p>
-                      <p class="w_an02">行憲紀念日</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="wRBox">
-                  <img src="img/week/w-pic01.png">
-                  <p class="w_an01">您選擇的答案是</p>
-                  <p class="w_an02">行憲紀念日</p>
-                </div>
-              </div>
-            </div>
+			<div class='ds ds100'>
+				<picture>
+					<source srcset="img/week/m-title-week.png" media="(max-width: 450px)">
+					<source srcset="img/week/title-week.png" media="(max-width: 768px)">
+					<img class='pt-img' src="img/week/title-week.png">
+				</picture>
+			</div>
 
-            <!-- 02 -->
-            <!-- <div class='weekCent'>
-              <div class="weekContent">
-                <div class="wLBox">
-                  <div class='w_title'>
-                    <img class='w_clock' src="img/week/w_clock.png">
-                    <div class="w_anTitle">
-                      作答時間
-                      <div class='w_anTime'>2014.9.29~2014.10.5</div>
-                    </div>
-                  </div>
+			<div class='weekBoxs'>
 
-                  <div class="w_answer">
-                    <p class="w_q"><img class='icon_q' src="img/week/icon_q.png">哪一個節日在12月?</p>
-                    <div class="ds ds100">
-                      <div class='box50'>
-                        <div class='w_anok'>國慶日</div>
-                        <div class='w_anok'>母親節</div>
-                        <div class='w_anok'>兒童節</div>
-                        <div class='w_anok nopl'>
-                          <img src="img/week/correct.png">
-                        行憲紀念日
-                        </div>
-                      </div>
-                      <div class='box50'>
-                        <div class='w_select'>有23位小朋友選擇!</div>
-                        <div class='w_select'>有23位小朋友選擇!</div>
-                        <div class='w_select'>有23位小朋友選擇!</div>
-                        <div class='w_select'>有23位小朋友選擇!</div>
-                      </div>
-                    </div>
-                    <div class="ds ds100 m-open">
-                      <p class="w_an01">您選擇的答案是</p>
-                      <p class="w_an02">行憲紀念日</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="wRBox">
-                  <img src="img/week/w-pic01.png">
-                  <p class="w_an01">您選擇的答案是</p>
-                  <p class="w_an02">行憲紀念日</p>
-                </div>
-              </div>
-            </div> -->
+				<div class="weekMoBox">
+					<a href="#" class='left'><img src="img/week/in_arrow_LG.png"></a>
+					<div class="moBox">
+						<div class="mo">
+							<p class='moyear'>2021</p>
+							<p class='monub'>01</p>
+						</div>
+						<div class="mo">
+							<p class='moyear'>2021</p>
+							<p class='monub'>02</p>
+						</div>
+						<div class="mo">
+							<p class='moyear'>2021</p>
+							<p class='monub'>03</p>
+						</div>
+						<div class="mo">
+							<p class='moyear'>2021</p>
+							<p class='monub'>04</p>
+						</div>
+						<div class="mo">
+							<p class='moyear'>2021</p>
+							<p class='monub'>05</p>
+						</div>
+						<div class="mo now">
+							<p class='moyear'>2021</p>
+							<p class='monub'>06</p>
+						</div>
+						<div class="mo future">
+							<p class='moyear'>2021</p>
+							<p class='monub'>07</p>
+						</div>
+						<div class="mo future">
+							<p class='moyear'>2021</p>
+							<p class='monub'>08</p>
+						</div>
+						<div class="mo future">
+							<p class='moyear'>2021</p>
+							<p class='monub'>09</p>
+						</div>
+						<div class="mo future">
+							<p class='moyear'>2021</p>
+							<p class='monub'>10</p>
+						</div>
+						<div class="mo future">
+							<p class='moyear'>2021</p>
+							<p class='monub'>11</p>
+						</div>
+						<div class="mo future">
+							<p class='moyear'>2021</p>
+							<p class='monub'>12</p>
+						</div>
+					</div>
+					<a href="#" class='right'><img src="img/week/in_arrow_RG.png"></a>
+				</div>
 
-            <!-- 03 -->
-            <!-- <div class='weekCent'>
-              <div class="weekContent">
-                <div class="wLBox">
-                  <div class='w_title'>
-                    <img class='w_clock' src="img/week/w_clock_o.png">
-                    <div class="w_anTitle">
-                      作答時間
-                      <div class='w_anTime'>2014.9.29~2014.10.5</div>
-                    </div>
-                  </div>
+				<div class="weekCentBox">
+					
+					<div class="weekCent show">
+						<!-- Style 01 -->
+						<div class="weekContent">
+							<div class="wLBox">
+								<div class='w_title'>
+									<img class='w_clock' src="img/week/w_clock.png">
+									<div class="w_anTitle">
+										作答時間
+										<div class='w_anTime'>2014.9.29~2014.10.5</div>
+									</div>
+								</div>
 
-                  <div class="w_answer">
-                    <p class="w_q"><img class='icon_q' src="img/week/icon_q.png">哪一個節日在12月?</p>
-                    <div class="ds ds100">
-                      <div class='box50'>
-                        <div class='w_anok'>國慶日</div>
-                        <div class='w_anok'>母親節</div>
-                        <div class='w_anok'>兒童節</div>
-                        <div class='w_anok nopl'>
-                          <img src="img/week/correct.png">
-                        行憲紀念日
-                        </div>
-                      </div>
-                      <div class='box50'>
-                        <div class='w_select'>有23位小朋友選擇!</div>
-                        <div class='w_select'>有23位小朋友選擇!</div>
-                        <div class='w_select'>有23位小朋友選擇!</div>
-                        <div class='w_select'>有23位小朋友選擇!</div>
-                      </div>
-                    </div>
-                    <div class="ds ds100 m-open">
-                      <p class="w_an01">您選擇的答案是</p>
-                      <p class="w_an02">行憲紀念日</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="wRBox">
-                  <img src="img/week/w-pic01.png">
-                  <p class="w_an01">您選擇的答案是</p>
-                  <p class="w_an02">行憲紀念日</p>
-                </div>
-              </div>
-            </div> -->
+								<div class="w_answer">
+									<p class="w_q"><img class='icon_q' src="img/week/icon_q.png">哪一個選項不是昆蟲?</p>
+									<div class="ds ds100">
+										<div class='w_answer_box'>
+											<div class="box100">
+												<input type="radio" id="r1" name="rr" />
+												<label for="r1">
+													<div class="label-box">
+														<span></span>
+														<p>蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶</p>
+													</div>
+												</label>
+											</div>
+											<div class="box100">
+												<div class='w_select' p=>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="w_answer_box">
+											<div class="box100">
+												<input type="radio" id="r2" name="rr" />
+												<label for="r2">
+													<div class="label-box">
+														<span></span>
+														<p>蜜蜂</p>
+													</div>
+												</label>
+											</div>
+											<div class='box100'>
+												<div class='w_select' p=>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+										<div class="w_answer_box">
+											<div class="box100">
+												<input type="radio" id="r3" name="rr" />
+												<label for="r3">
+													<div class="label-box">
+														<span></span>
+														<p>蜘蛛</p>
+													</div>
+												</label>
+											</div>
+											<div class='box100'>
+												<div class='w_select' p=>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
 
-          </div>
-        </div>
+										<div class="w_answer_box">
+											<div class="box100">
+												<input type="radio" id="r4" name="rr" />
+												<label for="r4">
+													<div class="label-box">
+														<span></span>
+														<p>螢火蟲</p>
+													</div>
+												</label>
+											</div>
+											<div class='box100'>
+												<div class='w_select' p=>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
 
-        <img class='pt-img' src="img/week/ticket_bg.png">
-      </div>
-    </div> 
+									</div>
+									<div class="ds ds100 m-open">
+										<button class="link_orange2">確定作答</button>
+									</div>
+								</div>
+								<!-- <div class="w_answer">
+									<p class="w_q"><img class='icon_q' src="img/week/icon_q.png">哪一個選項不是昆蟲?</p>
+									<div class="ds ds100">
+										<div class='box100'>
+											<div class="box50">
+												<input type="radio" id="r1" name="rr" />
+												<label for="r1"><span></span>
+													<p>蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶</p>
+												</label>
+											</div>
+											<div class="box50">
+												<div class='w_select' p=50>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+										<div class="box100">
+											<div class="box50">
+												<input type="radio" id="r2" name="rr" />
+												<label for="r2"><span></span>
+													<p>蜜蜂</p>
+												</label>
+											</div>
+											<div class='box50'>
+												<div class='w_select' p=80>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
 
-    <!-- footer -->
-    <footer class='bg_blue m_t_100'>
-      <p class='f_b13'>Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc.</p>
-      <p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
-      <p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
-    </footer>
-  </body>
+										<div class="box100">
+											<div class="box50">
+												<input type="radio" id="r3" name="rr" />
+												<label for="r3"><span></span>蜘蛛</label>
+											</div>
+											<div class='box50'>
+												<div class='w_select' p=10>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="box100">
+											<div class="box50">
+												<input type="radio" id="r4" name="rr" />
+												<label for="r4"><span></span>螢火蟲</label>
+											</div>
+											<div class='box50'>
+												<div class='w_select' p=20>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="ds ds100 m-open">
+										<button class="link_orange2">確定作答</button>
+									</div>
+								</div> -->
+							</div>
+							<div class="wRBox">
+								<img src="img/week/w-pic01.png">
+								<button class="link_orange2">確定作答</button>
+							</div>
+						</div>
+						<!-- Style 01 Correct -->
+						<div class="weekContent">
+							<div class="wLBox">
+								<div class='w_title'>
+									<img class='w_clock' src="img/week/w_clock.png">
+									<div class="w_anTitle">
+										作答時間
+										<div class='w_anTime'>2014.9.29~2014.10.5</div>
+									</div>
+								</div>
+
+								<div class="w_answer correct">
+									<p class="w_q"><img class='icon_q' src="img/week/icon_q.png">哪一個節日在12月?</p>
+									<div class="ds ds100">
+										<div class="w_answer_box">
+											<div class='box100'>
+												<div class='w_anok'>國慶日</div>
+											</div>
+											<div class='box100'>
+												<div class='w_select'>有23位小朋友選擇!</div>
+											</div>
+										</div>
+										<div class="w_answer_box">
+											<div class='box100'>
+												<div class='w_anok'>母親節</div>
+											</div>
+											<div class='box100'>
+												<div class='w_select'>有23位小朋友選擇!</div>
+											</div>
+										</div>
+										<div class="w_answer_box">
+											<div class='box100'>
+												<div class='w_anok'>兒童節</div>
+											</div>
+											<div class='box100'>
+												<div class='w_select'>有23位小朋友選擇!</div>
+											</div>
+										</div>
+										<div class="w_answer_box">
+											<div class='box100'>
+												<div class='w_anok nopl'>
+													<img src="img/week/correct.png">
+													<p>行憲紀念日行憲紀念日行憲紀念日行憲紀念日行憲紀念日</p>
+												</div>
+											</div>
+											<div class='box100'>
+												<div class='w_select'>有23位小朋友選擇!</div>
+											</div>
+										</div>
+									</div>
+									<div class="ds ds100 m-open">
+										<p class="w_an01">您選擇的答案是</p>
+										<p class="w_an02">行憲紀念日</p>
+									</div>
+								</div>
+							</div>
+							<div class="wRBox">
+								<img src="img/week/w-pic01.png">
+								<p class="w_an01">您選擇的答案是</p>
+								<p class="w_an02">行憲紀念日</p>
+							</div>
+						</div>
+						<!-- Style 02 -->
+						<div class="weekContent">
+							<div class="wLBox">
+								<div class='w_title'>
+									<img class='w_clock' src="img/week/w_clock.png">
+									<div class="w_anTitle">
+										作答時間
+										<div class='w_anTime'>2014.9.29~2014.10.5</div>
+									</div>
+								</div>
+
+								<div class="w_answer">
+									<p class="w_q">
+										<img class='icon_q' src="img/week/icon_q.png">
+										哪一個選項不是昆蟲哪一個選項不是昆蟲哪一個選項不是昆蟲哪一個選項不是昆蟲?
+										<img class='img_q' src="img/week/w-pic01.png">	
+									</p>
+									<div class="ds ds100">
+										<div class='w_answer_box'>
+											<div class="box100">
+												<input type="radio" id="r5" name="rr" />
+												<label for="r5">
+													<div class="label-box">
+														<span></span>
+														<p>蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶蝴蝶</p>
+													</div>
+													<img class='img_a' src="img/week/w-pic01.png">	
+												</label>
+											</div>
+											<div class="box100">
+												<div class='w_select' p=>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="w_answer_box">
+											<div class="box100">
+												
+												<input type="radio" id="r6" name="rr" />
+												<label for="r6">
+													<div class="label-box">
+														<span></span>
+														<p>蜜蜂</p>
+													</div>
+													<img class='img_a' src="img/week/w-pic01.png">	
+												</label>
+											</div>
+											<div class='box100'>
+												<div class='w_select' p=>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+										<div class="w_answer_box">
+											<div class="box100">
+												<input type="radio" id="r7" name="rr" />
+												<label for="r7">
+													<div class="label-box">
+														<span></span>
+														<p>蜘蛛</p>
+													</div>
+													<img class='img_a' src="img/week/w-pic01.png">	
+												</label>
+											</div>
+											<div class='box100'>
+												<div class='w_select' p=>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="w_answer_box">
+											<div class="box100">
+												<input type="radio" id="r8" name="rr" />
+												<label for="r8">
+													<div class="label-box">
+														<span></span>
+														<p>螢火蟲</p>
+													</div>
+													<img class='img_a' src="img/week/w-pic01.png">	
+												</label>
+											</div>
+											<div class='box100'>
+												<div class='w_select' p=>
+													<span>有23位小朋友選擇!</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="ds ds100 m-open">
+										<button class="link_orange2">確定作答</button>
+									</div>
+								</div>
+								
+							</div>
+							<div class="wRBox">
+								<img src="img/week/w-pic01.png">
+								<button class="link_orange2">確定作答</button>
+							</div>
+						</div>
+
+						<!-- Style 02 Correct -->
+						<div class="weekContent">
+							<div class="wLBox">
+								<div class='w_title'>
+									<img class='w_clock' src="img/week/w_clock.png">
+									<div class="w_anTitle">
+										作答時間
+										<div class='w_anTime'>2014.9.29~2014.10.5</div>
+									</div>
+								</div>
+
+								<div class="w_answer correct">
+									<p class="w_q">
+										<img class='icon_q' src="img/week/icon_q.png">
+										哪一個節日在12月?
+										<img class='img_q' src="img/week/w-pic01.png">
+									</p>
+									<div class="ds ds100">
+										<div class="w_answer_box">
+											<div class='box100'>
+												<div class='w_anok'>國慶日</div>
+												<img class='img_a' src="img/week/w-pic01.png">
+											</div>
+											<div class='box100'>
+												<div class='w_select'>有23位小朋友選擇!</div>
+											</div>
+										</div>
+										<div class="w_answer_box">
+											<div class='box100'>
+												<div class='w_anok'>母親節</div>
+												<img class='img_a' src="img/week/w-pic01.png">
+											</div>
+											<div class='box100'>
+												<div class='w_select'>有23位小朋友選擇!</div>
+											</div>
+										</div>
+										<div class="w_answer_box">
+											<div class='box100'>
+												<div class='w_anok'>兒童節</div>
+												<img class='img_a' src="img/week/w-pic01.png">
+											</div>
+											<div class='box100'>
+												<div class='w_select'>有23位小朋友選擇!</div>
+											</div>
+										</div>
+										<div class="w_answer_box">
+											<div class='box100'>
+												<div class='w_anok nopl'>
+													<img src="img/week/correct.png">
+													<p>行憲紀念日行憲紀念日行憲紀念日行憲紀念日行憲紀念日</p>
+												</div>
+												<img class='img_a' src="img/week/w-pic01.png">
+											</div>
+											<div class='box100'>
+												<div class='w_select'>有23位小朋友選擇!</div>
+											</div>
+										</div>
+									</div>
+									<div class="ds ds100 m-open">
+										<p class="w_an01">您選擇的答案是</p>
+										<p class="w_an02">行憲紀念日</p>
+									</div>
+								</div>
+							</div>
+							<div class="wRBox">
+								<img src="img/week/w-pic01.png">
+								<p class="w_an01">您選擇的答案是</p>
+								<p class="w_an02">行憲紀念日</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<img class='pt-img' src="img/week/ticket_bg.png">
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer class='bg_blue m_t_100'>
+		<p class='f_b13'>Benesse and its symbol mark are registered trademarks of Benesse Holdings, Inc.</p>
+		<p class='f_b13'>巧連智,小朋友巧連智,巧虎are registered trademarks of Benesse Corporation.</p>
+		<p class='f_b13'>Copyright © Benesse Corporation / 巧虎</p>
+	</footer>
+</body>
 
 </html>
