@@ -99,6 +99,16 @@
 									&:before {
 										background-color: transparent;
 									}
+
+									span {
+										display: flex;
+										justify-content: flex-start;
+										align-items: center;
+
+										&:after {
+											margin-left: 10px;
+										}
+									}
 								}
 
 								.w_anok {
