@@ -51,6 +51,7 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .img_a { margin-left: 15px; } }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_anok { display: flex; justify-content: flex-start; align-items: center; padding-left: 52px; width: 100%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_anok { padding-left: 15px; } }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer.correct .w_answer_box .box100 .w_anok.nopl { padding: 10px 0 10px 0; }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 { justify-content: flex-start; }
 @media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 label { padding-left: 15px; } }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 label .label-box { display: flex; justify-content: flex-start; align-items: center; }

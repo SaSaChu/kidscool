@@ -66,6 +66,10 @@
 										@include range-width(0, 450px) {
 											padding-left: 15px;	
 										}	
+
+										&.nopl {
+											padding: 10px 0 10px 0;
+										}
 									}
 								}
 							}
