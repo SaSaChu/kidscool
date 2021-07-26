@@ -23,7 +23,7 @@
 									.box100 {
 										.w_select {
 	
-											margin-left: 80px;
+											margin-left: 52px;
 
 											@include range-width(0, 450px) {
 												margin-left: 50px;
@@ -37,7 +37,7 @@
 									justify-content: flex-start;
 									align-items: flex-start;
 									.w_select {
-
+										margin-left: 52px;
 										@include range-width(0, 450px) {
 											margin-left: 52px;
 										}
@@ -49,6 +49,12 @@
 										@include range-width(0, 450px) {
 											margin-left: 52px;
 										}
+									}
+
+									.w_anok {
+										display: flex;
+										align-items: center;
+										// padding-left: 52px;
 									}
 								}
 							}
@@ -90,14 +96,13 @@
 								}
 					
 								.w_select {
-									margin-left: 85px;
-									line-height: unset;
+									margin-left: 50px;
 									@include range-width(0, 450px) {
 										margin-left: 50px;
 									}
 
 									&:before {
-										background-color: transparent;
+										// background-color: transparent;
 									}
 
 									span {
@@ -109,11 +114,6 @@
 											margin-left: 10px;
 										}
 									}
-								}
-
-								.w_anok {
-									display: flex;
-									align-items: center;
 								}
 							}
 						}
