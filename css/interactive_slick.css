@@ -42,7 +42,7 @@
 
 .bg_testBlue { background-color: #2a9fe9; }
 
-@media screen and (max-width: 449px) and (min-width: 0) { .banner1 .top .boxs, .banner2 .top .boxs, .banner3 .top .boxs { height: 360px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .banner1 .top .boxs, .banner2 .top .boxs, .banner3 .top .boxs { height: 375px; }
   .banner1 .top .boxs.i04-boxs .box span, .banner2 .top .boxs.i04-boxs .box span, .banner3 .top .boxs.i04-boxs .box span { border: 2px solid #10aadc; }
   .banner1 .top .boxs .box + .box, .banner2 .top .boxs .box + .box, .banner3 .top .boxs .box + .box { margin-left: 0; }
   .banner1 .top .boxs .box img, .banner2 .top .boxs .box img, .banner3 .top .boxs .box img { max-height: 300px; }
