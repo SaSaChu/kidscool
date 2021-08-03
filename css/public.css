@@ -196,6 +196,7 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .box80 { width: 100%; } }
 
 .box90 { width: 90%; }
+@media screen and (max-width: 449px) and (min-width: 0) { .box90 { width: 100%; } }
 
 .box100 { display: flex; justify-content: center; align-items: center; }
 .box100 .box50 { display: flex; }
@@ -208,6 +209,10 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .m-qBtnBox { display: inline-block; width: calc(100% - 55px - 110px); }
 
 .fixBoxs { display: inline-block; width: 100%; position: absolute; left: 0; bottom: 0; padding: 15px; }
+
+.fixBoxs_l { display: inline-block; position: absolute; left: 0; bottom: 0; padding: 15px; }
+
+.fixBoxs_r { display: inline-block; position: absolute; right: 0; bottom: 0; padding: 15px; }
 
 .safeBoxs { display: inline-block; width: calc(100% - 20px * 2); max-width: 950px; margin: 150px 20px 50px 20px; padding: 20px; background-color: rgba(255, 255, 255, 0.5); -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; position: relative; }
 @media screen and (max-width: 449px) and (min-width: 0) { .safeBoxs { margin: 50px 0; padding: 10px; width: 100%; } }

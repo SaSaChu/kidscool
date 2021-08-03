@@ -169,3 +169,6 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .btn_test { display: inline-block; cursor: pointer; width: 100%; background-color: #f9f9f9; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: 1px solid #b5b4b5; font-size: 1.2rem; color: black; text-align: left; padding: 2px 5px; line-height: 32px; }
 .btn_test:hover { background-color: #cccccc; }
 .btn_test img { display: inline-block; width: 100%; max-width: 35px; margin-right: 5px; }
+
+.link_qa { font-size: 1.6rem; color: #2175e2; font-weight: bold; text-align: left; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.link_qa:hover { color: #ff6601; }

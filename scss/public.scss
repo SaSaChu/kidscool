@@ -610,6 +610,11 @@ footer {
 
 .box90 {
   width: 90%;
+
+  // mail
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
 }
 
 .box100 {
@@ -661,6 +666,24 @@ footer {
   padding: 15px;
 }
 
+.fixBoxs_l {
+  display: inline-block;
+  // width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+}
+
+
+.fixBoxs_r {
+  display: inline-block;
+  // width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+}
 .safeBoxs {
   display: inline-block;
   width: calc(100% - 20px * 2);
