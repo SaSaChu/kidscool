@@ -995,6 +995,14 @@
         border: 10px solid rgba(255, 136, 51, 1.00);
       }
 
+      &.mailBg {
+        max-width: 700px;
+        max-height: 500px;
+        overflow-x: scroll;
+        background-color: white;
+        border: 10px solid rgba(255, 136, 51, 1.00);
+      }
+
       width: 100%;
       max-width: 700px;
       @include clearfix();
