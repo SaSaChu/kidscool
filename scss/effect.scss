@@ -2110,10 +2110,10 @@
                 position: relative;
                 z-index: 2;
                 &:before {
-                  content: '('
+                  content: ''
                 }
                 &:after {
-                  content: ')'
+                  content: ''
                 }
               }
               &:before {
@@ -2134,7 +2134,7 @@
                   }
                   span {
                     &:after {
-                      content: ' #{$i}%)'
+                      content: ' #{$i}%'
                     }
                   }
                 }
