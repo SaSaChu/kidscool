@@ -83,7 +83,9 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 .w_select_type.p { border: 1px solid #af4dac; color: #af4dac; }
 .w_select_type.br { border: 1px solid #996536; color: #996536; }
 
-.select_mail { display: inline-block; width: 100%; border: 0; height: 25px; outline: 0; }
+.select_mail { display: inline-block; width: 100%; border: 0; height: 25px; outline: 0; font-size: 1.6rem; }
+
+.text_mail { display: inline-block; width: 100%; border: 0; outline: 0; font-size: 1.6rem; }
 
 .select_type { display: inline-block; width: calc(100% - 160px); float: right; font-size: 1.2rem; padding: 8px 10px; border: 1px solid #c6c6c6; color: black; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 38px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }
 
