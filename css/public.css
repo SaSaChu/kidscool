@@ -167,7 +167,7 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .MyAds { width: 24%; }
 .MyAds.slick-slider { display: inline-block; }
 
-.adBoxs { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); height: 120px; margin-right: 20px; float: left; background-color: transparent; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; overflow: hidden; }
+.adBoxs { display: inline-block; width: calc(100% / 4 - 20px * 3 / 4); height: 120px; margin-right: 20px; float: left; background-color: transparent; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; overflow: hidden; max-width: 258px; }
 .adBoxs:last-child { margin-right: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .adBoxs { display: none; } }
 
