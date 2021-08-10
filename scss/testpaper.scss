@@ -50,11 +50,11 @@ body {
 		height: 100%;
         background-image: url(../img/testpaper/cent_title.png),
             url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png);
-		background-position: center 2%, center bottom, center top;
+		background-position: center 1%, center bottom, center top;
         @include range-width(0, 450px) {
             max-width: none;
 			padding-top: 100px;
-			background-position: center 1%, center bottom, center top;
+			background-position: center .5%, center bottom, center top;
             background-image: url(../img/testpaper/cent_title.png),
             url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png);
         }

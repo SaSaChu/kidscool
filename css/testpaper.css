@@ -51,8 +51,8 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg { max-width: none; height: 100vh; background-size: contain; background-image: url(../img/testpaper/index_m_bg.jpg); } }
 .testpaper_bg.infoPage { background-image: url(../img/testpaper/in_title_s.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg.infoPage { max-width: none; height: 100vh; background-size: contain; background-image: url(../img/testpaper/description_bg_m.jpg); } }
-.testpaper_bg.challengePage { padding-top: 200px; padding-bottom: 50px; height: 100%; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); background-position: center 2%, center bottom, center top; }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg.challengePage { max-width: none; padding-top: 100px; background-position: center 1%, center bottom, center top; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); } }
+.testpaper_bg.challengePage { padding-top: 200px; padding-bottom: 50px; height: 100%; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); background-position: center 1%, center bottom, center top; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg.challengePage { max-width: none; padding-top: 100px; background-position: center .5%, center bottom, center top; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); } }
 .testpaper_bg.challengePage .testpaper_boxs .tp_centBoxs { align-items: flex-start; }
 .testpaper_bg .testpaper_boxs { display: inline-block; width: 100%; height: 100%; overflow: auto; }
 .testpaper_bg .testpaper_boxs .tp-title { display: inline-flex; justify-content: flex-start; }
