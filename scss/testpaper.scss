@@ -549,6 +549,11 @@ body {
 						}
 					}
 
+					&.failModel {
+						> .btnBox {
+							margin: 10px 0;
+						}
+					}
 					&.scoreModel {
 						.button_outer {
 							&:nth-child(1) {
