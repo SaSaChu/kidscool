@@ -44,7 +44,7 @@
 
 p { padding: 0; margin: 0; }
 
-.w_anok { color: #38959a; font-weight: bold; font-size: 1.6rem; display: block; text-align: left; padding: 10px 0 10px 85px; }
+.w_anok { color: black; font-weight: bold; font-size: 1.6rem; display: block; text-align: left; padding: 10px 0 10px 85px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .w_anok { font-size: 1.2rem; padding: 10px 0 10px 52px; line-height: 25px; } }
 .w_anok.nopl { padding: 10px 0 10px 15px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .w_anok.nopl { padding: 10px 0 10px 0; } }

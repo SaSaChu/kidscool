@@ -61,5 +61,5 @@
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 .img_a { margin: 10px 0 0 35px; width: 180px; height: 135px; }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 .w_select { margin-left: 50px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 .w_select { margin-left: 50px; } }
-.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 .w_select span { display: flex; justify-content: flex-start; align-items: center; }
+.weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 .w_select span { display: flex; justify-content: flex-start; align-items: center; color: #38959a; }
 .weekBoxs .weekCentBox .weekCent .weekContent .wLBox .w_answer .w_answer_box .box100 .w_select span:after { margin-left: 10px; }
