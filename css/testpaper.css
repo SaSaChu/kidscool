@@ -47,6 +47,11 @@ html { font-size: 13px; }
 
 body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
+.tb { display: flex; justify-content: center; align-items: center; }
+.tb .button_outer_2 { margin-bottom: 20px; background-color: #0da5f0; border: 4px solid #0b73d7; border-radius: 25px; padding: 5px; }
+.tb .button_outer_2 .button_inner { background-color: #85f5fc; border-radius: 25px; padding: 5px 10px; }
+.tb .button_outer_2 .button_inner a { font-size: 16px; text-decoration: none; color: unset; }
+
 .testpaper_bg { position: relative; display: inline-block; margin: 0 auto; width: 100%; max-width: 720px; height: 1200px; background-image: url(../img/testpaper/in_title_big.png), url(../img/testpaper/island_ot.png), url(../img/testpaper/bg_blue.png); background-repeat: no-repeat, no-repeat, no-repeat; background-position: center top, center bottom, center top; -moz-background-size: contain, contain, cover; background-size: initial, contain, initial; background-color: #6cd5ed; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg { max-width: none; height: 100vh; background-size: contain; background-image: url(../img/testpaper/index_m_bg.jpg); } }
 .testpaper_bg.infoPage { background-image: url(../img/testpaper/in_title_s.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); }
@@ -57,8 +62,8 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .testpaper_bg .testpaper_boxs { display: inline-block; width: 100%; height: 100%; overflow: auto; }
 .testpaper_bg .testpaper_boxs .tp-title { display: inline-flex; justify-content: flex-start; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs { position: relative; display: inline-flex; justify-content: center; align-items: center; overflow: hidden; width: 100%; height: 100%; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_buttonBoxs { display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: 100%; height: 300px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_buttonBoxs { height: 200px; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_buttonBoxs { display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: 100%; height: 330px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_buttonBoxs { height: 240px; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_buttonBoxs .btnBox { cursor: pointer; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs { position: relative; top: 100px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs { top: 60px; } }
