@@ -48,7 +48,7 @@ html { font-size: 13px; }
 body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 .tb { display: flex; justify-content: center; align-items: center; }
-.tb .button_outer_2 { margin-bottom: 20px; background-color: #0da5f0; border: 4px solid #0b73d7; border-radius: 25px; padding: 5px; }
+.tb .button_outer_2 { background-color: #0da5f0; border: 4px solid #0b73d7; border-radius: 25px; padding: 5px; }
 .tb .button_outer_2 .button_inner { background-color: #85f5fc; border-radius: 25px; padding: 5px 10px; }
 .tb .button_outer_2 .button_inner a { font-size: 16px; text-decoration: none; color: unset; }
 
@@ -73,6 +73,7 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { position: relative; width: 100%; padding: 10px; max-width: 650px; background-color: white; border-radius: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { width: 95%; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionNo { display: flex; justify-content: flex-start; align-items: center; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore { display: flex; flex-direction: column; justify-content: center; align-items: flex-end; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .socreBox { display: flex; justify-content: center; align-items: center; width: 100px; height: 100px; margin: 10px; border: 1px solid #959595; border-radius: 10px; font-size: 32px; color: #e35252; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .socreBox h3 { margin: 0; position: relative; }
