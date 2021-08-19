@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 
   .button_outer_2 {
     // margin-bottom: 20px;
@@ -196,9 +197,9 @@ body {
 
 				.questionScore {
 					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: flex-end;
+					// flex-direction: column;
+					justify-content: space-between;
+					align-items: flex-start;
 
 					.socreBox {
 						
@@ -225,6 +226,12 @@ body {
 
 					}
 
+					
+				}
+				.questionCoke {
+					display: flex;
+					justify-content: flex-end;
+
 					.button_outer {
 						margin-bottom: 20px;
 						background-color: rgba(13, 165, 240, 1.00);
@@ -245,7 +252,6 @@ body {
 						}
 					}
 				}
-
 				.questionType {
 					margin-top: 40px;
 				}
