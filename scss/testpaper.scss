@@ -30,9 +30,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 
   .button_outer_2 {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     background-color: rgba(13, 165, 240, 1.00);
     border: 4px solid rgba(11, 115, 215, 1);
     border-radius: 25px;
@@ -48,6 +49,10 @@ body {
         text-decoration: none;
         color: unset;
       }
+
+	  span {
+		  font-size: 16px;
+	  }
     }
   }
 }
@@ -196,11 +201,17 @@ body {
                     max-height: 100%;
                 }
 
+				.questionNo {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+				}
+
 				.questionScore {
 					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: flex-end;
+					// flex-direction: column;
+					justify-content: space-between;
+					align-items: flex-start;
 
 					.socreBox {
 						
@@ -227,6 +238,12 @@ body {
 
 					}
 
+					
+				}
+				.questionCoke {
+					display: flex;
+					justify-content: flex-end;
+
 					.button_outer {
 						margin-bottom: 20px;
 						background-color: rgba(13, 165, 240, 1.00);
@@ -247,7 +264,6 @@ body {
 						}
 					}
 				}
-
 				.questionType {
 					margin-top: 40px;
 				}

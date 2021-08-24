@@ -47,12 +47,18 @@ html { font-size: 13px; }
 
 body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
+<<<<<<< HEAD
 .testP { display: inline-block; width: 100%; font-size: 30px; color: black; margin: 0; padding-bottom: 15px; }
 
 .tb { display: flex; justify-content: center; align-items: center; }
 .tb .button_outer_2 { margin-bottom: 20px; background-color: #0da5f0; border: 4px solid #0b73d7; border-radius: 25px; padding: 5px; }
+=======
+.tb { display: flex; justify-content: center; align-items: center; margin-top: 10px; }
+.tb .button_outer_2 { background-color: #0da5f0; border: 4px solid #0b73d7; border-radius: 25px; padding: 5px; }
+>>>>>>> e6c750d58fbd771881d5faed936f44e1c2ea10ec
 .tb .button_outer_2 .button_inner { background-color: #85f5fc; border-radius: 25px; padding: 5px 10px; }
 .tb .button_outer_2 .button_inner a { font-size: 16px; text-decoration: none; color: unset; }
+.tb .button_outer_2 .button_inner span { font-size: 16px; }
 
 .testpaper_bg { position: relative; display: inline-block; margin: 0 auto; width: 100%; max-width: 720px; height: 1200px; background-image: url(../img/testpaper/in_title_big.png), url(../img/testpaper/island_ot.png), url(../img/testpaper/bg_blue.png); background-repeat: no-repeat, no-repeat, no-repeat; background-position: center top, center bottom, center top; -moz-background-size: contain, contain, cover; background-size: initial, contain, initial; background-color: #6cd5ed; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg { max-width: none; height: 100vh; background-size: contain; background-image: url(../img/testpaper/index_m_bg.jpg); } }
@@ -75,13 +81,15 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { position: relative; width: 100%; padding: 10px; max-width: 650px; background-color: white; border-radius: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { width: 95%; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore { display: flex; flex-direction: column; justify-content: center; align-items: flex-end; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionNo { display: flex; justify-content: flex-start; align-items: center; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore { display: flex; justify-content: space-between; align-items: flex-start; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .socreBox { display: flex; justify-content: center; align-items: center; width: 100px; height: 100px; margin: 10px; border: 1px solid #959595; border-radius: 10px; font-size: 32px; color: #e35252; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .socreBox h3 { margin: 0; position: relative; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .socreBox h3:after { content: '分'; font-size: 16px; vertical-align: baseline; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .button_outer { margin-bottom: 20px; background-color: #0da5f0; border: 4px solid #0b73d7; border-radius: 25px; padding: 5px; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .button_outer .button_inner { background-color: #85f5fc; border-radius: 25px; padding: 5px 10px; }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore .button_outer .button_inner a { font-size: 16px; text-decoration: none; color: unset; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionCoke { display: flex; justify-content: flex-end; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionCoke .button_outer { margin-bottom: 20px; background-color: #0da5f0; border: 4px solid #0b73d7; border-radius: 25px; padding: 5px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionCoke .button_outer .button_inner { background-color: #85f5fc; border-radius: 25px; padding: 5px 10px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionCoke .button_outer .button_inner a { font-size: 16px; text-decoration: none; color: unset; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionType { margin-top: 40px; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent { counter-reset: question; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionBoxs .questionContent .questionBox { position: relative; margin: 20px 0; padding-left: 20px; }
