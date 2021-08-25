@@ -122,7 +122,7 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .model .ac_outer .hisCentBox.in_his { height: 100%; }
 .model .ac_outer .hisCentBox .model_content { margin: 20px 0; padding: 10px; width: 100%; height: 100%; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 .model .ac_outer .hisCentBox .model_content .text { display: flex; justify-content: center; align-items: flex-start; margin-bottom: 20px; font-size: 32px; text-align: left; }
-@media screen and (max-width: 449px) and (min-width: 0) { .model .ac_outer .hisCentBox .model_content .text { font-size: 24px; line-height: 56px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .model .ac_outer .hisCentBox .model_content .text { font-size: 24px; } }
 .model .ac_outer .hisCentBox .model_content .text p { margin: 0 0 0 10px; }
 .model .ac_outer .hisCentBox .model_content .text p span { vertical-align: baseline; }
 .model .ac_outer .hisCentBox .model_content .text.completeModel { background-image: url(../img/testpaper/frame_pass.png); background-size: cover; background-repeat: no-repeat; width: 550px; height: 500px; }
