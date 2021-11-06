@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 .pageColorGreen { color: #4e8f2b; }
@@ -91,7 +92,7 @@ p { padding: 0; margin: 0; }
 .hover_tag { font-size: 1.5rem; color: #959595; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .hover_tag { font-size: 1rem; } }
 
-.f_b30 { display: inline-block; font-size: 2.3rem; font-weight: bolder; }
+.f_b30 { display: inline-block; font-size: 2.3rem; font-weight: bolder; font-family: "cwTeXYen", sans-serif; font-weight: bolder; }
 
 .helpTitle { display: inline-block; padding: 10px 15px; background-color: #129eff; color: white; font-size: 2.3rem; font-weight: bolder; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .helpTitle { font-size: 1.69rem; } }

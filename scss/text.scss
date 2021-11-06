@@ -1,5 +1,7 @@
 @import "color";
 @import "Ginkgo";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
 
 p {
   padding: 0;
@@ -200,6 +202,8 @@ p {
 .f_b30 {
   display: inline-block;
   font-size: 2.3rem;
+  font-weight: bolder;
+  font-family: "cwTeXYen", sans-serif;
   font-weight: bolder;
 }
 
