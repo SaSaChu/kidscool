@@ -251,6 +251,11 @@ $(function() {
       $('#loginModel').removeClass('showModel') 
     })
 
+    $('#fixModel').addClass('showModel');
+
+    $('.fix_btn_close, .fix-t-close, .fix_btn_delete').click(function() {
+      $('#fixModel').removeClass('showModel')
+    })
     
     //切換banner圖片 和 按鈕樣式
     function slideTo(index){

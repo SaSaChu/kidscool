@@ -316,3 +316,9 @@ footer { display: inline-block; width: 100%; padding: 20px 0; }
 .boxn .units > * img { display: inline-block; width: calc(100% - 20px); }
 .boxn .units > * img + span { margin-top: 4px; }
 .boxn .units > * span { display: inline-block; width: 100%; height: 20px; line-height: 20px; text-align: center; font-weight: bold; }
+
+.fixModel { width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0 auto; padding: 10px; border-radius: 5px; background-color: #245ac7; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .fixModel { width: 85%; } }
+.fixModel p { font-size: 16px; color: white; margin: 10px 0; line-height: 2; }
+.fixModel p > span { color: #f8fc01; }
+.fixModel button.fix_btn_close { display: flex; justify-content: center; align-items: center; margin: 0 auto; border: 1px solid; width: 80px; border: 1px solid transparent; height: 30px; border-radius: 25px; }
