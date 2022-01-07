@@ -1258,13 +1258,14 @@ footer {
   } 
 
   p{
-    font-size: 16px;
+    font-size: 30px;
     color: white;
     margin: 10px 0;
-    line-height: 2;
+    line-height: 1.5;
 
     @include range-width(0, 450px) {
-      // font-size: 16px;
+      font-size: 22px;
+      line-height: 1.5;
     } 
 
     > span {
