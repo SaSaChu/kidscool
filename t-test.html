@@ -5,6 +5,40 @@
 <title>JavaScript banner輪播 左右切換 圓點點擊切換</title>
 
 <style type="text/css">
+@keyframes fade {
+  from {
+      opacity: 1.0;
+  }
+  50% {
+      opacity: 0.4;
+  }
+  to {
+      opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+.blink {
+ display: inline-block;
+ background-color: red;
+ color: white;
+ padding: 10px;
+ font-size: 15px;
+ animation: fade 600ms infinite;
+ -webkit-animation: fade 600ms infinite;
+}
+
 div,ul,li,a,span,img{margin:0;padding:0;}
 #banner { 
     overflow:hidden; 
@@ -75,6 +109,8 @@ div,ul,li,a,span,img{margin:0;padding:0;}
 
 </head>
 <body>
+
+<h1 class="blink">花花世界</h1>
 
 <div id="banner">    
   <!-- 輪播圖片 -->
