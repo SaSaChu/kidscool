@@ -6,7 +6,7 @@
       opacity: 1.0;
   }
   50% {
-      opacity: 0.8;
+      opacity: 0.6;
   }
   to {
       opacity: 1.0;
@@ -18,7 +18,7 @@
         opacity: 1.0;
     }
     50% {
-        opacity: 0.8;
+        opacity: 0.6;
     }
     to {
         opacity: 1.0;
@@ -34,7 +34,7 @@
  background-color: red;
  color: white;
  padding: 5px 8px;
- font-size: 1rem;
+ font-size: 1.2rem;
  font-weight: bold;
  animation: fade 600ms infinite;
  -webkit-animation: fade 600ms infinite;
