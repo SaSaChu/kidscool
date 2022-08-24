@@ -47,6 +47,16 @@ html { font-size: 13px; }
 
 body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
+.lltitle { display: flex; height: 74px; color: red; font-weight: bold; font-size: 35px; margin: 0; align-items: center; justify-content: center; }
+
+.listBoxs { display: inline-block; width: 100%; max-width: 626px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .listBoxs { max-width: none; } }
+
+.list-title { display: inline-block; width: 100%; max-width: 626px; background-image: url(../img/list02.png); background-repeat: no-repeat; }
+
+.list-bg { display: inline-block; width: 100%; max-width: 626px; background-image: url(../img/list04.png); background-repeat: repeat-y; min-height: 480px; overflow: auto; }
+@media screen and (max-width: 449px) and (min-width: 0) { .list-bg { max-width: 375px; min-height: 230px; } }
+
 .testP { display: inline-block; width: 100%; font-size: 30px; color: black; margin: 0; padding-bottom: 15px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testP { font-size: 24px; } }
 
@@ -70,6 +80,7 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_buttonBoxs { height: 240px; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_buttonBoxs .btnBox { cursor: pointer; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs { position: relative; top: 100px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs.tp_list { top: 57px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs { top: 60px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs > img { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs > a { position: relative; top: 40px; }

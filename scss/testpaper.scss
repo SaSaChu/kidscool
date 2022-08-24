@@ -17,6 +17,51 @@ body {
         Helvetica, Arial, sans-serif;
 }
 
+.lltitle {
+	display: flex;
+	height: 74px;
+	color: red;
+	font-weight: bold;
+	font-size: 35px;
+	margin: 0;
+	align-items: center;
+    justify-content: center;
+}
+
+
+.listBoxs {
+	display: inline-block;
+	width: 100%;
+	max-width: 626px;
+
+	@include range-width(0, 450px) {
+		max-width: none;
+	}
+}
+
+.list-title {
+	display: inline-block;
+	width: 100%;
+	max-width: 626px;
+	background-image: url(../img/list02.png);
+	background-repeat: no-repeat;
+}
+
+.list-bg {
+	display: inline-block;
+	width: 100%;
+	max-width: 626px;
+	background-image: url(../img/list04.png);
+	background-repeat: repeat-y;
+	min-height: 480px;
+	overflow: auto;
+
+	@include range-width(0, 450px) {
+		max-width: 375px;
+		min-height: 230px;
+	}
+}
+
 .testP {
   display: inline-block;
   width: 100%;
@@ -163,6 +208,10 @@ body {
             .tp_infoBoxs {
                 position: relative;
                 top: 100px;
+
+                &.tp_list {
+                	top: 57px;
+                }
 
                 @include range-width(0, 450px) {
                     top: 60px;
