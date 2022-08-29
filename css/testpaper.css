@@ -47,15 +47,39 @@ html { font-size: 13px; }
 
 body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
-.lltitle { display: flex; height: 74px; color: red; font-weight: bold; font-size: 35px; margin: 0; align-items: center; justify-content: center; }
+.l_t { display: inline-block; width: 100%; position: absolute; z-index: 111; top: 140px; }
+.l_t img { display: inline-block; width: 100%; max-width: 626px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .l_t img { max-width: auto; } }
+
+.rank_bg { display: inline-block; width: 100%; min-height: 104px; background-image: url(../img/list_rank.png); background-repeat: no-repeat; background-size: cover; }
+@media screen and (max-width: 449px) and (min-width: 0) { .rank_bg { min-height: 65px; background-size: contain; background-image: url(../img/list_rank.png); } }
+.rank_bg .lltitle { display: inline-block; color: red; font-weight: bold; font-size: 3rem; margin: 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .rank_bg .lltitle { font-size: 2rem; } }
+
+.red-dot { display: inline-block; border-bottom: 2px dotted red; }
+
+.rank-title { font-size: 2rem; color: #0030ff; font-weight: bold; }
+@media screen and (max-width: 449px) and (min-width: 0) { .rank-title { font-size: 1.2rem; } }
+
+.rank-type { font-size: 2rem; color: black; }
+@media screen and (max-width: 449px) and (min-width: 0) { .rank-type { font-size: 1.2rem; } }
+
+.pt-19 { padding-top: 1.9rem !important; }
+@media screen and (max-width: 449px) and (min-width: 0) { .pt-19 { padding-top: .8rem !important; } }
+
+.bg-y { background-color: #feffd5; }
+
+.rank_cent { display: inline-block; width: 100%; height: 300px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .rank_cent { height: 170px; } }
 
 .listBoxs { display: inline-block; width: 100%; max-width: 626px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .listBoxs { max-width: none; } }
 
 .list-title { display: inline-block; width: 100%; max-width: 626px; background-image: url(../img/list02.png); background-repeat: no-repeat; }
+@media screen and (max-width: 449px) and (min-width: 0) { .list-title { max-width: none; background-size: contain; background-image: url(../img/list02_m.png); } }
 
 .list-bg { display: inline-block; width: 100%; max-width: 626px; background-image: url(../img/list04.png); background-repeat: repeat-y; min-height: 480px; overflow: auto; }
-@media screen and (max-width: 449px) and (min-width: 0) { .list-bg { max-width: 375px; min-height: 230px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .list-bg { max-width: none; min-height: 250px; background-size: contain; background-repeat: repeat-y; background-image: url(../img/list04_m.png); } }
 
 .testP { display: inline-block; width: 100%; font-size: 30px; color: black; margin: 0; padding-bottom: 15px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testP { font-size: 24px; } }
@@ -73,6 +97,9 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .testpaper_bg.challengePage { padding-top: 200px; padding-bottom: 50px; height: 100%; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); background-position: center 1%, center bottom, center top; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg.challengePage { max-width: none; padding-top: 100px; background-position: center .5%, center bottom, center top; background-image: url(../img/testpaper/cent_title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); } }
 .testpaper_bg.challengePage .testpaper_boxs .tp_centBoxs { align-items: flex-start; }
+.testpaper_bg.listPage { padding-top: 312px; padding-bottom: 50px; height: 100%; background-image: url(../img/title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); background-position: center 1%, center bottom, center top; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg.listPage { max-width: none; padding-top: 245px; background-position: center .5%, center bottom, center top; background-image: url(../img/title.png), url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png); } }
+.testpaper_bg.listPage .testpaper_boxs .tp_centBoxs { align-items: flex-start; }
 .testpaper_bg .testpaper_boxs { display: inline-block; width: 100%; height: 100%; overflow: auto; }
 .testpaper_bg .testpaper_boxs .tp-title { display: inline-flex; justify-content: flex-start; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs { position: relative; display: inline-flex; justify-content: center; align-items: center; overflow: hidden; width: 100%; height: 100%; }
@@ -81,12 +108,16 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_buttonBoxs .btnBox { cursor: pointer; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs { position: relative; top: 100px; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs.tp_list { top: 57px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs.tp_list2 { top: 158px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs { top: 60px; } }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs > img { width: auto; height: auto; max-width: 100%; max-height: 100%; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs > a { position: relative; top: 40px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs > a { top: 20px; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { position: relative; width: 100%; padding: 10px; max-width: 650px; background-color: white; border-radius: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { width: 95%; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs.all_t_bg { padding: 30px 10px 10px 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs.all_t_bg { width: 100%; } }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs.all_c_bg { background-color: rgba(255, 255, 255, 0.5); margin-bottom: 25px; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionNo { display: flex; justify-content: flex-start; align-items: center; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore { display: flex; justify-content: space-between; align-items: flex-start; }

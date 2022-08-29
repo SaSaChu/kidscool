@@ -17,17 +17,96 @@ body {
         Helvetica, Arial, sans-serif;
 }
 
-.lltitle {
-	display: flex;
-	height: 74px;
-	color: red;
-	font-weight: bold;
-	font-size: 35px;
-	margin: 0;
-	align-items: center;
-    justify-content: center;
+.l_t {
+	display: inline-block;
+	width: 100%;
+	position: absolute;
+	z-index: 111;
+	top: 140px;
+
+	img {
+		display: inline-block;
+		width: 100%;
+		max-width: 626px;
+
+		@include range-width(0, 450px) {
+			max-width: auto;
+		}
+	}
 }
 
+.rank_bg {
+	display: inline-block;
+	width: 100%;
+	min-height: 104px;
+	background-image: url(../img/list_rank.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include range-width(0, 450px) {
+        min-height: 65px;
+        background-size: contain;
+        background-image: url(../img/list_rank.png);
+    }
+
+    .lltitle {
+    	display: inline-block;
+		color: red;
+		font-weight: bold;
+		font-size: 3rem;
+		margin: 0;
+
+	    @include range-width(0, 450px) {
+	    	font-size: 2rem;
+	    }
+	}
+}
+
+.red-dot {
+	display: inline-block;
+	border-bottom: 2px dotted red;
+}
+
+.rank-title {
+	font-size: 2rem;
+	color: #0030ff;
+	font-weight: bold;
+
+	@include range-width(0, 450px) {
+		font-size: 1.2rem;
+	}
+}
+
+.rank-type {
+	font-size: 2rem;
+	color: black;
+
+	@include range-width(0, 450px) {
+		font-size: 1.2rem;
+	}
+}
+
+.pt-19 {
+	padding-top: 1.9rem !important;
+
+	@include range-width(0, 450px) {
+		padding-top: .8rem !important;
+	}
+}
+
+.bg-y {
+	background-color: #feffd5;
+}
+
+.rank_cent {
+	display: inline-block;
+	width: 100%;
+	height: 300px;
+
+	@include range-width(0, 450px) {
+		height: 170px;
+	}
+}
 
 .listBoxs {
 	display: inline-block;
@@ -45,6 +124,12 @@ body {
 	max-width: 626px;
 	background-image: url(../img/list02.png);
 	background-repeat: no-repeat;
+
+	@include range-width(0, 450px) {
+        max-width: none;
+        background-size: contain;
+        background-image: url(../img/list02_m.png);
+    }
 }
 
 .list-bg {
@@ -57,8 +142,11 @@ body {
 	overflow: auto;
 
 	@include range-width(0, 450px) {
-		max-width: 375px;
-		min-height: 230px;
+		max-width: none;
+		min-height: 250px;
+        background-size: contain;
+        background-repeat: repeat-y;
+        background-image: url(../img/list04_m.png);
 	}
 }
 
@@ -156,6 +244,29 @@ body {
 		}
     }
 
+    &.listPage {
+		padding-top: 312px;
+		padding-bottom: 50px;
+		height: 100%;
+        background-image: url(../img/title.png),
+            url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png);
+		background-position: center 1%, center bottom, center top;
+
+        @include range-width(0, 450px) {
+            max-width: none;
+			padding-top: 245px;
+			background-position: center .5%, center bottom, center top;
+            background-image: url(../img/title.png),
+            url(../img/testpaper/island.png), url(../img/testpaper/bg_blue.png);
+        }
+
+		.testpaper_boxs {
+			.tp_centBoxs {
+				align-items: flex-start;
+			}
+		}
+    }
+
     background-image: url(../img/testpaper/in_title_big.png),
         url(../img/testpaper/island_ot.png), url(../img/testpaper/bg_blue.png);
 
@@ -213,6 +324,10 @@ body {
                 	top: 57px;
                 }
 
+                &.tp_list2 {
+                	top: 158px;
+                }
+
                 @include range-width(0, 450px) {
                     top: 60px;
                 }
@@ -246,6 +361,19 @@ body {
 
 				@include range-width(0, 450px) {
 					width: 95%;
+				}
+
+				&.all_t_bg {
+					padding:30px 10px 10px 10px;
+
+					@include range-width(0, 450px) {
+					width: 100%;
+					}
+				}
+
+				&.all_c_bg {
+					background-color: rgba(255, 255, 255, .5);
+					margin-bottom: 25px;
 				}
 
                 img {
