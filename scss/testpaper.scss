@@ -73,7 +73,7 @@ body {
 	font-weight: bold;
 
 	@include range-width(0, 450px) {
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 }
 
@@ -101,7 +101,8 @@ body {
 .rank_cent {
 	display: inline-block;
 	width: 100%;
-	height: 300px;
+	// height: 300px;
+	height: 470px;
 
 	@include range-width(0, 450px) {
 		height: 170px;
@@ -404,16 +405,19 @@ body {
                 // top: 150px;
                 width: 100%;
                 padding: 10px;
-                max-width: 650px;
+                // max-width: 650px;
+                max-width: 690px;
                 background-color: rgba(255, 255, 255, 1);
-                border-radius: 10px;
+                border-radius: 30px;
 
 				@include range-width(0, 450px) {
 					width: 95%;
 				}
 
 				&.all_t_bg {
-					padding:30px 10px 10px 10px;
+					border: 10px solid #e16c1d;
+					// padding:30px 10px 10px 10px;
+					padding:12px 10px;
 
 					@include range-width(0, 450px) {
 					width: 100%;
@@ -421,7 +425,8 @@ body {
 				}
 
 				&.all_c_bg {
-					background-color: rgba(255, 255, 255, .5);
+					// background-color: rgba(255, 255, 255, .5);
+					background-color: #fffd00;
 					margin-bottom: 25px;
 				}
 
@@ -925,3 +930,16 @@ body {
 	left: 0%;
 }
 
+.listBoxs2023 {
+	width: 100%;
+}
+
+.nav-link.active {
+	background-color: transparent !important;
+}
+
+.nav-link {
+	@include range-width(0, 450px) {
+		padding: .3rem !important;
+	}
+}

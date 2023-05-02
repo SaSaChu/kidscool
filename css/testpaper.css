@@ -59,7 +59,7 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .red-dot { display: inline-block; border-bottom: 2px dotted red; }
 
 .rank-title { font-size: 2rem; color: #0030ff; font-weight: bold; }
-@media screen and (max-width: 449px) and (min-width: 0) { .rank-title { font-size: 1.2rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .rank-title { font-size: 1rem; } }
 
 .rank-type { font-size: 2rem; color: black; }
 @media screen and (max-width: 449px) and (min-width: 0) { .rank-type { font-size: 1.2rem; } }
@@ -69,7 +69,7 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 
 .bg-y { background-color: #feffd5; }
 
-.rank_cent { display: inline-block; width: 100%; height: 300px; }
+.rank_cent { display: inline-block; width: 100%; height: 470px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .rank_cent { height: 170px; } }
 
 .listBoxs { display: inline-block; width: 100%; max-width: 626px; }
@@ -117,11 +117,11 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs > img.infoimg { width: auto; height: auto; max-width: 88%; max-height: 100%; } }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs > a { position: relative; top: 40px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_infoBoxs > a { top: 20px; } }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { position: relative; width: 100%; padding: 10px; max-width: 650px; background-color: white; border-radius: 10px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { position: relative; width: 100%; padding: 10px; max-width: 690px; background-color: white; border-radius: 30px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs { width: 95%; } }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs.all_t_bg { padding: 30px 10px 10px 10px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs.all_t_bg { border: 10px solid #e16c1d; padding: 12px 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs.all_t_bg { width: 100%; } }
-.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs.all_c_bg { background-color: rgba(255, 255, 255, 0.5); margin-bottom: 25px; }
+.testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs.all_c_bg { background-color: #fffd00; margin-bottom: 25px; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionNo { display: flex; justify-content: flex-start; align-items: center; }
 .testpaper_bg .testpaper_boxs .tp_centBoxs .tp_challengeBoxs .questionScore { display: flex; justify-content: space-between; align-items: flex-start; }
@@ -210,3 +210,9 @@ body { display: inline-block; width: 100%; margin: 0; padding: 0; color: black; 
 .list-cent { top: 15%; }
 
 .list-bo { bottom: 1%; left: 0%; }
+
+.listBoxs2023 { width: 100%; }
+
+.nav-link.active { background-color: transparent !important; }
+
+@media screen and (max-width: 449px) and (min-width: 0) { .nav-link { padding: .3rem !important; } }
