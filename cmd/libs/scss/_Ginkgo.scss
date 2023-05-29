@@ -1,9 +1,3 @@
-//
-// @author      OA Wu <comdan66@gmail.com>
-// @copyright   Copyright (c) 2015 - 2019, Ginkgo
-// @license     http://opensource.org/licenses/MIT  MIT License
-// @link        https://www.ioa.tw/
-//
 
 @import "GinkgoMixin";
 
@@ -14,7 +8,8 @@ $_InitGinkgo: false !global;
     $_InitGinkgo: true !global;
     * {
       &, &:after, &:before {
-        vertical-align: top;
+        // vertical-align: top;
+        vertical-align: middle;
         @include box-sizing(border-box);
         @include font-smoothing(subpixel-antialiased);
       }

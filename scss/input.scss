@@ -1,7 +1,6 @@
 @import "Ginkgo";
 @import "color";
 
-
 input, textarea {
   border:0 none;
   outline: 0;
@@ -42,6 +41,7 @@ input[type="radio"]:checked + label span {
 }
 
 label {
+  display: unset !important;
   padding: 0;
   cursor: pointer;
 
@@ -151,6 +151,7 @@ label {
   padding: 5px 20px;
   font-size: 1.3rem;
   color: black;
+  margin-bottom: 0 !important;
 }
 
 .w_select_type {
@@ -277,9 +278,35 @@ label {
   }
 }
 
+.input_history {
+  display: inline-block;
+  width: 80%;
+  float: left;
+  font-size: 1.2rem;
+  padding: 8px 10px;
+  border: 1px solid rgba(198, 198, 198, 1.00);
+  color: black;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  @include border-radius(5px);
+}
 
-
-
+.input_history_btn {
+  display: inline-block;
+  width: 18%;
+  float: right;
+  // background-color: #fabe01;
+  background-image: linear-gradient(to top, #d48402, #fabe01);
+  border: 1px solid #bb6e00;
+  @include border-radius(5px);
+  padding: 8px 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: white;
+}
 
 
 

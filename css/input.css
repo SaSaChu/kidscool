@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+*, *:after, *:before { vertical-align: middle; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 .pageColorGreen { color: #4e8f2b; }
 
@@ -54,7 +54,7 @@ input[type="radio"] + label span { display: inline-block; width: 25px; height: 2
 
 input[type="radio"]:checked + label span { background: url(../img/cbx-on.png) no-repeat; }
 
-label { padding: 0; cursor: pointer; }
+label { display: unset !important; padding: 0; cursor: pointer; }
 label.checkbox { float: left; margin-left: 30px; }
 label.checkbox input[type=checkbox] { display: none; }
 label.checkbox input[type=checkbox] + span { display: inline-block; padding-left: 26px; line-height: 25px; background: url(../img/cbx-off.png) no-repeat; user-select: none; text-indent: -9999px; }
@@ -74,7 +74,7 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 .input_white.w-change { width: 60%; max-width: none; }
 .input_white.m-menuUse { width: calc(100% - 69px); max-width: none; padding: 5px 10px; font-size: 1rem; }
 
-.talk_input { display: inline-block; width: 100%; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; }
+.talk_input { display: inline-block; width: 100%; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; margin-bottom: 0 !important; }
 
 .w_select_type { display: inline-block; width: 100%; float: right; font-size: 1.6rem; padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/se_arrow.png") no-repeat scroll right center transparent; background-size: 38px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }
 .w_select_type.g { border: 1px solid #4e8f2b; color: #4e8f2b; }
@@ -91,3 +91,7 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 
 .select_history { display: inline-block; width: calc(100% / 2 - 15px * 1 / 2); float: left; font-size: 1.2rem; padding: 8px 10px; border: 1px solid #c6c6c6; color: black; margin-right: 15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; /*適應safari瀏覽器內容不跑偏*/ line-height: 1; /*將預設的select選擇框樣式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在選擇框的最右側中間顯示小箭頭圖片*/ background: url("../img/his_arrow.png") no-repeat scroll right center white; background-size: 32px 40px; /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/ padding-right: 14px; /*去除選中時樣式*/ outline: none; margin-top: 5px; }
 .select_history:last-child { margin-right: 0; }
+
+.input_history { display: inline-block; width: 80%; float: left; font-size: 1.2rem; padding: 8px 10px; border: 1px solid #c6c6c6; color: black; background-color: white; margin-top: 10px; margin-bottom: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+
+.input_history_btn { display: inline-block; width: 18%; float: right; background-image: linear-gradient(to top, #d48402, #fabe01); border: 1px solid #bb6e00; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 8px 10px; margin-top: 10px; margin-bottom: 5px; font-size: 1.2rem; font-weight: bolder; color: white; }

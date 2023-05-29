@@ -1,6 +1,12 @@
 @import "Ginkgo";
 @import "color";
 
+* {
+  &, &:after, &:before {
+    vertical-align: middle !important;
+  }
+}
+
 
 html {
   font-size: 13px;
@@ -278,6 +284,10 @@ header {
   &.in_his {
     max-height: 600px;
     overflow-x:hidden;
+
+    @include range-width(0, 450px) {
+      max-height: 400px;
+    }
   }
 }
 
@@ -484,6 +494,10 @@ header {
     @include range-width(0, 450px) {
       padding: 0;
     }
+  }
+
+  &:after {
+    vertical-align: middle !important;
   }
 }
 
@@ -1241,16 +1255,64 @@ footer {
   }
 }
 
+// backup
+// .fixModel {
+//   width: 50%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto;
+//   padding: 10px;
+//   border-radius: 5px;
+//   background-color: rgba(36, 90, 199, 1.00);
+//   text-align: left;
+
+//   @include range-width(0, 450px) {
+//     width: 85%;
+//   } 
+
+//   p{
+//     font-size: 30px;
+//     color: white;
+//     margin: 10px 0;
+//     line-height: 1.5;
+
+//     @include range-width(0, 450px) {
+//       font-size: 22px;
+//       line-height: 1.5;
+//     } 
+
+//     > span {
+//       color: rgba(248, 252, 1, 1.00);
+//     }
+//   }
+
+//   button.fix_btn_close {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0 auto;
+//     border: 1px solid;
+//     width: 80px;
+//     border: 1px solid transparent;
+//     height: 30px;
+//     border-radius: 25px;
+//   }
+// }
+
 .fixModel {
-  width: 50%;
+  width: 100%;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 10px;
-  border-radius: 5px;
-  background-color: rgba(36, 90, 199, 1.00);
+  border-radius: 10px;
+  background-color: white;
+  border: 10px solid #fe8832;
   text-align: left;
 
   @include range-width(0, 450px) {
@@ -1259,7 +1321,6 @@ footer {
 
   p{
     font-size: 30px;
-    color: white;
     margin: 10px 0;
     line-height: 1.5;
 
@@ -1274,14 +1335,14 @@ footer {
   }
 
   button.fix_btn_close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     margin: 0 auto;
     border: 1px solid;
-    width: 80px;
+    padding: 10px 20px;
     border: 1px solid transparent;
-    height: 30px;
-    border-radius: 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-left: 10px;
   }
 }

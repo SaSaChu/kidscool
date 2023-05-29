@@ -1,4 +1,4 @@
-*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+*, *:after, *:before { vertical-align: middle; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 .m_r_10 { margin-right: 10px; }
 
@@ -24,7 +24,7 @@
 
 .m_t_5 { margin-top: 5px; }
 
-.m_t_3 { margin-top: 3px; }
+.m_t_3 { margin-top: -3px; }
 
 .m_d_20 { margin-bottom: 20px; }
 

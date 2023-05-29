@@ -4,7 +4,7 @@
 a,  .cantuse {
   display: inline-block;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
   outline: 0;
 }
 
@@ -439,9 +439,10 @@ button {
   }
 }
 
-.menu01, .menu02, .menu03, .menu04, .menu05, .menu06 {
+.menu01, .menu02, .menu03, .menu04, .menu05, .menu06, .menu07 {
   display: inline-block;
   position: absolute;
+
 
   @include range-width(0, 450px) {
     display: none;
@@ -450,38 +451,111 @@ button {
 
 .menu01 {
   top: 9%;
-  left: 1%;
+  left: 6%;
+
+  @include range-width(770px, 1367px) {
+    top: 7%;
+    left: 3%;
+  }
 }
 
 .menu02 {
   bottom: 1%;
-  left: 20%;
+  left: 17%;
+
+  @include range-width(770px, 1367px) {
+    bottom: -9px;
+    left: 12%;
+  }
 }
 
 .menu03 {
-  top: 12%;
-  left: 39%;
+  top: 17%;
+  left: 31%;
 }
 
 .menu04 {
   bottom: -2%;
-  right: 22%;
+  right: 17%;
+
+  @include range-width(770px, 1367px) {
+    bottom: -10%;
+    right: 13%;
+  }
 }
 
 .menu05 {
   top: 6%;
   right: 6%;
+
+  @include range-width(770px, 1367px) {
+    right: 2%;
+  }
 }
 
 .menu06 {
-  bottom: -18%;
+  bottom: -3%;
   right: 4%;
 
-  @include range-width(450px, 1285px) {
+  @include range-width(450px, 1367px) {
     bottom: -34%;
     right: 2%;
   }
 }
+
+.menu07 {
+  top: 6%;
+  right: 30%;
+}
+
+
+// backup
+// .menu01 {
+//   top: 9%;
+//   left: 1%;
+// }
+
+// .menu02 {
+//   bottom: 1%;
+//   left: 20%;
+
+//   @include range-width(450px, 1285px) {
+//     bottom: 1%;
+//     left: 17%;
+//   }
+// }
+
+// .menu03 {
+//   top: 12%;
+//   left: 39%;
+// }
+
+// .menu04 {
+//   bottom: -2%;
+//   right: 22%;
+// }
+
+// .menu05 {
+//   top: 6%;
+//   right: 6%;
+// }
+
+// .menu06 {
+//   bottom: -18%;
+//   right: 4%;
+
+//   @include range-width(450px, 1285px) {
+//     bottom: -34%;
+//     right: 2%;
+//   }
+// }
+
+// .menu07 {
+//   top: 6%;
+//   right: 30%;
+// }
+
+
 
 // tag
 .knowBtn {

@@ -339,7 +339,7 @@
 
 
 // 首頁星球
-.img_menu01, .img_menu02, .img_menu03, .img_menu04, .img_menu05, .img_menu06 {
+.img_menu01, .img_menu02, .img_menu03, .img_menu04, .img_menu05, .img_menu06, .img_menu07 {
   display: inline-block;
   width: 100%;
 }
@@ -347,40 +347,40 @@
 .img_menu01 {
   max-width: 236px;
 
-  @include range-width(450px, 1445px) {
-    max-width: 215px;
+  @include range-width(770px, 1367px) {
+    max-width: 180px;
   }
 }
 
 .img_menu02 {
   max-width: 221px;
 
-  @include range-width(450px, 1445px) {
-    max-width: 192px;
+  @include range-width(770px, 1367px) {
+    max-width: 170px;
   }
 }
 
 .img_menu03 {
   max-width: 342px;
 
-  @include range-width(450px, 1445px) {
-    max-width: 264px;
+  @include range-width(770px, 1367px) {
+    max-width: 195px;
   }
 }
 
 .img_menu04 {
   max-width: 202px;
 
-  @include range-width(450px, 1445px) {
-    max-width: 190px;
+  @include range-width(770px, 1367px) {
+    max-width: 160px;
   }
 }
 
 .img_menu05 {
   max-width: 198px;
 
-  @include range-width(450px, 1445px) {
-    max-width: 160px;
+  @include range-width(770px, 1367px) {
+    max-width: 150px;
   }
 
 }
@@ -388,10 +388,78 @@
 .img_menu06 {
   max-width: 115px;
 
-  @include range-width(450px, 1445px) {
-    max-width: 125px;
+  @include range-width(770px, 1367px) {
+    max-width: 100px;
   }
 }
+
+.img_menu07 {
+  max-width: 250px;
+
+  @include range-width(770px, 1367px) {
+    max-width: 165px;
+  }
+}
+
+
+// backup
+// .img_menu01 {
+//   max-width: 236px;
+
+//   @include range-width(450px, 1445px) {
+//     max-width: 215px;
+//   }
+// }
+
+// .img_menu02 {
+//   max-width: 221px;
+
+//   @include range-width(450px, 1445px) {
+//     max-width: 192px;
+//   }
+// }
+
+// .img_menu03 {
+//   max-width: 342px;
+
+//   @include range-width(450px, 1445px) {
+//     max-width: 245px;
+//   }
+// }
+
+// .img_menu04 {
+//   max-width: 202px;
+
+//   @include range-width(450px, 1445px) {
+//     max-width: 190px;
+//   }
+// }
+
+// .img_menu05 {
+//   max-width: 198px;
+
+//   @include range-width(450px, 1445px) {
+//     max-width: 160px;
+//   }
+
+// }
+
+// .img_menu06 {
+//   max-width: 115px;
+
+//   @include range-width(450px, 1445px) {
+//     max-width: 125px;
+//   }
+// }
+
+// .img_menu07 {
+//   max-width: 222px;
+
+//   @include range-width(450px, 1445px) {
+//     max-width: 222px;
+//   }
+// }
+
 
 .m_header_img {
   display: inline-block;
@@ -505,6 +573,12 @@
     background-position:15px 6px;
     background-image: url(../img/mMenuIcon/m-menu08.png);
   }
+
+  &.m-menu09 {
+    background-repeat: no-repeat;
+    background-position:13px 5px;
+    background-image: url(../img/revision2023/m-menu09.png);
+  }
 }
 
 .dropdown {
@@ -576,6 +650,10 @@
     &.m-menu08 {
       background-image: url(../img/mMenuIcon/m-menu08-hover.png);
     }
+
+    &.m-menu09 {
+      background-image: url(../img/revision2023/m-menu09-hover.png);
+    }
   }
 }
 
@@ -631,4 +709,22 @@
 }
 
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
 
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lb-h {
+  height: 600px;
+  overflow-y: auto; 
+}
