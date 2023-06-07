@@ -81,7 +81,7 @@ p { padding: 0; margin: 0; margin-bottom: 0 !important; }
 .f_b13 { font-size: 1rem; line-height: 1.5; color: black; }
 @media screen and (max-width: 449px) and (min-width: 0) { .f_b13 { font-size: .8rem; line-height: 1.3; } }
 
-.m_f_b13 { display: inline-block; width: 100%; max-width: 65px; font-size: 1rem; line-height: 25px; color: black; }
+.m_f_b13 { display: inline-block; width: 100%; font-size: 1rem; line-height: 25px; color: black; }
 
 .whiteNum { display: inline-block; width: 100%; max-width: 175px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: white; padding: 10px 15px; text-align: left; margin-right: 30px; }
 .whiteNum:before { display: inline-block; content: attr(title); font-size: 1.15rem; color: black; }

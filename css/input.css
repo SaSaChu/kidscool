@@ -54,7 +54,7 @@ input[type="radio"] + label span { display: inline-block; width: 25px; height: 2
 
 input[type="radio"]:checked + label span { background: url(../img/cbx-on.png) no-repeat; }
 
-label { display: unset !important; padding: 0; cursor: pointer; }
+label { display: inline-block; padding: 0; cursor: pointer; }
 label.checkbox { float: left; margin-left: 30px; }
 label.checkbox input[type=checkbox] { display: none; }
 label.checkbox input[type=checkbox] + span { display: inline-block; padding-left: 26px; line-height: 25px; background: url(../img/cbx-off.png) no-repeat; user-select: none; text-indent: -9999px; }
@@ -72,7 +72,7 @@ label.checkbox input[type=checkbox]:checked + span { background: url(../img/cbx-
 .input_white.m-login { width: 100%; max-width: none; }
 .input_white.w-login { width: 75%; max-width: none; }
 .input_white.w-change { width: 60%; max-width: none; }
-.input_white.m-menuUse { width: calc(100% - 69px); max-width: none; padding: 5px 10px; font-size: 1rem; }
+.input_white.m-menuUse { max-width: none; padding: 5px 10px; font-size: 1rem; }
 
 .talk_input { display: inline-block; width: 100%; background-color: #d7d7d7; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; padding: 5px 20px; font-size: 1.3rem; color: black; margin-bottom: 0 !important; }
 

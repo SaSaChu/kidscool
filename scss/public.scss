@@ -1315,6 +1315,10 @@ footer {
   border: 10px solid #fe8832;
   text-align: left;
 
+  &.in-usenow {
+    max-width: 1200px;
+  }
+
   @include range-width(0, 450px) {
     width: 85%;
   } 

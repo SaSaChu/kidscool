@@ -41,7 +41,8 @@ input[type="radio"]:checked + label span {
 }
 
 label {
-  display: unset !important;
+  // display: unset !important;
+  display: inline-block;
   padding: 0;
   cursor: pointer;
 
@@ -136,7 +137,7 @@ label {
   }
 
   &.m-menuUse {
-    width: calc(100% - 69px);
+    // width: calc(100% - 69px);
     max-width: none;
     padding: 5px 10px;
     font-size: 1rem;

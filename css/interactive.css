@@ -81,6 +81,7 @@
 #iModel .ac_outer .hisCentBox, .model .ac_outer .hisCentBox { display: inline-block; width: 100%; background-color: white; padding: 40px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox, .model .ac_outer .hisCentBox { padding: 15px; } }
 #iModel .ac_outer .hisCentBox.in_his, .model .ac_outer .hisCentBox.in_his { max-height: 800px; overflow-x: hidden; }
+@media screen and (max-width: 449px) and (min-width: 0) { #iModel .ac_outer .hisCentBox.in_his, .model .ac_outer .hisCentBox.in_his { max-height: 580px; } }
 #iModel .ac_outer .hisCentBox .model_title, .model .ac_outer .hisCentBox .model_title { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
 #iModel .ac_outer .hisCentBox .model_title.bt_line, .model .ac_outer .hisCentBox .model_title.bt_line { border-bottom: 1px solid rgba(33, 33, 33, 0.8); }
 #iModel .ac_outer .hisCentBox .model_title.bt_line h2, .model .ac_outer .hisCentBox .model_title.bt_line h2 { margin-bottom: 20px; color: #ff790b; font-size: 36px; }
@@ -117,6 +118,7 @@
 #textModel .ac_outer .hisCentBox, .model .ac_outer .hisCentBox { display: inline-block; width: 100%; background-color: white; padding: 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 @media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox, .model .ac_outer .hisCentBox { padding: 15px; } }
 #textModel .ac_outer .hisCentBox.in_his, .model .ac_outer .hisCentBox.in_his { max-height: 900px; overflow-x: hidden; }
+@media screen and (max-width: 449px) and (min-width: 0) { #textModel .ac_outer .hisCentBox.in_his, .model .ac_outer .hisCentBox.in_his { max-height: 580px; } }
 #textModel .ac_outer .hisCentBox .model_title, .model .ac_outer .hisCentBox .model_title { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
 #textModel .ac_outer .hisCentBox .model_title.bt_line, .model .ac_outer .hisCentBox .model_title.bt_line { border-bottom: 1px solid rgba(33, 33, 33, 0.8); }
 #textModel .ac_outer .hisCentBox .model_title.bt_line h2, .model .ac_outer .hisCentBox .model_title.bt_line h2 { margin-bottom: 20px; color: #ff790b; font-size: 36px; }

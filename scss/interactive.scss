@@ -312,6 +312,10 @@
             &.in_his {
                 max-height: 800px;
                 overflow-x: hidden;
+
+                @include range-width(0, 450px) {
+                    max-height: 580px;
+                }
             }
 
             .model_title {
@@ -513,6 +517,10 @@
             &.in_his {
                 max-height: 900px;
                 overflow-x: hidden;
+
+                @include range-width(0, 450px) {
+                    max-height: 580px;
+                }
             }
 
             .model_title {
