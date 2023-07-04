@@ -93,7 +93,7 @@
 
 .img_slogan, .img_week, .img_testPlay { display: inline-block; width: 100%; }
 
-.img_slogan { max-width: 570px; }
+.img_slogan { max-width: 570px; position: relative; z-index: 9999; }
 .img_slogan.img_S_page { max-width: 310px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .img_slogan.img_S_page { max-width: 133px; } }
 .img_slogan.img_safe_tilte { max-width: 280px; margin-top: -70px; }

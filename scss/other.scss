@@ -175,6 +175,8 @@
 
 .img_slogan {
   max-width: 570px;
+  position: relative;
+  z-index: 9999;
 
   &.img_S_page {
     max-width: 310px;
