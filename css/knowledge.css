@@ -73,6 +73,7 @@
 .knowBoxsRight .knowCentBoxs .knowCent > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > img { float: right; margin-left: 20px; width: auto; height: auto; max-width: 200px; max-height: 200px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .knowCentBoxs .knowCent > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > img, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > img { float: none; margin: 0 auto; max-width: 100%; max-height: 100%; } }
 .knowBoxsRight .knowCentBoxs .knowCent > .content > .text > p, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > p, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > p { text-align: left; font-size: 16px; margin: 10px 0; color: black; }
+.knowBoxsRight .knowCentBoxs .knowCent > .content > .text > p u, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text > p u, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text > p u { vertical-align: unset !important; }
 .knowBoxsRight .knowCentBoxs .knowCent > .content > .text:after, .knowBoxsRight .knowCentBoxs .knowCent_o > .content > .text:after, .knowBoxsRight .knowCentBoxs .knowCent_p > .content > .text:after { content: ''; clear: both; }
 .knowBoxsRight .knowCentBoxs .knowCent.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_o, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_o { padding: 20px; background-color: #e0e0e0; border-radius: 10px; cursor: default; }
 .knowBoxsRight .knowCentBoxs .knowCent.knowCent_p, .knowBoxsRight .knowCentBoxs .knowCent_o.knowCent_p, .knowBoxsRight .knowCentBoxs .knowCent_p.knowCent_p { padding: 20px; background-color: #e0e0e0; border-radius: 10px; cursor: default; }
@@ -103,4 +104,5 @@
 .knowBoxsRight .infoWrapper > .content > .text > img { float: right; margin-left: 20px; width: auto; height: auto; max-width: 200px; max-height: 200px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .knowBoxsRight .infoWrapper > .content > .text > img { float: none; margin: 0 auto; max-width: 100%; max-height: 100%; } }
 .knowBoxsRight .infoWrapper > .content > .text > p { text-align: left; font-size: 16px; margin: 10px 0; color: white; }
+.knowBoxsRight .infoWrapper > .content > .text > p u { vertical-align: top !important; }
 .knowBoxsRight .infoWrapper > .content > .text:after { content: ''; clear: both; }
